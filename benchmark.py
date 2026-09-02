@@ -54,10 +54,15 @@ RESULT_FIELDS = (
     "episode_seconds",
     "farmer_pass_actions",
     "farmer_nonpass_actions",
+    "farmer_harvest_actions",
     "hand_pass_actions",
     "hand_nonpass_actions",
     "market_orders",
     "plant_to_weed_transitions",
+    "unique_plant_tiles_used",
+    "median_mature_wait_steps",
+    "max_mature_wait_steps",
+    "unharvested_mature_tiles",
     "final_seed_total",
     "final_wheat_seeds",
     "final_shed_total",
@@ -172,6 +177,9 @@ class TrackedAgent:
         self.market_orders = 0
         self.plant_to_weed_transitions = 0
         self.previous_tiles = None
+        self.unique_plant_tiles = set()
+        self.maturity_started_at = {}
+        self.mature_wait_steps = []
         self.validation_errors = []
         self.exception_messages = []
 
@@ -210,6 +218,8 @@ class TrackedAgent:
         try:
             player = int(obs.get("player", 0))
             tiles = obs.get("farms", [])[player].get("tiles", [])
+            step = int(obs.get("step", 0))
+            day = int(obs.get("day", 0))
             snapshot = [
                 [
                     tile.get("kind") if isinstance(tile, Mapping) else tile
@@ -220,10 +230,29 @@ class TrackedAgent:
         except (AttributeError, IndexError, TypeError, ValueError):
             return
         if self.previous_tiles is not None:
-            for previous_row, current_row in zip(self.previous_tiles, snapshot):
-                for previous, current in zip(previous_row, current_row):
+            for y, (previous_row, current_row) in enumerate(
+                zip(self.previous_tiles, snapshot)
+            ):
+                for x, (previous, current) in enumerate(zip(previous_row, current_row)):
+                    position = (x, y)
                     if previous == "PLANT" and current == "WEED":
                         self.plant_to_weed_transitions += 1
+                        self.maturity_started_at.pop(position, None)
+                    elif previous == "PLANT" and current != "PLANT":
+                        matured_at = self.maturity_started_at.pop(position, None)
+                        if matured_at is not None:
+                            self.mature_wait_steps.append(max(0, step - matured_at))
+        for y, row in enumerate(tiles):
+            for x, tile in enumerate(row):
+                if not isinstance(tile, Mapping) or tile.get("kind") != "PLANT":
+                    continue
+                position = (x, y)
+                self.unique_plant_tiles.add(position)
+                if (
+                    tile.get("crop") == "WHEAT"
+                    and day - int(tile.get("planted_day", day)) >= 4
+                ):
+                    self.maturity_started_at.setdefault(position, step)
         self.previous_tiles = snapshot
 
     def internal_exceptions(self) -> int:
@@ -315,12 +344,19 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
                 "episode_seconds": round(time.perf_counter() - started, 6),
                 "farmer_pass_actions": tracker.farmer_ops.get("PASS", 0),
                 "farmer_nonpass_actions": tracker.calls - tracker.farmer_ops.get("PASS", 0),
+                "farmer_harvest_actions": tracker.farmer_ops.get("HARVEST", 0),
                 "hand_pass_actions": tracker.hand_ops.get("PASS", 0),
                 "hand_nonpass_actions": sum(
                     count for op, count in tracker.hand_ops.items() if op != "PASS"
                 ),
                 "market_orders": tracker.market_orders,
                 "plant_to_weed_transitions": tracker.plant_to_weed_transitions,
+                "unique_plant_tiles_used": len(tracker.unique_plant_tiles),
+                "median_mature_wait_steps": statistics.median(tracker.mature_wait_steps)
+                if tracker.mature_wait_steps
+                else 0,
+                "max_mature_wait_steps": max(tracker.mature_wait_steps, default=0),
+                "unharvested_mature_tiles": len(tracker.maturity_started_at),
                 "final_seed_total": _sum_nonnegative_values(final_seeds),
                 "final_wheat_seeds": int(final_seeds.get("WHEAT", 0) or 0),
                 "final_shed_total": _sum_nonnegative_values(final_shed),
@@ -364,6 +400,9 @@ def _aggregate(rows: list[dict]) -> dict:
     final_immature_wheat = [
         int(row["final_immature_wheat_tiles"] or 0) for row in completed
     ]
+    unique_plant_tiles = [int(row["unique_plant_tiles_used"] or 0) for row in completed]
+    harvest_actions = [int(row["farmer_harvest_actions"] or 0) for row in completed]
+    mature_wait = [float(row["median_mature_wait_steps"] or 0) for row in completed]
     return {
         "episodes": len(rows),
         "completed": len(completed),
@@ -392,6 +431,21 @@ def _aggregate(rows: list[dict]) -> dict:
         if final_plant_tiles
         else None,
         "max_final_immature_wheat_tiles": max(final_immature_wheat, default=0),
+        "median_unique_plant_tiles": statistics.median(unique_plant_tiles)
+        if unique_plant_tiles
+        else None,
+        "median_harvest_actions": statistics.median(harvest_actions)
+        if harvest_actions
+        else None,
+        "median_mature_wait_steps": statistics.median(mature_wait)
+        if mature_wait
+        else None,
+        "max_mature_wait_steps": max(
+            (float(row["max_mature_wait_steps"] or 0) for row in completed), default=0
+        ),
+        "unharvested_mature_tiles": sum(
+            int(row["unharvested_mature_tiles"] or 0) for row in completed
+        ),
         "shape_invalid_actions": sum(int(row["shape_invalid_actions"] or 0) for row in rows),
         "wrapper_exceptions": sum(int(row["wrapper_exceptions"] or 0) for row in rows),
         "agent_internal_exceptions": sum(
@@ -473,6 +527,11 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         f"- Median carried items: `{_fmt(overall['median_final_carried_total'])}`",
         f"- Median remaining plant tiles: `{_fmt(overall['median_final_plant_tiles'])}`",
         f"- Max immature wheat tiles: `{overall['max_final_immature_wheat_tiles']}`",
+        f"- Median unique plant tiles used: `{_fmt(overall['median_unique_plant_tiles'])}`",
+        f"- Median harvest actions: `{_fmt(overall['median_harvest_actions'])}`",
+        f"- Median mature wait: `{_fmt(overall['median_mature_wait_steps'])} steps`",
+        f"- Max mature wait: `{_fmt(overall['max_mature_wait_steps'])} steps`",
+        f"- Unharvested mature tiles: `{overall['unharvested_mature_tiles']}`",
         "",
         "## By opponent and side",
         "",

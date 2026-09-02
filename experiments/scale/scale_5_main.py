@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V3 five-tile agent.
+"""Submission entry point for the Kaggriculture scale-5 experiment.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact

@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V3 five-tile agent.
+"""Submission entry point for the Kaggriculture scale-10 experiment.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -18,7 +18,7 @@ DEBUG_VERBOSE = os.environ.get("KAGGRICULTURE_DEBUG_VERBOSE", "0").lower() in {
 
 LAST_GAME_DAY = 29
 WHEAT_MAX_YIELD_DAY = 4
-TARGET_TILE_COUNT = 5
+TARGET_TILE_COUNT = 10
 
 _LAST_DECISION = {"reason": "agent has not been called"}
 _LAST_ERROR = None
