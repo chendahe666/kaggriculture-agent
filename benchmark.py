@@ -1,0 +1,497 @@
+"""Run a repeatable Kaggriculture benchmark suite for one agent file.
+
+The runner mirrors the official file-loader rule by executing the source and
+selecting the last callable. It records local engineering evidence; it does not
+predict the Kaggle skill rating. The built-in ``random`` opponent is intentionally
+stochastic and is a robustness probe, not a deterministic regression oracle.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+import platform
+import re
+import statistics
+import sys
+import time
+import traceback
+from collections import Counter
+from collections.abc import Mapping
+from datetime import datetime, timezone
+from pathlib import Path
+
+from test_local import validate_action
+
+
+PROJECT_DIR = Path(__file__).resolve().parent
+DEFAULT_SEEDS = tuple(range(20260901, 20260911))
+DEFAULT_OPPONENTS = ("pass", "random", "starter")
+DEFAULT_SIDES = (0, 1)
+RESULT_FIELDS = (
+    "run_index",
+    "seed_requested",
+    "seed_resolved",
+    "opponent",
+    "side",
+    "recorded_steps",
+    "expected_steps",
+    "our_status",
+    "opponent_status",
+    "our_cash",
+    "opponent_cash",
+    "cash_delta",
+    "result",
+    "episode_completed",
+    "agent_calls",
+    "shape_invalid_actions",
+    "wrapper_exceptions",
+    "agent_internal_exceptions",
+    "total_agent_seconds",
+    "max_agent_seconds",
+    "episode_seconds",
+    "farmer_pass_actions",
+    "farmer_nonpass_actions",
+    "hand_pass_actions",
+    "hand_nonpass_actions",
+    "market_orders",
+    "runner_error",
+)
+
+
+def _parse_csv(value: str) -> list[str]:
+    return [part.strip() for part in value.split(",") if part.strip()]
+
+
+def _parse_seeds(value: str) -> list[int]:
+    seeds = []
+    for part in _parse_csv(value):
+        seeds.append(int(part))
+    if not seeds:
+        raise argparse.ArgumentTypeError("at least one seed is required")
+    return seeds
+
+
+def _parse_sides(value: str) -> list[int]:
+    sides = [int(part) for part in _parse_csv(value)]
+    if not sides or any(side not in (0, 1) for side in sides):
+        raise argparse.ArgumentTypeError("sides must contain 0 and/or 1")
+    return sides
+
+
+def _safe_label(value: str) -> str:
+    label = re.sub(r"[^A-Za-z0-9._-]+", "-", value.strip()).strip("-.")
+    return label or "agent"
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(65536), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _plain(value):
+    if isinstance(value, Mapping):
+        return {str(key): _plain(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_plain(item) for item in value]
+    if isinstance(value, (str, int, float, bool)) or value is None:
+        return value
+    return str(value)
+
+
+def _fallback(obs):
+    try:
+        player = int(obs.get("player", 0))
+        hands = obs.get("farms", [])[player].get("hands", [])
+        count = len(hands)
+    except (AttributeError, IndexError, TypeError, ValueError):
+        count = 0
+    return {
+        "farmer": ["PASS"],
+        "hands": [["PASS"] for _ in range(count)],
+        "market": [],
+    }
+
+
+def _load_agent(path: Path):
+    raw = path.read_text(encoding="utf-8")
+    namespace = {}
+    exec(compile(raw, str(path), "exec"), namespace)
+    callables = [value for value in namespace.values() if callable(value)]
+    if not callables:
+        raise RuntimeError(f"no callable found in {path}")
+    return callables[-1], namespace
+
+
+class TrackedAgent:
+    def __init__(self, path: Path, max_market_orders: int):
+        self.agent, self.namespace = _load_agent(path)
+        reset = self.namespace.get("reset_runtime_state")
+        if callable(reset):
+            reset()
+        self.max_market_orders = max_market_orders
+        self.calls = 0
+        self.shape_invalid_actions = 0
+        self.wrapper_exceptions = 0
+        self.total_seconds = 0.0
+        self.max_seconds = 0.0
+        self.farmer_ops = Counter()
+        self.hand_ops = Counter()
+        self.market_orders = 0
+        self.validation_errors = []
+        self.exception_messages = []
+
+    def __call__(self, obs, configuration=None):
+        self.calls += 1
+        started = time.perf_counter()
+        try:
+            action = self.agent(obs)
+        except Exception as exc:
+            self.wrapper_exceptions += 1
+            self.exception_messages.append(
+                f"{type(exc).__name__}: {exc}\n{traceback.format_exc()}"
+            )
+            action = _fallback(obs)
+        duration = time.perf_counter() - started
+        self.total_seconds += duration
+        self.max_seconds = max(self.max_seconds, duration)
+
+        errors = validate_action(action, obs, self.max_market_orders)
+        if errors:
+            self.shape_invalid_actions += 1
+            self.validation_errors.extend(errors)
+            action = _fallback(obs)
+
+        farmer = action.get("farmer", ["UNKNOWN"])
+        farmer_op = farmer[0] if farmer else "UNKNOWN"
+        self.farmer_ops[str(farmer_op)] += 1
+        for hand in action.get("hands", []):
+            hand_op = hand[0] if hand else "UNKNOWN"
+            self.hand_ops[str(hand_op)] += 1
+        self.market_orders += len(action.get("market", []))
+        return action
+
+    def internal_exceptions(self) -> int:
+        getter = self.namespace.get("get_runtime_stats")
+        if not callable(getter):
+            return 0
+        try:
+            return int(getter().get("exceptions", 0))
+        except (AttributeError, TypeError, ValueError):
+            return 0
+
+
+def _empty_result(run_index: int, seed: int, opponent: str, side: int) -> dict:
+    row = {field: None for field in RESULT_FIELDS}
+    row.update(
+        {
+            "run_index": run_index,
+            "seed_requested": seed,
+            "opponent": opponent,
+            "side": side,
+            "episode_completed": False,
+            "result": "ERROR",
+            "shape_invalid_actions": 0,
+            "wrapper_exceptions": 0,
+            "agent_internal_exceptions": 0,
+            "runner_error": "",
+        }
+    )
+    return row
+
+
+def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: str, side: int):
+    row = _empty_result(run_index, seed, opponent, side)
+    started = time.perf_counter()
+    try:
+        env = make("kaggriculture", configuration={"seed": seed}, debug=False)
+        expected_steps = int(env.configuration.episodeSteps)
+        tracker = TrackedAgent(agent_path, int(env.configuration.maxMarketOrdersPerTurn))
+        agents = [tracker, opponent] if side == 0 else [opponent, tracker]
+        env.run(agents)
+
+        final_states = env.steps[-1]
+        statuses = [str(state.status) for state in final_states]
+        observation = final_states[0].observation
+        farms = observation.get("farms", [])
+        our_cash = float(farms[side].get("money", 0))
+        opponent_cash = float(farms[1 - side].get("money", 0))
+        result = "WIN" if our_cash > opponent_cash else "LOSS" if our_cash < opponent_cash else "DRAW"
+        completed = len(env.steps) == expected_steps and all(status == "DONE" for status in statuses)
+
+        row.update(
+            {
+                "seed_resolved": env.info.get("seed", "unavailable"),
+                "recorded_steps": len(env.steps),
+                "expected_steps": expected_steps,
+                "our_status": statuses[side],
+                "opponent_status": statuses[1 - side],
+                "our_cash": our_cash,
+                "opponent_cash": opponent_cash,
+                "cash_delta": our_cash - opponent_cash,
+                "result": result,
+                "episode_completed": completed,
+                "agent_calls": tracker.calls,
+                "shape_invalid_actions": tracker.shape_invalid_actions,
+                "wrapper_exceptions": tracker.wrapper_exceptions,
+                "agent_internal_exceptions": tracker.internal_exceptions(),
+                "total_agent_seconds": round(tracker.total_seconds, 6),
+                "max_agent_seconds": round(tracker.max_seconds, 6),
+                "episode_seconds": round(time.perf_counter() - started, 6),
+                "farmer_pass_actions": tracker.farmer_ops.get("PASS", 0),
+                "farmer_nonpass_actions": tracker.calls - tracker.farmer_ops.get("PASS", 0),
+                "hand_pass_actions": tracker.hand_ops.get("PASS", 0),
+                "hand_nonpass_actions": sum(
+                    count for op, count in tracker.hand_ops.items() if op != "PASS"
+                ),
+                "market_orders": tracker.market_orders,
+                "runner_error": " | ".join(
+                    tracker.exception_messages + tracker.validation_errors
+                ),
+            }
+        )
+    except Exception as exc:
+        row["episode_seconds"] = round(time.perf_counter() - started, 6)
+        row["runner_error"] = f"{type(exc).__name__}: {exc}\n{traceback.format_exc()}"
+    return row
+
+
+def _write_csv(path: Path, rows: list[dict]):
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=RESULT_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def _write_json(path: Path, metadata: dict, rows: list[dict]):
+    payload = {"metadata": metadata, "episodes": rows}
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def _aggregate(rows: list[dict]) -> dict:
+    completed = [row for row in rows if row["episode_completed"]]
+    cash = [float(row["our_cash"]) for row in completed]
+    deltas = [float(row["cash_delta"]) for row in completed]
+    return {
+        "episodes": len(rows),
+        "completed": len(completed),
+        "wins": sum(row["result"] == "WIN" for row in completed),
+        "draws": sum(row["result"] == "DRAW" for row in completed),
+        "losses": sum(row["result"] == "LOSS" for row in completed),
+        "win_rate": (sum(row["result"] == "WIN" for row in completed) / len(completed))
+        if completed
+        else 0.0,
+        "median_cash": statistics.median(cash) if cash else None,
+        "worst_cash": min(cash) if cash else None,
+        "best_cash": max(cash) if cash else None,
+        "median_cash_delta": statistics.median(deltas) if deltas else None,
+        "worst_cash_delta": min(deltas) if deltas else None,
+        "shape_invalid_actions": sum(int(row["shape_invalid_actions"] or 0) for row in rows),
+        "wrapper_exceptions": sum(int(row["wrapper_exceptions"] or 0) for row in rows),
+        "agent_internal_exceptions": sum(
+            int(row["agent_internal_exceptions"] or 0) for row in rows
+        ),
+        "runner_errors": sum(bool(row["runner_error"]) for row in rows),
+        "max_agent_seconds": max(
+            (float(row["max_agent_seconds"] or 0) for row in rows), default=0.0
+        ),
+    }
+
+
+def _fmt(value):
+    if value is None:
+        return "unavailable"
+    if isinstance(value, float):
+        return f"{value:.3f}".rstrip("0").rstrip(".")
+    return str(value)
+
+
+def _write_summary(path: Path, metadata: dict, rows: list[dict]):
+    overall = _aggregate(rows)
+    groups = []
+    for opponent in metadata["opponents"]:
+        for side in metadata["sides"]:
+            selected = [
+                row for row in rows if row["opponent"] == opponent and row["side"] == side
+            ]
+            groups.append((opponent, side, _aggregate(selected)))
+
+    gate_pass = (
+        overall["completed"] == overall["episodes"]
+        and overall["shape_invalid_actions"] == 0
+        and overall["wrapper_exceptions"] == 0
+        and overall["agent_internal_exceptions"] == 0
+        and overall["runner_errors"] == 0
+    )
+    lines = [
+        f"# Benchmark Summary: {metadata['label']}",
+        "",
+        f"- Generated: `{metadata['generated_at_utc']}`",
+        f"- Agent: `{metadata['agent_path']}`",
+        f"- SHA256: `{metadata['agent_sha256']}`",
+        f"- Python: `{metadata['python']}`",
+        f"- kaggle-environments: `{metadata['kaggle_environments']}`",
+        f"- Seeds: `{metadata['seeds']}`",
+        f"- Opponents: `{metadata['opponents']}`",
+        f"- Sides: `{metadata['sides']}`",
+        "",
+        "## Gate",
+        "",
+        f"**{'PASS' if gate_pass else 'FAIL'}**",
+        "",
+        f"- Completed: `{overall['completed']}/{overall['episodes']}`",
+        f"- Shape-invalid actions: `{overall['shape_invalid_actions']}`",
+        f"- Wrapper exceptions: `{overall['wrapper_exceptions']}`",
+        f"- Agent internal exceptions: `{overall['agent_internal_exceptions']}`",
+        f"- Runner errors: `{overall['runner_errors']}`",
+        f"- Slowest agent call: `{overall['max_agent_seconds'] * 1000:.3f} ms`",
+        "",
+        "## Overall",
+        "",
+        f"- Wins / draws / losses: `{overall['wins']} / {overall['draws']} / {overall['losses']}`",
+        f"- Win rate: `{overall['win_rate']:.1%}`",
+        f"- Median cash: `{_fmt(overall['median_cash'])}`",
+        f"- Worst cash: `{_fmt(overall['worst_cash'])}`",
+        f"- Best cash: `{_fmt(overall['best_cash'])}`",
+        f"- Median cash delta: `{_fmt(overall['median_cash_delta'])}`",
+        f"- Worst cash delta: `{_fmt(overall['worst_cash_delta'])}`",
+        "",
+        "## By opponent and side",
+        "",
+        "| Opponent | Side | Done | W-D-L | Win rate | Median cash | Worst cash | Median delta | Worst delta |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for opponent, side, stats in groups:
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    opponent,
+                    str(side),
+                    f"{stats['completed']}/{stats['episodes']}",
+                    f"{stats['wins']}-{stats['draws']}-{stats['losses']}",
+                    f"{stats['win_rate']:.1%}",
+                    _fmt(stats["median_cash"]),
+                    _fmt(stats["worst_cash"]),
+                    _fmt(stats["median_cash_delta"]),
+                    _fmt(stats["worst_cash_delta"]),
+                ]
+            )
+            + " |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Interpretation boundary",
+            "",
+            "This is a local engineering benchmark. It verifies completion, stability,",
+            "and paired behavior against fixed built-in opponents. It does not estimate",
+            "or predict the live Kaggle skill rating.",
+            "The built-in `random` opponent can vary across reruns even with the same",
+            "environment seed. Use `pass` and `starter` for exact deterministic regression,",
+            "and use `random` only as a repeated stochastic robustness probe.",
+            "",
+        ]
+    )
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return gate_pass, overall
+
+
+def _save(output_dir: Path, metadata: dict, rows: list[dict]):
+    _write_csv(output_dir / "episodes.csv", rows)
+    _write_json(output_dir / "episodes.json", metadata, rows)
+    return _write_summary(output_dir / "summary.md", metadata, rows)
+
+
+def _build_parser():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--agent", default="main.py", help="submission-style Python file")
+    parser.add_argument("--label", default="v0", help="short run label")
+    parser.add_argument(
+        "--seeds",
+        type=_parse_seeds,
+        default=list(DEFAULT_SEEDS),
+        help="comma-separated integer seeds",
+    )
+    parser.add_argument(
+        "--opponents",
+        type=_parse_csv,
+        default=list(DEFAULT_OPPONENTS),
+        help="comma-separated built-in opponents",
+    )
+    parser.add_argument(
+        "--sides",
+        type=_parse_sides,
+        default=list(DEFAULT_SIDES),
+        help="comma-separated player sides, default 0,1",
+    )
+    parser.add_argument("--output-dir", help="explicit output directory")
+    return parser
+
+
+def main():
+    args = _build_parser().parse_args()
+    agent_path = (PROJECT_DIR / args.agent).resolve()
+    if not agent_path.is_file():
+        raise SystemExit(f"agent file not found: {agent_path}")
+
+    from kaggle_environments import __version__ as kaggle_env_version
+    from kaggle_environments import environments, make
+
+    available = environments.get("kaggriculture", {}).get("agents", {})
+    missing = [opponent for opponent in args.opponents if opponent not in available]
+    if missing:
+        raise SystemExit(f"unknown built-in opponents: {missing}; available={sorted(available)}")
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    label = _safe_label(args.label)
+    output_dir = (
+        Path(args.output_dir).resolve()
+        if args.output_dir
+        else PROJECT_DIR / "benchmarks" / "runs" / f"{timestamp}_{label}"
+    )
+    output_dir.mkdir(parents=True, exist_ok=False)
+
+    metadata = {
+        "label": label,
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "agent_path": str(agent_path.relative_to(PROJECT_DIR)),
+        "agent_sha256": _sha256(agent_path),
+        "python": sys.version.split()[0],
+        "platform": platform.platform(),
+        "kaggle_environments": kaggle_env_version,
+        "seeds": list(args.seeds),
+        "opponents": list(args.opponents),
+        "sides": list(args.sides),
+    }
+
+    rows = []
+    total = len(args.seeds) * len(args.opponents) * len(args.sides)
+    for seed in args.seeds:
+        for opponent in args.opponents:
+            for side in args.sides:
+                run_index = len(rows) + 1
+                row = _run_episode(make, agent_path, run_index, seed, opponent, side)
+                rows.append(row)
+                _save(output_dir, metadata, rows)
+                print(
+                    f"[{run_index:02d}/{total}] seed={seed} opponent={opponent} "
+                    f"side={side} status={row['our_status']} result={row['result']} "
+                    f"cash={row['our_cash']} error={'yes' if row['runner_error'] else 'no'}",
+                    flush=True,
+                )
+
+    gate_pass, overall = _save(output_dir, metadata, rows)
+    print(f"output_dir={output_dir.relative_to(PROJECT_DIR)}")
+    print(f"completed={overall['completed']}/{overall['episodes']}")
+    print(f"gate={'PASS' if gate_pass else 'FAIL'}")
+    return 0 if gate_pass else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

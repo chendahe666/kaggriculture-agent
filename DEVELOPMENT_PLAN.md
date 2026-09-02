@@ -92,25 +92,31 @@ py -3.13 -B test_local.py
 
 ### 任务
 
-- [ ] 保存 V0 commit/hash 和文件摘要。
-- [ ] 创建批量 benchmark runner。
-- [ ] 固定 seeds、对手和双方位置。
-- [ ] 输出逐局结构化结果。
-- [ ] 汇总胜率、现金中位数、最差值、运行时间和所有失败。
-- [ ] 确认评估不会修改 submission 文件。
+- [x] 保存 V0 commit/hash 和文件摘要。
+- [x] 创建批量 benchmark runner。
+- [x] 固定 seeds、对手和双方位置。
+- [x] 输出逐局结构化结果。
+- [x] 汇总胜率、现金中位数、最差值、运行时间和所有失败。
+- [x] 确认评估不会修改 submission 文件。
 
 ### Phase 1 Gate
 
-- [ ] 60/60 Episodes 完整完成。
-- [ ] 所有异常和 shape-invalid 均为 0。
-- [ ] 重跑同一评估集能复现确定性部分。
-- [ ] 报告能够把不同对手、seed 和玩家位置分开显示。
+- [x] 60/60 Episodes 完整完成。
+- [x] 所有异常和 shape-invalid 均为 0。
+- [x] 重跑同一评估集能复现确定性部分。
+- [x] 报告能够把不同对手、seed 和玩家位置分开显示。
+
+Phase 1 于 2026-09-02 通过。`pass` 与 `starter` 的 40 个确定性条件在复跑中
+逐字段一致；内置 `random` 对手的 20 局会自行产生随机漂移，因此只作为随机
+压力测试，不作为精确回归判据。基线报告见
+`benchmarks/v0_baseline_20260902/`，复跑见
+`benchmarks/v0_baseline_repeat_20260902/`。
 
 ### 人机检查点 A
 
 用户只需要决定：**这套评估集是否足以作为未来一周的统一尺子？**
 
-通过后才进入 Phase 2。
+**状态：2026-09-02 已批准。** Phase 1 Gate 通过后可进入 Phase 2。
 
 ## Phase 2 / Day 1：Endgame guard
 
@@ -173,6 +179,8 @@ py -3.13 -B test_local.py
 ### 人机检查点 B
 
 用户选择：继续优化多格路线，还是批准进入 farm-hand 实验。
+
+**状态：2026-09-02 已预先批准。** 仍须先通过 Phase 3–4 Gate，不能跳过前置验证。
 
 ## Phase 5 / Day 4：Farm hands
 
@@ -253,7 +261,10 @@ AI 提交一个简短决策包：
 - 推荐提交的文件、commit 和描述。
 - `promote / hold / reject` 建议。
 
-只有用户明确批准后，才上传 Kaggle 或替换 active submission。
+**状态：2026-09-02 已给予持续批准。** 通过所有前置 Gate 的最终候选可以上传；
+该批准持续到用户修改。每次上传后必须执行 `reports/submissions/README.md`
+定义的人类侧报告协议。
+
 
 ## 暂不做事项
 
@@ -265,4 +276,3 @@ AI 提交一个简短决策包：
 - 仅根据当前技能评分 226.9 调参。
 
 这些不是永远不做，而是在评估、调度和经济基础稳定前不做。
-

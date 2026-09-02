@@ -44,8 +44,11 @@ one lucky score.
 
 ## Scope boundaries
 
-- Do not submit to Kaggle, replace an active submission, publish competition code,
-  change repository visibility, or expose credentials without explicit user approval.
+- The user granted standing approval on 2026-09-02 for the unified evaluation suite,
+  the farm-hand experiment after its prerequisite gates, and upload of final candidates
+  that pass the plan's gates. This approval remains active until the user changes it.
+- Do not upload a candidate that fails a gate, publish competition code elsewhere,
+  change repository visibility, or expose credentials.
 - Do not combine multiple major strategy layers in one experiment. Multiple tiles,
   farm hands, crop selection, market timing, animals, land expansion, search, and
   reinforcement learning should be introduced and evaluated separately.
@@ -81,5 +84,13 @@ Do not skip an exit gate merely because a later feature appears more interesting
 - Before implementation, state the single hypothesis and acceptance gate.
 - After implementation, report the exact tests actually run and identify anything not
   tested.
-- Stop for user approval before a Kaggle submission or another external publication.
-
+- After every Kaggle submission, create or update a durable human-side report under
+  `reports/submissions/`. It must contain a validation report, an optimization report,
+  and a natural-language five-minute briefing covering what changed, why it changed,
+  what was actually verified, what remains uncertain, and the next recommendation.
+- Report `Pending` honestly. When server validation, replay, logs, or rating arrive,
+  update the same submission report instead of replacing its earlier evidence.
+- Repeat this reporting protocol after every submission until the user changes it.
+- A candidate that passes the current plan may be submitted under the standing approval;
+  stop only when credentials, an external confirmation step, a rules question, or a
+  materially broader publication requires the user.
