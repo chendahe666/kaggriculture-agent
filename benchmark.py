@@ -57,6 +57,13 @@ RESULT_FIELDS = (
     "hand_pass_actions",
     "hand_nonpass_actions",
     "market_orders",
+    "final_seed_total",
+    "final_wheat_seeds",
+    "final_shed_total",
+    "final_wheat_shed",
+    "final_carried_total",
+    "final_plant_tiles",
+    "final_immature_wheat_tiles",
     "runner_error",
 )
 
@@ -86,6 +93,13 @@ def _safe_label(value: str) -> str:
     return label or "agent"
 
 
+def _display_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(PROJECT_DIR))
+    except ValueError:
+        return str(path)
+
+
 def _sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -102,6 +116,18 @@ def _plain(value):
     if isinstance(value, (str, int, float, bool)) or value is None:
         return value
     return str(value)
+
+
+def _sum_nonnegative_values(value) -> int:
+    if not isinstance(value, Mapping):
+        return 0
+    total = 0
+    for item in value.values():
+        try:
+            total += max(0, int(item))
+        except (TypeError, ValueError):
+            continue
+    return total
 
 
 def _fallback(obs):
@@ -217,10 +243,30 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
 
         final_states = env.steps[-1]
         statuses = [str(state.status) for state in final_states]
-        observation = final_states[0].observation
+        observation = final_states[side].observation
         farms = observation.get("farms", [])
-        our_cash = float(farms[side].get("money", 0))
+        our_farm = farms[side]
+        our_cash = float(our_farm.get("money", 0))
         opponent_cash = float(farms[1 - side].get("money", 0))
+        private = observation.get("private", {}) or {}
+        final_seeds = private.get("seeds", {}) or {}
+        final_shed = private.get("shed", {}) or {}
+        final_inventories = private.get("inventories", []) or []
+        final_day = int(observation.get("day", 0))
+        final_tiles = [
+            tile
+            for row_tiles in our_farm.get("tiles", [])
+            if isinstance(row_tiles, (list, tuple))
+            for tile in row_tiles
+            if isinstance(tile, Mapping)
+        ]
+        final_plants = [tile for tile in final_tiles if tile.get("kind") == "PLANT"]
+        final_immature_wheat = [
+            tile
+            for tile in final_plants
+            if tile.get("crop") == "WHEAT"
+            and final_day - int(tile.get("planted_day", final_day)) < 4
+        ]
         result = "WIN" if our_cash > opponent_cash else "LOSS" if our_cash < opponent_cash else "DRAW"
         completed = len(env.steps) == expected_steps and all(status == "DONE" for status in statuses)
 
@@ -250,6 +296,15 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
                     count for op, count in tracker.hand_ops.items() if op != "PASS"
                 ),
                 "market_orders": tracker.market_orders,
+                "final_seed_total": _sum_nonnegative_values(final_seeds),
+                "final_wheat_seeds": int(final_seeds.get("WHEAT", 0) or 0),
+                "final_shed_total": _sum_nonnegative_values(final_shed),
+                "final_wheat_shed": int(final_shed.get("WHEAT", 0) or 0),
+                "final_carried_total": sum(
+                    _sum_nonnegative_values(inventory) for inventory in final_inventories
+                ),
+                "final_plant_tiles": len(final_plants),
+                "final_immature_wheat_tiles": len(final_immature_wheat),
                 "runner_error": " | ".join(
                     tracker.exception_messages + tracker.validation_errors
                 ),
@@ -277,6 +332,13 @@ def _aggregate(rows: list[dict]) -> dict:
     completed = [row for row in rows if row["episode_completed"]]
     cash = [float(row["our_cash"]) for row in completed]
     deltas = [float(row["cash_delta"]) for row in completed]
+    final_seed_totals = [int(row["final_seed_total"] or 0) for row in completed]
+    final_shed_totals = [int(row["final_shed_total"] or 0) for row in completed]
+    final_carried_totals = [int(row["final_carried_total"] or 0) for row in completed]
+    final_plant_tiles = [int(row["final_plant_tiles"] or 0) for row in completed]
+    final_immature_wheat = [
+        int(row["final_immature_wheat_tiles"] or 0) for row in completed
+    ]
     return {
         "episodes": len(rows),
         "completed": len(completed),
@@ -291,6 +353,20 @@ def _aggregate(rows: list[dict]) -> dict:
         "best_cash": max(cash) if cash else None,
         "median_cash_delta": statistics.median(deltas) if deltas else None,
         "worst_cash_delta": min(deltas) if deltas else None,
+        "median_final_seed_total": statistics.median(final_seed_totals)
+        if final_seed_totals
+        else None,
+        "max_final_seed_total": max(final_seed_totals, default=0),
+        "median_final_shed_total": statistics.median(final_shed_totals)
+        if final_shed_totals
+        else None,
+        "median_final_carried_total": statistics.median(final_carried_totals)
+        if final_carried_totals
+        else None,
+        "median_final_plant_tiles": statistics.median(final_plant_tiles)
+        if final_plant_tiles
+        else None,
+        "max_final_immature_wheat_tiles": max(final_immature_wheat, default=0),
         "shape_invalid_actions": sum(int(row["shape_invalid_actions"] or 0) for row in rows),
         "wrapper_exceptions": sum(int(row["wrapper_exceptions"] or 0) for row in rows),
         "agent_internal_exceptions": sum(
@@ -360,6 +436,14 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         f"- Best cash: `{_fmt(overall['best_cash'])}`",
         f"- Median cash delta: `{_fmt(overall['median_cash_delta'])}`",
         f"- Worst cash delta: `{_fmt(overall['worst_cash_delta'])}`",
+        "",
+        "## End state",
+        "",
+        f"- Median / max unused seeds: `{_fmt(overall['median_final_seed_total'])} / {overall['max_final_seed_total']}`",
+        f"- Median unsold shed items: `{_fmt(overall['median_final_shed_total'])}`",
+        f"- Median carried items: `{_fmt(overall['median_final_carried_total'])}`",
+        f"- Median remaining plant tiles: `{_fmt(overall['median_final_plant_tiles'])}`",
+        f"- Max immature wheat tiles: `{overall['max_final_immature_wheat_tiles']}`",
         "",
         "## By opponent and side",
         "",
@@ -487,7 +571,7 @@ def main():
                 )
 
     gate_pass, overall = _save(output_dir, metadata, rows)
-    print(f"output_dir={output_dir.relative_to(PROJECT_DIR)}")
+    print(f"output_dir={_display_path(output_dir)}")
     print(f"completed={overall['completed']}/{overall['episodes']}")
     print(f"gate={'PASS' if gate_pass else 'FAIL'}")
     return 0 if gate_pass else 1

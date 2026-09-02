@@ -9612,16 +9612,16 @@ animals={}
 decision:
 farmer_action=['WATER']
 worker_actions=[]
-market_actions=[['BUY_SEED', 'WHEAT', 1]]
+market_actions=[]
 reason='water WHEAT for daily survival/yield'
 
-[OUTCOME 579 -> 580] coins_after=3604.0 coins_change=-10.0 shed_change={} seeds_change={'WHEAT': 1} position_change=[4, 4]->[4, 4]
+[OUTCOME 579 -> 580] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 580 | DAY 24 | HOUR 4]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9631,13 +9631,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 580 -> 581] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 580 -> 581] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 581 | DAY 24 | HOUR 5]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9647,13 +9647,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 581 -> 582] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 581 -> 582] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 582 | DAY 24 | HOUR 6]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9663,13 +9663,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 582 -> 583] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 582 -> 583] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 583 | DAY 24 | HOUR 7]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9679,13 +9679,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 583 -> 584] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 583 -> 584] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 584 | DAY 24 | HOUR 8]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9695,13 +9695,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 584 -> 585] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 584 -> 585] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 585 | DAY 24 | HOUR 9]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9711,13 +9711,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 585 -> 586] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 585 -> 586] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 586 | DAY 24 | HOUR 10]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9727,13 +9727,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 586 -> 587] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 586 -> 587] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 587 | DAY 24 | HOUR 11]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9743,13 +9743,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 587 -> 588] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 587 -> 588] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 588 | DAY 24 | HOUR 12]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9759,13 +9759,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 588 -> 589] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 588 -> 589] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 589 | DAY 24 | HOUR 13]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9775,13 +9775,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 589 -> 590] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 589 -> 590] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 590 | DAY 24 | HOUR 14]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9791,13 +9791,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 590 -> 591] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 590 -> 591] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 591 | DAY 24 | HOUR 15]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9807,13 +9807,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 591 -> 592] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 591 -> 592] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 592 | DAY 24 | HOUR 16]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9823,13 +9823,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 592 -> 593] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 592 -> 593] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 593 | DAY 24 | HOUR 17]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9839,13 +9839,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 593 -> 594] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 593 -> 594] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 594 | DAY 24 | HOUR 18]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9855,13 +9855,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 594 -> 595] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 594 -> 595] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 595 | DAY 24 | HOUR 19]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9871,13 +9871,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 595 -> 596] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 595 -> 596] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 596 | DAY 24 | HOUR 20]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9887,13 +9887,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 596 -> 597] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 596 -> 597] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 597 | DAY 24 | HOUR 21]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9903,13 +9903,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 597 -> 598] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 597 -> 598] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 598 | DAY 24 | HOUR 22]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9919,13 +9919,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 598 -> 599] coins_after=3604.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 598 -> 599] coins_after=3614.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 599 | DAY 24 | HOUR 23]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9935,13 +9935,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 599 -> 600] coins_after=3604.0 coins_change=0.0 shed_change={'WHEAT': 4} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 599 -> 600] coins_after=3614.0 coins_change=0.0 shed_change={'WHEAT': 4} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 600 | DAY 25 | HOUR 0]
-coins=3604.0
+coins=3614.0
 farmer_position=[4, 4]
 workers=0
 shed={'WHEAT': 4}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9951,13 +9951,13 @@ worker_actions=[]
 market_actions=[['SELL', 'WHEAT', 4]]
 reason='water WHEAT for daily survival/yield'
 
-[OUTCOME 600 -> 601] coins_after=3780.0 coins_change=176.0 shed_change={'WHEAT': -4} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 600 -> 601] coins_after=3790.0 coins_change=176.0 shed_change={'WHEAT': -4} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 601 | DAY 25 | HOUR 1]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9967,13 +9967,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 601 -> 602] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 601 -> 602] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 602 | DAY 25 | HOUR 2]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9983,13 +9983,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 602 -> 603] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 602 -> 603] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 603 | DAY 25 | HOUR 3]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -9999,13 +9999,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 603 -> 604] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 603 -> 604] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 604 | DAY 25 | HOUR 4]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10015,13 +10015,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 604 -> 605] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 604 -> 605] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 605 | DAY 25 | HOUR 5]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10031,13 +10031,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 605 -> 606] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 605 -> 606] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 606 | DAY 25 | HOUR 6]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10047,13 +10047,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 606 -> 607] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 606 -> 607] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 607 | DAY 25 | HOUR 7]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10063,13 +10063,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 607 -> 608] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 607 -> 608] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 608 | DAY 25 | HOUR 8]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10079,13 +10079,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 608 -> 609] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 608 -> 609] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 609 | DAY 25 | HOUR 9]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10095,13 +10095,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 609 -> 610] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 609 -> 610] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 610 | DAY 25 | HOUR 10]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10111,13 +10111,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 610 -> 611] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 610 -> 611] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 611 | DAY 25 | HOUR 11]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10127,13 +10127,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 611 -> 612] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 611 -> 612] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 612 | DAY 25 | HOUR 12]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10143,13 +10143,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 612 -> 613] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 612 -> 613] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 613 | DAY 25 | HOUR 13]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10159,13 +10159,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 613 -> 614] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 613 -> 614] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 614 | DAY 25 | HOUR 14]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10175,13 +10175,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 614 -> 615] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 614 -> 615] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 615 | DAY 25 | HOUR 15]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10191,13 +10191,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 615 -> 616] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 615 -> 616] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 616 | DAY 25 | HOUR 16]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10207,13 +10207,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 616 -> 617] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 616 -> 617] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 617 | DAY 25 | HOUR 17]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10223,13 +10223,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 617 -> 618] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 617 -> 618] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 618 | DAY 25 | HOUR 18]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10239,13 +10239,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 618 -> 619] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 618 -> 619] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 619 | DAY 25 | HOUR 19]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10255,13 +10255,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 619 -> 620] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 619 -> 620] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 620 | DAY 25 | HOUR 20]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10271,13 +10271,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 620 -> 621] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 620 -> 621] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 621 | DAY 25 | HOUR 21]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10287,13 +10287,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 621 -> 622] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 621 -> 622] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 622 | DAY 25 | HOUR 22]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10303,13 +10303,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 622 -> 623] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 622 -> 623] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 623 | DAY 25 | HOUR 23]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10319,13 +10319,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 623 -> 624] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 623 -> 624] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 624 | DAY 26 | HOUR 0]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10335,13 +10335,13 @@ worker_actions=[]
 market_actions=[]
 reason='water WHEAT for daily survival/yield'
 
-[OUTCOME 624 -> 625] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 624 -> 625] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 625 | DAY 26 | HOUR 1]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10351,13 +10351,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 625 -> 626] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 625 -> 626] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 626 | DAY 26 | HOUR 2]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10367,13 +10367,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 626 -> 627] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 626 -> 627] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 627 | DAY 26 | HOUR 3]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10383,13 +10383,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 627 -> 628] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 627 -> 628] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 628 | DAY 26 | HOUR 4]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10399,13 +10399,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 628 -> 629] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 628 -> 629] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 629 | DAY 26 | HOUR 5]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10415,13 +10415,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 629 -> 630] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 629 -> 630] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 630 | DAY 26 | HOUR 6]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10431,13 +10431,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 630 -> 631] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 630 -> 631] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 631 | DAY 26 | HOUR 7]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10447,13 +10447,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 631 -> 632] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 631 -> 632] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 632 | DAY 26 | HOUR 8]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10463,13 +10463,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 632 -> 633] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 632 -> 633] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 633 | DAY 26 | HOUR 9]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10479,13 +10479,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 633 -> 634] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 633 -> 634] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 634 | DAY 26 | HOUR 10]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10495,13 +10495,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 634 -> 635] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 634 -> 635] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 635 | DAY 26 | HOUR 11]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10511,13 +10511,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 635 -> 636] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 635 -> 636] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 636 | DAY 26 | HOUR 12]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10527,13 +10527,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 636 -> 637] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 636 -> 637] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 637 | DAY 26 | HOUR 13]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10543,13 +10543,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 637 -> 638] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 637 -> 638] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 638 | DAY 26 | HOUR 14]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10559,13 +10559,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 638 -> 639] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 638 -> 639] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 639 | DAY 26 | HOUR 15]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10575,13 +10575,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 639 -> 640] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 639 -> 640] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 640 | DAY 26 | HOUR 16]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10591,13 +10591,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 640 -> 641] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 640 -> 641] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 641 | DAY 26 | HOUR 17]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10607,13 +10607,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 641 -> 642] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 641 -> 642] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 642 | DAY 26 | HOUR 18]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10623,13 +10623,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 642 -> 643] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 642 -> 643] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 643 | DAY 26 | HOUR 19]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10639,13 +10639,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 643 -> 644] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 643 -> 644] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 644 | DAY 26 | HOUR 20]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10655,13 +10655,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 644 -> 645] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 644 -> 645] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 645 | DAY 26 | HOUR 21]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10671,13 +10671,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 645 -> 646] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 645 -> 646] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 646 | DAY 26 | HOUR 22]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10687,13 +10687,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 646 -> 647] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 646 -> 647] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 647 | DAY 26 | HOUR 23]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10703,13 +10703,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 647 -> 648] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 647 -> 648] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 648 | DAY 27 | HOUR 0]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10719,13 +10719,13 @@ worker_actions=[]
 market_actions=[]
 reason='water WHEAT for daily survival/yield'
 
-[OUTCOME 648 -> 649] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 648 -> 649] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 649 | DAY 27 | HOUR 1]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10735,13 +10735,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 649 -> 650] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 649 -> 650] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 650 | DAY 27 | HOUR 2]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10751,13 +10751,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 650 -> 651] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 650 -> 651] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 651 | DAY 27 | HOUR 3]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10767,13 +10767,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 651 -> 652] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 651 -> 652] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 652 | DAY 27 | HOUR 4]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10783,13 +10783,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 652 -> 653] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 652 -> 653] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 653 | DAY 27 | HOUR 5]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10799,13 +10799,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 653 -> 654] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 653 -> 654] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 654 | DAY 27 | HOUR 6]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10815,13 +10815,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 654 -> 655] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 654 -> 655] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 655 | DAY 27 | HOUR 7]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10831,13 +10831,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 655 -> 656] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 655 -> 656] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 656 | DAY 27 | HOUR 8]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10847,13 +10847,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 656 -> 657] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 656 -> 657] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 657 | DAY 27 | HOUR 9]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10863,13 +10863,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 657 -> 658] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 657 -> 658] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 658 | DAY 27 | HOUR 10]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10879,13 +10879,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 658 -> 659] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 658 -> 659] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 659 | DAY 27 | HOUR 11]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10895,13 +10895,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 659 -> 660] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 659 -> 660] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 660 | DAY 27 | HOUR 12]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10911,13 +10911,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 660 -> 661] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 660 -> 661] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 661 | DAY 27 | HOUR 13]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10927,13 +10927,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 661 -> 662] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 661 -> 662] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 662 | DAY 27 | HOUR 14]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10943,13 +10943,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 662 -> 663] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 662 -> 663] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 663 | DAY 27 | HOUR 15]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10959,13 +10959,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 663 -> 664] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 663 -> 664] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 664 | DAY 27 | HOUR 16]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10975,13 +10975,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 664 -> 665] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 664 -> 665] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 665 | DAY 27 | HOUR 17]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -10991,13 +10991,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 665 -> 666] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 665 -> 666] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 666 | DAY 27 | HOUR 18]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -11007,13 +11007,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 666 -> 667] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 666 -> 667] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 667 | DAY 27 | HOUR 19]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -11023,13 +11023,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 667 -> 668] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 667 -> 668] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 668 | DAY 27 | HOUR 20]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -11039,13 +11039,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 668 -> 669] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 668 -> 669] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 669 | DAY 27 | HOUR 21]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -11055,13 +11055,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 669 -> 670] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 669 -> 670] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 670 | DAY 27 | HOUR 22]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -11071,13 +11071,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 670 -> 671] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 670 -> 671] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 671 | DAY 27 | HOUR 23]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=3
 animals={}
@@ -11087,13 +11087,13 @@ worker_actions=[]
 market_actions=[]
 reason='plant already watered; waiting for harvest maturity'
 
-[OUTCOME 671 -> 672] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 671 -> 672] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 672 | DAY 28 | HOUR 0]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=4
 animals={}
@@ -11103,13 +11103,13 @@ worker_actions=[]
 market_actions=[]
 reason='water WHEAT for daily survival/yield'
 
-[OUTCOME 672 -> 673] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 672 -> 673] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 673 | DAY 28 | HOUR 1]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
 crops={'WHEAT': 1} weeds=4
 animals={}
@@ -11119,727 +11119,727 @@ worker_actions=[]
 market_actions=[]
 reason='wheat reached verified max-yield day'
 
-[OUTCOME 673 -> 674] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 673 -> 674] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 674 | DAY 28 | HOUR 2]
-coins=3780.0
-farmer_position=[4, 4]
-workers=0
-shed={}
-seeds={'WHEAT': 1}
-inventories=[{'WHEAT': 4}]
-crops={} weeds=4
-animals={}
-decision:
-farmer_action=['PLANT', 'WHEAT']
-worker_actions=[]
-market_actions=[]
-reason='empty owned tile and wheat seed available'
-
-[OUTCOME 674 -> 675] coins_after=3780.0 coins_change=0.0 shed_change={} seeds_change={'WHEAT': -1} position_change=[4, 4]->[4, 4]
-[TURN 675 | DAY 28 | HOUR 3]
-coins=3780.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
 seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
-farmer_action=['WATER']
+farmer_action=['PASS']
 worker_actions=[]
-market_actions=[['BUY_SEED', 'WHEAT', 1]]
-reason='water WHEAT for daily survival/yield'
+market_actions=[]
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 675 -> 676] coins_after=3770.0 coins_change=-10.0 shed_change={} seeds_change={'WHEAT': 1} position_change=[4, 4]->[4, 4]
+[OUTCOME 674 -> 675] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[TURN 675 | DAY 28 | HOUR 3]
+coins=3790.0
+farmer_position=[4, 4]
+workers=0
+shed={}
+seeds={}
+inventories=[{'WHEAT': 4}]
+crops={} weeds=4
+animals={}
+decision:
+farmer_action=['PASS']
+worker_actions=[]
+market_actions=[]
+reason='endgame guard: no remaining profitable wheat cycle'
+
+[OUTCOME 675 -> 676] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 676 | DAY 28 | HOUR 4]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 676 -> 677] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 676 -> 677] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 677 | DAY 28 | HOUR 5]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 677 -> 678] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 677 -> 678] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 678 | DAY 28 | HOUR 6]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 678 -> 679] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 678 -> 679] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 679 | DAY 28 | HOUR 7]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 679 -> 680] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 679 -> 680] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 680 | DAY 28 | HOUR 8]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 680 -> 681] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 680 -> 681] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 681 | DAY 28 | HOUR 9]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 681 -> 682] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 681 -> 682] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 682 | DAY 28 | HOUR 10]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 682 -> 683] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 682 -> 683] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 683 | DAY 28 | HOUR 11]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 683 -> 684] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 683 -> 684] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 684 | DAY 28 | HOUR 12]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 684 -> 685] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 684 -> 685] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 685 | DAY 28 | HOUR 13]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 685 -> 686] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 685 -> 686] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 686 | DAY 28 | HOUR 14]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 686 -> 687] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 686 -> 687] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 687 | DAY 28 | HOUR 15]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 687 -> 688] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 687 -> 688] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 688 | DAY 28 | HOUR 16]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 688 -> 689] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 688 -> 689] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 689 | DAY 28 | HOUR 17]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 689 -> 690] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 689 -> 690] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 690 | DAY 28 | HOUR 18]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 690 -> 691] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 690 -> 691] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 691 | DAY 28 | HOUR 19]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 691 -> 692] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 691 -> 692] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 692 | DAY 28 | HOUR 20]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 692 -> 693] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 692 -> 693] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 693 | DAY 28 | HOUR 21]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 693 -> 694] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 693 -> 694] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 694 | DAY 28 | HOUR 22]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 694 -> 695] coins_after=3770.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 694 -> 695] coins_after=3790.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 695 | DAY 28 | HOUR 23]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{'WHEAT': 4}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 695 -> 696] coins_after=3770.0 coins_change=0.0 shed_change={'WHEAT': 4} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 695 -> 696] coins_after=3790.0 coins_change=0.0 shed_change={'WHEAT': 4} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 696 | DAY 29 | HOUR 0]
-coins=3770.0
+coins=3790.0
 farmer_position=[4, 4]
 workers=0
 shed={'WHEAT': 4}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
-farmer_action=['WATER']
+farmer_action=['PASS']
 worker_actions=[]
 market_actions=[['SELL', 'WHEAT', 4]]
-reason='water WHEAT for daily survival/yield'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 696 -> 697] coins_after=3961.0 coins_change=191.0 shed_change={'WHEAT': -4} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 696 -> 697] coins_after=3981.0 coins_change=191.0 shed_change={'WHEAT': -4} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 697 | DAY 29 | HOUR 1]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 697 -> 698] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 697 -> 698] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 698 | DAY 29 | HOUR 2]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 698 -> 699] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 698 -> 699] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 699 | DAY 29 | HOUR 3]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 699 -> 700] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 699 -> 700] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 700 | DAY 29 | HOUR 4]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 700 -> 701] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 700 -> 701] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 701 | DAY 29 | HOUR 5]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 701 -> 702] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 701 -> 702] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 702 | DAY 29 | HOUR 6]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 702 -> 703] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 702 -> 703] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 703 | DAY 29 | HOUR 7]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 703 -> 704] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 703 -> 704] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 704 | DAY 29 | HOUR 8]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 704 -> 705] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 704 -> 705] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 705 | DAY 29 | HOUR 9]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 705 -> 706] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 705 -> 706] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 706 | DAY 29 | HOUR 10]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 706 -> 707] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 706 -> 707] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 707 | DAY 29 | HOUR 11]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 707 -> 708] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 707 -> 708] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 708 | DAY 29 | HOUR 12]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 708 -> 709] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 708 -> 709] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 709 | DAY 29 | HOUR 13]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 709 -> 710] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 709 -> 710] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 710 | DAY 29 | HOUR 14]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 710 -> 711] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 710 -> 711] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 711 | DAY 29 | HOUR 15]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 711 -> 712] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 711 -> 712] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 712 | DAY 29 | HOUR 16]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 712 -> 713] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 712 -> 713] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 713 | DAY 29 | HOUR 17]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 713 -> 714] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 713 -> 714] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 714 | DAY 29 | HOUR 18]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 714 -> 715] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 714 -> 715] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 715 | DAY 29 | HOUR 19]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 715 -> 716] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 715 -> 716] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 716 | DAY 29 | HOUR 20]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 716 -> 717] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 716 -> 717] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 717 | DAY 29 | HOUR 21]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 717 -> 718] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 717 -> 718] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 [TURN 718 | DAY 29 | HOUR 22]
-coins=3961.0
+coins=3981.0
 farmer_position=[4, 4]
 workers=0
 shed={}
-seeds={'WHEAT': 1}
+seeds={}
 inventories=[{}]
-crops={'WHEAT': 1} weeds=4
+crops={} weeds=4
 animals={}
 decision:
 farmer_action=['PASS']
 worker_actions=[]
 market_actions=[]
-reason='plant already watered; waiting for harvest maturity'
+reason='endgame guard: no remaining profitable wheat cycle'
 
-[OUTCOME 718 -> 719] coins_after=3961.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
+[OUTCOME 718 -> 719] coins_after=3981.0 coins_change=0.0 shed_change={} seeds_change={} position_change=[4, 4]->[4, 4]
 === END OF EPISODE ===
 kaggle_environments=1.32.7
 episode_identifier=unavailable (not exposed by local environment)
@@ -11849,11 +11849,11 @@ available_agents=['pass', 'random', 'starter']
 recorded_episode_steps=720
 agent_calls=719
 final_statuses=['DONE', 'DONE']
-rewards=[3961.0, 3750.0]
-final_coins=3961.0
+rewards=[3981.0, 3750.0]
+final_coins=3981.0
 opponent_final_coins=3750.0
 result=WIN
-runtime_seconds=2.027992
+runtime_seconds=2.035505
 invalid_actions=0
 agent_exceptions=0
 wrapper_exceptions=0

@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V1 endgame-guard agent.
+"""Submission entry point for the Kaggriculture V0 agent.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -15,9 +15,6 @@ DEBUG_VERBOSE = os.environ.get("KAGGRICULTURE_DEBUG_VERBOSE", "0").lower() in {
     "true",
     "yes",
 }
-
-LAST_GAME_DAY = 29
-WHEAT_MAX_YIELD_DAY = 4
 
 _LAST_DECISION = {"reason": "agent has not been called"}
 _LAST_ERROR = None
@@ -57,22 +54,6 @@ def _as_nonnegative_int(value):
         return 0
 
 
-def _can_finish_wheat_planted_on(day):
-    return day + WHEAT_MAX_YIELD_DAY <= LAST_GAME_DAY
-
-
-def _replacement_wheat_seed_can_finish(tile, day):
-    """Whether one newly bought seed can still become sold wheat this episode."""
-    if tile is None:
-        return _can_finish_wheat_planted_on(day)
-    if isinstance(tile, dict) and tile.get("kind") == "PLANT":
-        if tile.get("crop") == "WHEAT":
-            planted_day = _as_nonnegative_int(tile.get("planted_day", day))
-            next_plant_day = planted_day + WHEAT_MAX_YIELD_DAY
-            return _can_finish_wheat_planted_on(next_plant_day)
-    return _can_finish_wheat_planted_on(day)
-
-
 def _decide(obs):
     """Choose a conservative one-tile wheat-cycle action and its reason."""
     fallback = _fallback_action(obs)
@@ -100,7 +81,6 @@ def _decide(obs):
     shed = _get(private, "shed", {}) or {}
     wheat_seeds = _as_nonnegative_int(_get(seeds, "WHEAT", 0))
     wheat_in_shed = _as_nonnegative_int(_get(shed, "WHEAT", 0))
-    day = _as_nonnegative_int(_get(obs, "day", 0))
     money = _get(farm, "money", 0)
     try:
         money = float(money)
@@ -114,31 +94,24 @@ def _decide(obs):
     market = []
     if wheat_in_shed > 0:
         market.append(["SELL", "WHEAT", wheat_in_shed])
-    if (
-        wheat_seeds == 0
-        and money >= 10
-        and _replacement_wheat_seed_can_finish(tile, day)
-    ):
+    if wheat_seeds == 0 and money >= 10:
         market.append(["BUY_SEED", "WHEAT", 1])
 
     farmer = ["PASS"]
     reason = "no useful verified tile action; safe PASS"
 
     if tile is None:
-        if wheat_seeds > 0 and _can_finish_wheat_planted_on(day):
+        if wheat_seeds > 0:
             farmer = ["PLANT", "WHEAT"]
             reason = "empty owned tile and wheat seed available"
-        elif wheat_seeds > 0:
-            reason = "endgame guard: wheat planted now cannot mature before game end"
         elif any(order[:2] == ["BUY_SEED", "WHEAT"] for order in market):
             reason = "buying wheat seed; purchase is available next turn"
-        else:
-            reason = "endgame guard: no remaining profitable wheat cycle"
     elif isinstance(tile, dict):
         kind = tile.get("kind")
         if kind == "PLANT":
             crop = tile.get("crop")
             watered = bool(tile.get("watered_today", False))
+            day = _as_nonnegative_int(_get(obs, "day", 0))
             planted_day = _as_nonnegative_int(tile.get("planted_day", day))
             age = max(0, day - planted_day)
             yield_units = _as_nonnegative_int(tile.get("yield_units", 0))
