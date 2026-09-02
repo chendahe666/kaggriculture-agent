@@ -67,6 +67,20 @@ RESULT_FIELDS = (
     "hand_turns",
     "unit_tile_action_conflicts",
     "plant_to_weed_transitions",
+    "wheat_plant_actions",
+    "carrot_plant_actions",
+    "wheat_harvest_actions",
+    "carrot_harvest_actions",
+    "wheat_land_days",
+    "carrot_land_days",
+    "sell_units",
+    "realized_sale_revenue",
+    "realized_average_sale_price",
+    "revenue_per_land_day",
+    "revenue_per_nonpass_unit_action",
+    "peak_shed_total",
+    "minimum_cash",
+    "funding_shortfall_orders",
     "unique_plant_tiles_used",
     "median_mature_wait_steps",
     "max_mature_wait_steps",
@@ -168,6 +182,17 @@ def _load_agent(path: Path):
     return callables[-1], namespace
 
 
+def _custom_opponent_path(label: str) -> Path | None:
+    if not label.startswith("file:"):
+        return None
+    candidate = (PROJECT_DIR / label.removeprefix("file:")).resolve()
+    try:
+        candidate.relative_to(PROJECT_DIR)
+    except ValueError as exc:
+        raise ValueError(f"custom opponent escapes project directory: {label}") from exc
+    return candidate
+
+
 class TrackedAgent:
     def __init__(self, path: Path, max_market_orders: int):
         self.agent, self.namespace = _load_agent(path)
@@ -192,12 +217,24 @@ class TrackedAgent:
         self.unique_plant_tiles = set()
         self.maturity_started_at = {}
         self.mature_wait_steps = []
+        self.crop_plant_actions = Counter()
+        self.crop_harvest_actions = Counter()
+        self.crop_tile_turns = Counter()
+        self.sell_units = 0
+        self.realized_sale_revenue = 0.0
+        self.peak_shed_total = 0
+        self.minimum_cash = float("inf")
+        self.funding_shortfall_orders = 0
+        self.previous_money = None
+        self.pending_market_cost = 0.0
+        self.pending_sell_units = 0
         self.validation_errors = []
         self.exception_messages = []
 
     def __call__(self, obs, configuration=None):
         self.calls += 1
         self._observe_plant_transitions(obs)
+        self._observe_economics(obs)
         try:
             player = int(obs.get("player", 0))
             hand_count = len(obs.get("farms", [])[player].get("hands", []))
@@ -237,7 +274,103 @@ class TrackedAgent:
             isinstance(order, list) and bool(order) and order[0] == "HIRE"
             for order in action.get("market", [])
         )
+        self._record_economics(obs, action)
         return action
+
+    @staticmethod
+    def _fib(index: int) -> int:
+        a, b = 1, 1
+        for _ in range(max(0, index)):
+            a, b = b, a + b
+        return a
+
+    def _observe_economics(self, obs):
+        try:
+            player = int(obs.get("player", 0))
+            farm = obs.get("farms", [])[player]
+            money = float(farm.get("money", 0))
+            private = obs.get("private", {}) or {}
+            shed = private.get("shed", {}) or {}
+            tiles = farm.get("tiles", [])
+        except (AttributeError, IndexError, TypeError, ValueError):
+            return
+        self.minimum_cash = min(self.minimum_cash, money)
+        self.peak_shed_total = max(self.peak_shed_total, _sum_nonnegative_values(shed))
+        for row in tiles:
+            if not isinstance(row, (list, tuple)):
+                continue
+            for tile in row:
+                if isinstance(tile, Mapping) and tile.get("kind") == "PLANT":
+                    self.crop_tile_turns[str(tile.get("crop", "UNKNOWN"))] += 1
+        if self.previous_money is not None and self.pending_sell_units > 0:
+            revenue = money - self.previous_money + self.pending_market_cost
+            self.realized_sale_revenue += max(0.0, revenue)
+        self.previous_money = money
+        self.pending_market_cost = 0.0
+        self.pending_sell_units = 0
+
+    def _record_economics(self, obs, action):
+        try:
+            player = int(obs.get("player", 0))
+            farm = obs.get("farms", [])[player]
+            positions = [farm.get("farmer"), *farm.get("hands", [])]
+            unit_actions = [action.get("farmer", ["PASS"]), *action.get("hands", [])]
+            tiles = farm.get("tiles", [])
+            budget = float(farm.get("money", 0))
+            hires_today = int(farm.get("hires_today", 0))
+            prices = (obs.get("market", {}) or {}).get("prices", {}) or {}
+        except (AttributeError, IndexError, TypeError, ValueError):
+            return
+
+        for position, unit_action in zip(positions, unit_actions):
+            if not isinstance(unit_action, list) or not unit_action:
+                continue
+            if unit_action[0] == "PLANT" and len(unit_action) >= 2:
+                self.crop_plant_actions[str(unit_action[1])] += 1
+            elif (
+                unit_action[0] == "HARVEST"
+                and isinstance(position, (list, tuple))
+                and len(position) >= 2
+            ):
+                x, y = int(position[0]), int(position[1])
+                if 0 <= y < len(tiles) and 0 <= x < len(tiles[y]):
+                    tile = tiles[y][x]
+                    if isinstance(tile, Mapping) and tile.get("kind") == "PLANT":
+                        self.crop_harvest_actions[str(tile.get("crop", "UNKNOWN"))] += 1
+
+        seed_costs = {"WHEAT": 10, "CARROT": 20, "TOMATO": 50, "STRAWBERRY": 100, "MELON": 80}
+        for order in action.get("market", []):
+            if not isinstance(order, list) or not order:
+                continue
+            op = order[0]
+            if op == "HIRE":
+                cost = float(self._fib(hires_today))
+                hires_today += 1
+                if budget < cost:
+                    self.funding_shortfall_orders += 1
+                else:
+                    budget -= cost
+                    self.pending_market_cost += cost
+            elif op == "BUY_SEED" and len(order) >= 3:
+                crop = str(order[1])
+                quantity = max(0, int(order[2]))
+                unit_cost = float(seed_costs.get(crop, 0))
+                affordable = quantity if unit_cost <= 0 else min(quantity, int(budget // unit_cost))
+                if affordable < quantity:
+                    self.funding_shortfall_orders += 1
+                cost = affordable * unit_cost
+                budget -= cost
+                self.pending_market_cost += cost
+            elif op == "SELL" and len(order) >= 3:
+                quantity = max(0, int(order[2]))
+                self.sell_units += quantity
+                self.pending_sell_units += quantity
+                budget += quantity * float(prices.get(str(order[1]), 0) or 0)
+
+    def finalize(self, obs):
+        """Consume the terminal observation that is not followed by another agent call."""
+        self._observe_plant_transitions(obs)
+        self._observe_economics(obs)
 
     @staticmethod
     def _count_unit_conflicts(obs, action) -> int:
@@ -295,10 +428,9 @@ class TrackedAgent:
                     continue
                 position = (x, y)
                 self.unique_plant_tiles.add(position)
-                if (
-                    tile.get("crop") == "WHEAT"
-                    and day - int(tile.get("planted_day", day)) >= 4
-                ):
+                crop = tile.get("crop")
+                mature_day = {"WHEAT": 4, "CARROT": 3}.get(crop)
+                if mature_day is not None and day - int(tile.get("planted_day", day)) >= mature_day:
                     self.maturity_started_at.setdefault(position, step)
         self.previous_tiles = snapshot
 
@@ -337,13 +469,19 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
     try:
         env = make("kaggriculture", configuration={"seed": seed}, debug=False)
         expected_steps = int(env.configuration.episodeSteps)
-        tracker = TrackedAgent(agent_path, int(env.configuration.maxMarketOrdersPerTurn))
-        agents = [tracker, opponent] if side == 0 else [opponent, tracker]
+        market_order_cap = int(env.configuration.maxMarketOrdersPerTurn)
+        tracker = TrackedAgent(agent_path, market_order_cap)
+        opponent_path = _custom_opponent_path(opponent)
+        opponent_agent = (
+            TrackedAgent(opponent_path, market_order_cap) if opponent_path else opponent
+        )
+        agents = [tracker, opponent_agent] if side == 0 else [opponent_agent, tracker]
         env.run(agents)
 
         final_states = env.steps[-1]
         statuses = [str(state.status) for state in final_states]
         observation = final_states[side].observation
+        tracker.finalize(observation)
         farms = observation.get("farms", [])
         our_farm = farms[side]
         our_cash = float(our_farm.get("money", 0))
@@ -369,6 +507,15 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
         ]
         result = "WIN" if our_cash > opponent_cash else "LOSS" if our_cash < opponent_cash else "DRAW"
         completed = len(env.steps) == expected_steps and all(status == "DONE" for status in statuses)
+        turns_per_day = int(env.configuration.turnsPerDay)
+        wheat_land_days = tracker.crop_tile_turns.get("WHEAT", 0) / turns_per_day
+        carrot_land_days = tracker.crop_tile_turns.get("CARROT", 0) / turns_per_day
+        total_land_days = wheat_land_days + carrot_land_days
+        total_nonpass_actions = (
+            tracker.calls
+            - tracker.farmer_ops.get("PASS", 0)
+            + sum(count for op, count in tracker.hand_ops.items() if op != "PASS")
+        )
 
         row.update(
             {
@@ -408,6 +555,34 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
                 "hand_turns": tracker.hand_turns,
                 "unit_tile_action_conflicts": tracker.unit_tile_action_conflicts,
                 "plant_to_weed_transitions": tracker.plant_to_weed_transitions,
+                "wheat_plant_actions": tracker.crop_plant_actions.get("WHEAT", 0),
+                "carrot_plant_actions": tracker.crop_plant_actions.get("CARROT", 0),
+                "wheat_harvest_actions": tracker.crop_harvest_actions.get("WHEAT", 0),
+                "carrot_harvest_actions": tracker.crop_harvest_actions.get("CARROT", 0),
+                "wheat_land_days": round(wheat_land_days, 3),
+                "carrot_land_days": round(carrot_land_days, 3),
+                "sell_units": tracker.sell_units,
+                "realized_sale_revenue": round(tracker.realized_sale_revenue, 3),
+                "realized_average_sale_price": round(
+                    tracker.realized_sale_revenue / tracker.sell_units, 3
+                )
+                if tracker.sell_units
+                else 0,
+                "revenue_per_land_day": round(
+                    tracker.realized_sale_revenue / total_land_days, 3
+                )
+                if total_land_days
+                else 0,
+                "revenue_per_nonpass_unit_action": round(
+                    tracker.realized_sale_revenue / total_nonpass_actions, 3
+                )
+                if total_nonpass_actions
+                else 0,
+                "peak_shed_total": tracker.peak_shed_total,
+                "minimum_cash": tracker.minimum_cash
+                if tracker.minimum_cash != float("inf")
+                else None,
+                "funding_shortfall_orders": tracker.funding_shortfall_orders,
                 "unique_plant_tiles_used": len(tracker.unique_plant_tiles),
                 "median_mature_wait_steps": statistics.median(tracker.mature_wait_steps)
                 if tracker.mature_wait_steps
@@ -460,6 +635,14 @@ def _aggregate(rows: list[dict]) -> dict:
     unique_plant_tiles = [int(row["unique_plant_tiles_used"] or 0) for row in completed]
     harvest_actions = [int(row["farmer_harvest_actions"] or 0) for row in completed]
     mature_wait = [float(row["median_mature_wait_steps"] or 0) for row in completed]
+    sale_revenue = [float(row["realized_sale_revenue"] or 0) for row in completed]
+    average_sale_price = [float(row["realized_average_sale_price"] or 0) for row in completed]
+    revenue_per_land_day = [float(row["revenue_per_land_day"] or 0) for row in completed]
+    revenue_per_action = [
+        float(row["revenue_per_nonpass_unit_action"] or 0) for row in completed
+    ]
+    peak_shed = [int(row["peak_shed_total"] or 0) for row in completed]
+    minimum_cash = [float(row["minimum_cash"] or 0) for row in completed]
     return {
         "episodes": len(rows),
         "completed": len(completed),
@@ -481,12 +664,15 @@ def _aggregate(rows: list[dict]) -> dict:
         "median_final_shed_total": statistics.median(final_shed_totals)
         if final_shed_totals
         else None,
+        "max_final_shed_total": max(final_shed_totals, default=0),
         "median_final_carried_total": statistics.median(final_carried_totals)
         if final_carried_totals
         else None,
+        "max_final_carried_total": max(final_carried_totals, default=0),
         "median_final_plant_tiles": statistics.median(final_plant_tiles)
         if final_plant_tiles
         else None,
+        "max_final_plant_tiles": max(final_plant_tiles, default=0),
         "max_final_immature_wheat_tiles": max(final_immature_wheat, default=0),
         "median_unique_plant_tiles": statistics.median(unique_plant_tiles)
         if unique_plant_tiles
@@ -515,6 +701,22 @@ def _aggregate(rows: list[dict]) -> dict:
         "unit_tile_action_conflicts": sum(
             int(row["unit_tile_action_conflicts"] or 0) for row in rows
         ),
+        "funding_shortfall_orders": sum(
+            int(row["funding_shortfall_orders"] or 0) for row in rows
+        ),
+        "median_sale_revenue": statistics.median(sale_revenue) if sale_revenue else None,
+        "median_realized_average_sale_price": statistics.median(average_sale_price)
+        if average_sale_price
+        else None,
+        "median_revenue_per_land_day": statistics.median(revenue_per_land_day)
+        if revenue_per_land_day
+        else None,
+        "median_revenue_per_nonpass_unit_action": statistics.median(revenue_per_action)
+        if revenue_per_action
+        else None,
+        "median_peak_shed_total": statistics.median(peak_shed) if peak_shed else None,
+        "max_peak_shed_total": max(peak_shed, default=0),
+        "worst_minimum_cash": min(minimum_cash) if minimum_cash else None,
         "hire_orders": sum(int(row["hire_orders"] or 0) for row in rows),
         "hand_nonpass_actions": sum(int(row["hand_nonpass_actions"] or 0) for row in rows),
         "max_agent_seconds": max(
@@ -547,7 +749,13 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         and overall["wrapper_exceptions"] == 0
         and overall["agent_internal_exceptions"] == 0
         and overall["runner_errors"] == 0
+        and overall["plant_to_weed_transitions"] == 0
         and overall["unit_tile_action_conflicts"] == 0
+        and overall["funding_shortfall_orders"] == 0
+        and overall["max_final_shed_total"] == 0
+        and overall["max_final_carried_total"] == 0
+        and overall["max_final_plant_tiles"] == 0
+        and overall["unharvested_mature_tiles"] == 0
     )
     lines = [
         f"# Benchmark Summary: {metadata['label']}",
@@ -572,6 +780,7 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         f"- Runner errors: `{overall['runner_errors']}`",
         f"- Plant-to-weed transitions: `{overall['plant_to_weed_transitions']}`",
         f"- Unit tile-action conflicts: `{overall['unit_tile_action_conflicts']}`",
+        f"- Funding shortfall orders: `{overall['funding_shortfall_orders']}`",
         f"- Hire orders: `{overall['hire_orders']}`",
         f"- Hand non-PASS actions: `{overall['hand_nonpass_actions']}`",
         f"- Slowest agent call: `{overall['max_agent_seconds'] * 1000:.3f} ms`",
@@ -585,13 +794,19 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         f"- Best cash: `{_fmt(overall['best_cash'])}`",
         f"- Median cash delta: `{_fmt(overall['median_cash_delta'])}`",
         f"- Worst cash delta: `{_fmt(overall['worst_cash_delta'])}`",
+        f"- Median realized sale revenue: `{_fmt(overall['median_sale_revenue'])}`",
+        f"- Median realized average sale price: `{_fmt(overall['median_realized_average_sale_price'])}`",
+        f"- Median revenue per land-day: `{_fmt(overall['median_revenue_per_land_day'])}`",
+        f"- Median revenue per non-PASS unit action: `{_fmt(overall['median_revenue_per_nonpass_unit_action'])}`",
+        f"- Median / max peak shed items: `{_fmt(overall['median_peak_shed_total'])} / {overall['max_peak_shed_total']}`",
+        f"- Worst minimum cash: `{_fmt(overall['worst_minimum_cash'])}`",
         "",
         "## End state",
         "",
         f"- Median / max unused seeds: `{_fmt(overall['median_final_seed_total'])} / {overall['max_final_seed_total']}`",
-        f"- Median unsold shed items: `{_fmt(overall['median_final_shed_total'])}`",
-        f"- Median carried items: `{_fmt(overall['median_final_carried_total'])}`",
-        f"- Median remaining plant tiles: `{_fmt(overall['median_final_plant_tiles'])}`",
+        f"- Median / max unsold shed items: `{_fmt(overall['median_final_shed_total'])} / {overall['max_final_shed_total']}`",
+        f"- Median / max carried items: `{_fmt(overall['median_final_carried_total'])} / {overall['max_final_carried_total']}`",
+        f"- Median / max remaining plant tiles: `{_fmt(overall['median_final_plant_tiles'])} / {overall['max_final_plant_tiles']}`",
         f"- Max immature wheat tiles: `{overall['max_final_immature_wheat_tiles']}`",
         f"- Median unique plant tiles used: `{_fmt(overall['median_unique_plant_tiles'])}`",
         f"- Median harvest actions: `{_fmt(overall['median_harvest_actions'])}`",
@@ -682,7 +897,14 @@ def main():
     from kaggle_environments import environments, make
 
     available = environments.get("kaggriculture", {}).get("agents", {})
-    missing = [opponent for opponent in args.opponents if opponent not in available]
+    missing = []
+    for opponent in args.opponents:
+        opponent_path = _custom_opponent_path(opponent)
+        if opponent_path is not None:
+            if not opponent_path.is_file():
+                missing.append(opponent)
+        elif opponent not in available:
+            missing.append(opponent)
     if missing:
         raise SystemExit(f"unknown built-in opponents: {missing}; available={sorted(available)}")
 

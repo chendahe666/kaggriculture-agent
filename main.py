@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V4 one-hand agent.
+"""Submission entry point for the Kaggriculture V4.2 paced-sale agent.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -17,7 +17,16 @@ DEBUG_VERBOSE = os.environ.get("KAGGRICULTURE_DEBUG_VERBOSE", "0").lower() in {
 }
 
 LAST_GAME_DAY = 29
-WHEAT_MAX_YIELD_DAY = 4
+ENDGAME_BUFFER_DAYS = 0
+LAST_CYCLE_TILE_COUNT = 6
+CROP_MODE = "WHEAT"
+SELL_MODE = "THRESHOLD"
+MAX_NORMAL_SALE_BATCH = 16
+MIX_CARROT_TILES = 1
+CROP_DATA = {
+    "WHEAT": {"seed_cost": 10, "max_yield_day": 4, "max_yield": 6},
+    "CARROT": {"seed_cost": 20, "max_yield_day": 3, "max_yield": 4},
+}
 DESIRED_HANDS = 1
 TARGET_TILES_PER_UNIT = 5
 TARGET_TILE_COUNT = 6
@@ -60,20 +69,35 @@ def _as_nonnegative_int(value):
         return 0
 
 
-def _can_finish_wheat_planted_on(day):
-    return day + WHEAT_MAX_YIELD_DAY <= LAST_GAME_DAY
+def _can_finish_crop_planted_on(crop, day):
+    crop_data = CROP_DATA.get(crop)
+    return bool(crop_data) and day + crop_data["max_yield_day"] <= (
+        LAST_GAME_DAY - ENDGAME_BUFFER_DAYS
+    )
 
 
-def _replacement_wheat_seed_can_finish(tile, day):
+def _replacement_seed_can_finish(tile, day, desired_crop, target_index):
     """Whether one newly bought seed can still become sold wheat this episode."""
     if tile is None:
-        return _can_finish_wheat_planted_on(day)
+        candidate_day = day
+        can_finish = _can_finish_crop_planted_on(desired_crop, candidate_day)
+        return can_finish and not (
+            candidate_day + CROP_DATA[desired_crop]["max_yield_day"] == LAST_GAME_DAY
+            and target_index >= LAST_CYCLE_TILE_COUNT
+        )
     if isinstance(tile, dict) and tile.get("kind") == "PLANT":
-        if tile.get("crop") == "WHEAT":
+        planted_crop = tile.get("crop")
+        crop_data = CROP_DATA.get(planted_crop)
+        if crop_data:
             planted_day = _as_nonnegative_int(tile.get("planted_day", day))
-            next_plant_day = planted_day + WHEAT_MAX_YIELD_DAY
-            return _can_finish_wheat_planted_on(next_plant_day)
-    return _can_finish_wheat_planted_on(day)
+            next_plant_day = planted_day + crop_data["max_yield_day"]
+            can_finish = _can_finish_crop_planted_on(desired_crop, next_plant_day)
+            return can_finish and not (
+                next_plant_day + CROP_DATA[desired_crop]["max_yield_day"]
+                == LAST_GAME_DAY
+                and target_index >= LAST_CYCLE_TILE_COUNT
+            )
+    return _can_finish_crop_planted_on(desired_crop, day)
 
 
 def _tile_at(tiles, position):
@@ -101,18 +125,59 @@ def _target_positions(tiles):
     return positions[:TARGET_TILE_COUNT]
 
 
-def _future_seed_slots(tiles, targets, day):
-    return sum(
-        _replacement_wheat_seed_can_finish(_tile_at(tiles, position), day)
-        for position in targets
-    )
+def _shop_demand(town, crop):
+    shops = _get(town, "unlocked_shops", []) or []
+    products = {
+        "BAKERY": ("WHEAT",),
+        "PIZZA_SHOP": ("WHEAT",),
+        "BRUNCH_SPOT": ("WHEAT",),
+        "ICE_CREAM_SHOP": ("WHEAT",),
+        "PET_CAFE": ("CARROT", "CARROT"),
+        "FARMERS_MARKET": ("WHEAT", "CARROT"),
+    }
+    return sum(products.get(shop, ()).count(crop) for shop in shops)
 
 
-def _task_for_tile(tile, day, wheat_seeds):
+def _preferred_crop(prices, town):
+    """Choose on current economics; shop demand is a conservative tie-break."""
+    scored = []
+    for crop, data in CROP_DATA.items():
+        price = _as_nonnegative_int(_get(prices, crop, 0))
+        actions = data["max_yield_day"] + 2  # plant + daily water + harvest
+        margin_per_action = (data["max_yield"] * price - data["seed_cost"]) / actions
+        scored.append((margin_per_action, _shop_demand(town, crop), crop))
+    return max(scored)[2]
+
+
+def _target_crops(tiles, targets, prices, town, seed_counts):
+    if CROP_MODE == "CARROT":
+        return ["CARROT" for _ in targets], True
+    if CROP_MODE == "MIX":
+        split = max(0, len(targets) - MIX_CARROT_TILES)
+        crops = ["WHEAT" if index < split else "CARROT" for index in range(len(targets))]
+        return crops, True
+    if CROP_MODE == "ADAPTIVE":
+        crop = _preferred_crop(prices, town)
+        return [crop for _ in targets], True
+    return ["WHEAT" for _ in targets], True
+
+
+def _future_seed_slots(tiles, targets, target_crops, day, allow_plant):
+    slots = {crop: 0 for crop in CROP_DATA}
+    if not allow_plant:
+        return slots
+    for index, (position, crop) in enumerate(zip(targets, target_crops)):
+        tile = _tile_at(tiles, position)
+        if _replacement_seed_can_finish(tile, day, crop, index):
+            slots[crop] += 1
+    return slots
+
+
+def _task_for_tile(tile, day, available_seeds, desired_crop):
     """Return (priority, action, reason) for one managed tile, if actionable."""
     if tile is None:
-        if wheat_seeds > 0 and _can_finish_wheat_planted_on(day):
-            return 3, ["PLANT", "WHEAT"], "plant an empty managed tile"
+        if available_seeds > 0 and _can_finish_crop_planted_on(desired_crop, day):
+            return 3, ["PLANT", desired_crop], f"plant managed {desired_crop}"
         return None
     if not isinstance(tile, dict):
         return None
@@ -125,9 +190,10 @@ def _task_for_tile(tile, day, wheat_seeds):
         planted_day = _as_nonnegative_int(tile.get("planted_day", day))
         age = max(0, day - planted_day)
         yield_units = _as_nonnegative_int(tile.get("yield_units", 0))
-        if crop == "WHEAT" and age >= WHEAT_MAX_YIELD_DAY and yield_units > 0:
-            return 1, ["HARVEST"], "harvest mature managed wheat"
-        if crop != "WHEAT" and yield_units > 0:
+        crop_data = CROP_DATA.get(crop)
+        if crop_data and age >= crop_data["max_yield_day"] and yield_units > 0:
+            return 1, ["HARVEST"], f"harvest mature managed {crop}"
+        if not crop_data and yield_units > 0:
             return 1, ["HARVEST"], "harvest unexpected crop from managed tile"
         return None
     if kind == "WEED":
@@ -179,13 +245,16 @@ def _decide(obs):
     private = _get(obs, "private", {}) or {}
     seeds = _get(private, "seeds", {}) or {}
     shed = _get(private, "shed", {}) or {}
-    wheat_seeds = _as_nonnegative_int(_get(seeds, "WHEAT", 0))
-    wheat_in_shed = _as_nonnegative_int(_get(shed, "WHEAT", 0))
+    seed_counts = {
+        crop: _as_nonnegative_int(_get(seeds, crop, 0)) for crop in CROP_DATA
+    }
+    shed_counts = {
+        crop: _as_nonnegative_int(_get(shed, crop, 0)) for crop in CROP_DATA
+    }
     day = _as_nonnegative_int(_get(obs, "day", 0))
     hour = _as_nonnegative_int(_get(obs, "hour", 0))
     inventories = _get(private, "inventories", []) or []
     farmer_inventory = inventories[0] if isinstance(inventories, (list, tuple)) and inventories else {}
-    wheat_carried = _as_nonnegative_int(_get(farmer_inventory, "WHEAT", 0))
     money = _get(farm, "money", 0)
     try:
         money = float(money)
@@ -199,14 +268,37 @@ def _decide(obs):
     if day < LAST_GAME_DAY:
         for _ in range(max(0, DESIRED_HANDS - len(hands))):
             market.append(["HIRE"])
-    if wheat_in_shed > 0:
-        market.append(["SELL", "WHEAT", wheat_in_shed])
-    wanted_seeds = _future_seed_slots(tiles, targets, day)
-    missing_seeds = max(0, wanted_seeds - wheat_seeds)
-    affordable_seeds = max(0, int(money // 10))
-    buy_count = min(missing_seeds, affordable_seeds)
-    if buy_count > 0:
-        market.append(["BUY_SEED", "WHEAT", buy_count])
+    market_state = _get(obs, "market", {}) or {}
+    prices = _get(market_state, "prices", {}) or {}
+    town = _get(obs, "town", {}) or {}
+    target_crops, allow_plant = _target_crops(
+        tiles, targets, prices, town, seed_counts
+    )
+    for crop, amount in shed_counts.items():
+        price = _as_nonnegative_int(_get(prices, crop, 0))
+        should_sell = SELL_MODE == "IMMEDIATE" or day == LAST_GAME_DAY or price >= {
+            "WHEAT": 25,
+            "CARROT": 35,
+        }[crop]
+        if amount > 0 and should_sell:
+            sell_amount = (
+                amount
+                if day == LAST_GAME_DAY or MAX_NORMAL_SALE_BATCH <= 0
+                else min(amount, MAX_NORMAL_SALE_BATCH)
+            )
+            market.append(["SELL", crop, sell_amount])
+    wanted_seeds = _future_seed_slots(
+        tiles, targets, target_crops, day, allow_plant
+    )
+    buy_counts = {crop: 0 for crop in CROP_DATA}
+    remaining_money = money
+    for crop, seed_cost in (("WHEAT", 10), ("CARROT", 20)):
+        missing_seeds = max(0, wanted_seeds[crop] - seed_counts[crop])
+        affordable_seeds = max(0, int(remaining_money // seed_cost))
+        buy_counts[crop] = min(missing_seeds, affordable_seeds)
+        if buy_counts[crop] > 0:
+            market.append(["BUY_SEED", crop, buy_counts[crop]])
+            remaining_money -= buy_counts[crop] * seed_cost
 
     shed_position = targets[0]
     remaining_calls = max(0, 23 - hour) if day == LAST_GAME_DAY else 24
@@ -220,14 +312,27 @@ def _decide(obs):
     unit_actions = []
     unit_reasons = []
     claimed_targets = set()
-    plant_actions = 0
+    plant_actions = {crop: 0 for crop in CROP_DATA}
     for unit_index, (ux, uy) in enumerate(unit_positions):
         candidates = []
-        available_seeds = max(0, wheat_seeds - plant_actions)
         for index, target in enumerate(targets):
             if target in claimed_targets:
                 continue
-            task = _task_for_tile(_tile_at(tiles, target), day, available_seeds)
+            desired_crop = target_crops[index]
+            available_seeds = (
+                max(0, seed_counts[desired_crop] - plant_actions[desired_crop])
+                if allow_plant
+                else 0
+            )
+            if (
+                _tile_at(tiles, target) is None
+                and day + CROP_DATA[desired_crop]["max_yield_day"] == LAST_GAME_DAY
+                and index >= LAST_CYCLE_TILE_COUNT
+            ):
+                available_seeds = 0
+            task = _task_for_tile(
+                _tile_at(tiles, target), day, available_seeds, desired_crop
+            )
             if task is None:
                 continue
             priority, task_action, task_reason = task
@@ -241,11 +346,13 @@ def _decide(obs):
             candidates.append((priority, distance, index, target, task_action, task_reason))
 
         inventory = inventories[unit_index] if unit_index < len(inventories) else {}
-        unit_wheat = _as_nonnegative_int(_get(inventory, "WHEAT", 0))
+        unit_crop_total = sum(
+            _as_nonnegative_int(_get(inventory, crop, 0)) for crop in CROP_DATA
+        )
         cashout_distance = abs(shed_position[0] - ux) + abs(shed_position[1] - uy)
         cashout_due = (
             day == LAST_GAME_DAY
-            and unit_wheat > 0
+            and unit_crop_total > 0
             and (not candidates or remaining_calls <= cashout_distance + 1)
         )
         if cashout_due and cashout_distance == 0:
@@ -261,7 +368,7 @@ def _decide(obs):
                 unit_action = task_action
                 unit_reason = f"{task_reason} at {list(target)}"
                 if task_action[0] == "PLANT":
-                    plant_actions += 1
+                    plant_actions[task_action[1]] += 1
             else:
                 unit_action = _move_toward((ux, uy), target)
                 unit_reason = f"move toward {list(target)} to {task_reason}"
@@ -273,25 +380,29 @@ def _decide(obs):
 
     farmer = unit_actions[0] if unit_actions else ["PASS"]
     hand_actions = unit_actions[1:]
-    if all(action[0] == "PASS" for action in unit_actions) and buy_count > 0:
-        unit_reasons.append(f"market: buying {buy_count} wheat seed(s)")
-    elif all(action[0] == "PASS" for action in unit_actions) and wheat_seeds > 0 and not _can_finish_wheat_planted_on(day):
+    total_buys = sum(buy_counts.values())
+    if all(action[0] == "PASS" for action in unit_actions) and total_buys > 0:
+        unit_reasons.append(f"market: buying {total_buys} crop seed(s)")
+    elif all(action[0] == "PASS" for action in unit_actions) and sum(seed_counts.values()) > 0 and not any(
+        _can_finish_crop_planted_on(crop, day) for crop in CROP_DATA
+    ):
         unit_reasons.append("market: endgame guard keeps remaining seeds unplanted")
     reason = "; ".join(unit_reasons) or "safe PASS"
 
-    drop_wheat = sum(
-        _as_nonnegative_int(_get(inventories[index], "WHEAT", 0))
-        for index, action in enumerate(unit_actions)
-        if action[0] == "DROP" and index < len(inventories)
-    )
-    if drop_wheat > 0:
-        sell_order = next(
-            (order for order in market if order[:2] == ["SELL", "WHEAT"]), None
+    for crop in CROP_DATA:
+        drop_amount = sum(
+            _as_nonnegative_int(_get(inventories[index], crop, 0))
+            for index, action in enumerate(unit_actions)
+            if action[0] == "DROP" and index < len(inventories)
         )
-        if sell_order is None:
-            market.insert(0, ["SELL", "WHEAT", drop_wheat])
-        else:
-            sell_order[2] += drop_wheat
+        if drop_amount > 0:
+            sell_order = next(
+                (order for order in market if order[:2] == ["SELL", crop]), None
+            )
+            if sell_order is None:
+                market.insert(0, ["SELL", crop, drop_amount])
+            else:
+                sell_order[2] += drop_amount
 
     action = {"farmer": farmer, "hands": hand_actions, "market": market}
     return action, reason
