@@ -12,6 +12,8 @@ Minimal working Kaggriculture agent: correctness, stability, observability, and 
 - `run_report.md` — parameters and results from the final actual local run.
 - `logs/episode_001.log` — first observation, compact turn decisions, next-observation outcomes, and the final episode summary.
 - `KAGGRICULTURE_AGENT_DEVELOPMENT_GUIDE_ZH.md` — Chinese 60-minute onboarding, Agentic AI collaboration guide, and 3-to-7-day development roadmap.
+- `AGENTS.md` — persistent repository rules for Codex and other compatible coding agents.
+- `DEVELOPMENT_PLAN.md` — phased Day 1–7 execution plan with measurable exit gates.
 
 ## Setup
 
