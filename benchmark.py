@@ -57,6 +57,7 @@ RESULT_FIELDS = (
     "hand_pass_actions",
     "hand_nonpass_actions",
     "market_orders",
+    "plant_to_weed_transitions",
     "final_seed_total",
     "final_wheat_seeds",
     "final_shed_total",
@@ -169,11 +170,14 @@ class TrackedAgent:
         self.farmer_ops = Counter()
         self.hand_ops = Counter()
         self.market_orders = 0
+        self.plant_to_weed_transitions = 0
+        self.previous_tiles = None
         self.validation_errors = []
         self.exception_messages = []
 
     def __call__(self, obs, configuration=None):
         self.calls += 1
+        self._observe_plant_transitions(obs)
         started = time.perf_counter()
         try:
             action = self.agent(obs)
@@ -201,6 +205,26 @@ class TrackedAgent:
             self.hand_ops[str(hand_op)] += 1
         self.market_orders += len(action.get("market", []))
         return action
+
+    def _observe_plant_transitions(self, obs):
+        try:
+            player = int(obs.get("player", 0))
+            tiles = obs.get("farms", [])[player].get("tiles", [])
+            snapshot = [
+                [
+                    tile.get("kind") if isinstance(tile, Mapping) else tile
+                    for tile in row
+                ]
+                for row in tiles
+            ]
+        except (AttributeError, IndexError, TypeError, ValueError):
+            return
+        if self.previous_tiles is not None:
+            for previous_row, current_row in zip(self.previous_tiles, snapshot):
+                for previous, current in zip(previous_row, current_row):
+                    if previous == "PLANT" and current == "WEED":
+                        self.plant_to_weed_transitions += 1
+        self.previous_tiles = snapshot
 
     def internal_exceptions(self) -> int:
         getter = self.namespace.get("get_runtime_stats")
@@ -296,6 +320,7 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
                     count for op, count in tracker.hand_ops.items() if op != "PASS"
                 ),
                 "market_orders": tracker.market_orders,
+                "plant_to_weed_transitions": tracker.plant_to_weed_transitions,
                 "final_seed_total": _sum_nonnegative_values(final_seeds),
                 "final_wheat_seeds": int(final_seeds.get("WHEAT", 0) or 0),
                 "final_shed_total": _sum_nonnegative_values(final_shed),
@@ -373,6 +398,9 @@ def _aggregate(rows: list[dict]) -> dict:
             int(row["agent_internal_exceptions"] or 0) for row in rows
         ),
         "runner_errors": sum(bool(row["runner_error"]) for row in rows),
+        "plant_to_weed_transitions": sum(
+            int(row["plant_to_weed_transitions"] or 0) for row in rows
+        ),
         "max_agent_seconds": max(
             (float(row["max_agent_seconds"] or 0) for row in rows), default=0.0
         ),
@@ -425,6 +453,7 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         f"- Wrapper exceptions: `{overall['wrapper_exceptions']}`",
         f"- Agent internal exceptions: `{overall['agent_internal_exceptions']}`",
         f"- Runner errors: `{overall['runner_errors']}`",
+        f"- Plant-to-weed transitions: `{overall['plant_to_weed_transitions']}`",
         f"- Slowest agent call: `{overall['max_agent_seconds'] * 1000:.3f} ms`",
         "",
         "## Overall",

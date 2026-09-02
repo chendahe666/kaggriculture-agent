@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V2 three-tile agent.
+"""Submission entry point for the Kaggriculture V1 endgame-guard agent.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -18,7 +18,6 @@ DEBUG_VERBOSE = os.environ.get("KAGGRICULTURE_DEBUG_VERBOSE", "0").lower() in {
 
 LAST_GAME_DAY = 29
 WHEAT_MAX_YIELD_DAY = 4
-TARGET_TILE_COUNT = 3
 
 _LAST_DECISION = {"reason": "agent has not been called"}
 _LAST_ERROR = None
@@ -74,84 +73,8 @@ def _replacement_wheat_seed_can_finish(tile, day):
     return _can_finish_wheat_planted_on(day)
 
 
-def _tile_at(tiles, position):
-    x, y = position
-    if not isinstance(tiles, (list, tuple)) or not (0 <= y < len(tiles)):
-        return "LOCKED"
-    row = tiles[y]
-    if not isinstance(row, (list, tuple)) or not (0 <= x < len(row)):
-        return "LOCKED"
-    return row[x]
-
-
-def _target_positions(tiles):
-    """Use three adjacent owned cells ending at the NW shed-access tile."""
-    if not isinstance(tiles, (list, tuple)) or not tiles:
-        return []
-    first_row = tiles[0]
-    if not isinstance(first_row, (list, tuple)) or not first_row:
-        return []
-    board_size = min(len(tiles), len(first_row))
-    origin = max(0, board_size // 2 - 1)
-    return [
-        (origin - offset, origin)
-        for offset in range(TARGET_TILE_COUNT)
-        if origin - offset >= 0
-    ]
-
-
-def _future_seed_slots(tiles, targets, day):
-    return sum(
-        _replacement_wheat_seed_can_finish(_tile_at(tiles, position), day)
-        for position in targets
-    )
-
-
-def _task_for_tile(tile, day, wheat_seeds):
-    """Return (priority, action, reason) for one managed tile, if actionable."""
-    if tile is None:
-        if wheat_seeds > 0 and _can_finish_wheat_planted_on(day):
-            return 3, ["PLANT", "WHEAT"], "plant an empty managed tile"
-        return None
-    if not isinstance(tile, dict):
-        return None
-
-    kind = tile.get("kind")
-    if kind == "PLANT":
-        crop = tile.get("crop")
-        if not bool(tile.get("watered_today", False)):
-            return 0, ["WATER"], f"water managed {crop or 'plant'} before other work"
-        planted_day = _as_nonnegative_int(tile.get("planted_day", day))
-        age = max(0, day - planted_day)
-        yield_units = _as_nonnegative_int(tile.get("yield_units", 0))
-        if crop == "WHEAT" and age >= WHEAT_MAX_YIELD_DAY and yield_units > 0:
-            return 1, ["HARVEST"], "harvest mature managed wheat"
-        if crop != "WHEAT" and yield_units > 0:
-            return 1, ["HARVEST"], "harvest unexpected crop from managed tile"
-        return None
-    if kind == "WEED":
-        return 2, ["DIG"], "clear weed from managed tile"
-    if kind in {"COOP", "PASTURE"} and "animal" not in tile:
-        return 2, ["DIG"], "clear unexpected empty structure from managed tile"
-    return None
-
-
-def _move_toward(position, target):
-    x, y = position
-    tx, ty = target
-    if tx < x:
-        return ["WEST"]
-    if tx > x:
-        return ["EAST"]
-    if ty < y:
-        return ["NORTH"]
-    if ty > y:
-        return ["SOUTH"]
-    return ["PASS"]
-
-
 def _decide(obs):
-    """Choose the next action in a conservative three-tile wheat schedule."""
+    """Choose a conservative one-tile wheat-cycle action and its reason."""
     fallback = _fallback_action(obs)
     farms = _get(obs, "farms", [])
     player = int(_get(obs, "player", 0))
@@ -172,9 +95,6 @@ def _decide(obs):
         return fallback, "farmer position is outside tile grid; safe PASS"
 
     tile = row[x]
-    targets = _target_positions(tiles)
-    if not targets:
-        return fallback, "managed tile set unavailable; safe PASS"
     private = _get(obs, "private", {}) or {}
     seeds = _get(private, "seeds", {}) or {}
     shed = _get(private, "shed", {}) or {}
@@ -194,41 +114,56 @@ def _decide(obs):
     market = []
     if wheat_in_shed > 0:
         market.append(["SELL", "WHEAT", wheat_in_shed])
-    wanted_seeds = _future_seed_slots(tiles, targets, day)
-    missing_seeds = max(0, wanted_seeds - wheat_seeds)
-    affordable_seeds = max(0, int(money // 10))
-    buy_count = min(missing_seeds, affordable_seeds)
-    if buy_count > 0:
-        market.append(["BUY_SEED", "WHEAT", buy_count])
+    if (
+        wheat_seeds == 0
+        and money >= 10
+        and _replacement_wheat_seed_can_finish(tile, day)
+    ):
+        market.append(["BUY_SEED", "WHEAT", 1])
 
     farmer = ["PASS"]
     reason = "no useful verified tile action; safe PASS"
 
-    candidates = []
-    for index, target in enumerate(targets):
-        task = _task_for_tile(_tile_at(tiles, target), day, wheat_seeds)
-        if task is None:
-            continue
-        priority, task_action, task_reason = task
-        distance = abs(target[0] - x) + abs(target[1] - y)
-        candidates.append((priority, distance, index, target, task_action, task_reason))
-
-    if candidates:
-        _, distance, _, target, task_action, task_reason = min(candidates)
-        if distance == 0:
-            farmer = task_action
-            reason = f"{task_reason} at {list(target)}"
+    if tile is None:
+        if wheat_seeds > 0 and _can_finish_wheat_planted_on(day):
+            farmer = ["PLANT", "WHEAT"]
+            reason = "empty owned tile and wheat seed available"
+        elif wheat_seeds > 0:
+            reason = "endgame guard: wheat planted now cannot mature before game end"
+        elif any(order[:2] == ["BUY_SEED", "WHEAT"] for order in market):
+            reason = "buying wheat seed; purchase is available next turn"
         else:
-            farmer = _move_toward((x, y), target)
-            reason = f"move toward {list(target)} to {task_reason}"
-    elif buy_count > 0:
-        reason = f"buying {buy_count} wheat seed(s); available next turn"
-    elif wheat_seeds > 0 and not _can_finish_wheat_planted_on(day):
-        reason = "endgame guard: remaining seed cannot mature before game end"
+            reason = "endgame guard: no remaining profitable wheat cycle"
+    elif isinstance(tile, dict):
+        kind = tile.get("kind")
+        if kind == "PLANT":
+            crop = tile.get("crop")
+            watered = bool(tile.get("watered_today", False))
+            planted_day = _as_nonnegative_int(tile.get("planted_day", day))
+            age = max(0, day - planted_day)
+            yield_units = _as_nonnegative_int(tile.get("yield_units", 0))
+
+            if not watered:
+                farmer = ["WATER"]
+                reason = f"water {crop or 'plant'} for daily survival/yield"
+            elif crop == "WHEAT" and age >= 4 and yield_units > 0:
+                farmer = ["HARVEST"]
+                reason = "wheat reached verified max-yield day"
+            elif crop != "WHEAT" and yield_units > 0:
+                farmer = ["HARVEST"]
+                reason = "unexpected crop has harvestable yield"
+            else:
+                reason = "plant already watered; waiting for harvest maturity"
+        elif kind == "WEED":
+            farmer = ["DIG"]
+            reason = "clear weed from the working tile"
+        elif kind in {"COOP", "PASTURE"} and "animal" not in tile:
+            farmer = ["DIG"]
+            reason = "clear unexpected empty structure from the working tile"
+        elif "animal" in tile:
+            reason = "unexpected animal present without a verified feed inventory plan"
     elif tile == "LOCKED":
-        reason = "current tile is locked and no managed task is actionable"
-    else:
-        reason = "all managed tiles are safe for this turn"
+        reason = "current tile is locked; safe PASS"
 
     action = {"farmer": farmer, "hands": hand_actions, "market": market}
     return action, reason
