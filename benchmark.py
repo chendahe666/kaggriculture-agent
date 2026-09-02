@@ -57,7 +57,15 @@ RESULT_FIELDS = (
     "farmer_harvest_actions",
     "hand_pass_actions",
     "hand_nonpass_actions",
+    "hand_move_actions",
+    "hand_water_actions",
+    "hand_harvest_actions",
+    "hand_plant_actions",
     "market_orders",
+    "hire_orders",
+    "max_hands_observed",
+    "hand_turns",
+    "unit_tile_action_conflicts",
     "plant_to_weed_transitions",
     "unique_plant_tiles_used",
     "median_mature_wait_steps",
@@ -175,6 +183,10 @@ class TrackedAgent:
         self.farmer_ops = Counter()
         self.hand_ops = Counter()
         self.market_orders = 0
+        self.hire_orders = 0
+        self.max_hands_observed = 0
+        self.hand_turns = 0
+        self.unit_tile_action_conflicts = 0
         self.plant_to_weed_transitions = 0
         self.previous_tiles = None
         self.unique_plant_tiles = set()
@@ -186,6 +198,13 @@ class TrackedAgent:
     def __call__(self, obs, configuration=None):
         self.calls += 1
         self._observe_plant_transitions(obs)
+        try:
+            player = int(obs.get("player", 0))
+            hand_count = len(obs.get("farms", [])[player].get("hands", []))
+        except (AttributeError, IndexError, TypeError, ValueError):
+            hand_count = 0
+        self.max_hands_observed = max(self.max_hands_observed, hand_count)
+        self.hand_turns += hand_count
         started = time.perf_counter()
         try:
             action = self.agent(obs)
@@ -205,6 +224,8 @@ class TrackedAgent:
             self.validation_errors.extend(errors)
             action = _fallback(obs)
 
+        self.unit_tile_action_conflicts += self._count_unit_conflicts(obs, action)
+
         farmer = action.get("farmer", ["UNKNOWN"])
         farmer_op = farmer[0] if farmer else "UNKNOWN"
         self.farmer_ops[str(farmer_op)] += 1
@@ -212,7 +233,33 @@ class TrackedAgent:
             hand_op = hand[0] if hand else "UNKNOWN"
             self.hand_ops[str(hand_op)] += 1
         self.market_orders += len(action.get("market", []))
+        self.hire_orders += sum(
+            isinstance(order, list) and bool(order) and order[0] == "HIRE"
+            for order in action.get("market", [])
+        )
         return action
+
+    @staticmethod
+    def _count_unit_conflicts(obs, action) -> int:
+        tile_ops = {"PLANT", "WATER", "HARVEST", "DIG", "BUILD_COOP", "BUILD_PASTURE"}
+        try:
+            player = int(obs.get("player", 0))
+            farm = obs.get("farms", [])[player]
+            positions = [farm.get("farmer"), *farm.get("hands", [])]
+            actions = [action.get("farmer", ["PASS"]), *action.get("hands", [])]
+        except (AttributeError, IndexError, TypeError, ValueError):
+            return 0
+        occupied = Counter()
+        for position, unit_action in zip(positions, actions):
+            if (
+                isinstance(position, (list, tuple))
+                and len(position) >= 2
+                and isinstance(unit_action, list)
+                and unit_action
+                and unit_action[0] in tile_ops
+            ):
+                occupied[(int(position[0]), int(position[1]))] += 1
+        return sum(max(0, count - 1) for count in occupied.values())
 
     def _observe_plant_transitions(self, obs):
         try:
@@ -349,7 +396,17 @@ def _run_episode(make, agent_path: Path, run_index: int, seed: int, opponent: st
                 "hand_nonpass_actions": sum(
                     count for op, count in tracker.hand_ops.items() if op != "PASS"
                 ),
+                "hand_move_actions": sum(
+                    tracker.hand_ops.get(op, 0) for op in ("NORTH", "SOUTH", "EAST", "WEST")
+                ),
+                "hand_water_actions": tracker.hand_ops.get("WATER", 0),
+                "hand_harvest_actions": tracker.hand_ops.get("HARVEST", 0),
+                "hand_plant_actions": tracker.hand_ops.get("PLANT", 0),
                 "market_orders": tracker.market_orders,
+                "hire_orders": tracker.hire_orders,
+                "max_hands_observed": tracker.max_hands_observed,
+                "hand_turns": tracker.hand_turns,
+                "unit_tile_action_conflicts": tracker.unit_tile_action_conflicts,
                 "plant_to_weed_transitions": tracker.plant_to_weed_transitions,
                 "unique_plant_tiles_used": len(tracker.unique_plant_tiles),
                 "median_mature_wait_steps": statistics.median(tracker.mature_wait_steps)
@@ -455,6 +512,11 @@ def _aggregate(rows: list[dict]) -> dict:
         "plant_to_weed_transitions": sum(
             int(row["plant_to_weed_transitions"] or 0) for row in rows
         ),
+        "unit_tile_action_conflicts": sum(
+            int(row["unit_tile_action_conflicts"] or 0) for row in rows
+        ),
+        "hire_orders": sum(int(row["hire_orders"] or 0) for row in rows),
+        "hand_nonpass_actions": sum(int(row["hand_nonpass_actions"] or 0) for row in rows),
         "max_agent_seconds": max(
             (float(row["max_agent_seconds"] or 0) for row in rows), default=0.0
         ),
@@ -485,6 +547,7 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         and overall["wrapper_exceptions"] == 0
         and overall["agent_internal_exceptions"] == 0
         and overall["runner_errors"] == 0
+        and overall["unit_tile_action_conflicts"] == 0
     )
     lines = [
         f"# Benchmark Summary: {metadata['label']}",
@@ -508,6 +571,9 @@ def _write_summary(path: Path, metadata: dict, rows: list[dict]):
         f"- Agent internal exceptions: `{overall['agent_internal_exceptions']}`",
         f"- Runner errors: `{overall['runner_errors']}`",
         f"- Plant-to-weed transitions: `{overall['plant_to_weed_transitions']}`",
+        f"- Unit tile-action conflicts: `{overall['unit_tile_action_conflicts']}`",
+        f"- Hire orders: `{overall['hire_orders']}`",
+        f"- Hand non-PASS actions: `{overall['hand_nonpass_actions']}`",
         f"- Slowest agent call: `{overall['max_agent_seconds'] * 1000:.3f} ms`",
         "",
         "## Overall",

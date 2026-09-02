@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V4 one-hand agent.
+"""Submission entry point for the Kaggriculture V4 one-hand six-near-tile candidate.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -360,3 +360,4 @@ def agent(obs):
             if DEBUG_VERBOSE:
                 print(f"exception_observation={obs!r}")
         return fallback
+

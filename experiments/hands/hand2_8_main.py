@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V4 one-hand agent.
+"""Submission entry point for the Kaggriculture rejected two-hand 8-tile experiment.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -18,9 +18,9 @@ DEBUG_VERBOSE = os.environ.get("KAGGRICULTURE_DEBUG_VERBOSE", "0").lower() in {
 
 LAST_GAME_DAY = 29
 WHEAT_MAX_YIELD_DAY = 4
-DESIRED_HANDS = 1
+DESIRED_HANDS = 2
 TARGET_TILES_PER_UNIT = 5
-TARGET_TILE_COUNT = 6
+TARGET_TILE_COUNT = 8
 
 _LAST_DECISION = {"reason": "agent has not been called"}
 _LAST_ERROR = None
@@ -360,3 +360,4 @@ def agent(obs):
             if DEBUG_VERBOSE:
                 print(f"exception_observation={obs!r}")
         return fallback
+

@@ -1,4 +1,4 @@
-"""Submission entry point for the Kaggriculture V4 one-hand agent.
+"""Submission entry point for the Kaggriculture V3 five-tile agent.
 
 The agent intentionally uses only the Python standard library and defaults to
 silent, submission-safe behavior. Set KAGGRICULTURE_DEBUG=1 locally for compact
@@ -18,9 +18,7 @@ DEBUG_VERBOSE = os.environ.get("KAGGRICULTURE_DEBUG_VERBOSE", "0").lower() in {
 
 LAST_GAME_DAY = 29
 WHEAT_MAX_YIELD_DAY = 4
-DESIRED_HANDS = 1
-TARGET_TILES_PER_UNIT = 5
-TARGET_TILE_COUNT = 6
+TARGET_TILE_COUNT = 5
 
 _LAST_DECISION = {"reason": "agent has not been called"}
 _LAST_ERROR = None
@@ -96,8 +94,9 @@ def _target_positions(tiles):
     board_size = min(len(tiles), len(first_row))
     origin = max(0, board_size // 2 - 1)
     positions = []
-    for y in range(origin, -1, -1):
-        positions.extend((x, y) for x in range(origin, -1, -1))
+    for row_offset, y in enumerate(range(origin, -1, -1)):
+        xs = range(origin, -1, -1) if row_offset % 2 == 0 else range(0, origin + 1)
+        positions.extend((x, y) for x in xs)
     return positions[:TARGET_TILE_COUNT]
 
 
@@ -193,12 +192,10 @@ def _decide(obs):
         money = 0.0
 
     hands = _get(farm, "hands", [])
-    if not isinstance(hands, (list, tuple)):
-        hands = []
+    hand_actions = [
+        ["PASS"] for _ in range(len(hands) if isinstance(hands, (list, tuple)) else 0)
+    ]
     market = []
-    if day < LAST_GAME_DAY:
-        for _ in range(max(0, DESIRED_HANDS - len(hands))):
-            market.append(["HIRE"])
     if wheat_in_shed > 0:
         market.append(["SELL", "WHEAT", wheat_in_shed])
     wanted_seeds = _future_seed_slots(tiles, targets, day)
@@ -208,90 +205,64 @@ def _decide(obs):
     if buy_count > 0:
         market.append(["BUY_SEED", "WHEAT", buy_count])
 
+    farmer = ["PASS"]
+    reason = "no useful verified tile action; safe PASS"
+
+    candidates = []
     shed_position = targets[0]
     remaining_calls = max(0, 23 - hour) if day == LAST_GAME_DAY else 24
-    unit_positions = [(x, y)]
-    for position_value in hands:
-        if isinstance(position_value, (list, tuple)) and len(position_value) >= 2:
-            unit_positions.append((int(position_value[0]), int(position_value[1])))
-        else:
-            unit_positions.append((x, y))
-
-    unit_actions = []
-    unit_reasons = []
-    claimed_targets = set()
-    plant_actions = 0
-    for unit_index, (ux, uy) in enumerate(unit_positions):
-        candidates = []
-        available_seeds = max(0, wheat_seeds - plant_actions)
-        for index, target in enumerate(targets):
-            if target in claimed_targets:
+    for index, target in enumerate(targets):
+        task = _task_for_tile(_tile_at(tiles, target), day, wheat_seeds)
+        if task is None:
+            continue
+        priority, task_action, task_reason = task
+        distance = abs(target[0] - x) + abs(target[1] - y)
+        if day == LAST_GAME_DAY and task_action[0] == "HARVEST":
+            return_distance = abs(target[0] - shed_position[0]) + abs(
+                target[1] - shed_position[1]
+            )
+            calls_to_bank = distance + 1 + return_distance + 1
+            if calls_to_bank > remaining_calls:
                 continue
-            task = _task_for_tile(_tile_at(tiles, target), day, available_seeds)
-            if task is None:
-                continue
-            priority, task_action, task_reason = task
-            distance = abs(target[0] - ux) + abs(target[1] - uy)
-            if day == LAST_GAME_DAY and task_action[0] == "HARVEST":
-                return_distance = abs(target[0] - shed_position[0]) + abs(
-                    target[1] - shed_position[1]
-                )
-                if distance + 1 + return_distance + 1 > remaining_calls:
-                    continue
-            candidates.append((priority, distance, index, target, task_action, task_reason))
+        candidates.append((priority, distance, index, target, task_action, task_reason))
 
-        inventory = inventories[unit_index] if unit_index < len(inventories) else {}
-        unit_wheat = _as_nonnegative_int(_get(inventory, "WHEAT", 0))
-        cashout_distance = abs(shed_position[0] - ux) + abs(shed_position[1] - uy)
-        cashout_due = (
-            day == LAST_GAME_DAY
-            and unit_wheat > 0
-            and (not candidates or remaining_calls <= cashout_distance + 1)
-        )
-        if cashout_due and cashout_distance == 0:
-            unit_action = ["DROP"]
-            unit_reason = "final-day cashout at shed access"
-        elif cashout_due:
-            unit_action = _move_toward((ux, uy), shed_position)
-            unit_reason = f"final-day return to shed access {list(shed_position)}"
-        elif candidates:
-            _, distance, _, target, task_action, task_reason = min(candidates)
-            claimed_targets.add(target)
-            if distance == 0:
-                unit_action = task_action
-                unit_reason = f"{task_reason} at {list(target)}"
-                if task_action[0] == "PLANT":
-                    plant_actions += 1
-            else:
-                unit_action = _move_toward((ux, uy), target)
-                unit_reason = f"move toward {list(target)} to {task_reason}"
-        else:
-            unit_action = ["PASS"]
-            unit_reason = "no unclaimed managed task"
-        unit_actions.append(unit_action)
-        unit_reasons.append(f"unit {unit_index}: {unit_reason}")
-
-    farmer = unit_actions[0] if unit_actions else ["PASS"]
-    hand_actions = unit_actions[1:]
-    if all(action[0] == "PASS" for action in unit_actions) and buy_count > 0:
-        unit_reasons.append(f"market: buying {buy_count} wheat seed(s)")
-    elif all(action[0] == "PASS" for action in unit_actions) and wheat_seeds > 0 and not _can_finish_wheat_planted_on(day):
-        unit_reasons.append("market: endgame guard keeps remaining seeds unplanted")
-    reason = "; ".join(unit_reasons) or "safe PASS"
-
-    drop_wheat = sum(
-        _as_nonnegative_int(_get(inventories[index], "WHEAT", 0))
-        for index, action in enumerate(unit_actions)
-        if action[0] == "DROP" and index < len(inventories)
+    cashout_distance = abs(shed_position[0] - x) + abs(shed_position[1] - y)
+    cashout_due = (
+        day == LAST_GAME_DAY
+        and wheat_carried > 0
+        and (not candidates or remaining_calls <= cashout_distance + 1)
     )
-    if drop_wheat > 0:
+    if cashout_due and cashout_distance == 0:
+        farmer = ["DROP"]
+        reason = "final-day cashout: drop carried wheat at shed access"
+    elif cashout_due:
+        farmer = _move_toward((x, y), shed_position)
+        reason = f"final-day cashout: return to shed access at {list(shed_position)}"
+    elif candidates:
+        _, distance, _, target, task_action, task_reason = min(candidates)
+        if distance == 0:
+            farmer = task_action
+            reason = f"{task_reason} at {list(target)}"
+        else:
+            farmer = _move_toward((x, y), target)
+            reason = f"move toward {list(target)} to {task_reason}"
+    elif buy_count > 0:
+        reason = f"buying {buy_count} wheat seed(s); available next turn"
+    elif wheat_seeds > 0 and not _can_finish_wheat_planted_on(day):
+        reason = "endgame guard: remaining seed cannot mature before game end"
+    elif tile == "LOCKED":
+        reason = "current tile is locked and no managed task is actionable"
+    else:
+        reason = "all managed tiles are safe for this turn"
+
+    if farmer[0] == "DROP" and wheat_carried > 0:
         sell_order = next(
             (order for order in market if order[:2] == ["SELL", "WHEAT"]), None
         )
         if sell_order is None:
-            market.insert(0, ["SELL", "WHEAT", drop_wheat])
+            market.insert(0, ["SELL", "WHEAT", wheat_carried])
         else:
-            sell_order[2] += drop_wheat
+            sell_order[2] += wheat_carried
 
     action = {"farmer": farmer, "hands": hand_actions, "market": market}
     return action, reason
