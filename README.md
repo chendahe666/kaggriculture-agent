@@ -11,6 +11,7 @@ Minimal working Kaggriculture agent: correctness, stability, observability, and 
 - `requirements.txt` — the single required top-level dependency.
 - `run_report.md` — parameters and results from the final actual local run.
 - `logs/episode_001.log` — first observation, compact turn decisions, next-observation outcomes, and the final episode summary.
+- `KAGGRICULTURE_AGENT_DEVELOPMENT_GUIDE_ZH.md` — Chinese 60-minute onboarding, Agentic AI collaboration guide, and 3-to-7-day development roadmap.
 
 ## Setup
 
