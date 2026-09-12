@@ -41,6 +41,10 @@ def main():
     if remote != 'https://github.com/chendahe666/kaggriculture-agent.git':
         raise SystemExit('Unexpected destination remote; inspect before exporting.')
     target = repo / LAB.name
+    dirty = subprocess.check_output(['git', '-C', str(repo), 'status', '--porcelain',
+                                     '--untracked-files=no', '--', LAB.name], text=True)
+    if dirty.strip() and not args.check:
+        raise SystemExit('Tracked archive edits are present; inspect and commit them before exporting.')
     if target.is_symlink() or (target.exists() and target.resolve().parent != repo.resolve()):
         raise SystemExit('Destination must remain directly inside the approved repository.')
     records = []

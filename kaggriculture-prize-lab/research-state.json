@@ -1,6 +1,6 @@
 {
   "updated_local_date": "2026-09-11",
-  "status": "track_p_approved_github_checkpoint",
+  "status": "track_p_approved_ready_for_diagnosis",
   "github_repository": "https://github.com/chendahe666/kaggriculture-agent",
   "github_policy": "one candidate and its version report per commit; push and verify remote; no Kaggle submission implied",
   "active_baseline": "public-baseline-v10/main.py",

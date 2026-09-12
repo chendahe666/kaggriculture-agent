@@ -302,9 +302,14 @@
       "bytes": 1267
     },
     {
+      "path": "reports/versions/README.md",
+      "sha256": "8f4b2e09f2c72b58434558fa7a3fa9c4bcabb617eb5e11ad7da4744a50f2a558",
+      "bytes": 2374
+    },
+    {
       "path": "research-state.json",
-      "sha256": "07e4412184b54ebe8dc30b08f67d6adab4c57f37d08f7c919cb32ea492b6cea9",
-      "bytes": 2289
+      "sha256": "cbce29e58515f2f41d8bc1e9b507d89689db25e43fd74863c7145fa729704d92",
+      "bytes": 2291
     },
     {
       "path": "RESEARCH.md",
@@ -498,8 +503,8 @@
     },
     {
       "path": "scripts/checkpoint_export.py",
-      "sha256": "9a560737a5be4fc8811f9fd8ff2d15909ccfc7a73568250d522e3887305ba7ff",
-      "bytes": 3704
+      "sha256": "0e04c0e99fa332508605ae8471a5027885d9a931bad1658b4e81d8392ed43e87",
+      "bytes": 4025
     },
     {
       "path": "scripts/collect_public_corpus.py",
