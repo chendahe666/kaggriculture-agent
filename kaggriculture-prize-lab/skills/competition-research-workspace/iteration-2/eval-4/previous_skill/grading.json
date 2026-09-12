@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "H上保留M与N公平控制，不以仅N重训后对季节基线的比较声称胜过M。", "passed": true, "evidence": "明确季节基线不能证明N胜M，冻结M/N在H配对；若重训N仍保留旧M/N并区分方法与更新收益。"},
+    {"text": "不超过一次完整训练，说明确认、选型、重训时点且不反复偷看H。", "passed": true, "evidence": "保留额度，先免费确认选型，后训练选定方案；H查看后不能反复作为确认，重训版没有独立验证。"},
+    {"text": "无须等无关track；仍检验单模块耦合、正确性、完整结果且区分评估与提交授权。", "passed": true, "evidence": "明确不必等所有track，检验合法、触发、官方收益、资源和恢复；实际提交仍需授权。"},
+    {"text": "给出32/128/256次数及28/52/84毫秒，公平比较并核验尾部/最坏延迟。", "passed": true, "evidence": "完整列出0/32/128/256和20/28/52/84毫秒，以128次同CPU/模块/对手/种子/席位比较，检查最坏耗时和尾延迟。"}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0},
+  "reviewer": "Primary agent, final-output inspection; configuration visible",
+  "limitations": "Old and revised skills both passed. This does not establish the revision caused better answers; prompt explicitly exposes the defects."
+}

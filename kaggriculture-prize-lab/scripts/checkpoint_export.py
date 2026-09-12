@@ -35,6 +35,14 @@ def selected_files():
                          and p.suffix in ('.py', '.md', '.json', '.jsonl', '.txt'))
     for folder, files in PUBLIC.items():
         paths.extend(LAB / folder / name for name in files)
+    # Only this original, user-requested skill and its anonymous forward tests.
+    # Do not export personal skill libraries or third-party research downloads.
+    for folder in ('skills/competition-research', 'skills/competition-research-workspace'):
+        root = LAB / folder
+        if root.exists():
+            paths.extend(p for p in root.rglob('*') if p.is_file()
+                         and not any(part in EXCLUDED for part in p.relative_to(LAB).parts)
+                         and p.suffix in ('.py', '.md', '.json', '.yaml'))
     return sorted(set(paths))
 
 

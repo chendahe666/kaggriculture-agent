@@ -1,0 +1,4 @@
+interface:
+  display_name: "Competition Research"
+  short_description: "Evidence-driven competition research and learning"
+  default_prompt: "Use $competition-research to diagnose this competition's bottleneck, compare diverse methods, and design the next evidence-backed experiment."

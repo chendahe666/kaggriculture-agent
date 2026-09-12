@@ -1,6 +1,18 @@
 {
   "updated_local_date": "2026-09-11",
-  "status": "macro_research_memory_complete_no_promotion_track_p_direction_approved_not_started",
+  "status": "competition_research_skill_installed_no_strategy_promotion_track_p_approved_not_started",
+  "latest_general_research_report": "reports/competition-research-20260912.md",
+  "competition_research_skill": {
+    "version": "0.1.1",
+    "project_path": "skills/competition-research/SKILL.md",
+    "personal_path": "C:/Users/chend/.codex/skills/competition-research/SKILL.md",
+    "installed_sha256": "7ad0599dc31e7d73084461f42aaa1367d547691ca31fc76914d270dc902c8797",
+    "validation_report": "reports/competition-skill-20260912-validation.md",
+    "reading": "5 books: 3 author-provided text selections, 2 official companions/previews; 5 practitioner texts read",
+    "pilot": "v0.1.0 with/no skill: 15/16 vs 14/16 assertions; v0.1.1/previous regression: both 4/4; no statistical or competition uplift claim",
+    "growth": "Versioned guidance with forward review; not model-weight training or background execution",
+    "new_strategy_simulations": 0
+  },
   "latest_synthesis_report": "reports/macro-20260912-report.md",
   "research_memory": "research-memory.json",
   "research_tracks": "RESEARCH_TRACKS.md",

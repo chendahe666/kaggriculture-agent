@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "H上保留M与N公平控制，不以仅N重训后对季节基线的比较声称胜过M。", "passed": true, "evidence": "冻结现有M/N并在同一H免费预测；明确季节基线不能替代M，只重训N会混入新增数据收益。"},
+    {"text": "不超过一次完整训练，说明确认、选型、重训时点且不反复偷看H。", "passed": true, "evidence": "先H配对确认选M或N，最后才用一次训练；H标签届时可用才纳入，且不再是重训模型独立验证。"},
+    {"text": "无须等无关track；仍检验单模块耦合、正确性、完整结果且区分评估与提交授权。", "passed": true, "evidence": "交易排序可单独构成范围，检查触发、合法性、全局收益、共享资源、恢复与新样本；实际提交需明确授权。"},
+    {"text": "给出32/128/256次数及28/52/84毫秒，公平比较并核验尾部/最坏延迟。", "passed": true, "evidence": "明确0/32/128/256及20/28/52/84毫秒；旧新排序同128次、同对手种子换位，核验目标CPU尾部、最坏局面与回退。"}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0},
+  "reviewer": "Primary agent, final-output inspection; configuration visible",
+  "limitations": "Targeted diagnostic regression, one fresh-context run. No full executor trace or token/timing data. Not proof of skill or competition-score improvement."
+}
