@@ -1,6 +1,6 @@
 {
   "updated_local_date": "2026-09-11",
-  "status": "macro_research_memory_complete_no_promotion_waiting_direction_approval",
+  "status": "macro_research_memory_complete_no_promotion_track_p_direction_approved_not_started",
   "latest_synthesis_report": "reports/macro-20260912-report.md",
   "research_memory": "research-memory.json",
   "research_tracks": "RESEARCH_TRACKS.md",
@@ -8,7 +8,7 @@
   "latest_optimization_report": "reports/p1-20260912-report.md",
   "latest_experiment_index": "results/feed-20260912/experiment-index.json",
   "latest_optimization_result": "9 candidates, 296 simulations, 45 tests; no promoted variant. netting own 7/20 unchanged, fixed top30 6/30 unchanged; jit1 own 4/20; reserve6 2/20",
-  "pending_direction_request": "Approve isolated state-driven production/transport task planner, retaining COK fallback; async question sent with evidence, no reply yet",
+  "pending_direction_request": null,
   "active_study": "results/elite-20260912/corpus.json",
   "active_study_report": "reports/elite-study-20260912-report.md",
   "dataset_preview": "datasets/elite-20260912-v0.1.0",
@@ -32,8 +32,8 @@
   "canonical_economic_audit": "results/current-corpus-calibration-v2.json",
   "aggregate_report": "results/research-report-20260911.json",
   "external_data_access": "official Kaggle CLI works; no credentials or manual replay downloads currently needed",
-  "next_proposed_track": "P in RESEARCH_TRACKS.md: isolated state-driven production/transport planning, pending direction approval; maintain E/G evidence controls, retain COK baseline",
-  "reason_for_pause": "Local inventory patch family has no outcome uplift after mechanism fixes, ablations and broader controls. Await requested approval before changing main approach to state-driven task planning; not a claim that all algorithms are exhausted.",
+  "next_proposed_track": "P in RESEARCH_TRACKS.md: isolated state-driven production/transport planning is direction-approved but not started; maintain E/G evidence controls and retain the COK baseline",
+  "reason_for_pause": "Local inventory patch family has no outcome uplift after mechanism fixes, ablations and broader controls. Track P direction is approved, but no new planner experiment has started in this checkpoint; this is not a claim that all algorithms are exhausted.",
   "direction_approval": "2026-09-11: user replied 好的 to proposed Track P and requested per-version GitHub records; checkpoint first, preserve COK control",
   "resume_after_approval": [
     "Read OPTIMIZATION_LOG.md and begin a round with hypotheses and evaluation design in chat",
