@@ -72,3 +72,15 @@ py -3.13 -X utf8 kaggriculture-prize-lab/scripts/summarize_competition_skill_eva
 已实现、测试、安装可复用skill，并完成一次有缺陷记录的修订。它扩大可探索方法、明确实验要求；研究效率与真实胜率的收益仍待未来实测。
 
 本轮没有新策略候选、游戏对局、模型训练、Kaggle提交、付费API或后台任务；未改变原始回放或数据集许可。GitHub按既有授权存档，状态以实际远端核验和交付记录为准。下一步可在已批准Track P内使用新框架设计异构探针，不把文献研究当作已完成规划器。
+
+### GitHub同步与最小操作卡
+
+初版 `0bd9356`、修订版 `a6b3294` 已在本地Git分别记录，提交正文包含方法、评价和真实结果。558个白名单文件逐字节一致。远端仍为 `31e8d2a642fe0857b7f6b79a6d11c6396a83d855`：普通推送卡在凭据处理后已取消，非交互重试明确缺少认证；本轮未上传成功，最后状态另作本地checkpoint。
+
+需要的外部帮助仅是本机GitHub登录，不需要发送密码/token。可在本机终端运行下列命令，并按Git凭据管理器的提示完成官方登录；这会将已审查提交普通推送至既定仓库，不会提交Kaggle：
+
+```powershell
+git -C "C:\Users\chend\OneDrive\文档\ChatGPT\kaggle-agriculture\kaggriculture-agent" push origin main
+```
+
+登录或推送完成后告知“GitHub登录好了”，后续只需核验远端并补同步状态，不重跑书籍研究或评测。若没有登录提示，提供脱敏错误信息即可；不要复制凭据内容。

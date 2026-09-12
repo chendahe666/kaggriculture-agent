@@ -303,8 +303,8 @@
     },
     {
       "path": "OPTIMIZATION_LOG.md",
-      "sha256": "281673b5cf8421284409a05c3a4b98f692b35320b9b53a8d093b0363e1531c44",
-      "bytes": 23402
+      "sha256": "95fff65fb4421b39648bd187242c43576f5fd8c7d50db583af39f350c1cb12c4",
+      "bytes": 23975
     },
     {
       "path": "PIPELINE_PROMPT.md",
@@ -373,8 +373,8 @@
     },
     {
       "path": "reports/competition-skill-20260912-validation.md",
-      "sha256": "fd1110fa29925ff6b096f1d40136234cbb4450606be6a8a669a44d7c27c55523",
-      "bytes": 6560
+      "sha256": "4084fa1256af50bf2af9877fe72acf25b5fad27bd7a1ead533c6365483dfb3b0",
+      "bytes": 7549
     },
     {
       "path": "reports/elite-20260912/16621799.md",
@@ -693,8 +693,8 @@
     },
     {
       "path": "research-state.json",
-      "sha256": "10eec5d94be12d5ca38923678e8dfdfeeecc3cc82f72860f15cc5aa837a6234c",
-      "bytes": 5218
+      "sha256": "112aaa91f2be7203b2babfe53b5525d41db5f2165c6d08d4347f78cc7df1f17b",
+      "bytes": 5398
     },
     {
       "path": "RESEARCH.md",
@@ -2493,8 +2493,8 @@
     },
     {
       "path": "scripts/summarize_competition_skill_evals.py",
-      "sha256": "871dc0ad279efb885453582e1c7d0c490eb4702d8b542f3a1df7b298462c071d",
-      "bytes": 5920
+      "sha256": "81a5e3127517fd4d83d629d8534285f9822dc62d80738ddc945c9937de51744b",
+      "bytes": 5958
     },
     {
       "path": "scripts/summarize_elite.py",

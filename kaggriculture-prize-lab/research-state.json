@@ -1,5 +1,5 @@
 {
-  "updated_local_date": "2026-09-11",
+  "updated_local_date": "2026-09-12",
   "status": "competition_research_skill_installed_no_strategy_promotion_track_p_approved_not_started",
   "latest_general_research_report": "reports/competition-research-20260912.md",
   "competition_research_skill": {
@@ -28,7 +28,7 @@
   "dataset_license": "pending owner approval; public research preview, not an open-license release",
   "study_scope": "frozen top30, one active submission per team, 20 public games each; 600 references, 438 unique episodes; all development, future holdout not acquired",
   "github_repository": "https://github.com/chendahe666/kaggriculture-agent",
-  "github_sync_status": "success: 13 P0/P1/MR-1 research commits were pushed to origin/main and independently verified at adafb59cb1373a2d1d81ad038772ddb320bbee4b; this status-record checkpoint follows without changing the research conclusions",
+  "github_sync_status": "CR-1 pending authentication: local version commits 0bd9356 (v0.1.0) and a6b3294 (v0.1.1) are not pushed. Remote main independently verified at 31e8d2a642fe0857b7f6b79a6d11c6396a83d855. Ordinary push waited in credential manager and was cancelled; noninteractive retry failed to obtain credentials. A final status/reproducibility checkpoint follows locally. Prior P0/P1/MR-1 sync remains successful.",
   "github_policy": "one candidate and its version report per commit; push and verify remote; no Kaggle submission implied",
   "active_baseline": "public-baseline-v10/main.py",
   "online_submissions": [56156204, 56156051],

@@ -5,7 +5,6 @@ from pathlib import Path
 import statistics
 
 LAB = Path(__file__).resolve().parents[1]
-SKILL = LAB / 'skills' / 'competition-research'
 WORK = LAB / 'skills' / 'competition-research-workspace' / 'iteration-1'
 
 
@@ -15,7 +14,8 @@ def write_json(path, data):
 
 
 def main():
-    evals = json.loads((SKILL / 'evals' / 'evals.json').read_text(encoding='utf-8'))['evals']
+    # Reproduce the frozen pilot even after the live skill/eval suite grows.
+    evals = json.loads((WORK / 'skill' / 'evals' / 'evals.json').read_text(encoding='utf-8'))['evals']
     runs = []
     names = {1: 'prediction-validation', 2: 'nontransitive-policies', 3: 'bounded-search-learning'}
     for case in evals:
