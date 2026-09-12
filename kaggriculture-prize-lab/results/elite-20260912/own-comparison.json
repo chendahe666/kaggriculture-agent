@@ -1,0 +1,136 @@
+{
+  "note": "unmatched historical own sample vs current elite cohort; descriptive, not causal",
+  "own_games": 20,
+  "own_metrics": {
+    "money": {
+      "median": 76677.5,
+      "min": 44869.0,
+      "max": 144976.0
+    },
+    "wheat_harvest": {
+      "median": 386.0,
+      "min": 383,
+      "max": 386
+    },
+    "wheat_feed": {
+      "median": 321.0,
+      "min": 301,
+      "max": 321
+    },
+    "wheat_bought": {
+      "median": 486.0,
+      "min": 486,
+      "max": 486
+    },
+    "wheat_sold": {
+      "median": 539.0,
+      "min": 517,
+      "max": 552
+    },
+    "wheat_buy_cost": {
+      "median": 20838.5,
+      "min": 18421.0,
+      "max": 22033.0
+    },
+    "wheat_net_trade_cash": {
+      "median": 3075.0,
+      "min": 1921.0,
+      "max": 3735.0
+    },
+    "wheat_seed_cost": {
+      "median": 1290.0,
+      "min": 1290.0,
+      "max": 1290.0
+    },
+    "hire_cost": {
+      "median": 5977.0,
+      "min": 5977.0,
+      "max": 5977.0
+    },
+    "land_cost": {
+      "median": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "sale_revenue": {
+      "median": 114239.5,
+      "min": 85429.0,
+      "max": 184791.0
+    },
+    "purchase_cost": {
+      "median": 33388.5,
+      "min": 30971.0,
+      "max": 34583.0
+    },
+    "overflow_units": {
+      "median": 12.0,
+      "min": 12,
+      "max": 64
+    },
+    "wheat_overflow": {
+      "median": 12.0,
+      "min": 12,
+      "max": 45
+    },
+    "milk_harvest": {
+      "median": 278.0,
+      "min": 189,
+      "max": 279
+    },
+    "wool_harvest": {
+      "median": 120.0,
+      "min": 120,
+      "max": 208
+    },
+    "strawberry_harvest": {
+      "median": 274.0,
+      "min": 264,
+      "max": 274
+    },
+    "fertilizer_bought": {
+      "median": 0.0,
+      "min": 0,
+      "max": 0
+    },
+    "fertilizer_used": {
+      "median": 70.0,
+      "min": 64,
+      "max": 70
+    },
+    "labor_requests": {
+      "median": 6914.0,
+      "min": 6914,
+      "max": 6914
+    },
+    "same_day_buy_sell_days": {
+      "median": 21.0,
+      "min": 21,
+      "max": 21
+    }
+  },
+  "elite_completed_teams": 30,
+  "elite_equal_team_median": {
+    "money": 97404.75,
+    "wheat_harvest": 553.25,
+    "wheat_feed": 337.25,
+    "wheat_bought": 201.75,
+    "wheat_sold": 418.75,
+    "wheat_buy_cost": 6980.0,
+    "wheat_net_trade_cash": 8368.0,
+    "wheat_seed_cost": 1630.0,
+    "hire_cost": 4496.75,
+    "land_cost": 3000.0,
+    "sale_revenue": 127975.75,
+    "purchase_cost": 23629.5,
+    "overflow_units": 1.5,
+    "wheat_overflow": 0.0,
+    "milk_harvest": 190.25,
+    "wool_harvest": 148.75,
+    "strawberry_harvest": 249.0,
+    "fertilizer_bought": 46.5,
+    "fertilizer_used": 104.0,
+    "labor_requests": 6882.75,
+    "same_day_buy_sell_days": 7.0
+  },
+  "elite_teams": 30
+}

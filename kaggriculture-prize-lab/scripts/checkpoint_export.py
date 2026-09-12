@@ -8,7 +8,14 @@ import subprocess
 
 LAB = Path(__file__).resolve().parents[1]
 EXCLUDED = {'.git', '__pycache__', '.pytest_cache', '.local-tmp', 'dist', 'inbox', 'online-replays'}
-TREES = ('candidate', 'experiments', 'official', 'results', 'scripts', 'submissions', 'tests', 'reports', 'licenses')
+TREES = ('candidate', 'experiments', 'official', 'results', 'scripts', 'submissions', 'tests', 'reports', 'licenses', 'datasets')
+
+
+def release_safe(path):
+    rel = path.relative_to(LAB).as_posix()
+    # Intermediate audits contain private-inventory snapshots; publish only
+    # curated economic tables, not these replay-level reconstruction artifacts.
+    return not rel.startswith(('results/elite-20260912/audits/', 'results/elite-20260912/own-audits/'))
 PUBLIC = {
     'public-baseline-v10': ('main.py', 'LICENSE', 'THIRD_PARTY_NOTICES.md'),
     'public-seyam-v21': ('main.py', 'LICENSE', 'THIRD_PARTY_NOTICES.md'),
@@ -24,7 +31,8 @@ def selected_files():
         if root.exists():
             paths.extend(p for p in root.rglob('*') if p.is_file()
                          and not any(part in EXCLUDED for part in p.relative_to(LAB).parts)
-                         and p.suffix in ('.py', '.md', '.json', '.txt'))
+                         and release_safe(p)
+                         and p.suffix in ('.py', '.md', '.json', '.jsonl', '.txt'))
     for folder, files in PUBLIC.items():
         paths.extend(LAB / folder / name for name in files)
     return sorted(set(paths))
@@ -63,7 +71,7 @@ def main():
             raise SystemExit(f'Export mismatch: {rel}')
         records.append({'path': rel.as_posix(), 'sha256': digest, 'bytes': source.stat().st_size})
     manifest = target / 'archive-manifest.json'
-    payload = {'format': 1, 'files': records, 'excluded': ['raw replays', 'credentials', 'Igor source (license unverified)', 'nested Git metadata', 'binary archives']}
+    payload = {'format': 1, 'files': records, 'excluded': ['raw replays', 'elite intermediate private-inventory audit snapshots', 'credentials', 'Igor source (license unverified)', 'nested Git metadata', 'binary archives']}
     if args.check:
         if json.loads(manifest.read_text(encoding='utf-8')) != payload:
             raise SystemExit('Archive manifest differs from the selected source files.')

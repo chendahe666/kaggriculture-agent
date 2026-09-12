@@ -1,0 +1,37 @@
+{
+  "run_id": "elite-20260912-v0.1.0",
+  "exported_utc": "2026-09-12T02:52:30.873803+00:00",
+  "local_date_convention": "America/Chicago: 2026-09-11; UTC date: 2026-09-12",
+  "python": "3.13.12",
+  "kaggle_environments": "1.32.7",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "manifest_sha256": "43a0e7c9ba1c6bee203e1ccf1c609b72550807011183ef69fbaa13794c10d2bf",
+  "team_metadata_sha256": "9ec27e17e44d29d9dabe11a1090a8acf18b266038d42334d285cfcb9ae927b1d",
+  "analysis_source_sha256": {
+    "collect_elite_corpus.py": "45d1d6e659404af97ec7cfd014b5668f8be8cd724bfcc488dc465cdc94298167",
+    "elite_economics.py": "542b32b77ed3788a6cb9aa915913efce888aa3001b35c7d377ec3134e0944453",
+    "summarize_elite.py": "0904d63c55e4a31c37dab3b71a4147331f88769022f0002c5511e2a8d1d08caa",
+    "build_elite_dataset.py": "a6c913c2ec204f52eadd8d69370218f10943c46162c63c3ce0a17cf6c3a7d309",
+    "validate_elite_dataset.py": "4fdfda382617b6825b170ab0cf2d30927f2e08e598dcbfc85cd34843b59c1f06",
+    "research_cycle.py": "48df447e5be1389e425af2769e2bf39b5c36898db45d19ef0b2c5d1abfc1e211",
+    "analyze_online_replays.py": "26109840e2d1057f4975042f34e1b150b834e95a164236dcbfa271f8a5b739cb"
+  },
+  "method": "official-engine state-by-state calibration plus instrumented successful transaction and unit-action accounting",
+  "unit_of_analysis": "episode/seat; cluster by episode and strategy family, not by frame",
+  "split": "development only; prospective holdout must be acquired after model freeze",
+  "publication_state": "draft; licensing approval and final QA required",
+  "quality": {
+    "cohort_teams": 30,
+    "unique_episodes": 438,
+    "selected_references": 600,
+    "audited_player_rows": 600,
+    "daily_rows": 18000,
+    "missing_audit_ids": [],
+    "invalid_audit_ids": [],
+    "complete": true,
+    "duplicate_player_keys": 0,
+    "client_clock_acquisition_times": 0,
+    "mtime_proxy_acquisition_times": 438,
+    "raw_bytes_kept_local": 14288084612
+  }
+}

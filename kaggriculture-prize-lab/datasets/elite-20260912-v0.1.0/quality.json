@@ -1,0 +1,14 @@
+{
+  "cohort_teams": 30,
+  "unique_episodes": 438,
+  "selected_references": 600,
+  "audited_player_rows": 600,
+  "daily_rows": 18000,
+  "missing_audit_ids": [],
+  "invalid_audit_ids": [],
+  "complete": true,
+  "duplicate_player_keys": 0,
+  "client_clock_acquisition_times": 0,
+  "mtime_proxy_acquisition_times": 438,
+  "raw_bytes_kept_local": 14288084612
+}

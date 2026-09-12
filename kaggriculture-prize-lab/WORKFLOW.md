@@ -4,6 +4,8 @@
 
 ## 先读什么
 
+数据采集与公开复现新增入口：[标准数据记录](DATA_COLLECTION_PROTOCOL.md)；首批 [数据集说明](datasets/elite-20260912-v0.1.0/README.md) 和 [采集时排名/评分表](datasets/elite-20260912-v0.1.0/COLLECTION_RECORD.md)。榜单评分、游戏金币、赛前未知评分与下载近似时间严格分开。
+
 版本留痕新增入口：[VERSIONING.md](VERSIONING.md)。每个候选代码与报告独立提交至用户指定 GitHub 仓库；失败也存档，发布门禁不变。用户已同意下一轮 Track P，并允许仓库根 main.py 更新为 COK 同款基线。
 
 1. 本文件：评价体系、决策流程、人机交互。

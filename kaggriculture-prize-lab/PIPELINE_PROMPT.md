@@ -38,6 +38,10 @@
 
 ## 输出标准
 
+### 可发布数据与标准分析记录
+
+每次采集和分析遵循 DATA_COLLECTION_PROTOCOL.md。必须登记采集时间及精度、批次排名/评分、固定版本、对局时间/席位/哈希，赛前分数未知时保留 null。分析记录代码与引擎哈希、实际经济流水、校准和覆盖。冻结每批历史快照；不把未来排名/商店用于在线特征。公开数据集应带数据字典、采样偏差、质量报告和校验和，原始回放不默认再分发。许可待确认时仅标记发布候选，不宣称开放许可已生效。
+
 ### GitHub 版本留痕（用户于 2026-09-11 授权）
 
 目标仓库固定为 https://github.com/chendahe666/kaggriculture-agent 。本地研究工作区保持不动，用 scripts/checkpoint_export.py 将白名单文件按原始字节同步至相邻 kaggriculture-agent/kaggriculture-prize-lab。用户随后明确允许覆盖原代码：仓库根 main.py 更新为当前线上同款 COK V10，早期路线保留在 Git 历史；实验候选不得未经门禁替换它。

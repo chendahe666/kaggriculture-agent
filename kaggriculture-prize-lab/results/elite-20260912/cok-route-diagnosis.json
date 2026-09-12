@@ -1,0 +1,1602 @@
+{
+  "source_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "evidence": "unchanged selector on original recorded observations, not counterfactual strength test",
+  "games": [
+    {
+      "episode_id": 107992327,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 107958155,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 216,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "BAKERY"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107942319,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 144,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    {
+      "episode_id": 107933422,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 107921312,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 144,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107903783,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 216,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107902265,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 144,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": "10c4s_3q",
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": "10c4s_3q",
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 107872505,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107842902,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 144,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BAKERY",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    {
+      "episode_id": 107814544,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 216,
+          "route": "current:6c8s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "6c8s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "6c8s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "PET_CAFE"
+      ]
+    },
+    {
+      "episode_id": 107801749,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107798158,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 72,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107782314,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 72,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP",
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107760289,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 72,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107743853,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 144,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "episode_id": 107727172,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 72,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PIZZA_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "episode_id": 107713155,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 144,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 107712380,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "BRUNCH_SPOT",
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "episode_id": 107710185,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BAKERY"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "PET_CAFE",
+            "BAKERY"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "PET_CAFE",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "episode_id": 107709162,
+      "switches": [
+        {
+          "step": 0,
+          "route": "current:8c6s_3q"
+        },
+        {
+          "step": 72,
+          "route": "current:10c4s_3q"
+        }
+      ],
+      "checkpoints": {
+        "24": {
+          "last_step": 24,
+          "legacy": false,
+          "label": "8c6s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": null,
+          "v5_shops": [],
+          "v5_expert": null
+        },
+        "72": {
+          "last_step": 72,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "168": {
+          "last_step": 168,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP",
+            "PIZZA_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "240": {
+          "last_step": 240,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP",
+            "PIZZA_SHOP"
+          ],
+          "v5_expert": null
+        },
+        "718": {
+          "last_step": 718,
+          "legacy": false,
+          "label": "10c4s_3q",
+          "third_yarn_milk": null,
+          "v5_gate": false,
+          "v5_shops": [
+            "SMOOTHIE_SHOP",
+            "PIZZA_SHOP"
+          ],
+          "v5_expert": null
+        }
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY"
+      ]
+    }
+  ]
+}
