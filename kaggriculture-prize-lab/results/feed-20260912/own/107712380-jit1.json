@@ -1,0 +1,187 @@
+{
+  "rewards": [
+    56035.0,
+    59632.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 539,
+      "FERTILIZER": 236,
+      "WOOL": 160,
+      "MILK": 237,
+      "MELON": 72,
+      "STRAWBERRY": 274,
+      "CARROT": 11
+    },
+    {
+      "WHEAT": 244,
+      "FERTILIZER": 235,
+      "WOOL": 162,
+      "MILK": 230,
+      "MELON": 72,
+      "STRAWBERRY": 272,
+      "CARROT": 8
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 25112,
+      "FERTILIZER": 12439,
+      "WOOL": 7203,
+      "MILK": 4698,
+      "MELON": 14211,
+      "STRAWBERRY": 32012,
+      "CARROT": 743
+    },
+    {
+      "WHEAT": 11399,
+      "FERTILIZER": 12543,
+      "WOOL": 9853,
+      "MILK": 4465,
+      "MELON": 14310,
+      "STRAWBERRY": 33092,
+      "CARROT": 533
+    }
+  ],
+  "floor_units": [
+    {
+      "MILK": 169,
+      "WOOL": 81,
+      "STRAWBERRY": 32
+    },
+    {
+      "MILK": 155,
+      "WOOL": 44,
+      "STRAWBERRY": 31
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 2,
+      "SELL:WOOL": 9,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72,
+      "SELL:MILK": 9,
+      "SELL:STRAWBERRY": 3
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 190,
+      "SELL:MILK": 14,
+      "SELL:WOOL": 12,
+      "SELL:STRAWBERRY": 7,
+      "SELL:CARROT": 1
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 3200.0,
+      "BUY_ANIMAL:SHEEP": 3000.0,
+      "BUY_SEED:WHEAT": 1330.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 21456.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 260.0
+    },
+    {
+      "BUY_ANIMAL:COW": 3200.0,
+      "BUY_ANIMAL:SHEEP": 3000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 7836.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    }
+  ],
+  "max_call_ms": [
+    0.104,
+    106.862
+  ],
+  "shops": [
+    "BRUNCH_SPOT",
+    "PET_CAFE",
+    "BAKERY",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "FARMERS_MARKET",
+    "YARN_STORE",
+    "PIZZA_SHOP"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "job": {
+    "kind": "own",
+    "variant": "jit1",
+    "episode_id": 107712380,
+    "path": "inbox\\replays\\episode-107712380-replay.json",
+    "seat": 1,
+    "key": "own/107712380-jit1.json"
+  },
+  "candidate_sha256": "f307f4affd0d8f5b885cb656bbee41b0bda2eebfb62e99ea52e7af3d796b9c28",
+  "started_utc": "2026-09-12T03:36:29.180648+00:00",
+  "completed_utc": "2026-09-12T03:36:34.448344+00:00",
+  "runner_sha256": "08a866fc67a8ce593b60956dfb380d617ec8d83b3becc81b7035a6b4edf42c10",
+  "source_sha256": "629ac737dfcc9690b09b74c7cd6e300241e3d604c4d7e0f968b76eac62f3bafc",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "fixed_opponent_tape_development",
+  "safety": [
+    {
+      "feed_success": 320,
+      "unfed_animal_days": 9,
+      "escaped_animals": 0,
+      "overflow_units": 12,
+      "wheat_overflow": 12,
+      "wheat_harvest": 386,
+      "feed_failed_no_wheat": 1
+    },
+    {
+      "feed_success": 316,
+      "unfed_animal_days": 13,
+      "escaped_animals": 0,
+      "overflow_units": 25,
+      "wheat_overflow": 19,
+      "wheat_harvest": 386,
+      "feed_failed_no_wheat": 5
+    }
+  ],
+  "policy_diagnostics": {
+    "changed_steps": 195,
+    "no_emergency_slot": 1
+  },
+  "margin": 3597.0,
+  "shop_path_matches_recording": true
+}

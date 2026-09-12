@@ -1,0 +1,4362 @@
+{
+  "own": {
+    "delivery-early": {
+      "paired_games": 4,
+      "baseline_wins": 1,
+      "candidate_wins": 1,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": -4.5,
+      "mean_wheat_cost_delta": 0.0,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 0,
+      "all_clean": true,
+      "max_call_ms": 125.659,
+      "comparisons": [
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -19138.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 125.659
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30087.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 105.714
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -17001.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 106.526
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": 376.0,
+          "gain_points": 0,
+          "delta_margin": -6.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 102.298
+        }
+      ]
+    },
+    "feed-guard": {
+      "paired_games": 4,
+      "baseline_wins": 1,
+      "candidate_wins": 0,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 1,
+      "mean_point_gain": -0.25,
+      "mean_margin_gain": -1845.25,
+      "mean_wheat_cost_delta": 4308.25,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 4,
+      "all_clean": true,
+      "max_call_ms": 116.499,
+      "comparisons": [
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -22103.0,
+          "gain_points": 0,
+          "delta_margin": -2969.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 85,
+            "wheat_overflow": 30
+          },
+          "wheat_cost_delta": 4364.0,
+          "clean": true,
+          "max_call_ms": 116.499
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30727.0,
+          "gain_points": 0,
+          "delta_margin": -644.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": 4038.0,
+          "clean": true,
+          "max_call_ms": 105.726
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -17812.0,
+          "gain_points": 0,
+          "delta_margin": -815.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -2,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": 4258.0,
+          "clean": true,
+          "max_call_ms": 114.44
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": -2571.0,
+          "gain_points": -1,
+          "delta_margin": -2953.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 85,
+            "wheat_overflow": 30
+          },
+          "wheat_cost_delta": 4573.0,
+          "clean": true,
+          "max_call_ms": 100.595
+        }
+      ]
+    },
+    "idle-delivery": {
+      "paired_games": 4,
+      "baseline_wins": 1,
+      "candidate_wins": 1,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": 0.0,
+      "mean_wheat_cost_delta": 0.0,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 0,
+      "all_clean": true,
+      "max_call_ms": 102.206,
+      "comparisons": [
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -19134.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 102.206
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30083.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 86.735
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -16997.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 98.432
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": 382.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": 0.0,
+          "clean": true,
+          "max_call_ms": 89.135
+        }
+      ]
+    },
+    "jit-aware": {
+      "paired_games": 4,
+      "baseline_wins": 1,
+      "candidate_wins": 0,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 1,
+      "mean_point_gain": -0.25,
+      "mean_margin_gain": -1913.0,
+      "mean_wheat_cost_delta": -13079.0,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 4,
+      "all_clean": true,
+      "max_call_ms": 113.05,
+      "comparisons": [
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -22114.0,
+          "gain_points": 0,
+          "delta_margin": -2980.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 85,
+            "wheat_overflow": 31
+          },
+          "wheat_cost_delta": -12520.0,
+          "clean": true,
+          "max_call_ms": 100.498
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30726.0,
+          "gain_points": 0,
+          "delta_margin": -643.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -13202.0,
+          "clean": true,
+          "max_call_ms": 104.423
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -17866.0,
+          "gain_points": 0,
+          "delta_margin": -869.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -2,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -13539.0,
+          "clean": true,
+          "max_call_ms": 84.873
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": -2778.0,
+          "gain_points": -1,
+          "delta_margin": -3160.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 85,
+            "wheat_overflow": 31
+          },
+          "wheat_cost_delta": -13055.0,
+          "clean": true,
+          "max_call_ms": 113.05
+        }
+      ]
+    },
+    "jit-busy": {
+      "paired_games": 4,
+      "baseline_wins": 1,
+      "candidate_wins": 0,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 1,
+      "mean_point_gain": -0.25,
+      "mean_margin_gain": -1905.5,
+      "mean_wheat_cost_delta": -12371.5,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 4,
+      "all_clean": true,
+      "max_call_ms": 99.913,
+      "comparisons": [
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -22112.0,
+          "gain_points": 0,
+          "delta_margin": -2978.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 85,
+            "wheat_overflow": 31
+          },
+          "wheat_cost_delta": -11815.0,
+          "clean": true,
+          "max_call_ms": 90.217
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30720.0,
+          "gain_points": 0,
+          "delta_margin": -637.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -12462.0,
+          "clean": true,
+          "max_call_ms": 88.501
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -17859.0,
+          "gain_points": 0,
+          "delta_margin": -862.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -2,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -12888.0,
+          "clean": true,
+          "max_call_ms": 99.913
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": -2763.0,
+          "gain_points": -1,
+          "delta_margin": -3145.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 85,
+            "wheat_overflow": 31
+          },
+          "wheat_cost_delta": -12321.0,
+          "clean": true,
+          "max_call_ms": 97.469
+        }
+      ]
+    },
+    "jit-return": {
+      "paired_games": 4,
+      "baseline_wins": 1,
+      "candidate_wins": 0,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 1,
+      "mean_point_gain": -0.25,
+      "mean_margin_gain": -1708.5,
+      "mean_wheat_cost_delta": -14530.0,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 4,
+      "more_overflow_games": 4,
+      "all_clean": true,
+      "max_call_ms": 99.308,
+      "comparisons": [
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -21104.0,
+          "gain_points": 0,
+          "delta_margin": -1970.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 2,
+            "escaped_animals": -2,
+            "overflow_units": 53,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -13799.0,
+          "clean": true,
+          "max_call_ms": 99.308
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -31535.0,
+          "gain_points": 0,
+          "delta_margin": -1452.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 10,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -14804.0,
+          "clean": true,
+          "max_call_ms": 2.422
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -16951.0,
+          "gain_points": 0,
+          "delta_margin": 46.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 8,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -15184.0,
+          "clean": true,
+          "max_call_ms": 98.054
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": -3076.0,
+          "gain_points": -1,
+          "delta_margin": -3458.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 2,
+            "escaped_animals": -2,
+            "overflow_units": 53,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -14333.0,
+          "clean": true,
+          "max_call_ms": 97.287
+        }
+      ]
+    },
+    "jit1": {
+      "paired_games": 20,
+      "baseline_wins": 7,
+      "candidate_wins": 4,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 3,
+      "mean_point_gain": -0.15,
+      "mean_margin_gain": -1701.3,
+      "mean_wheat_cost_delta": -13047.9,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 16,
+      "more_overflow_games": 20,
+      "all_clean": true,
+      "max_call_ms": 115.883,
+      "comparisons": [
+        {
+          "key": [
+            107709162,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -8774.0,
+          "candidate_margin": -10737.0,
+          "gain_points": 0,
+          "delta_margin": -1963.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -12340.0,
+          "clean": true,
+          "max_call_ms": 104.608
+        },
+        {
+          "key": [
+            107710185,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 1960.0,
+          "candidate_margin": 1073.0,
+          "gain_points": 0,
+          "delta_margin": -887.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 13,
+            "wheat_overflow": 7
+          },
+          "wheat_cost_delta": -13637.0,
+          "clean": true,
+          "max_call_ms": 97.383
+        },
+        {
+          "key": [
+            107712380,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 4574.0,
+          "candidate_margin": 3597.0,
+          "gain_points": 0,
+          "delta_margin": -977.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 13,
+            "wheat_overflow": 7
+          },
+          "wheat_cost_delta": -13697.0,
+          "clean": true,
+          "max_call_ms": 106.862
+        },
+        {
+          "key": [
+            107713155,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -5455.0,
+          "candidate_margin": -6856.0,
+          "gain_points": 0,
+          "delta_margin": -1401.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -12537.0,
+          "clean": true,
+          "max_call_ms": 104.342
+        },
+        {
+          "key": [
+            107727172,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 23445.0,
+          "candidate_margin": 21709.0,
+          "gain_points": 0,
+          "delta_margin": -1736.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13765.0,
+          "clean": true,
+          "max_call_ms": 92.161
+        },
+        {
+          "key": [
+            107743853,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -11696.0,
+          "candidate_margin": -12701.0,
+          "gain_points": 0,
+          "delta_margin": -1005.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 2,
+            "escaped_animals": -1,
+            "overflow_units": 8,
+            "wheat_overflow": 4
+          },
+          "wheat_cost_delta": -12402.0,
+          "clean": true,
+          "max_call_ms": 89.146
+        },
+        {
+          "key": [
+            107760289,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 1314.0,
+          "candidate_margin": -728.0,
+          "gain_points": -1,
+          "delta_margin": -2042.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 11,
+            "wheat_overflow": 7
+          },
+          "wheat_cost_delta": -13475.0,
+          "clean": true,
+          "max_call_ms": 115.883
+        },
+        {
+          "key": [
+            107782314,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -2298.0,
+          "candidate_margin": -3980.0,
+          "gain_points": 0,
+          "delta_margin": -1682.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13663.0,
+          "clean": true,
+          "max_call_ms": 91.938
+        },
+        {
+          "key": [
+            107798158,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -1117.0,
+          "candidate_margin": -2374.0,
+          "gain_points": 0,
+          "delta_margin": -1257.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13303.0,
+          "clean": true,
+          "max_call_ms": 111.176
+        },
+        {
+          "key": [
+            107801749,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -16569.0,
+          "candidate_margin": -19702.0,
+          "gain_points": 0,
+          "delta_margin": -3133.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -2,
+            "overflow_units": 53,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -12844.0,
+          "clean": true,
+          "max_call_ms": 96.404
+        },
+        {
+          "key": [
+            107814544,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 2.0,
+          "candidate_margin": -1773.0,
+          "gain_points": -1,
+          "delta_margin": -1775.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 15,
+            "wheat_overflow": 10
+          },
+          "wheat_cost_delta": -12490.0,
+          "clean": true,
+          "max_call_ms": 95.358
+        },
+        {
+          "key": [
+            107842902,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -5713.0,
+          "candidate_margin": -7623.0,
+          "gain_points": 0,
+          "delta_margin": -1910.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13451.0,
+          "clean": true,
+          "max_call_ms": 3.558
+        },
+        {
+          "key": [
+            107872505,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -26388.0,
+          "candidate_margin": -29251.0,
+          "gain_points": 0,
+          "delta_margin": -2863.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -2,
+            "overflow_units": 53,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -12962.0,
+          "clean": true,
+          "max_call_ms": 2.202
+        },
+        {
+          "key": [
+            107902265,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 2002.0,
+          "candidate_margin": 1168.0,
+          "gain_points": 0,
+          "delta_margin": -834.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 4,
+            "escaped_animals": 0,
+            "overflow_units": 7,
+            "wheat_overflow": 3
+          },
+          "wheat_cost_delta": -11657.0,
+          "clean": true,
+          "max_call_ms": 106.581
+        },
+        {
+          "key": [
+            107903783,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -36835.0,
+          "candidate_margin": -38037.0,
+          "gain_points": 0,
+          "delta_margin": -1202.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -11776.0,
+          "clean": true,
+          "max_call_ms": 103.124
+        },
+        {
+          "key": [
+            107921312,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -9824.0,
+          "candidate_margin": -11805.0,
+          "gain_points": 0,
+          "delta_margin": -1981.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13120.0,
+          "clean": true,
+          "max_call_ms": 94.555
+        },
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -21331.0,
+          "gain_points": 0,
+          "delta_margin": -2197.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -2,
+            "overflow_units": 53,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -12884.0,
+          "clean": true,
+          "max_call_ms": 101.38
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -31511.0,
+          "gain_points": 0,
+          "delta_margin": -1428.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 5,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13551.0,
+          "clean": true,
+          "max_call_ms": 96.114
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -17138.0,
+          "gain_points": 0,
+          "delta_margin": -141.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 3,
+            "escaped_animals": 0,
+            "overflow_units": 12,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -14009.0,
+          "clean": true,
+          "max_call_ms": 82.653
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": -3230.0,
+          "gain_points": -1,
+          "delta_margin": -3612.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -2,
+            "overflow_units": 53,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -13395.0,
+          "clean": true,
+          "max_call_ms": 99.472
+        }
+      ]
+    },
+    "netting": {
+      "paired_games": 20,
+      "baseline_wins": 7,
+      "candidate_wins": 7,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": 3.8,
+      "mean_wheat_cost_delta": -1546.0,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 0,
+      "all_clean": true,
+      "max_call_ms": 126.878,
+      "comparisons": [
+        {
+          "key": [
+            107709162,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -8774.0,
+          "candidate_margin": -8774.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1401.0,
+          "clean": true,
+          "max_call_ms": 96.151
+        },
+        {
+          "key": [
+            107710185,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 1960.0,
+          "candidate_margin": 1978.0,
+          "gain_points": 0,
+          "delta_margin": 18.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1573.0,
+          "clean": true,
+          "max_call_ms": 109.436
+        },
+        {
+          "key": [
+            107712380,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 4574.0,
+          "candidate_margin": 4576.0,
+          "gain_points": 0,
+          "delta_margin": 2.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1577.0,
+          "clean": true,
+          "max_call_ms": 124.692
+        },
+        {
+          "key": [
+            107713155,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -5455.0,
+          "candidate_margin": -5455.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1423.0,
+          "clean": true,
+          "max_call_ms": 108.943
+        },
+        {
+          "key": [
+            107727172,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 23445.0,
+          "candidate_margin": 23449.0,
+          "gain_points": 0,
+          "delta_margin": 4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1587.0,
+          "clean": true,
+          "max_call_ms": 3.73
+        },
+        {
+          "key": [
+            107743853,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -11696.0,
+          "candidate_margin": -11696.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1595.0,
+          "clean": true,
+          "max_call_ms": 116.815
+        },
+        {
+          "key": [
+            107760289,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 1314.0,
+          "candidate_margin": 1318.0,
+          "gain_points": 0,
+          "delta_margin": 4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1552.0,
+          "clean": true,
+          "max_call_ms": 103.185
+        },
+        {
+          "key": [
+            107782314,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -2298.0,
+          "candidate_margin": -2280.0,
+          "gain_points": 0,
+          "delta_margin": 18.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1567.0,
+          "clean": true,
+          "max_call_ms": 31.218
+        },
+        {
+          "key": [
+            107798158,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -1117.0,
+          "candidate_margin": -1117.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1518.0,
+          "clean": true,
+          "max_call_ms": 3.16
+        },
+        {
+          "key": [
+            107801749,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -16569.0,
+          "candidate_margin": -16569.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1466.0,
+          "clean": true,
+          "max_call_ms": 126.878
+        },
+        {
+          "key": [
+            107814544,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 2.0,
+          "candidate_margin": 36.0,
+          "gain_points": 0,
+          "delta_margin": 34.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1437.0,
+          "clean": true,
+          "max_call_ms": 103.19
+        },
+        {
+          "key": [
+            107842902,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -5713.0,
+          "candidate_margin": -5713.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1550.0,
+          "clean": true,
+          "max_call_ms": 95.195
+        },
+        {
+          "key": [
+            107872505,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -26388.0,
+          "candidate_margin": -26388.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1463.0,
+          "clean": true,
+          "max_call_ms": 2.804
+        },
+        {
+          "key": [
+            107902265,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 2002.0,
+          "candidate_margin": 1998.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -2241.0,
+          "clean": true,
+          "max_call_ms": 94.084
+        },
+        {
+          "key": [
+            107903783,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -36835.0,
+          "candidate_margin": -36835.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1327.0,
+          "clean": true,
+          "max_call_ms": 96.632
+        },
+        {
+          "key": [
+            107921312,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -9824.0,
+          "candidate_margin": -9824.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1499.0,
+          "clean": true,
+          "max_call_ms": 103.708
+        },
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -19134.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1464.0,
+          "clean": true,
+          "max_call_ms": 100.739
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30083.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1544.0,
+          "clean": true,
+          "max_call_ms": 110.493
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": -16997.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1604.0,
+          "clean": true,
+          "max_call_ms": 96.951
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": 382.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1532.0,
+          "clean": true,
+          "max_call_ms": 93.547
+        }
+      ]
+    },
+    "reserve6": {
+      "paired_games": 20,
+      "baseline_wins": 7,
+      "candidate_wins": 2,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 1,
+      "negative_outcome_flips": 6,
+      "mean_point_gain": -0.25,
+      "mean_margin_gain": -4217.15,
+      "mean_wheat_cost_delta": -3953.4,
+      "shop_changed_games": 20,
+      "more_escapes_games": 5,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 20,
+      "all_clean": true,
+      "max_call_ms": 134.943,
+      "comparisons": [
+        {
+          "key": [
+            107709162,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -8774.0,
+          "candidate_margin": -14910.0,
+          "gain_points": 0,
+          "delta_margin": -6136.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -5802.0,
+          "clean": true,
+          "max_call_ms": 105.784
+        },
+        {
+          "key": [
+            107710185,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 1960.0,
+          "candidate_margin": -6909.0,
+          "gain_points": -1,
+          "delta_margin": -8869.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 98,
+            "wheat_overflow": 36
+          },
+          "wheat_cost_delta": -7100.0,
+          "clean": true,
+          "max_call_ms": 90.702
+        },
+        {
+          "key": [
+            107712380,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 4574.0,
+          "candidate_margin": -741.0,
+          "gain_points": -1,
+          "delta_margin": -5315.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -5849.0,
+          "clean": true,
+          "max_call_ms": 121.324
+        },
+        {
+          "key": [
+            107713155,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -5455.0,
+          "candidate_margin": -17669.0,
+          "gain_points": 0,
+          "delta_margin": -12214.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -5066.0,
+          "clean": true,
+          "max_call_ms": 2.306
+        },
+        {
+          "key": [
+            107727172,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 23445.0,
+          "candidate_margin": 18551.0,
+          "gain_points": 0,
+          "delta_margin": -4894.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -6381.0,
+          "clean": true,
+          "max_call_ms": 85.367
+        },
+        {
+          "key": [
+            107743853,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -11696.0,
+          "candidate_margin": -22652.0,
+          "gain_points": 0,
+          "delta_margin": -10956.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -1,
+            "overflow_units": 208,
+            "wheat_overflow": 83
+          },
+          "wheat_cost_delta": -4513.0,
+          "clean": true,
+          "max_call_ms": 108.85
+        },
+        {
+          "key": [
+            107760289,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 1314.0,
+          "candidate_margin": -49218.0,
+          "gain_points": -1,
+          "delta_margin": -50532.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 407,
+            "wheat_overflow": 156
+          },
+          "wheat_cost_delta": -4884.0,
+          "clean": true,
+          "max_call_ms": 94.986
+        },
+        {
+          "key": [
+            107782314,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -2298.0,
+          "candidate_margin": -9925.0,
+          "gain_points": 0,
+          "delta_margin": -7627.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -6850.0,
+          "clean": true,
+          "max_call_ms": 97.34
+        },
+        {
+          "key": [
+            107798158,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -1117.0,
+          "candidate_margin": -22069.0,
+          "gain_points": 0,
+          "delta_margin": -20952.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -7707.0,
+          "clean": true,
+          "max_call_ms": 134.943
+        },
+        {
+          "key": [
+            107801749,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -16569.0,
+          "candidate_margin": -7217.0,
+          "gain_points": 0,
+          "delta_margin": 9352.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": 1,
+            "overflow_units": 184,
+            "wheat_overflow": 62
+          },
+          "wheat_cost_delta": 2395.0,
+          "clean": true,
+          "max_call_ms": 99.776
+        },
+        {
+          "key": [
+            107814544,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 2.0,
+          "candidate_margin": -64.0,
+          "gain_points": -1,
+          "delta_margin": -66.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 56,
+            "wheat_overflow": 22
+          },
+          "wheat_cost_delta": -4436.0,
+          "clean": true,
+          "max_call_ms": 94.36
+        },
+        {
+          "key": [
+            107842902,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -5713.0,
+          "candidate_margin": -5198.0,
+          "gain_points": 0,
+          "delta_margin": 515.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 407,
+            "wheat_overflow": 156
+          },
+          "wheat_cost_delta": -5818.0,
+          "clean": true,
+          "max_call_ms": 97.43
+        },
+        {
+          "key": [
+            107872505,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -26388.0,
+          "candidate_margin": -7781.0,
+          "gain_points": 0,
+          "delta_margin": 18607.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": 1,
+            "overflow_units": 184,
+            "wheat_overflow": 62
+          },
+          "wheat_cost_delta": 1456.0,
+          "clean": true,
+          "max_call_ms": 101.386
+        },
+        {
+          "key": [
+            107902265,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 2002.0,
+          "candidate_margin": -9898.0,
+          "gain_points": -1,
+          "delta_margin": -11900.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 3,
+            "overflow_units": 229,
+            "wheat_overflow": 88
+          },
+          "wheat_cost_delta": 3318.0,
+          "clean": true,
+          "max_call_ms": 110.364
+        },
+        {
+          "key": [
+            107903783,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -36835.0,
+          "candidate_margin": -23616.0,
+          "gain_points": 0,
+          "delta_margin": 13219.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -4908.0,
+          "clean": true,
+          "max_call_ms": 97.685
+        },
+        {
+          "key": [
+            107921312,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -9824.0,
+          "candidate_margin": -8519.0,
+          "gain_points": 0,
+          "delta_margin": 1305.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 3,
+            "overflow_units": 236,
+            "wheat_overflow": 95
+          },
+          "wheat_cost_delta": 2420.0,
+          "clean": true,
+          "max_call_ms": 115.632
+        },
+        {
+          "key": [
+            107933422,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19134.0,
+          "candidate_margin": -27346.0,
+          "gain_points": 0,
+          "delta_margin": -8212.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": 1,
+            "overflow_units": 184,
+            "wheat_overflow": 62
+          },
+          "wheat_cost_delta": -22.0,
+          "clean": true,
+          "max_call_ms": 99.657
+        },
+        {
+          "key": [
+            107942319,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -30083.0,
+          "candidate_margin": -30722.0,
+          "gain_points": 0,
+          "delta_margin": -639.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 68,
+            "wheat_overflow": 29
+          },
+          "wheat_cost_delta": -6750.0,
+          "clean": true,
+          "max_call_ms": 2.073
+        },
+        {
+          "key": [
+            107958155,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -16997.0,
+          "candidate_margin": 21718.0,
+          "gain_points": 1,
+          "delta_margin": 38715.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": -2,
+            "escaped_animals": 0,
+            "overflow_units": 67,
+            "wheat_overflow": 28
+          },
+          "wheat_cost_delta": -6536.0,
+          "clean": true,
+          "max_call_ms": 100.959
+        },
+        {
+          "key": [
+            107992327,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 382.0,
+          "candidate_margin": -17362.0,
+          "gain_points": -1,
+          "delta_margin": -17744.0,
+          "shop_path_changed_vs_baseline": true,
+          "safety_delta": {
+            "feed_failed_no_wheat": -8,
+            "escaped_animals": -2,
+            "overflow_units": 16,
+            "wheat_overflow": -4
+          },
+          "wheat_cost_delta": -6035.0,
+          "clean": true,
+          "max_call_ms": 97.596
+        }
+      ]
+    }
+  },
+  "elite": {
+    "netting": {
+      "paired_games": 48,
+      "baseline_wins": 8,
+      "candidate_wins": 8,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": -0.6041666666666666,
+      "mean_wheat_cost_delta": -1787.0,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 0,
+      "all_clean": true,
+      "max_call_ms": 177.57,
+      "comparisons": [
+        {
+          "key": [
+            108014567,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 5199.0,
+          "candidate_margin": 5193.0,
+          "gain_points": 0,
+          "delta_margin": -6.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1085.0,
+          "clean": true,
+          "max_call_ms": 2.41
+        },
+        {
+          "key": [
+            108014580,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -22750.0,
+          "candidate_margin": -22750.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1515.0,
+          "clean": true,
+          "max_call_ms": 100.758
+        },
+        {
+          "key": [
+            108015281,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -50590.0,
+          "candidate_margin": -50590.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1591.0,
+          "clean": true,
+          "max_call_ms": 104.147
+        },
+        {
+          "key": [
+            108015558,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 85234.0,
+          "candidate_margin": 85234.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1635.0,
+          "clean": true,
+          "max_call_ms": 88.172
+        },
+        {
+          "key": [
+            108015559,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -28301.0,
+          "candidate_margin": -28301.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1560.0,
+          "clean": true,
+          "max_call_ms": 108.598
+        },
+        {
+          "key": [
+            108017109,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -27274.0,
+          "candidate_margin": -27274.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1505.0,
+          "clean": true,
+          "max_call_ms": 99.916
+        },
+        {
+          "key": [
+            108017344,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -17632.0,
+          "candidate_margin": -17632.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1263.0,
+          "clean": true,
+          "max_call_ms": 100.59
+        },
+        {
+          "key": [
+            108017536,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -13220.0,
+          "candidate_margin": -13220.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1499.0,
+          "clean": true,
+          "max_call_ms": 104.13
+        },
+        {
+          "key": [
+            108017537,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -24102.0,
+          "candidate_margin": -24102.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1425.0,
+          "clean": true,
+          "max_call_ms": 97.604
+        },
+        {
+          "key": [
+            108018102,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -20513.0,
+          "candidate_margin": -20513.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1564.0,
+          "clean": true,
+          "max_call_ms": 99.738
+        },
+        {
+          "key": [
+            108018384,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -21294.0,
+          "candidate_margin": -21294.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1455.0,
+          "clean": true,
+          "max_call_ms": 2.752
+        },
+        {
+          "key": [
+            108018510,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -19773.0,
+          "candidate_margin": -19773.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -4237.0,
+          "clean": true,
+          "max_call_ms": 104.633
+        },
+        {
+          "key": [
+            108019087,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -24265.0,
+          "candidate_margin": -24265.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1345.0,
+          "clean": true,
+          "max_call_ms": 135.268
+        },
+        {
+          "key": [
+            108019268,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -36192.0,
+          "candidate_margin": -36192.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1474.0,
+          "clean": true,
+          "max_call_ms": 101.753
+        },
+        {
+          "key": [
+            108019272,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -5130.0,
+          "candidate_margin": -5133.0,
+          "gain_points": 0,
+          "delta_margin": -3.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1368.0,
+          "clean": true,
+          "max_call_ms": 100.147
+        },
+        {
+          "key": [
+            108019274,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -32362.0,
+          "candidate_margin": -32362.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1463.0,
+          "clean": true,
+          "max_call_ms": 95.921
+        },
+        {
+          "key": [
+            108019277,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -28871.0,
+          "candidate_margin": -28871.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1513.0,
+          "clean": true,
+          "max_call_ms": 31.871
+        },
+        {
+          "key": [
+            108019279,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 38951.0,
+          "candidate_margin": 38947.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1420.0,
+          "clean": true,
+          "max_call_ms": 2.08
+        },
+        {
+          "key": [
+            108019280,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 5120.0,
+          "candidate_margin": 5120.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1389.0,
+          "clean": true,
+          "max_call_ms": 100.583
+        },
+        {
+          "key": [
+            108019281,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -21764.0,
+          "candidate_margin": -21764.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1427.0,
+          "clean": true,
+          "max_call_ms": 2.292
+        },
+        {
+          "key": [
+            108019285,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -31524.0,
+          "candidate_margin": -31524.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1470.0,
+          "clean": true,
+          "max_call_ms": 99.354
+        },
+        {
+          "key": [
+            108019288,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19824.0,
+          "candidate_margin": -19824.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1487.0,
+          "clean": true,
+          "max_call_ms": 33.077
+        },
+        {
+          "key": [
+            108019290,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 7875.0,
+          "candidate_margin": 7859.0,
+          "gain_points": 0,
+          "delta_margin": -16.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3288.0,
+          "clean": true,
+          "max_call_ms": 2.144
+        },
+        {
+          "key": [
+            108019292,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -17242.0,
+          "candidate_margin": -17242.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1569.0,
+          "clean": true,
+          "max_call_ms": 103.394
+        },
+        {
+          "key": [
+            108019361,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -29995.0,
+          "candidate_margin": -29995.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3584.0,
+          "clean": true,
+          "max_call_ms": 110.441
+        },
+        {
+          "key": [
+            108019505,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -25148.0,
+          "candidate_margin": -25148.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1429.0,
+          "clean": true,
+          "max_call_ms": 118.189
+        },
+        {
+          "key": [
+            108019529,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -33425.0,
+          "candidate_margin": -33425.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1609.0,
+          "clean": true,
+          "max_call_ms": 123.08
+        },
+        {
+          "key": [
+            108020077,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -12013.0,
+          "candidate_margin": -12013.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1268.0,
+          "clean": true,
+          "max_call_ms": 101.84
+        },
+        {
+          "key": [
+            108020212,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -8479.0,
+          "candidate_margin": -8479.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3913.0,
+          "clean": true,
+          "max_call_ms": 177.57
+        },
+        {
+          "key": [
+            108020261,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -32165.0,
+          "candidate_margin": -32165.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1400.0,
+          "clean": true,
+          "max_call_ms": 97.081
+        },
+        {
+          "key": [
+            108020269,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -25397.0,
+          "candidate_margin": -25397.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1505.0,
+          "clean": true,
+          "max_call_ms": 2.629
+        },
+        {
+          "key": [
+            108021073,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 9036.0,
+          "candidate_margin": 9036.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1477.0,
+          "clean": true,
+          "max_call_ms": 106.052
+        },
+        {
+          "key": [
+            108021432,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -34807.0,
+          "candidate_margin": -34807.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3621.0,
+          "clean": true,
+          "max_call_ms": 108.405
+        },
+        {
+          "key": [
+            108021541,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -18355.0,
+          "candidate_margin": -18355.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1426.0,
+          "clean": true,
+          "max_call_ms": 113.283
+        },
+        {
+          "key": [
+            108021960,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -24176.0,
+          "candidate_margin": -24176.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3907.0,
+          "clean": true,
+          "max_call_ms": 89.891
+        },
+        {
+          "key": [
+            108022213,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -37768.0,
+          "candidate_margin": -37768.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1291.0,
+          "clean": true,
+          "max_call_ms": 103.276
+        },
+        {
+          "key": [
+            108022293,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -18192.0,
+          "candidate_margin": -18192.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1437.0,
+          "clean": true,
+          "max_call_ms": 101.095
+        },
+        {
+          "key": [
+            108022563,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -1419.0,
+          "candidate_margin": -1419.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1264.0,
+          "clean": true,
+          "max_call_ms": 93.385
+        },
+        {
+          "key": [
+            108022564,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -32033.0,
+          "candidate_margin": -32033.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1444.0,
+          "clean": true,
+          "max_call_ms": 109.798
+        },
+        {
+          "key": [
+            108023195,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -26537.0,
+          "candidate_margin": -26537.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1397.0,
+          "clean": true,
+          "max_call_ms": 102.172
+        },
+        {
+          "key": [
+            108023488,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -23314.0,
+          "candidate_margin": -23314.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1404.0,
+          "clean": true,
+          "max_call_ms": 90.481
+        },
+        {
+          "key": [
+            108023490,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -27471.0,
+          "candidate_margin": -27471.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1397.0,
+          "clean": true,
+          "max_call_ms": 106.675
+        },
+        {
+          "key": [
+            108023501,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 425.0,
+          "candidate_margin": 425.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1456.0,
+          "clean": true,
+          "max_call_ms": 110.438
+        },
+        {
+          "key": [
+            108023502,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -3999.0,
+          "candidate_margin": -3999.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1572.0,
+          "clean": true,
+          "max_call_ms": 104.123
+        },
+        {
+          "key": [
+            108023508,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -11041.0,
+          "candidate_margin": -11041.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1481.0,
+          "clean": true,
+          "max_call_ms": 102.432
+        },
+        {
+          "key": [
+            108023510,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -22084.0,
+          "candidate_margin": -22084.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -4297.0,
+          "clean": true,
+          "max_call_ms": 108.184
+        },
+        {
+          "key": [
+            108023567,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -15530.0,
+          "candidate_margin": -15530.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1194.0,
+          "clean": true,
+          "max_call_ms": 98.093
+        },
+        {
+          "key": [
+            108023582,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 18099.0,
+          "candidate_margin": 18099.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1456.0,
+          "clean": true,
+          "max_call_ms": 91.05
+        }
+      ]
+    }
+  },
+  "elite-top": {
+    "netting": {
+      "paired_games": 30,
+      "baseline_wins": 6,
+      "candidate_wins": 6,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": -4.233333333333333,
+      "mean_wheat_cost_delta": -1999.1333333333334,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 0,
+      "all_clean": true,
+      "max_call_ms": 128.603,
+      "comparisons": [
+        {
+          "key": [
+            108019274,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -29388.0,
+          "candidate_margin": -29388.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1593.0,
+          "clean": true,
+          "max_call_ms": 104.486
+        },
+        {
+          "key": [
+            108019277,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -29797.0,
+          "candidate_margin": -29797.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1448.0,
+          "clean": true,
+          "max_call_ms": 93.38
+        },
+        {
+          "key": [
+            108019279,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 38951.0,
+          "candidate_margin": 38947.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1420.0,
+          "clean": true,
+          "max_call_ms": 86.137
+        },
+        {
+          "key": [
+            108019290,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 92287.0,
+          "candidate_margin": 92287.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1399.0,
+          "clean": true,
+          "max_call_ms": 28.299
+        },
+        {
+          "key": [
+            108019290,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 7875.0,
+          "candidate_margin": 7859.0,
+          "gain_points": 0,
+          "delta_margin": -16.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3288.0,
+          "clean": true,
+          "max_call_ms": 90.96
+        },
+        {
+          "key": [
+            108019292,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -22399.0,
+          "candidate_margin": -22399.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1523.0,
+          "clean": true,
+          "max_call_ms": 108.632
+        },
+        {
+          "key": [
+            108019529,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -16591.0,
+          "candidate_margin": -16591.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1609.0,
+          "clean": true,
+          "max_call_ms": 85.542
+        },
+        {
+          "key": [
+            108020212,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -19522.0,
+          "candidate_margin": -19598.0,
+          "gain_points": 0,
+          "delta_margin": -76.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3554.0,
+          "clean": true,
+          "max_call_ms": 2.248
+        },
+        {
+          "key": [
+            108020261,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -31478.0,
+          "candidate_margin": -31478.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1426.0,
+          "clean": true,
+          "max_call_ms": 96.971
+        },
+        {
+          "key": [
+            108020269,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -27110.0,
+          "candidate_margin": -27110.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1297.0,
+          "clean": true,
+          "max_call_ms": 99.663
+        },
+        {
+          "key": [
+            108021073,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -9507.0,
+          "candidate_margin": -9507.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1453.0,
+          "clean": true,
+          "max_call_ms": 110.048
+        },
+        {
+          "key": [
+            108021432,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 10775.0,
+          "candidate_margin": 10775.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -4127.0,
+          "clean": true,
+          "max_call_ms": 99.894
+        },
+        {
+          "key": [
+            108021432,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -34807.0,
+          "candidate_margin": -34807.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3621.0,
+          "clean": true,
+          "max_call_ms": 86.441
+        },
+        {
+          "key": [
+            108021541,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -17352.0,
+          "candidate_margin": -17352.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1425.0,
+          "clean": true,
+          "max_call_ms": 87.499
+        },
+        {
+          "key": [
+            108021541,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -18355.0,
+          "candidate_margin": -18355.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1426.0,
+          "clean": true,
+          "max_call_ms": 111.157
+        },
+        {
+          "key": [
+            108021960,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -31728.0,
+          "candidate_margin": -31752.0,
+          "gain_points": 0,
+          "delta_margin": -24.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3957.0,
+          "clean": true,
+          "max_call_ms": 100.138
+        },
+        {
+          "key": [
+            108022213,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -37426.0,
+          "candidate_margin": -37426.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1291.0,
+          "clean": true,
+          "max_call_ms": 128.603
+        },
+        {
+          "key": [
+            108022293,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -21882.0,
+          "candidate_margin": -21882.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1433.0,
+          "clean": true,
+          "max_call_ms": 105.234
+        },
+        {
+          "key": [
+            108022563,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": 554.0,
+          "candidate_margin": 554.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1543.0,
+          "clean": true,
+          "max_call_ms": 95.144
+        },
+        {
+          "key": [
+            108022564,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -3787.0,
+          "candidate_margin": -3787.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1572.0,
+          "clean": true,
+          "max_call_ms": 88.851
+        },
+        {
+          "key": [
+            108023195,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -33594.0,
+          "candidate_margin": -33600.0,
+          "gain_points": 0,
+          "delta_margin": -6.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1316.0,
+          "clean": true,
+          "max_call_ms": 93.271
+        },
+        {
+          "key": [
+            108023488,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -18413.0,
+          "candidate_margin": -18413.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1580.0,
+          "clean": true,
+          "max_call_ms": 72.159
+        },
+        {
+          "key": [
+            108023490,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -33735.0,
+          "candidate_margin": -33735.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1428.0,
+          "clean": true,
+          "max_call_ms": 2.316
+        },
+        {
+          "key": [
+            108023501,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": 425.0,
+          "candidate_margin": 425.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1456.0,
+          "clean": true,
+          "max_call_ms": 98.529
+        },
+        {
+          "key": [
+            108023502,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -3999.0,
+          "candidate_margin": -3999.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1572.0,
+          "clean": true,
+          "max_call_ms": 91.361
+        },
+        {
+          "key": [
+            108023502,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -12875.0,
+          "candidate_margin": -12875.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1525.0,
+          "clean": true,
+          "max_call_ms": 93.9
+        },
+        {
+          "key": [
+            108023510,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -22084.0,
+          "candidate_margin": -22084.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -4297.0,
+          "clean": true,
+          "max_call_ms": 113.923
+        },
+        {
+          "key": [
+            108023510,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -28906.0,
+          "candidate_margin": -28909.0,
+          "gain_points": 0,
+          "delta_margin": -3.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -3951.0,
+          "clean": true,
+          "max_call_ms": 105.549
+        },
+        {
+          "key": [
+            108023567,
+            null,
+            null,
+            0
+          ],
+          "baseline_margin": -15530.0,
+          "candidate_margin": -15530.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1194.0,
+          "clean": true,
+          "max_call_ms": 2.774
+        },
+        {
+          "key": [
+            108023567,
+            null,
+            null,
+            1
+          ],
+          "baseline_margin": -36669.0,
+          "candidate_margin": -36667.0,
+          "gain_points": 0,
+          "delta_margin": 2.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1250.0,
+          "clean": true,
+          "max_call_ms": 2.738
+        }
+      ]
+    }
+  },
+  "league": {
+    "jit-aware": {
+      "paired_games": 12,
+      "baseline_wins": 10,
+      "candidate_wins": 10,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": -1775.75,
+      "mean_wheat_cost_delta": -13843.666666666666,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 12,
+      "all_clean": true,
+      "max_call_ms": 119.339,
+      "comparisons": [
+        {
+          "key": [
+            null,
+            "cok",
+            91101,
+            0
+          ],
+          "baseline_margin": -1472.0,
+          "candidate_margin": -2148.0,
+          "gain_points": 0,
+          "delta_margin": -676.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 16,
+            "wheat_overflow": 10
+          },
+          "wheat_cost_delta": -13474.0,
+          "clean": true,
+          "max_call_ms": 1.895
+        },
+        {
+          "key": [
+            null,
+            "cok",
+            91101,
+            1
+          ],
+          "baseline_margin": 1472.0,
+          "candidate_margin": 911.0,
+          "gain_points": 0,
+          "delta_margin": -561.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": 0,
+            "overflow_units": 16,
+            "wheat_overflow": 10
+          },
+          "wheat_cost_delta": -13345.0,
+          "clean": true,
+          "max_call_ms": 1.811
+        },
+        {
+          "key": [
+            null,
+            "cok",
+            91102,
+            0
+          ],
+          "baseline_margin": 5136.0,
+          "candidate_margin": 4009.0,
+          "gain_points": 0,
+          "delta_margin": -1127.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -1,
+            "overflow_units": 13,
+            "wheat_overflow": 3
+          },
+          "wheat_cost_delta": -13677.0,
+          "clean": true,
+          "max_call_ms": 119.339
+        },
+        {
+          "key": [
+            null,
+            "cok",
+            91102,
+            1
+          ],
+          "baseline_margin": -5136.0,
+          "candidate_margin": -6364.0,
+          "gain_points": 0,
+          "delta_margin": -1228.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 20,
+            "wheat_overflow": 9
+          },
+          "wheat_cost_delta": -13814.0,
+          "clean": true,
+          "max_call_ms": 1.989
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91101,
+            0
+          ],
+          "baseline_margin": 52778.0,
+          "candidate_margin": 51968.0,
+          "gain_points": 0,
+          "delta_margin": -810.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -13842.0,
+          "clean": true,
+          "max_call_ms": 8.382
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91101,
+            1
+          ],
+          "baseline_margin": 52343.0,
+          "candidate_margin": 51536.0,
+          "gain_points": 0,
+          "delta_margin": -807.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -13868.0,
+          "clean": true,
+          "max_call_ms": 2.981
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91102,
+            0
+          ],
+          "baseline_margin": 51077.0,
+          "candidate_margin": 44352.0,
+          "gain_points": 0,
+          "delta_margin": -6725.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -5,
+            "escaped_animals": -1,
+            "overflow_units": 83,
+            "wheat_overflow": 31
+          },
+          "wheat_cost_delta": -14028.0,
+          "clean": true,
+          "max_call_ms": 2.984
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91102,
+            1
+          ],
+          "baseline_margin": 51077.0,
+          "candidate_margin": 44352.0,
+          "gain_points": 0,
+          "delta_margin": -6725.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -5,
+            "escaped_animals": -1,
+            "overflow_units": 83,
+            "wheat_overflow": 31
+          },
+          "wheat_cost_delta": -14028.0,
+          "clean": true,
+          "max_call_ms": 1.523
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91101,
+            0
+          ],
+          "baseline_margin": 15463.0,
+          "candidate_margin": 14734.0,
+          "gain_points": 0,
+          "delta_margin": -729.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -14121.0,
+          "clean": true,
+          "max_call_ms": 2.895
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91101,
+            1
+          ],
+          "baseline_margin": 15285.0,
+          "candidate_margin": 14558.0,
+          "gain_points": 0,
+          "delta_margin": -727.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 17,
+            "wheat_overflow": 11
+          },
+          "wheat_cost_delta": -14121.0,
+          "clean": true,
+          "max_call_ms": 2.386
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91102,
+            0
+          ],
+          "baseline_margin": 8673.0,
+          "candidate_margin": 7999.0,
+          "gain_points": 0,
+          "delta_margin": -674.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": -3,
+            "escaped_animals": -1,
+            "overflow_units": 14,
+            "wheat_overflow": 8
+          },
+          "wheat_cost_delta": -13838.0,
+          "clean": true,
+          "max_call_ms": 1.992
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91102,
+            1
+          ],
+          "baseline_margin": 8543.0,
+          "candidate_margin": 8023.0,
+          "gain_points": 0,
+          "delta_margin": -520.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 13,
+            "wheat_overflow": 9
+          },
+          "wheat_cost_delta": -13968.0,
+          "clean": true,
+          "max_call_ms": 79.153
+        }
+      ]
+    },
+    "netting": {
+      "paired_games": 12,
+      "baseline_wins": 10,
+      "candidate_wins": 10,
+      "baseline_ties": 0,
+      "candidate_ties": 0,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "mean_point_gain": 0,
+      "mean_margin_gain": -0.3333333333333333,
+      "mean_wheat_cost_delta": -1646.6666666666667,
+      "shop_changed_games": 0,
+      "more_escapes_games": 0,
+      "more_failed_feed_games": 0,
+      "more_overflow_games": 0,
+      "all_clean": true,
+      "max_call_ms": 93.493,
+      "comparisons": [
+        {
+          "key": [
+            null,
+            "cok",
+            91101,
+            0
+          ],
+          "baseline_margin": -1472.0,
+          "candidate_margin": -1462.0,
+          "gain_points": 0,
+          "delta_margin": 10.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1592.0,
+          "clean": true,
+          "max_call_ms": 80.984
+        },
+        {
+          "key": [
+            null,
+            "cok",
+            91101,
+            1
+          ],
+          "baseline_margin": 1472.0,
+          "candidate_margin": 1466.0,
+          "gain_points": 0,
+          "delta_margin": -6.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1592.0,
+          "clean": true,
+          "max_call_ms": 2.026
+        },
+        {
+          "key": [
+            null,
+            "cok",
+            91102,
+            0
+          ],
+          "baseline_margin": 5136.0,
+          "candidate_margin": 5136.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1638.0,
+          "clean": true,
+          "max_call_ms": 3.343
+        },
+        {
+          "key": [
+            null,
+            "cok",
+            91102,
+            1
+          ],
+          "baseline_margin": -5136.0,
+          "candidate_margin": -5136.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1638.0,
+          "clean": true,
+          "max_call_ms": 1.894
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91101,
+            0
+          ],
+          "baseline_margin": 52778.0,
+          "candidate_margin": 52778.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1647.0,
+          "clean": true,
+          "max_call_ms": 1.95
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91101,
+            1
+          ],
+          "baseline_margin": 52343.0,
+          "candidate_margin": 52343.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1653.0,
+          "clean": true,
+          "max_call_ms": 1.742
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91102,
+            0
+          ],
+          "baseline_margin": 51077.0,
+          "candidate_margin": 51077.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1682.0,
+          "clean": true,
+          "max_call_ms": 73.757
+        },
+        {
+          "key": [
+            null,
+            "lonespear",
+            91102,
+            1
+          ],
+          "baseline_margin": 51077.0,
+          "candidate_margin": 51077.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1682.0,
+          "clean": true,
+          "max_call_ms": 1.587
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91101,
+            0
+          ],
+          "baseline_margin": 15463.0,
+          "candidate_margin": 15463.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1675.0,
+          "clean": true,
+          "max_call_ms": 13.403
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91101,
+            1
+          ],
+          "baseline_margin": 15285.0,
+          "candidate_margin": 15285.0,
+          "gain_points": 0,
+          "delta_margin": 0.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1675.0,
+          "clean": true,
+          "max_call_ms": 2.113
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91102,
+            0
+          ],
+          "baseline_margin": 8673.0,
+          "candidate_margin": 8669.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1643.0,
+          "clean": true,
+          "max_call_ms": 5.458
+        },
+        {
+          "key": [
+            null,
+            "seyam",
+            91102,
+            1
+          ],
+          "baseline_margin": 8543.0,
+          "candidate_margin": 8539.0,
+          "gain_points": 0,
+          "delta_margin": -4.0,
+          "shop_path_changed_vs_baseline": false,
+          "safety_delta": {
+            "feed_failed_no_wheat": 0,
+            "escaped_animals": 0,
+            "overflow_units": 0,
+            "wheat_overflow": 0
+          },
+          "wheat_cost_delta": -1643.0,
+          "clean": true,
+          "max_call_ms": 93.493
+        }
+      ]
+    }
+  }
+}

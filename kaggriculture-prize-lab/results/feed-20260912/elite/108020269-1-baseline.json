@@ -1,0 +1,186 @@
+{
+  "rewards": [
+    98974.0,
+    73577.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 361,
+      "FERTILIZER": 343,
+      "WOOL": 161,
+      "MILK": 245,
+      "MELON": 72,
+      "EGG": 78,
+      "STRAWBERRY": 249,
+      "CARROT": 90
+    },
+    {
+      "WHEAT": 539,
+      "FERTILIZER": 236,
+      "WOOL": 120,
+      "MILK": 279,
+      "MELON": 72,
+      "STRAWBERRY": 274,
+      "CARROT": 11
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 15801,
+      "FERTILIZER": 16336,
+      "WOOL": 5745,
+      "MILK": 12001,
+      "MELON": 16053,
+      "EGG": 4746,
+      "STRAWBERRY": 48489,
+      "CARROT": 5634
+    },
+    {
+      "WHEAT": 24104,
+      "FERTILIZER": 11506,
+      "WOOL": 5187,
+      "MILK": 8622,
+      "MELON": 12374,
+      "STRAWBERRY": 50672,
+      "CARROT": 690
+    }
+  ],
+  "floor_units": [
+    {
+      "WOOL": 111,
+      "MILK": 43,
+      "FERTILIZER": 13
+    },
+    {
+      "WOOL": 81,
+      "MILK": 158,
+      "FERTILIZER": 1
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "SELL:FERTILIZER": 29,
+      "SELL:MILK": 15,
+      "SELL:WOOL": 16,
+      "SELL:STRAWBERRY": 14,
+      "SELL:EGG": 11,
+      "SELL:CARROT": 18,
+      "SELL:WHEAT": 17,
+      "SELL:TOMATO": 6,
+      "SELL:MELON": 6
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_PRODUCT:WHEAT": 5185.0,
+      "BUY_ANIMAL:COW": 3200.0,
+      "BUY_ANIMAL:SHEEP": 3000.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_SEED:WHEAT": 1630.0,
+      "BUY_SEED:STRAWBERRY": 3300.0,
+      "BUY_PRODUCT:FERTILIZER": 2783.0,
+      "BUY_ANIMAL:GOOSE": 900.0,
+      "BUY_SEED:CARROT": 620.0
+    },
+    {
+      "BUY_ANIMAL:COW": 4000.0,
+      "BUY_ANIMAL:SHEEP": 2000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 21051.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    }
+  ],
+  "max_call_ms": [
+    1.01,
+    93.097
+  ],
+  "shops": [
+    "BRUNCH_SPOT",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "BAKERY",
+    "FARMERS_MARKET",
+    "SMOOTHIE_SHOP",
+    "FARMERS_MARKET",
+    "BRUNCH_SPOT"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "job": {
+    "kind": "elite",
+    "variant": "baseline",
+    "episode_id": 108020269,
+    "path": "inbox/replays/episode-108020269-replay.json",
+    "seat": 1,
+    "key": "elite/108020269-1-baseline.json"
+  },
+  "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "started_utc": "2026-09-12T03:45:31.456318+00:00",
+  "completed_utc": "2026-09-12T03:45:36.719512+00:00",
+  "runner_sha256": "a1a79be57c69ea7654db228986c5ee655e014abb0903edd6595a0c37de0c3e05",
+  "source_sha256": "9025d49c9c2e43a2a2dc7e6aa9d14b53b5ecca731ca93dc757653e39a5d617ef",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "fixed_opponent_tape_development",
+  "safety": [
+    {
+      "feed_success": 367,
+      "unfed_animal_days": 29,
+      "escaped_animals": 0,
+      "overflow_units": 0,
+      "wheat_overflow": 0,
+      "wheat_harvest": 581
+    },
+    {
+      "feed_success": 321,
+      "unfed_animal_days": 8,
+      "escaped_animals": 0,
+      "overflow_units": 12,
+      "wheat_overflow": 12,
+      "wheat_harvest": 386
+    }
+  ],
+  "policy_diagnostics": {},
+  "margin": -25397.0,
+  "shop_path_matches_recording": false
+}

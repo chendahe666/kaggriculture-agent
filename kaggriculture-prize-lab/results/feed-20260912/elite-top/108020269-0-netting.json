@@ -1,0 +1,189 @@
+{
+  "rewards": [
+    68939.0,
+    96049.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 506,
+      "FERTILIZER": 236,
+      "WOOL": 120,
+      "MILK": 279,
+      "MELON": 72,
+      "STRAWBERRY": 274,
+      "CARROT": 11
+    },
+    {
+      "WHEAT": 756,
+      "FERTILIZER": 265,
+      "WOOL": 136,
+      "MILK": 99,
+      "MELON": 72,
+      "EGG": 97,
+      "STRAWBERRY": 218,
+      "TOMATO": 16,
+      "CARROT": 9
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 18319,
+      "FERTILIZER": 13327,
+      "WOOL": 18445,
+      "MILK": 11796,
+      "MELON": 12374,
+      "STRAWBERRY": 30065,
+      "CARROT": 615
+    },
+    {
+      "WHEAT": 26971,
+      "FERTILIZER": 16207,
+      "WOOL": 17707,
+      "MILK": 10499,
+      "MELON": 16053,
+      "EGG": 5745,
+      "STRAWBERRY": 31360,
+      "TOMATO": 1004,
+      "CARROT": 518
+    }
+  ],
+  "floor_units": [
+    {
+      "MILK": 49,
+      "WOOL": 2,
+      "STRAWBERRY": 18
+    },
+    {
+      "WOOL": 7,
+      "MILK": 7,
+      "STRAWBERRY": 20
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72
+    },
+    {
+      "SELL:FERTILIZER": 1,
+      "SELL:MILK": 1
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 4000.0,
+      "BUY_ANIMAL:SHEEP": 2000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 17475.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 6561.0,
+      "BUY_ANIMAL:COW": 3200.0,
+      "BUY_ANIMAL:SHEEP": 3000.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_SEED:WHEAT": 1570.0,
+      "BUY_SEED:STRAWBERRY": 3400.0,
+      "BUY_PRODUCT:FERTILIZER": 6485.0,
+      "BUY_ANIMAL:GOOSE": 900.0,
+      "BUY_SEED:TOMATO": 100.0,
+      "BUY_SEED:CARROT": 60.0
+    }
+  ],
+  "max_call_ms": [
+    99.663,
+    0.059
+  ],
+  "shops": [
+    "BRUNCH_SPOT",
+    "ICE_CREAM_SHOP",
+    "PET_CAFE",
+    "BAKERY",
+    "YARN_STORE",
+    "SMOOTHIE_SHOP",
+    "YARN_STORE",
+    "FARMERS_MARKET"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "job": {
+    "kind": "elite-top",
+    "variant": "netting",
+    "episode_id": 108020269,
+    "path": "inbox/replays/episode-108020269-replay.json",
+    "seat": 0,
+    "opponent_team_id": 16730524,
+    "opponent_name": "THIRD FARM CLUB",
+    "opponent_rank_snapshot": 9,
+    "opponent_submission": 56162524,
+    "key": "elite-top/108020269-0-netting.json"
+  },
+  "candidate_sha256": "e3c813bb992c7d700f55f6ef9f1bd311a5d81376e788a9182ff5e737a8938728",
+  "started_utc": "2026-09-12T03:51:06.969143+00:00",
+  "completed_utc": "2026-09-12T03:51:12.331641+00:00",
+  "runner_sha256": "8c62939284fa6b83640aae3d255478060a6c02de1551531362ad6b9e2c411bd4",
+  "source_sha256": "9025d49c9c2e43a2a2dc7e6aa9d14b53b5ecca731ca93dc757653e39a5d617ef",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "fixed_opponent_tape_development",
+  "safety": [
+    {
+      "feed_success": 321,
+      "unfed_animal_days": 8,
+      "escaped_animals": 0,
+      "overflow_units": 12,
+      "wheat_overflow": 12,
+      "wheat_harvest": 386
+    },
+    {
+      "feed_success": 251,
+      "unfed_animal_days": 85,
+      "escaped_animals": 11,
+      "overflow_units": 0,
+      "wheat_overflow": 0,
+      "wheat_harvest": 823
+    }
+  ],
+  "policy_diagnostics": {
+    "changed_steps": 9,
+    "netted_units": 33
+  },
+  "margin": -27110.0,
+  "shop_path_matches_recording": false
+}

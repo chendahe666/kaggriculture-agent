@@ -1,0 +1,189 @@
+{
+  "rewards": [
+    79555.0,
+    90596.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 506,
+      "FERTILIZER": 236,
+      "WOOL": 120,
+      "MILK": 279,
+      "MELON": 72,
+      "STRAWBERRY": 274,
+      "CARROT": 11
+    },
+    {
+      "WHEAT": 319,
+      "FERTILIZER": 455,
+      "WOOL": 269,
+      "MILK": 218,
+      "MELON": 72,
+      "EGG": 110,
+      "STRAWBERRY": 249,
+      "CARROT": 90
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 22087,
+      "FERTILIZER": 10130,
+      "WOOL": 5183,
+      "MILK": 12878,
+      "MELON": 12516,
+      "STRAWBERRY": 53469,
+      "CARROT": 836
+    },
+    {
+      "WHEAT": 13725,
+      "FERTILIZER": 16910,
+      "WOOL": 5857,
+      "MILK": 16232,
+      "MELON": 15927,
+      "EGG": 5610,
+      "STRAWBERRY": 50701,
+      "CARROT": 6876
+    }
+  ],
+  "floor_units": [
+    {
+      "WOOL": 82,
+      "MILK": 92,
+      "FERTILIZER": 46
+    },
+    {
+      "WOOL": 218,
+      "MILK": 11,
+      "FERTILIZER": 83
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72
+    },
+    {
+      "SELL:FERTILIZER": 18,
+      "SELL:MILK": 22,
+      "SELL:WOOL": 14,
+      "SELL:STRAWBERRY": 13,
+      "SELL:EGG": 14,
+      "SELL:WHEAT": 19,
+      "SELL:CARROT": 18,
+      "SELL:TOMATO": 6,
+      "SELL:MELON": 6
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 4000.0,
+      "BUY_ANIMAL:SHEEP": 2000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 19017.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 9373.0,
+      "BUY_ANIMAL:COW": 2800.0,
+      "BUY_ANIMAL:SHEEP": 6000.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_SEED:WHEAT": 1630.0,
+      "BUY_SEED:STRAWBERRY": 3300.0,
+      "BUY_PRODUCT:FERTILIZER": 1862.0,
+      "BUY_ANIMAL:GOOSE": 1200.0,
+      "BUY_SEED:CARROT": 620.0
+    }
+  ],
+  "max_call_ms": [
+    102.432,
+    0.064
+  ],
+  "shops": [
+    "SMOOTHIE_SHOP",
+    "FARMERS_MARKET",
+    "PET_CAFE",
+    "FARMERS_MARKET",
+    "BAKERY",
+    "SMOOTHIE_SHOP",
+    "ICE_CREAM_SHOP",
+    "FARMERS_MARKET"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "job": {
+    "kind": "elite",
+    "variant": "netting",
+    "episode_id": 108023508,
+    "path": "inbox/replays/episode-108023508-replay.json",
+    "seat": 0,
+    "key": "elite/108023508-0-netting.json"
+  },
+  "candidate_sha256": "e3c813bb992c7d700f55f6ef9f1bd311a5d81376e788a9182ff5e737a8938728",
+  "started_utc": "2026-09-12T03:48:47.706501+00:00",
+  "completed_utc": "2026-09-12T03:48:53.008782+00:00",
+  "runner_sha256": "8c62939284fa6b83640aae3d255478060a6c02de1551531362ad6b9e2c411bd4",
+  "source_sha256": "184fc21a0a7340d945765844dfe493882227fea65cb98059f2ebe1483870c156",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "fixed_opponent_tape_development",
+  "safety": [
+    {
+      "feed_success": 321,
+      "unfed_animal_days": 8,
+      "escaped_animals": 0,
+      "overflow_units": 9,
+      "wheat_overflow": 9,
+      "wheat_harvest": 383
+    },
+    {
+      "feed_success": 475,
+      "unfed_animal_days": 29,
+      "escaped_animals": 0,
+      "overflow_units": 1,
+      "wheat_overflow": 1,
+      "wheat_harvest": 550
+    }
+  ],
+  "policy_diagnostics": {
+    "changed_steps": 9,
+    "netted_units": 33
+  },
+  "margin": -11041.0,
+  "shop_path_matches_recording": false
+}

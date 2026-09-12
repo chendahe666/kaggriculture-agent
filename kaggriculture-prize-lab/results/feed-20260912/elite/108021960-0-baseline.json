@@ -1,0 +1,185 @@
+{
+  "rewards": [
+    94405.0,
+    118581.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 1003,
+      "FERTILIZER": 295,
+      "WOOL": 267,
+      "MILK": 188,
+      "MELON": 102,
+      "STRAWBERRY": 216,
+      "CARROT": 2
+    },
+    {
+      "WHEAT": 430,
+      "FERTILIZER": 272,
+      "WOOL": 217,
+      "MILK": 103,
+      "MELON": 72,
+      "EGG": 35,
+      "STRAWBERRY": 237,
+      "CARROT": 149
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 43594,
+      "FERTILIZER": 12239,
+      "WOOL": 63316,
+      "MILK": 3913,
+      "MELON": 13919,
+      "STRAWBERRY": 23397,
+      "CARROT": 110
+    },
+    {
+      "WHEAT": 17149,
+      "FERTILIZER": 13965,
+      "WOOL": 51388,
+      "MILK": 4638,
+      "MELON": 16064,
+      "EGG": 1939,
+      "STRAWBERRY": 32896,
+      "CARROT": 8213
+    }
+  ],
+  "floor_units": [
+    {
+      "MILK": 140,
+      "FERTILIZER": 32
+    },
+    {
+      "MILK": 45,
+      "FERTILIZER": 8
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 142,
+      "SELL:WHEAT": 103,
+      "SELL:MELON": 1,
+      "SELL:MILK": 1,
+      "SELL:WOOL": 2
+    },
+    {
+      "SELL:TOMATO": 208,
+      "SELL:FERTILIZER": 31,
+      "SELL:WHEAT": 13,
+      "SELL:STRAWBERRY": 23,
+      "SELL:CARROT": 3,
+      "SELL:MELON": 1
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 2400.0,
+      "BUY_ANIMAL:SHEEP": 6000.0,
+      "BUY_SEED:WHEAT": 1500.0,
+      "BUY_SEED:MELON": 1360.0,
+      "BUY_PRODUCT:WHEAT": 41386.0,
+      "BUY_SEED:STRAWBERRY": 3400.0,
+      "BUY_SEED:CARROT": 60.0
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 6846.0,
+      "BUY_ANIMAL:COW": 1600.0,
+      "BUY_ANIMAL:SHEEP": 6000.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_SEED:WHEAT": 1670.0,
+      "BUY_SEED:STRAWBERRY": 3300.0,
+      "BUY_PRODUCT:FERTILIZER": 1118.0,
+      "BUY_ANIMAL:GOOSE": 300.0,
+      "BUY_SEED:CARROT": 1260.0
+    }
+  ],
+  "max_call_ms": [
+    101.635,
+    0.105
+  ],
+  "shops": [
+    "FARMERS_MARKET",
+    "YARN_STORE",
+    "YARN_STORE",
+    "BAKERY",
+    "FARMERS_MARKET",
+    "BRUNCH_SPOT",
+    "FARMERS_MARKET",
+    "FARMERS_MARKET"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "job": {
+    "kind": "elite",
+    "variant": "baseline",
+    "episode_id": 108021960,
+    "path": "inbox/replays/episode-108021960-replay.json",
+    "seat": 0,
+    "key": "elite/108021960-0-baseline.json"
+  },
+  "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "started_utc": "2026-09-12T03:48:26.240720+00:00",
+  "completed_utc": "2026-09-12T03:48:31.677387+00:00",
+  "runner_sha256": "8c62939284fa6b83640aae3d255478060a6c02de1551531362ad6b9e2c411bd4",
+  "source_sha256": "6dfbb06479127e40de525cb5e582503eca6fca9b31b956a98f1ef8cbd64b26dd",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "fixed_opponent_tape_development",
+  "safety": [
+    {
+      "feed_success": 368,
+      "unfed_animal_days": 20,
+      "escaped_animals": 3,
+      "overflow_units": 17,
+      "wheat_overflow": 13,
+      "wheat_harvest": 415,
+      "feed_failed_no_wheat": 4
+    },
+    {
+      "feed_success": 292,
+      "unfed_animal_days": 43,
+      "escaped_animals": 9,
+      "overflow_units": 0,
+      "wheat_overflow": 0,
+      "wheat_harvest": 514
+    }
+  ],
+  "policy_diagnostics": {},
+  "margin": -24176.0,
+  "shop_path_matches_recording": false
+}

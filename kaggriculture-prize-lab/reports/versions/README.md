@@ -4,6 +4,8 @@
 
 当前线上基线：[COK V10](cok-v10-baseline.md)，默认入口迁移提交 [92676d9](https://github.com/chendahe666/kaggriculture-agent/commit/92676d9)。根代码不采用以下实验版。
 
+新增 P1 库存/运输研究：9个候选分别见 feed-netting、feed-reserve6、feed-jit1、feed-jit-busy、feed-jit-return、feed-jit-aware、feed-idle-delivery、feed-delivery-early、feed-feed-guard 对应 Markdown。完整报告 ../p1-20260912-report.md；全部没有通过发布门禁。每候选单独提交；本地记录不代表远端推送成功。
+
 | 版本 | 建档提交 | 结论 |
 |---|---|---|
 | [k320-no-preempt](k320-no-preempt.md) | [dd2c8f7](https://github.com/chendahe666/kaggriculture-agent/commit/dd2c8f7) | reject |

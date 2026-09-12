@@ -1,0 +1,194 @@
+{
+  "rewards": [
+    47537.0,
+    46118.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "FERTILIZER": 212,
+      "WHEAT": 469,
+      "WOOL": 187,
+      "MILK": 91,
+      "MELON": 48,
+      "STRAWBERRY": 286,
+      "TOMATO": 13,
+      "CARROT": 55
+    },
+    {
+      "WHEAT": 517,
+      "FERTILIZER": 228,
+      "WOOL": 162,
+      "MILK": 222,
+      "MELON": 72,
+      "STRAWBERRY": 267,
+      "CARROT": 4
+    }
+  ],
+  "sale_revenue": [
+    {
+      "FERTILIZER": 13718,
+      "WHEAT": 16078,
+      "WOOL": 20475,
+      "MILK": 5740,
+      "MELON": 9271,
+      "STRAWBERRY": 4070,
+      "TOMATO": 928,
+      "CARROT": 5416
+    },
+    {
+      "WHEAT": 19042,
+      "FERTILIZER": 12590,
+      "WOOL": 25466,
+      "MILK": 3759,
+      "MELON": 17081,
+      "STRAWBERRY": 4210,
+      "CARROT": 351
+    }
+  ],
+  "floor_units": [
+    {
+      "MILK": 10,
+      "WOOL": 19,
+      "STRAWBERRY": 197
+    },
+    {
+      "MILK": 89,
+      "WOOL": 12,
+      "STRAWBERRY": 160
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_SEED:STRAWBERRY": 1,
+      "BUY_SEED:MELON": 1,
+      "BUY_SEED:WHEAT": 1,
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:WHEAT": 2,
+      "SELL:WOOL": 9,
+      "SELL:MILK": 12,
+      "SELL:FERTILIZER": 12,
+      "SELL:STRAWBERRY": 17,
+      "SELL:MELON": 1,
+      "SELL:TOMATO": 2,
+      "SELL:CARROT": 1
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 192,
+      "SELL:WHEAT": 73,
+      "SELL:MILK": 13,
+      "SELL:STRAWBERRY": 3,
+      "SELL:CARROT": 2
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 2000.0,
+      "BUY_ANIMAL:SHEEP": 5000.0,
+      "BUY_SEED:MELON": 640.0,
+      "BUY_SEED:WHEAT": 1510.0,
+      "BUY_PRODUCT:WHEAT": 2968.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_PRODUCT:FERTILIZER": 3039.0,
+      "BUY_SEED:TOMATO": 150.0,
+      "BUY_SEED:CARROT": 320.0
+    },
+    {
+      "BUY_ANIMAL:COW": 3200.0,
+      "BUY_ANIMAL:SHEEP": 3000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 17654.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    }
+  ],
+  "max_call_ms": [
+    0.096,
+    107.746
+  ],
+  "shops": [
+    "PET_CAFE",
+    "BAKERY",
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "YARN_STORE",
+    "BRUNCH_SPOT",
+    "YARN_STORE",
+    "BRUNCH_SPOT"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 8,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "job": {
+    "kind": "elite",
+    "variant": "baseline",
+    "episode_id": 108022563,
+    "path": "inbox/replays/episode-108022563-replay.json",
+    "seat": 1,
+    "key": "elite/108022563-1-baseline.json"
+  },
+  "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "started_utc": "2026-09-12T03:45:04.571994+00:00",
+  "completed_utc": "2026-09-12T03:45:09.978521+00:00",
+  "runner_sha256": "a1a79be57c69ea7654db228986c5ee655e014abb0903edd6595a0c37de0c3e05",
+  "source_sha256": "d11523df9e3e96ab42650df0c564469852a9a9bb702d09c4e8e0234b7ed7f919",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "fixed_opponent_tape_development",
+  "safety": [
+    {
+      "unfed_animal_days": 59,
+      "escaped_animals": 7,
+      "overflow_units": 15,
+      "wheat_overflow": 7,
+      "feed_success": 239,
+      "wheat_harvest": 627,
+      "feed_failed_no_wheat": 7
+    },
+    {
+      "feed_success": 310,
+      "unfed_animal_days": 16,
+      "escaped_animals": 2,
+      "overflow_units": 64,
+      "wheat_overflow": 45,
+      "wheat_harvest": 386,
+      "feed_failed_no_wheat": 8
+    }
+  ],
+  "policy_diagnostics": {},
+  "margin": -1419.0,
+  "shop_path_matches_recording": false
+}

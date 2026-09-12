@@ -1,0 +1,48 @@
+{
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "variants": {
+    "netting": {
+      "sha256": "e3c813bb992c7d700f55f6ef9f1bd311a5d81376e788a9182ff5e737a8938728",
+      "mode": "netting",
+      "horizon": 6
+    },
+    "reserve6": {
+      "sha256": "0129f435c22ada0538ea4d0abd9e3cfbcfb7825c9c524557878fd0dce1ae875e",
+      "mode": "reserve",
+      "horizon": 6
+    },
+    "jit1": {
+      "sha256": "f307f4affd0d8f5b885cb656bbee41b0bda2eebfb62e99ea52e7af3d796b9c28",
+      "mode": "reserve",
+      "horizon": 1
+    },
+    "jit-busy": {
+      "sha256": "a5ce0d1761269dd35c07580b7b7ebd11a6a84cfda0437d64ebbb4787dfe53c17",
+      "busy": true,
+      "day_return": false
+    },
+    "jit-return": {
+      "sha256": "2c3ce5e861b370c04c3878181807ecb712e0556c0e121621714ed03cdb677a17",
+      "busy": false,
+      "day_return": true
+    },
+    "jit-aware": {
+      "sha256": "c98780aca0410bb883298f407986087d6890c593e4f9206c966f18b64113315a",
+      "busy": true,
+      "day_return": true
+    },
+    "idle-delivery": {
+      "sha256": "e38cb6e88a04080622396aa9f075d7486762253f285034630a1c85e520c9e44a",
+      "mode": "otherwise-idle premium logistics",
+      "occupancy_trigger": 80
+    },
+    "delivery-early": {
+      "sha256": "e99bea634bbb1808e596ca2d0da2136044b8253a743fc439684e491bcce71170",
+      "occupancy_trigger": 0
+    },
+    "feed-guard": {
+      "sha256": "2a0b49cd5b0031bd02471b36eac794eb40e776ded67b2403efc2eed95b1f7f2b",
+      "mode": "append imminent deficit only; preserve original orders"
+    }
+  }
+}

@@ -1,6 +1,10 @@
 {
   "updated_local_date": "2026-09-11",
-  "status": "track_p0_elite_study_complete_p1_not_started",
+  "status": "track_p1_complete_no_promotion_waiting_direction_approval",
+  "latest_optimization_report": "reports/p1-20260912-report.md",
+  "latest_experiment_index": "results/feed-20260912/experiment-index.json",
+  "latest_optimization_result": "9 candidates, 296 simulations, 45 tests; no promoted variant. netting own 7/20 unchanged, fixed top30 6/30 unchanged; jit1 own 4/20; reserve6 2/20",
+  "pending_direction_request": "Approve isolated state-driven production/transport task planner, retaining COK fallback; async question sent with evidence, no reply yet",
   "active_study": "results/elite-20260912/corpus.json",
   "active_study_report": "reports/elite-study-20260912-report.md",
   "dataset_preview": "datasets/elite-20260912-v0.1.0",
@@ -25,7 +29,7 @@
   "aggregate_report": "results/research-report-20260911.json",
   "external_data_access": "official Kaggle CLI works; no credentials or manual replay downloads currently needed",
   "next_proposed_track": "feed inventory, procurement and production/labor joint planning; preserve COK as fallback and regression control",
-  "reason_for_pause": null,
+  "reason_for_pause": "Local inventory patch family has no outcome uplift after mechanism fixes, ablations and broader controls. Await requested approval before changing main approach to state-driven task planning; not a claim that all algorithms are exhausted.",
   "direction_approval": "2026-09-11: user replied 好的 to proposed Track P and requested per-version GitHub records; checkpoint first, preserve COK control",
   "resume_after_approval": [
     "Read OPTIMIZATION_LOG.md and begin a round with hypotheses and evaluation design in chat",
