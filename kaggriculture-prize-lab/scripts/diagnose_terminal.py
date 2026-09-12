@@ -238,7 +238,7 @@ def main():
     parser.add_argument('--opponent', required=True)
     parser.add_argument('--seed', type=int, required=True)
     parser.add_argument('--seat', type=int, choices=[0, 1], required=True)
-    parser.add_argument('--variant', choices=['depth1', 'depth2', 'depth3', 'transport'], required=True)
+    parser.add_argument('--variant', choices=['depth1', 'depth2', 'depth3', 'transport', 'depth2-timing-file'], required=True)
     args = parser.parse_args()
     out = LAB / 'inbox/diagnostics/terminal-20260912'
     out.mkdir(parents=True, exist_ok=True)

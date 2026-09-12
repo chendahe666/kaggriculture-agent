@@ -1,0 +1,51 @@
+{
+  "variant": "depth2-timing-safe-file",
+  "seat": 0,
+  "seed": 91101,
+  "started_utc": "2026-09-12T06:06:11.711013+00:00",
+  "completed_utc": "2026-09-12T06:06:20.465919+00:00",
+  "wall_seconds": 8.754857999971136,
+  "candidate_sha256": "8d37e6f4683c5a8c399c74022211e77061a59600af6278e318c2958c9c6bfbd2",
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "runner_sha256": "520ca08c880dac0e2f92a76abea276f066c100921e5efe66d082a87727a3303d",
+  "entrypoint": "env.run with actual Python file paths for BOTH policies",
+  "frames": 720,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    92883.0,
+    93747.0
+  ],
+  "errors": [],
+  "max_framework_call_seconds": [
+    0.094672,
+    0.10976
+  ],
+  "min_recorded_overage_seconds": [
+    60.0,
+    60.0
+  ],
+  "configuration": {
+    "seed": null,
+    "episodeSteps": 720,
+    "actTimeout": 1,
+    "runTimeout": 1200,
+    "boardSize": 10,
+    "startingMoney": 3000,
+    "maxMarketOrdersPerTurn": 10,
+    "turnsPerDay": 24,
+    "shedCapacity": 100,
+    "weedSpawnChance": 0.005,
+    "townShopUnlockInterval": 3,
+    "townShopSellInterval": 4,
+    "townCenterSellInterval": 24,
+    "farmHandCostMult": 1,
+    "marketParams": {}
+  },
+  "scope": "Development duplicate scenario. Verifies local file loading/configuration/engine completion; not online container CPU/memory guarantee.",
+  "matches_explicit_loader_league": true,
+  "league_reference": "results\\terminal-20260912\\development\\cok-91101-0-depth2-timing-safe-file.json"
+}

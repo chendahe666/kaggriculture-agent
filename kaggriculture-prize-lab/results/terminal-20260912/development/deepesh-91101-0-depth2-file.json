@@ -1,0 +1,196 @@
+{
+  "rewards": [
+    155530.0,
+    4669.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 533,
+      "FERTILIZER": 250,
+      "WOOL": 116,
+      "MILK": 279,
+      "MELON": 72,
+      "STRAWBERRY": 276,
+      "CARROT": 11
+    },
+    {
+      "WHEAT": 71
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 23450,
+      "FERTILIZER": 18775,
+      "WOOL": 12245,
+      "MILK": 66401,
+      "MELON": 17440,
+      "STRAWBERRY": 54894,
+      "CARROT": 816
+    },
+    {
+      "WHEAT": 2629
+    }
+  ],
+  "floor_units": [
+    {
+      "WOOL": 28
+    },
+    {}
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72
+    },
+    {}
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 4000.0,
+      "BUY_ANIMAL:SHEEP": 2000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 19964.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    },
+    {
+      "BUY_SEED:WHEAT": 960.0
+    }
+  ],
+  "max_call_ms": [
+    104.974,
+    0.101
+  ],
+  "shops": [
+    "PET_CAFE",
+    "FARMERS_MARKET",
+    "PIZZA_SHOP",
+    "PIZZA_SHOP",
+    "ICE_CREAM_SHOP",
+    "ICE_CREAM_SHOP",
+    "ICE_CREAM_SHOP",
+    "FARMERS_MARKET"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "variant": "depth2-file",
+  "candidate_path": "experiments/track-terminal-20260912/depth2-file/main.py",
+  "opponent_path": "public-deepesh-20260912/main.py",
+  "opponent": "deepesh",
+  "family": "single_farmer_staple_greedy",
+  "seed": 91101,
+  "seat": 0,
+  "split": "development",
+  "key": "deepesh-91101-0-depth2-file.json",
+  "started_utc": "2026-09-12T05:31:27.480186+00:00",
+  "completed_utc": "2026-09-12T05:31:32.016510+00:00",
+  "wall_seconds": 4.53630290000001,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "runner_sha256": "2ce7669a5bf00f186f39481505db37cbae56c55d2f21df0c75150695302bc502",
+  "candidate_sha256": "c06dc267e07ce5b07e8bf5380104dc3c87efbbbcdaf72386677ba31e7bb55624",
+  "opponent_sha256": "bad9dd849ee6b828183ee938d2a5732835715a23fcb25082269ba95c54808cf6",
+  "evidence": "closed_loop",
+  "margin": 150861.0,
+  "terminal_diagnostics": {
+    "calls": 23,
+    "search_nodes": 97043,
+    "tasks": 620,
+    "assigned_workers": 101,
+    "harvest_actions": 17,
+    "fertilizer_actions": 14,
+    "water_actions": 6,
+    "safe_partial_deposits": 0,
+    "capacity_waits": 0
+  },
+  "final_after_market": {
+    "step": 718,
+    "shed": [
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      }
+    ],
+    "carried": [
+      [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "WHEAT": 4
+        }
+      ]
+    ]
+  },
+  "terminal_start": {
+    "sha256": "cc3ef30c16227aba440e469a5ab1308d7b6162468462e05e802ff713126c24e5"
+  },
+  "entrypoint": "official_get_last_callable"
+}

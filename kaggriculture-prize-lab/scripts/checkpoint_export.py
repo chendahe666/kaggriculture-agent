@@ -81,7 +81,7 @@ def main():
             raise SystemExit(f'Export mismatch: {rel}')
         records.append({'path': rel.as_posix(), 'sha256': digest, 'bytes': source.stat().st_size})
     manifest = target / 'archive-manifest.json'
-    payload = {'format': 1, 'files': records, 'excluded': ['raw replays', 'elite intermediate private-inventory audit snapshots', 'credentials', 'Igor source (license unverified)', 'nested Git metadata', 'binary archives']}
+    payload = {'format': 1, 'files': records, 'excluded': ['raw replays', 'elite intermediate private-inventory audit snapshots', 'credentials', 'Igor source (license unverified)', 'Arlene source (upstream attribution unresolved; local stress only)', 'unreviewed native code and model weights', 'nested Git metadata', 'binary archives']}
     if args.check:
         if json.loads(manifest.read_text(encoding='utf-8')) != payload:
             raise SystemExit('Archive manifest differs from the selected source files.')

@@ -1,0 +1,15 @@
+{
+  "built_utc": "2026-09-12T05:34:05.617224+00:00",
+  "parent_sha256": "c06dc267e07ce5b07e8bf5380104dc3c87efbbbcdaf72386677ba31e7bb55624",
+  "overlay_sha256": "d611e6c24d9e717abe079622ab6a2799579f2046d2d9705d65c1b0e969417be0",
+  "variants": {
+    "timing-file": {
+      "timing_only": true,
+      "sha256": "6509cee22521b47a0e4f33b923dd48d4740f9864c5c79a01296b6d3cb0cc10fb"
+    },
+    "depth2-timing-file": {
+      "timing_only": false,
+      "sha256": "de4f002b5bd990728b8d31d3ea47a0788d5dbb20a9cf3edf92239e7aabe1e6cd"
+    }
+  }
+}

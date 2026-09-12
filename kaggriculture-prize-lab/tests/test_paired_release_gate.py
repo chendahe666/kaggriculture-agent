@@ -5,7 +5,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from paired_release_gate import clopper_pearson_upper, evaluate_release
+from paired_release_gate import bounded_mean_betting, clopper_pearson_upper, evaluate_release
 
 
 def fixture(n=90, families=5, candidate_points=1.0, baseline_points=0.0):
@@ -41,23 +41,26 @@ class PairedReleaseGateTests(unittest.TestCase):
         self.assertTrue(r["passed"], r)
         self.assertEqual(r["paired_games"], 900)
         self.assertEqual(r["independent_seed_blocks"], 90)
-        self.assertGreater(r["primary"]["interval_95"][0], 0)
+        self.assertGreater(r["primary"]["lower_bound_975"], 0)
+        self.assertTrue(r["primary"]["reject_nonpositive_mean"])
         self.assertLess(r["per_family"]["family0"]["regression_probability_upper"], .05)
 
     def test_negative_confirmation_does_not_pass(self):
         rows, p = fixture(candidate_points=0, baseline_points=1)
         r = gate(rows, p)
         self.assertFalse(r["passed"])
-        self.assertLess(r["primary"]["interval_95"][1], 0)
+        self.assertLess(r["primary"]["bootstrap_diagnostic"]["interval_95"][1], 0)
+        self.assertFalse(r["primary"]["reject_nonpositive_mean"])
         self.assertEqual(r["outcome_flips"]["win_to_loss"], 900)
 
     def test_zero_difference_does_not_create_certainty(self):
         rows, p = fixture(candidate_points=1, baseline_points=1)
         r = gate(rows, p)
         self.assertFalse(r["passed"])
-        self.assertTrue(r["primary"]["empirical_degenerate"])
-        self.assertLess(r["primary"]["interval_95"][0], 0)
-        self.assertGreater(r["primary"]["interval_95"][1], 0)
+        self.assertTrue(r["primary"]["bootstrap_diagnostic"]["empirical_degenerate"])
+        self.assertLess(r["primary"]["lower_bound_975"], 0)
+        self.assertEqual(r["primary"]["e_value_at_zero"], 1)
+        self.assertGreater(r["primary"]["bootstrap_diagnostic"]["interval_95"][1], 0)
         self.assertTrue(r["checks"]["simultaneous_family_noninferiority"])
 
     def test_thirty_seeds_do_not_certify_five_percent_no_regression(self):
@@ -129,8 +132,8 @@ class PairedReleaseGateTests(unittest.TestCase):
             if row["variant"] == "candidate" and row["seed"] % 3 == 0:
                 row["rewards"] = [0, 10] if row["seat"] == 0 else [10, 0]
         r = gate(rows, p)
-        self.assertFalse(r["primary"]["empirical_degenerate"])
-        self.assertEqual(r["primary"]["empirical_bootstrap_95"], r["per_family"]["family0"]["empirical_bootstrap_95"])
+        self.assertFalse(r["primary"]["bootstrap_diagnostic"]["empirical_degenerate"])
+        self.assertEqual(r["primary"]["bootstrap_diagnostic"]["empirical_bootstrap_95"], r["per_family"]["family0"]["empirical_bootstrap_95"])
 
     def test_family_equal_weight_not_opponent_count(self):
         rows, p = fixture(n=90, baseline_points=.5)
@@ -154,6 +157,49 @@ class PairedReleaseGateTests(unittest.TestCase):
         self.assertEqual(clopper_pearson_upper(90, 90, .01), 1)
         # P(Binomial(2,p) <= 1) = 1-p**2 = alpha.
         self.assertAlmostEqual(clopper_pearson_upper(1, 2, .05), math.sqrt(.95), places=12)
+
+    def test_sparse_positive_bootstrap_is_not_release_evidence(self):
+        # This observed sample is plausible under P(D=.1)=.10, P(D=-1)=.015,
+        # P(D=0)=.885, whose true macro mean is -.005. A sparse positive
+        # sample without the rare negative tail must not auto-release.
+        rows, p = fixture(candidate_points=.5, baseline_points=.5)
+        for row in rows:
+            if row["variant"] == "candidate" and row["family"] == "family0" and row["seed"] < 92010:
+                row["rewards"] = [10, 0] if row["seat"] == 0 else [0, 10]
+        r = gate(rows, p)
+        self.assertGreater(r["primary"]["bootstrap_diagnostic"]["interval_95"][0], 0)
+        self.assertTrue(r["checks"]["simultaneous_family_noninferiority"])
+        self.assertFalse(r["passed"])
+        self.assertLess(r["primary"]["lower_bound_975"], 0)
+        self.assertLess(r["primary"]["e_value_at_zero"], 40)
+
+    def test_betting_uses_fixed_grid_and_matches_direct_product(self):
+        values = [.1] * 10 + [0] * 80
+        result = bounded_mean_betting(values)
+        grid = [.05, .1, .2, .4, .6, .8, .95, 1]
+        expected = sum(math.prod(1 + stake * value for value in values) for stake in grid) / len(grid)
+        self.assertEqual(result["lambda_grid"], grid)
+        self.assertEqual(result["lambda_weights"], [.125] * 8)
+        self.assertAlmostEqual(result["e_value_at_zero"], expected, places=12)
+        self.assertEqual(result["alpha"], .025)
+
+    def test_betting_exact_null_rejection_probability_small_distribution(self):
+        # IID {-0.25,+0.75}, P(+0.75)=.25, has mean exactly zero.
+        # Enumerate binomial counts, not simulated games or random samples.
+        n, rejection_probability = 20, 0.0
+        for k in range(n + 1):
+            result = bounded_mean_betting([.75] * k + [-.25] * (n - k))
+            if result["reject_nonpositive_mean"]:
+                rejection_probability += math.comb(n, k) * .25 ** k * .75 ** (n - k)
+        self.assertLessEqual(rejection_probability, .025)
+
+    def test_betting_endpoints_and_validation(self):
+        self.assertEqual(bounded_mean_betting([-1] * 90)["lower_bound_975"], -1)
+        self.assertGreater(bounded_mean_betting([1] * 90)["lower_bound_975"], 0)
+        for values in ([], [math.nan], [1.001], [-1.001], [True]):
+            with self.subTest(values=values):
+                with self.assertRaises(ValueError):
+                    bounded_mean_betting(values)
 
 
 if __name__ == "__main__":

@@ -26,10 +26,12 @@ import re
 import statistics
 
 
-VERSION = "paired-release-v1"
+VERSION = "paired-release-v2"
 MIN_FAMILIES = 5
 MIN_SEEDS = 30
 ALPHA = 0.05
+PRIMARY_ALPHA = 0.025
+BETTING_LAMBDAS = (0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 0.95, 1.0)
 REGRESSION_TOLERANCE = 0.05
 _SHA = re.compile(r"^[0-9a-f]{64}$")
 
@@ -111,6 +113,62 @@ def _interval(values, bootstrap_means, alpha=ALPHA):
 def _points(row):
     a, b = row["rewards"][row["seat"]], row["rewards"][1 - row["seat"]]
     return 1.0 if a > b else 0.0 if a < b else 0.5
+
+
+def _mixture_log_e(values, null_mean):
+    """Log uniform mixture of pre-fixed bets; -1 < null_mean <= 1."""
+    logs = []
+    for stake in BETTING_LAMBDAS:
+        total = 0.0
+        for value in values:
+            increment = stake * (value - null_mean) / (1 + null_mean)
+            if increment <= -1:
+                total = -math.inf
+                break
+            total += math.log1p(increment)
+        logs.append(total)
+    peak = max(logs)
+    if peak == -math.inf:
+        return peak
+    return peak + math.log(sum(math.exp(v - peak) for v in logs) / len(logs))
+
+
+def bounded_mean_betting(values):
+    """Fixed-mixture e-test and inverted one-sided 97.5% mean lower bound.
+
+    For IID D in [-1,1] and H0 E[D] <= m, every factor
+    1 + lambda*(D-m)/(1+m) is nonnegative and has expectation <= 1.
+    Independence makes each product an e-value; their pre-fixed uniform
+    mixture is also an e-value. Markov's inequality bounds P(E >= 1/alpha)
+    by alpha. The e-value decreases in m, so test inversion is a lower
+    confidence bound. No fitting/selection of lambda using these outcomes.
+
+    This bound can be low-powered at n=90. Failure to reject is insufficient
+    evidence of superiority, not proof that the mean gain is nonpositive.
+    """
+    if not values or not all(_finite_number(v) and -1 <= v <= 1 for v in values):
+        raise ValueError("betting requires nonempty finite observations in [-1,1]")
+    threshold = -math.log(PRIMARY_ALPHA)
+    log_e = _mixture_log_e(values, 0.0)
+    lo, hi = -1.0, 1.0
+    for _ in range(80):
+        mid = (lo + hi) / 2
+        if mid == lo or mid == hi:
+            break
+        if _mixture_log_e(values, mid) > threshold:
+            lo = mid
+        else:
+            hi = mid
+    return {"method": "fixed_lambda_bounded_mean_mixture_betting",
+            "null_hypothesis": "E[family-equal paired seed gain] <= 0",
+            "alpha": PRIMARY_ALPHA, "one_sided_confidence": 1 - PRIMARY_ALPHA,
+            "lower_bound_975": lo, "reject_nonpositive_mean": log_e > threshold,
+            "e_value_at_zero": math.exp(log_e) if log_e < 700 else None,
+            "log_e_value_at_zero": log_e, "e_value_threshold": 1 / PRIMARY_ALPHA,
+            "lambda_grid": list(BETTING_LAMBDAS),
+            "lambda_weights": [1 / len(BETTING_LAMBDAS)] * len(BETTING_LAMBDAS),
+            "assumptions": "IID fresh seed blocks, D in [-1,1], fixed candidate/opponent pool and fixed lambda grid/weights before confirmation. Cross-family and paired-seat correlation within a seed is allowed.",
+            "interpretation": "Finite-sample one-sided 97.5% lower bound conditional on the frozen pool. Non-rejection is HOLD, not evidence of no improvement. No budget extension or candidate retuning from this confirmation set."}
 
 
 def evaluate_release(rows, preregistration, opened_seeds=(), resamples=4000, random_seed=9122026):
@@ -261,8 +319,11 @@ def evaluate_release(rows, preregistration, opened_seeds=(), resamples=4000, ran
         macro_bootstrap.append(statistics.mean(macro_values[i] for i in draw))
         for family in names:
             family_bootstrap[family].append(statistics.mean(family_values[family][i] for i in draw))
-    primary = _interval(macro_values, macro_bootstrap)
+    primary = bounded_mean_betting(macro_values)
     primary["mean_paired_gain"] = statistics.mean(macro_values)
+    primary["bootstrap_diagnostic"] = _interval(macro_values, macro_bootstrap)
+    primary["bootstrap_diagnostic"]["used_for_release"] = False
+    primary["bootstrap_diagnostic"]["limitation"] = "Percentile bootstrap may severely under-cover sparse outcomes with unseen negative tails; diagnostic only, never the superiority gate."
     per_family = {}
     for family in names:
         values = family_values[family]
@@ -278,7 +339,7 @@ def evaluate_release(rows, preregistration, opened_seeds=(), resamples=4000, ran
     checks = {"minimum_families": len(names) >= MIN_FAMILIES,
               "minimum_new_seeds_per_family": n >= MIN_SEEDS,
               "all_recorded_runs_clean": dirty_rows == 0,
-              "primary_gain_lower_95_above_zero": primary["interval_95"][0] > 0,
+              "primary_gain_lower_975_above_zero": primary["lower_bound_975"] > 0 and primary["reject_nonpositive_mean"],
               "simultaneous_family_noninferiority": all(v["noninferiority_pass"] for v in per_family.values())}
     result.update(checks=checks, passed=all(checks.values()),
                   decision="PASS" if all(checks.values()) else "HOLD",
@@ -293,7 +354,7 @@ def evaluate_release(rows, preregistration, opened_seeds=(), resamples=4000, ran
                                "multiple_comparison_adjustment": "Bonferroni across registered families",
                                "tolerance": REGRESSION_TOLERANCE,
                                "interpretation": "D is in [-1,1], so E[D] >= -P(D<0). Nonnegative blocks contribute zero to this conservative bound. Failure to certify is HOLD, not proof of harmful regression.",
-                               "assumptions": "Independent identically distributed fresh seed blocks; fixed opponent mixture. Family correlation is allowed. Primary bootstrap is marginal 95%; family bounds are simultaneous 95%, not a joint confidence rectangle including the primary."})
+                               "assumptions": "Independent identically distributed fresh seed blocks; fixed opponent mixture. Family correlation is allowed. Primary exact lower bound is marginal one-sided 97.5%; family bounds are simultaneous 95%. These are not a joint 95% confidence region (a union bound gives at least 92.5% joint coverage). The conjunction is an intersection-union decision: if any required population claim is false, passing all valid component tests has false-release probability at most 5%, under the stated assumptions. This is not a posterior probability of correctness."})
     if dirty_rows:
         result["decision"] = "REJECT"
     return result

@@ -1,0 +1,16 @@
+{
+  "built_utc": "2026-09-12T05:50:11.040191+00:00",
+  "overlay_sha256": "1bf5ce95f48a15ea91afebcdccf069b3bfa14a0641ed88f0962b695ef257f80e",
+  "variants": {
+    "timing-safe-file": {
+      "parent": "timing-file",
+      "parent_sha256": "6509cee22521b47a0e4f33b923dd48d4740f9864c5c79a01296b6d3cb0cc10fb",
+      "sha256": "5da4bf0a8cc5914e86e0d6b76d2a05f630c9b65fb4609a451869bd6f489e273b"
+    },
+    "depth2-timing-safe-file": {
+      "parent": "depth2-timing-file",
+      "parent_sha256": "de4f002b5bd990728b8d31d3ea47a0788d5dbb20a9cf3edf92239e7aabe1e6cd",
+      "sha256": "8d37e6f4683c5a8c399c74022211e77061a59600af6278e318c2958c9c6bfbd2"
+    }
+  }
+}

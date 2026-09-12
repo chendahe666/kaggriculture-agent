@@ -21,13 +21,22 @@ def run_job(job):
     theirs = load_agent(LAB/job['opponent_path'])
     our_function = ours.agent
     entrypoint = 'explicit_module_agent'
-    if job['variant'].endswith('-file') or job.get('official_loader'):
+    if job['variant'] == 'baseline' or job['variant'].endswith('-file') or job.get('official_loader'):
         from kaggle_environments.agent import get_last_callable
         candidate_file = LAB/job['candidate_path']
         our_function = get_last_callable(candidate_file.read_text(encoding='utf-8'), path=str(candidate_file))
         entrypoint = 'official_get_last_callable'
     seat = job['seat']
     module_metrics = {}
+    call_profile = []
+    def instrumented(observation):
+        tick, cpu = time.perf_counter(), time.process_time()
+        try:
+            return our_function(observation)
+        finally:
+            call_profile.append({'step': int(observation['step']),
+                                 'wall_ms': (time.perf_counter()-tick)*1000,
+                                 'cpu_ms': (time.process_time()-cpu)*1000})
     stock_end = {}
     start_snapshot = {}
     original = engine._process_market
@@ -36,6 +45,10 @@ def run_job(job):
         step = int(state[0].observation['step'])
         if step == 695:
             start_snapshot['sha256'] = hashlib.sha256(json.dumps([dict(s.observation) for s in state], sort_keys=True).encode()).hexdigest()
+            gameplay = [{k: v for k, v in s.observation.items() if k != 'remainingOverageTime'} for s in state]
+            start_snapshot['gameplay_sha256'] = hashlib.sha256(json.dumps(gameplay, sort_keys=True).encode()).hexdigest()
+            start_snapshot['runtime_overage_seconds'] = [s.observation.get('remainingOverageTime') for s in state]
+            start_snapshot['gameplay_hash_scope'] = 'All observation fields except machine-dependent remainingOverageTime; raw sha256 retained separately'
         if step >= 696:
             stock_end['step'] = step
             stock_end['shed'] = [dict(s.observation.private['shed']) for s in state]
@@ -43,17 +56,23 @@ def run_job(job):
         return result
     engine._process_market = market
     try:
-        players = [our_function, theirs.agent] if seat == 0 else [theirs.agent, our_function]
+        players = [instrumented, theirs.agent] if seat == 0 else [theirs.agent, instrumented]
         row = run_game(players, {'seed': job['seed'], 'episodeSteps': 720})
     finally:
         engine._process_market = original
     module_metrics.update(dict(our_function.__globals__.get('_TERMINAL_DIAGNOSTICS', {})))
+    timing_metrics = dict(our_function.__globals__.get('_P2B_DIAGNOSTICS', {}))
+    safety_metrics = dict(our_function.__globals__.get('_P2S_DIAGNOSTICS', {}))
     row.update(job)
     row.update(started_utc=started, completed_utc=datetime.now(timezone.utc).isoformat(),
                wall_seconds=time.perf_counter()-clock, engine_sha256=digest(engine.__file__),
                runner_sha256=digest(__file__), candidate_sha256=digest(LAB/job['candidate_path']),
                opponent_sha256=digest(LAB/job['opponent_path']), evidence='closed_loop',
                margin=row['rewards'][seat]-row['rewards'][1-seat], terminal_diagnostics=module_metrics,
+               timing_diagnostics=timing_metrics,
+               safety_diagnostics=safety_metrics,
+               own_call_profile=call_profile,
+               timing_scope='Local inner function wall/CPU time; excludes source loading and some framework overhead, not official sandbox limits',
                final_after_market=stock_end, terminal_start=start_snapshot, entrypoint=entrypoint)
     path = ROOT/job['split']/job['key']
     if path.exists():
