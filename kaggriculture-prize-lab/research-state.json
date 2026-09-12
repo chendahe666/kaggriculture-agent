@@ -8,6 +8,7 @@
   "dataset_license": "pending owner approval; public research preview, not an open-license release",
   "study_scope": "frozen top30, one active submission per team, 20 public games each; 600 references, 438 unique episodes; all development, future holdout not acquired",
   "github_repository": "https://github.com/chendahe666/kaggriculture-agent",
+  "github_sync_status": "pending: P0 commit 6b72cee created locally; Git credential manager could not authenticate noninteractively; remote last verified at 1f77b5bb752b990cb955c50ab9502be3d3c5be99",
   "github_policy": "one candidate and its version report per commit; push and verify remote; no Kaggle submission implied",
   "active_baseline": "public-baseline-v10/main.py",
   "online_submissions": [56156204, 56156051],

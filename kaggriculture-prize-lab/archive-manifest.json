@@ -228,8 +228,8 @@
     },
     {
       "path": "OPTIMIZATION_LOG.md",
-      "sha256": "3bee2d32191bfe274768889c7ae1e6718a6db2ead68ad19505889905e94a3f0b",
-      "bytes": 15884
+      "sha256": "681043d351a8807d9612039de86dc33c159f4fc74a04917ac1d2c60e6b28d454",
+      "bytes": 16307
     },
     {
       "path": "PIPELINE_PROMPT.md",
@@ -453,8 +453,8 @@
     },
     {
       "path": "reports/elite-study-20260912-report.md",
-      "sha256": "28abec65832b50109cc5b24466392087be10b8f93c47876b1fd72ef0a0ac2fed",
-      "bytes": 8063
+      "sha256": "a55b55ffbb1bb634b74889293e68e8363c7290df11a2f9ada5d2672a64e94035",
+      "bytes": 8390
     },
     {
       "path": "reports/versions/cok-v10-baseline.md",
@@ -533,8 +533,8 @@
     },
     {
       "path": "research-state.json",
-      "sha256": "fb78d1cc7e05fa56486621748e415ce3bad99a208cb4c2e52855a3e52103e6bd",
-      "bytes": 2969
+      "sha256": "01818a4cacf71da8da03c0fb0c3e38dc146e196231d98409fe2b3a6e39aa9f62",
+      "bytes": 3169
     },
     {
       "path": "RESEARCH.md",
