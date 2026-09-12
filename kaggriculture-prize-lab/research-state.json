@@ -34,7 +34,7 @@
   "dataset_license": "pending owner approval; public research preview, not an open-license release",
   "study_scope": "frozen top30, one active submission per team, 20 public games each; 600 references, 438 unique episodes; all development, future holdout not acquired",
   "github_repository": "https://github.com/chendahe666/kaggriculture-agent",
-  "github_sync_status": "User restored authentication; P2b/P2c four version commits plus full327-game checkpoint pushed normally and remote independently verified at 98d00ecb0086ba37c30b883a60f2938bf97bc5c0. New P3 work follows this checkpoint; no authentication blocker.",
+  "github_sync_status": "Authentication restored. P3 low candidate 9f34dbe and high candidate d059a8d each have an independent code-plus-report commit. Full96-game checkpoint45e79e8c15774ae9571b3cdd8cc543aec4399e77 pushed normally and independently verified against remote main on2026-09-12. This receipt records that completed verification; no authentication blocker or Kaggle submission.",
   "github_policy": "one candidate and its version report per commit; push and verify remote; no Kaggle submission implied",
   "active_baseline": "public-baseline-v10/main.py",
   "online_submissions": [56156204, 56156051],
