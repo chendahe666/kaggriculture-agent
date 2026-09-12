@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "skill_name": "competition-research",
+    "skill_version": "0.1.0",
+    "timestamp": "2026-09-12",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 1,
+    "executor": "Codex fresh-context subagents, inherited model/effort; no model override",
+    "grader": "Independent Codex subagent, configuration-visible, final outputs only"
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "prediction-validation",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1.0,
+        "time_seconds": null,
+        "tokens": null,
+        "errors": null,
+        "output_chars": 994
+      },
+      "expectations": [
+        {
+          "text": "明确剔除或重建预测时不可得退款率，公开榜改善不能挽救其不可用性。",
+          "passed": true,
+          "evidence": "开头明确写“退款率在预测后才产生，必须剔除；公开榜改善也不能证明它可部署”，并只允许“预测时已结算的滞后值”。"
+        },
+        {
+          "text": "主要验证匹配同门店未来预测，并处理七天标签可获得时点或跨边界重叠，不机械要求全门店互斥。",
+          "passed": true,
+          "evidence": "分割段写“门店可跨集合，因为目标不是新门店”，训练七天标签须在下一段首个预测时点前完全结束，清除跨界窗口；D/H 按完整月份先后划分。"
+        },
+        {
+          "text": "识别全训练集拟合预测训练二层模型的问题，要求合法 OOF/时间外预测与折内预处理。",
+          "passed": true,
+          "evidence": "写明全训练集原位预测会使二层看到“过分乐观的输入”；要求按时间生成、对该行标签真正样本外的一级预测。另明确“缺失填补、编码、缩放及特征选择只在训练部分拟合；目标编码须交叉拟合”。"
+        },
+        {
+          "text": "拒绝把50个依赖折当独立样本生成所提置信区间，说明正确依赖单位或有限样本限制。",
+          "passed": true,
+          "evidence": "明确拒绝“标准差除以 √50”，解释重复折共享样本及七天标签重叠；提出连同所有门店按至少两周日期块重采样、检查块长敏感性，并注明一个月有效块少及未来漂移限制。"
+        },
+        {
+          "text": "提供不超过四次完整训练的可执行预算，保留对照且依据互补误差/可信验证选型，不保证两个神经网络必胜。",
+          "passed": true,
+          "evidence": "预算为树模型控制 1 次、正则化中位数回归 1 次、选定模型 H 前重训 1 次、通过后最终重训 1 次；不暗加调参训练。D 按 MAE 与分组退化选型，H 只看一次，保留无需拟合的季节基线；明确暂停双神经网络和堆叠，集成须证明残差互补。"
+        }
+      ],
+      "output_sha256": "a96686b99fc77d8e0a88fcf64b16426817fe17a35ca7bf298b6f3fb134ed6f0a",
+      "notes": [
+        "Final-output grading only; full executor trace and token/timing metadata unavailable."
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "prediction-validation",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1.0,
+        "time_seconds": null,
+        "tokens": null,
+        "errors": null,
+        "output_chars": 737
+      },
+      "expectations": [
+        {
+          "text": "明确剔除或重建预测时不可得退款率，公开榜改善不能挽救其不可用性。",
+          "passed": true,
+          "evidence": "开头称预测早晨不可得的退款率“属于泄漏”，并写“时间折和公开榜同时改善也不能证明有效”；只允许预测时已落库的历史退款。"
+        },
+        {
+          "text": "主要验证匹配同门店未来预测，并处理七天标签可获得时点或跨边界重叠，不机械要求全门店互斥。",
+          "passed": true,
+          "evidence": "明确最后两个完整月份作开发月和封存确认月，保留同一批已有门店；训练七天标签须在开发月首个预测早晨前完整可得，边界隔离七天并加落库延迟。"
+        },
+        {
+          "text": "识别全训练集拟合预测训练二层模型的问题，要求合法 OOF/时间外预测与折内预处理。",
+          "passed": true,
+          "evidence": "明确训练样本原位预测喂二层会泄漏；要求“严格向前、标签已成熟的折外预测训练二层”。预处理采取时间因果约束：“滚动统计和编码只用当时已知数据”，并按训练截止时点只取此前数据。虽未逐项列出所有变换，已要求该方案用到的统计和编码不跨信息边界。"
+        },
+        {
+          "text": "拒绝把50个依赖折当独立样本生成所提置信区间，说明正确依赖单位或有限样本限制。",
+          "passed": true,
+          "evidence": "明确重复五折不是 50 个独立实验；提议对配对误差按连续 7—14 天日期块重采样，每块保留所有门店，解释目标重叠、共同日期冲击及一个月信息有限。"
+        },
+        {
+          "text": "提供不超过四次完整训练的可执行预算，保留对照且依据互补误差/可信验证选型，不保证两个神经网络必胜。",
+          "passed": true,
+          "evidence": "前三次为修复后的现有模型、浅层提升树和正则化/收缩变体；在开发月选挑战者，确认月使用保存的基线和挑战者、不重训；第4次按结果重训最终模型或基线。声明两个月模型冻结，对照一致；按 MAE、配对差及分组退化选型，不用公开榜微变或双神经网络保证。"
+        }
+      ],
+      "output_sha256": "43e831d02f194bee1656ffbdb3e1709c269c78959f0c1285b11604f52cd2b41a",
+      "notes": [
+        "Final-output grading only; full executor trace and token/timing metadata unavailable."
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "nontransitive-policies",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1.0,
+        "time_seconds": null,
+        "tokens": null,
+        "errors": null,
+        "output_chars": 1008
+      },
+      "expectations": [
+        {
+          "text": "识别循环克制，按给定分布正确算出 B 期望胜率64%（A50%、C36%，或等价正确比较）。",
+          "passed": true,
+          "evidence": "明确列出 A=(.5,.3,.7)、B=(.7,.5,.3)、C=(.3,.7,.5)，计算 B=.8×.7+.1×.5+.1×.3=64%，A=50%，C=36%，并指出循环克制。"
+        },
+        {
+          "text": "区分该分布下利用 B 与均匀整局混合对三列50%的有限池稳健性，不宣称混合一定最大化实际榜单收益。",
+          "passed": true,
+          "evidence": "将给定比例可信时优先 B 与重视分布变化时验证整局混合分开；均匀混合三列均 50%，纯策略最差列 30%，明确只是给定矩阵内保底，不能推广未知对手或保证比别人强。"
+        },
+        {
+          "text": "否定直接逐回合动作平均，说明布局/承诺兼容性，提出可执行的整局选择或有恢复约束的门控。",
+          "passed": true,
+          "evidence": "拒绝逐回合动作平均，指出离散动作不合法与布局、预算、资源承诺冲突；给出开局各 1/3 抽样、整局执行方案，中途切换必须验证兼容状态、资源仲裁和恢复。"
+        },
+        {
+          "text": "不把四个 A 克隆算四类独立对手，不把旧固定动作带当会响应的新策略。",
+          "passed": true,
+          "evidence": "明确“四个改名 A 克隆只算一个策略家族”；旧动作带不能对新状态反馈，不能充当响应式对手或最佳回应。"
+        },
+        {
+          "text": "补充配对座位/种子、有限样本不确定性及未见响应家族测试，记忆不声称全局均衡或保证提分。",
+          "passed": true,
+          "evidence": "提出匹配种子和平衡先后手，以独立种子/双席位块估区间；再对两个预留独立响应策略家族评测，家族未取得时声明缺口。长期记忆限定题面版本、矩阵和权重，未知家族稳健性仅记为 hypothesis，明确不能升级为普遍保证。"
+        }
+      ],
+      "output_sha256": "804978734fd2dc826ae497daba73c050c13fb3ad97f8d31dde56da404fe24c90",
+      "notes": [
+        "Final-output grading only; full executor trace and token/timing metadata unavailable."
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "nontransitive-policies",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1.0,
+        "time_seconds": null,
+        "tokens": null,
+        "errors": null,
+        "output_chars": 1061
+      },
+      "expectations": [
+        {
+          "text": "识别循环克制，按给定分布正确算出 B 期望胜率64%（A50%、C36%，或等价正确比较）。",
+          "passed": true,
+          "evidence": "明确“B 克 A、C 克 B、A 克 C”，表格正确列出三行胜率与 A=50%、B=64%、C=36%，并展示 B 的加权计算。"
+        },
+        {
+          "text": "区分该分布下利用 B 与均匀整局混合对三列50%的有限池稳健性，不宣称混合一定最大化实际榜单收益。",
+          "passed": true,
+          "evidence": "区分当前分布下 B 首选与开局各1/3、整局执行的稳健候选；说明混合三列50%、相对B在预估分布损失14个百分点，最大最小只限封闭三策略集合，不外推未知策略。"
+        },
+        {
+          "text": "否定直接逐回合动作平均，说明布局/承诺兼容性，提出可执行的整局选择或有恢复约束的门控。",
+          "passed": true,
+          "evidence": "说明逐回合动作平均可能离散/不合法，布局、库存、先前资源承诺使动作不能互换；执行方案为整局抽样，若中途切换须定义状态兼容、资源交接和合法性规则并单独评测。"
+        },
+        {
+          "text": "不把四个 A 克隆算四类独立对手，不把旧固定动作带当会响应的新策略。",
+          "passed": true,
+          "evidence": "明确固定回放状态偏离后须检查合法性，不能冒充适应局面的对手；四个 A 克隆按行为去重，不能当四种线上对手。"
+        },
+        {
+          "text": "补充配对座位/种子、有限样本不确定性及未见响应家族测试，记忆不声称全局均衡或保证提分。",
+          "passed": true,
+          "evidence": "提出新种子、双方位置互换、独立种子/成组实验区间，以及未参与调参的对手测试；结合后文明确排除克隆和固定动作带作为独立适应对手，构成未见响应对手的测试要求。长期记忆将混合稳健性限定集合内，并要求版本、矩阵、样本、区间、分布来源和日期。未指定新家族数量，属于可执行细节不足，不否定已提出的测试方向。"
+        }
+      ],
+      "output_sha256": "71ce524b60e0a0814f98af57d29c221824416f1759d3d1aaf805dd1f64f3315f",
+      "notes": [
+        "Final-output grading only; full executor trace and token/timing metadata unavailable."
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "bounded-search-learning",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "pass_rate": 0.8333333333333334,
+        "time_seconds": null,
+        "tokens": null,
+        "errors": null,
+        "output_chars": 1118
+      },
+      "expectations": [
+        {
+          "text": "明确隐藏全局状态不能直接成为线上输入，500局已经是开发资料，要求新冻结确认数据。",
+          "passed": true,
+          "evidence": "明确部署只用合法观测和历史，隐藏状态须从合法历史推断的分布采样，不能读真实库存/未来随机数；500局全部归开发集，重新切分不能恢复独立性，另隔离未查看筛选与最终确认数据。"
+        },
+        {
+          "text": "提出至少两条机制不同的非补丁探索，包括规划/搜索与学习政策或价值，不要求穷尽规则后才能尝试。",
+          "passed": true,
+          "evidence": "开头明确优先“官方模拟器搜索＋小型策略／价值学习”，同时给小型 RL 独立配额；分配搜索、模仿/价值、RL 三条路线，不必先穷尽规则。"
+        },
+        {
+          "text": "利用准确模拟器且区分可学习的价值/策略/对手模型，不默认重新学习全部已知动力学。",
+          "passed": true,
+          "evidence": "搜索使用官方模拟器；学习对象为策略、完整终局回报价值以及用合法历史预测隐藏库存的信念模型。明确已有准确快速模拟器，无需优先重学世界模型。"
+        },
+        {
+          "text": "识别100步筛选会误杀晚回报策略，并比较合理终端价值/完整局低成本样本或验证筛选排名。",
+          "passed": true,
+          "evidence": "明确100步仅用于正确性/速度，筛选用较少种子的600步完整局并检查排名可靠性；滚动规划用长程场景和终端价值纳入400步后回本。"
+        },
+        {
+          "text": "不以少采购奖励作为晋级目标，说明塑形偏差；拒绝此离线约束下逐步外部API并保留离线LLM用途。",
+          "passed": true,
+          "evidence": "冻结600步官方指标为验收目标，采购仅作诊断；指出“少采购”会抑制盈利投资，原奖励优先、塑形单独消融。拒绝逐步LLM API，并明确LLM可离线提出/编写候选再由模拟器验证。"
+        },
+        {
+          "text": "给出总量不超过6小时的分配、100毫秒运行检查和至少一个具体数据或搜索预算曲线；不声称已训练/提分。",
+          "passed": false,
+          "evidence": "六段预算30+90+60+60+45+75=360分钟，且写明整机等效机时；100毫秒目标、最坏耗时及确认超时率检查均明确，也未声称实测成绩。但具体曲线只有学习分支在25%/50%/100%时间配额的检查点；搜索部分仅笼统写“比较搜索宽度、深度及模拟次数的收益曲线”，没有给数据量/搜索调用数的比较档位或可复核的转换规则。按原项“具体数据或搜索预算曲线”从严判证据不足，不能用训练时间检查点替换该子要求。"
+        }
+      ],
+      "output_sha256": "81063bcf7be0eab9a22fb1324580ba58475eb922d8f1c394ce444a5a3e22efb7",
+      "notes": [
+        "Final-output grading only; full executor trace and token/timing metadata unavailable."
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "bounded-search-learning",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 4,
+        "failed": 2,
+        "total": 6,
+        "pass_rate": 0.6666666666666666,
+        "time_seconds": null,
+        "tokens": null,
+        "errors": null,
+        "output_chars": 902
+      },
+      "expectations": [
+        {
+          "text": "明确隐藏全局状态不能直接成为线上输入，500局已经是开发资料，要求新冻结确认数据。",
+          "passed": true,
+          "evidence": "明确500局已调参不能再当独立测试，新种子按整局分训练/开发/封存测试；线上限合法观测及自身历史，隐藏库存仅能作训练标签，不能作部署输入。"
+        },
+        {
+          "text": "提出至少两条机制不同的非补丁探索，包括规划/搜索与学习政策或价值，不要求穷尽规则后才能尝试。",
+          "passed": true,
+          "evidence": "提出模拟器搜索、模仿学习、小规模RL三条路线，写明同时探索规划和学习，不必穷尽规则，原规则作基线及超时兜底。"
+        },
+        {
+          "text": "利用准确模拟器且区分可学习的价值/策略/对手模型，不默认重新学习全部已知动力学。",
+          "passed": true,
+          "evidence": "官方模拟器负责转移，分别更新库存分布预测器、小策略、策略与价值网络；明确已有精确模拟器，暂不优先另学环境转移。"
+        },
+        {
+          "text": "识别100步筛选会误杀晚回报策略，并比较合理终端价值/完整局低成本样本或验证筛选排名。",
+          "passed": true,
+          "evidence": "明确100步只排查错误，不能淘汰后期回本策略；完整600步验收，规划用完整续演训练尾部价值并识别400步之后回本投资，预算不足也保留完整终局评估。"
+        },
+        {
+          "text": "不以少采购奖励作为晋级目标，说明塑形偏差；拒绝此离线约束下逐步外部API并保留离线LLM用途。",
+          "passed": false,
+          "evidence": "已将奖励对齐正式终局目标，指出“少采购”会奖励停摆且塑形须验证不改目标；也排除离线限制下每步LLM API。但整份答案没有提出任何离线LLM用途。该原项同时要求“并保留离线LLM用途”，这一子要求无证据，因此失败。"
+        },
+        {
+          "text": "给出总量不超过6小时的分配、100毫秒运行检查和至少一个具体数据或搜索预算曲线；不声称已训练/提分。",
+          "passed": false,
+          "evidence": "分配0.5+1+1+1+1+1.5=6小时，并说明整机共享预算、吞吐不足减少候选；搜索约80毫秒主动停止、预留特征/兜底开销并报告尾部延迟和超时率，未声称实测。但曲线是25%/50%/100%时间预算处的收益随耗时曲线，模拟器调用数仅另行记录；未给具体数据量或搜索次数档位及对应可复核比较规则。原项要求具体数据或搜索预算曲线，从严判该子要求证据不足。"
+        }
+      ],
+      "output_sha256": "458bf9a2e6cc0d70a94771487a06d730ea3d5e388e4f9810892356ab159c7385",
+      "notes": [
+        "Final-output grading only; full executor trace and token/timing metadata unavailable."
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9444444444444444,
+        "stddev": 0.0962250448649376
+      },
+      "time_seconds": null,
+      "tokens": null,
+      "assertions_passed": 15,
+      "assertions_total": 16
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8888888888888888,
+        "stddev": 0.1924500897298753
+      },
+      "time_seconds": null,
+      "tokens": null,
+      "assertions_passed": 14,
+      "assertions_total": 16
+    },
+    "delta": {
+      "pass_rate": 0.05555555555555558,
+      "time_seconds": null,
+      "tokens": null
+    }
+  },
+  "notes": [
+    "This is a small diagnostic pilot, not evidence of competition-score improvement.",
+    "Stddev is across heterogeneous prompts, not repeat-run sampling uncertainty.",
+    "Prompts and expectations were frozen before execution; v0.1.0 snapshot is retained.",
+    "No executor token or duration data returned; null means unavailable, not zero.",
+    "Eval-1 missed a confirmation-control defect despite a passing assertion; see qualitative review.",
+    "Eval-3 curve assertion was graded strictly for concrete data/search levels, not time checkpoints alone."
+  ]
+}

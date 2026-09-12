@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.1.0",
+  "updated_utc": "2026-09-12",
+  "lessons": [
+    {
+      "id": "CR01", "version": 1, "status": "literature_guidance",
+      "claim": "Keep a baseline as a control while probing different mechanisms and budget-scaling methods.",
+      "scope": "Research portfolios with an executable baseline and bounded budget",
+      "sources": ["P2", "P3", "P5"], "evidence": [], "validations": [],
+      "limitations": "Long-run scalability is not fixed-budget superiority; implementation checks remain necessary.",
+      "falsification": "A probe fails its objective/resource tradeoff; narrow that probe, not all learning/search."
+    },
+    {
+      "id": "CR02", "version": 1, "status": "literature_guidance",
+      "claim": "Validation must represent the generalization target and preserve sample dependence.",
+      "scope": "Prediction and agent evaluation; sampling units are task-dependent",
+      "sources": ["B4", "B5", "P1"], "evidence": [], "validations": [],
+      "limitations": "Local splits may miss future shift; repeated folds are dependent.",
+      "falsification": "Frozen local rankings fail prospective outcomes; audit distribution, leakage and estimators."
+    },
+    {
+      "id": "CR03", "version": 1, "status": "literature_guidance",
+      "claim": "Responsive opponent populations reveal weaknesses hidden by latest-champion testing.",
+      "scope": "Adversarial games with possible nontransitivity and versioned policies",
+      "sources": ["B2", "P4"], "evidence": [], "validations": [],
+      "limitations": "Finite pools and approximate best responses cannot prove global robustness or equilibrium.",
+      "falsification": "Independent opponent families reveal worse results despite training-pool improvement."
+    },
+    {
+      "id": "CR04", "version": 1, "status": "literature_guidance",
+      "claim": "Plan, learn and execute with legal information and explicit horizon/resource assumptions.",
+      "scope": "Sequential competitions with simulator or trajectory access",
+      "sources": ["B1", "B3"], "evidence": [], "validations": [],
+      "limitations": "Known transitions do not imply observable hidden state; shaping and truncation can alter preferences.",
+      "falsification": "Observation-only closed-loop or longer-horizon evaluation overturns apparent benefit."
+    },
+    {
+      "id": "CR05", "version": 1, "status": "hypothesis",
+      "claim": "Versioned literature-and-experiment memory may improve competition research decisions.",
+      "scope": "Research assistance, not underlying weights or guaranteed score gains",
+      "sources": ["P3", "P5"], "evidence": [], "validations": [],
+      "limitations": "Prompt tests alone do not establish competition-performance improvement.",
+      "falsification": "Forward tasks or measured competitions show no improvement or harmful rigidity."
+    }
+  ]
+}
