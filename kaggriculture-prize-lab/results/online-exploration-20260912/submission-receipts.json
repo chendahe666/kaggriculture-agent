@@ -6,7 +6,7 @@
   "local_baseline_replaced": false,
   "new_strategy_bytes": false,
   "extra_preflight_full_games": 2,
-  "extra_preflight_scope": "Duplicate development cases; not independent strength evidence. P2/P3 frozen425-count not rewritten:327P2+96P3+2R1=425total executions.",
+  "extra_preflight_scope": "Duplicate development cases; not independent strength evidence. P2/P3 frozen counts not rewritten:327P2+96P3+2R1=425total executions.",
   "regression_tests": {"count": 57, "passed": 57, "seconds": 6.817},
   "receipt_source": "Official Kaggle CLI successful submit responses and independently fetched authenticated submission list",
   "server_remaining_daily_submissions_after_second_upload": 3,
@@ -38,6 +38,13 @@
       "upload_accepted": true
     }
   ],
+  "subsequent_validation_snapshot": {
+    "observed_utc_date": "2026-09-12",
+    "source": "Official authenticated submissions list after initial upload receipts",
+    "56180702": {"status": "COMPLETE", "public_score": 600.0},
+    "56180708": {"status": "COMPLETE", "public_score": 600.0},
+    "interpretation": "Both passed server validation. These are default starting ratings, not converged outcomes."
+  },
   "automatic_follow_up": false,
   "third_submission_authorized": false,
   "rating_interpretation": "No online strength result yet; initial/default ratings and asynchronous opponent mixes are not paired causal uplift."

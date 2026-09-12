@@ -1,6 +1,7 @@
 {
   "updated_local_date": "2026-09-12",
-  "status": "R1_two_user_authorized_online_trials_uploaded_validation_pending",
+  "status": "R1_two_user_authorized_online_trials_COMPLETE_rating_not_converged",
+  "R1_server_validation": {"56180708": "COMPLETE", "56180702": "COMPLETE", "observed_utc_date": "2026-09-12", "initial_scores": {"56180708": 600.0, "56180702": 600.0}, "interpretation": "Default starting ratings, not evidence of competitive strength."},
   "latest_online_report": "reports/online-exploration-20260912.md",
   "exploratory_submission_authorization": "2026-09-12 user explicitly requested two best existing candidates be submitted despite the prior no-promotion explanation. One-time two-submission exploration; no blanket statistical-gate relaxation, paid compute or baseline file replacement.",
   "current_round_plan": "reports/p3-20260912-plan.md",
@@ -36,7 +37,7 @@
   "dataset_license": "pending owner approval; public research preview, not an open-license release",
   "study_scope": "frozen top30, one active submission per team, 20 public games each; 600 references, 438 unique episodes; all development, future holdout not acquired",
   "github_repository": "https://github.com/chendahe666/kaggriculture-agent",
-  "github_sync_status": "Authentication restored. P3 low candidate 9f34dbe and high candidate d059a8d each have an independent code-plus-report commit. Full96-game checkpoint45e79e8c15774ae9571b3cdd8cc543aec4399e77 pushed normally and independently verified against remote main on2026-09-12. This receipt records that completed verification; no authentication blocker or Kaggle submission.",
+  "github_sync_status": "P3 full checkpoint45e79e8c15774ae9571b3cdd8cc543aec4399e77 previously pushed and independently verified. Subsequent receiptce86aad and R1 submission-record commit3cf983a remain local: R1 noninteractive push failed because credentials could not be obtained. Do not claim these records synced. Kaggle is independently authenticated and both R1 submissions are COMPLETE. No repeated interactive credential wait started.",
   "github_policy": "one candidate and its version report per commit; push and verify remote; no Kaggle submission implied",
   "active_baseline": "public-baseline-v10/main.py",
   "online_submissions": [56180708, 56180702],

@@ -428,8 +428,8 @@
     },
     {
       "path": "OPTIMIZATION_LOG.md",
-      "sha256": "7464acf75da7c240f842920ef4ae3b731f09f8df2605ade19d5042d66876462c",
-      "bytes": 32481
+      "sha256": "84f9501e42cf81a2fccbbb9b09657dcf38ea46f7cfd214fb92892df56afd8c7a",
+      "bytes": 32833
     },
     {
       "path": "PIPELINE_PROMPT.md",
@@ -698,8 +698,8 @@
     },
     {
       "path": "reports/online-exploration-20260912.md",
-      "sha256": "5449dc85c65a5fa51ea00945515732f17b3b58b96038b634f0c232c1bebc03c3",
-      "bytes": 4120
+      "sha256": "7b1d0a58225de014ee2730974832ffd9e685f2c2db341c52be71d5f36e0e7a8c",
+      "bytes": 4723
     },
     {
       "path": "reports/p1-20260912-plan.md",
@@ -998,8 +998,8 @@
     },
     {
       "path": "research-state.json",
-      "sha256": "9bf9a69a72fc23e1fdf05b227c3fdb2bf65cfeedcce9f668efb50fc463969c41",
-      "bytes": 7517
+      "sha256": "433ec0f88c2e37bcc5a8b3e1472786b4e5bca4e1c00be5ca5853c86e01f606c9",
+      "bytes": 7825
     },
     {
       "path": "RESEARCH.md",
@@ -2643,8 +2643,8 @@
     },
     {
       "path": "results/online-exploration-20260912/submission-receipts.json",
-      "sha256": "ae5527dbb3ffb8c0e52f211942cd71af0944aaac4c15394d4be54adb4cc6de0d",
-      "bytes": 2114
+      "sha256": "4c1fb13d76663509c3547bbfb917a1e87c71ada888b58b08e72c5d9f7881d3bf",
+      "bytes": 2522
     },
     {
       "path": "results/online-sample-analysis.json",
