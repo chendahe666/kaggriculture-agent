@@ -1,0 +1,76 @@
+{
+  "schema": "p3-prefix-mechanism-audit-v1",
+  "reviewed_utc": "2026-09-12 06:34:18 UTC",
+  "approved": true,
+  "approval_scope": "Only the pre-registered 96-game local development probe matrix. Not baseline replacement, release confirmation, strength proof or Kaggle submission.",
+  "variant_hashes": {
+    "baseline": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+    "v5-low-file": "f2d250860f199ba5569cfbd9909219a0069da6a1c3575fe4203c5d1551e5a3a2",
+    "v5-high-file": "40c857218c781a5980010bacb348c03f498a87d36c2671e5a8c37194c78a2a83"
+  },
+  "source_hashes": {
+    "runner_sha256": "38fd908bffd4c2364a87d46812049d40e53488dc7e1fa865ab627111f95c9a1d",
+    "features_sha256": "e6f865e478875deec3c745e89a5bb11bc86fc62a3cfac2e8f3e9198250932c34",
+    "research_cycle_sha256": "48df447e5be1389e425af2769e2bf39b5c36898db45d19ef0b2c5d1abfc1e211",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "overlay_sha256": "9678ad7d6f9584398e2a3e15551510dc99fbb4724b9defeea5fce0d4386714f5",
+  "static_review": {
+    "path": "reports/p2-macro-source-hypotheses.md",
+    "sha256": "0fccda8c7833bebb696aa011f54eb166d09f8be6216b726a66eb152678b828c7",
+    "section": 7,
+    "root_read": true
+  },
+  "root_test_runs": [
+    {
+      "command": "py -3.13 -m unittest discover -s kaggriculture-prize-lab/tests -p test_portfolio_switch.py -q",
+      "path": "tests/test_portfolio_switch.py",
+      "sha256": "d726476309cedcb87d71db33cec4cd481eaebe119f7b858dea8ceba046a4cbff",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 45.47
+    },
+    {
+      "command": "py -3.13 -m unittest discover -s kaggriculture-prize-lab/tests -p test_portfolio_runner.py -q",
+      "path": "tests/test_portfolio_runner.py",
+      "sha256": "6d4969d54958a9613e5153bd35cc3c822037edb6048584712d5be26fb069d017",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 0.908
+    }
+  ],
+  "mechanism_evidence": [
+    "12 native raw tables share 0-71; all corresponding premium-sales pairs audited.",
+    "Six official-engine prefixes through action180: baseline/low/high x both seats, seed17 and a live COK opponent. Full wrapped actions, opponent actions, game states and ledgers equal through71; low/high equal through167.",
+    "Valid continuous observation history opens V5 at72; paired low actions/sales remain selected until167; fixed requested expert is selected at168.",
+    "Step152 CARROT zero/nonzero-stock counterexample detects premature high-table activation via future seed-demand clipping.",
+    "Unmodified seed17 prefixes have no nonempty H1 boundary debt. Separate explicitly selected legal states execute official DROP, full-agent presale creation and official sale, then verify nonempty debt repayment at72/168 without ledger wiping.",
+    "Selected WEED recovery at167 executes official DIG and day reset, then clears active transaction while preserving market-history flag. Cow reset/target logic is unchanged and statically reviewed; no claim of exhaustive reachable repair-state coverage.",
+    "Original hand alignment, cow reconciliation, market ordering and disabled extra-cow flag remain intact. Same-step retries, changed72 precommit retry, seat isolation, restart, missed168 safe-low and malformed/backward clock nonrewind are tested.",
+    "Four-frame official runner smoke validates actual configuration forwarding and nested successful transaction counters; all phase totals reconcile. One-argument opponents remain supported.",
+    "Step72 feature whitelist excludes private data, seed, opponent identity, rewards and future shops; step168 shops are captured separately before action.",
+    "48 historical baseline controls verified read-only. Five opponent official entrypoints equal namespace agent; frozen Seyam's final one-argument wrapper directly returns agent(obs)."
+  ],
+  "timing": {
+    "scope": "Root's short-prefix local inner-call observation only; not official sandbox or full-game certification",
+    "max_inner_call_ms": 22.951,
+    "max_trace_validation_ms": 21.773,
+    "trace_checks_per_probe": 3
+  },
+  "corrected_test_failures": [
+    "Seat1 raw stored observation lacks merged shared step; fixtures now use official shared-state view.",
+    "Identical same72 values were not a changed-input retry; test now genuinely alters input.",
+    "Selected-state nested plain dict changes through Struct attribute conversion did not persist; test now uses direct key access.",
+    "Temporary-directory Windows ACL interfered with exclusive-write unit test; bounded workspace test directory inherits workspace ACLs."
+  ],
+  "policy_safety_change": "Malformed clock/seat after forced entry returns safe PASS without allowing native step coercion to reset committed ledgers.",
+  "limits": [
+    "Only mechanism/recorder evidence; zero full P3 games at approval.",
+    "Only selected boundary counterexamples and six short development prefixes, not arbitrary reachability or opponent generalization.",
+    "Historical controls did not record action71/72 prefixes/features and used older caller instrumentation; no invented baseline fingerprint equivalence.",
+    "Native low/high sources are related COK experts, not independent opponent families; Arlene source remains local-only.",
+    "No release gate was relaxed; no confirmation seeds opened; no online score estimate."
+  ]
+}

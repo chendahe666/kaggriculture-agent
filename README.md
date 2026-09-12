@@ -9,7 +9,11 @@
 [优化复盘](kaggriculture-prize-lab/OPTIMIZATION_LOG.md)、
 [逐版本记录](kaggriculture-prize-lab/reports/versions/)、
 [版本恢复说明](kaggriculture-prize-lab/VERSIONING.md) 开始。
-当前市场候选没有通过发布门禁，GitHub 存档不代表线上提分。
+2026-09-12：竞赛研究skill 0.1.1 已整理；P2终局研究与P3早期专家研究均未晋级，根基线未改。
+P3新增96场完整模拟，两专家均由原版36胜分降为32；没有训练无胜负互补的选择器，也没有新增Kaggle提交。
+先读 [P3完整复盘](kaggriculture-prize-lab/reports/p3-20260912-report.md) 与
+[下一阶段诊断提案（未启动）](kaggriculture-prize-lab/reports/p4-material-diagnostic-proposal.md)。
+GitHub 存档包含失败版本与结果，不代表线上提分。
 根源码对应许可为 `LICENSE-APACHE-2.0.txt`，原始来源声明见
 `THIRD_PARTY_NOTICES.md`；不要将第三方代码表示为本项目原创。
 

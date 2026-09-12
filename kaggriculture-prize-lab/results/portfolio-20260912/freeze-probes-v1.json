@@ -1,0 +1,62 @@
+{
+  "schema": "portfolio-track-freeze-v1",
+  "split": "development",
+  "seeds": [
+    91101,
+    91102,
+    91103,
+    91104
+  ],
+  "variant_hashes": {
+    "baseline": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+    "v5-low-file": "f2d250860f199ba5569cfbd9909219a0069da6a1c3575fe4203c5d1551e5a3a2",
+    "v5-high-file": "40c857218c781a5980010bacb348c03f498a87d36c2671e5a8c37194c78a2a83"
+  },
+  "opponents": {
+    "cok": {
+      "path": "public-baseline-v10/main.py",
+      "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "family": "reconstructed_mixed_route"
+    },
+    "seyam": {
+      "path": "public-seyam-v21/main.py",
+      "sha256": "4c02a323b0939e8f99df69dc6c23026946b033b0d831c79216ffac0ded9c8e60",
+      "family": "closed_loop_expert_route"
+    },
+    "lonespear": {
+      "path": "public-lonespear/main.py",
+      "sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "family": "greedy_dynamic_lineage"
+    },
+    "deepesh": {
+      "path": "public-deepesh-20260912/main.py",
+      "sha256": "bad9dd849ee6b828183ee938d2a5732835715a23fcb25082269ba95c54808cf6",
+      "family": "single_farmer_staple_greedy"
+    },
+    "maverick": {
+      "path": "public-maverick-20260912/main.py",
+      "sha256": "7ae4354862f4674155b788526e442da8edcf0dbe57cee808fed9fb629e0c0fa8",
+      "family": "sticky_zoned_crop_economy"
+    },
+    "arlene": {
+      "path": "inbox/opponents/strong-source-audit-20260912/lynnsakurai-farming-score-v3/verified-output/main.py",
+      "sha256": "d36ae976ad4a6316e6c1a27a5d04e9cc8e30300f21bdd31e749127c67a9311c4",
+      "family": "reconstructed_mixed_route"
+    }
+  },
+  "runner_sha256": "38fd908bffd4c2364a87d46812049d40e53488dc7e1fa865ab627111f95c9a1d",
+  "features_sha256": "e6f865e478875deec3c745e89a5bb11bc86fc62a3cfac2e8f3e9198250932c34",
+  "research_cycle_sha256": "48df447e5be1389e425af2769e2bf39b5c36898db45d19ef0b2c5d1abfc1e211",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "feature_schema_sha256": "7f1e1b3a8bc3f71fa4ba372c4cf9b5dab35d1c5366c2686089a3484049521547",
+  "max_new_games": 96,
+  "prefix_audit": {
+    "path": "reports/p3-prefix-audit.json",
+    "sha256": "9d868e4f2219141497a7c9e75d97e0b2d2611376a384f6bc0bbbaffd1a3a4d3b",
+    "approved": true
+  },
+  "scope": "Two fixed native experts; 96 new full games plus 48 read-only historical P2 baseline controls. No confirmation or promotion.",
+  "protocol_path": "reports/p3-20260912-plan.md",
+  "protocol_sha256": "89d4c90d441d5c33d2f57a7894d8a032fbe5e5f1d7439c3a830306bcf920c8c3",
+  "frozen_utc": "2026-09-12T06:34:19.785841+00:00"
+}

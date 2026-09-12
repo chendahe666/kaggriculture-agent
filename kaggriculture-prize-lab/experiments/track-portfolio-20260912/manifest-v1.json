@@ -1,0 +1,23 @@
+{
+  "schema": "p3-expert-probes-v1",
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "overlay_sha256": "9678ad7d6f9584398e2a3e15551510dc99fbb4724b9defeea5fce0d4386714f5",
+  "variants": {
+    "v5-low-file": {
+      "sha256": "f2d250860f199ba5569cfbd9909219a0069da6a1c3575fe4203c5d1551e5a3a2",
+      "expert": "low",
+      "bytes": 204845,
+      "first_possible_entry_step": 72,
+      "fixed_expert_decision_step": 168
+    },
+    "v5-high-file": {
+      "sha256": "40c857218c781a5980010bacb348c03f498a87d36c2671e5a8c37194c78a2a83",
+      "expert": "high",
+      "bytes": 204846,
+      "first_possible_entry_step": 72,
+      "fixed_expert_decision_step": 168
+    }
+  },
+  "scope": "Mechanism-gated local research probes; no strength validation or submission implied",
+  "built_utc": "2026-09-12T06:32:36.567030+00:00"
+}

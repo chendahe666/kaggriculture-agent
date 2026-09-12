@@ -1,0 +1,4651 @@
+{
+  "rewards": [
+    42335.0,
+    74896.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 853,
+      "FERTILIZER": 293,
+      "WOOL": 271,
+      "MILK": 189,
+      "MELON": 120,
+      "STRAWBERRY": 221,
+      "CARROT": 4
+    },
+    {
+      "WHEAT": 361,
+      "FERTILIZER": 351,
+      "WOOL": 195,
+      "MILK": 261,
+      "MELON": 72,
+      "STRAWBERRY": 262,
+      "CARROT": 9
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 37561,
+      "FERTILIZER": 12341,
+      "WOOL": 5678,
+      "MILK": 27863,
+      "MELON": 13949,
+      "STRAWBERRY": 5448,
+      "CARROT": 432
+    },
+    {
+      "WHEAT": 15281,
+      "FERTILIZER": 14660,
+      "WOOL": 5387,
+      "MILK": 36914,
+      "MELON": 16064,
+      "STRAWBERRY": 11968,
+      "CARROT": 1012
+    }
+  ],
+  "floor_units": [
+    {
+      "WOOL": 229,
+      "MELON": 15,
+      "STRAWBERRY": 99,
+      "FERTILIZER": 44
+    },
+    {
+      "WOOL": 148,
+      "STRAWBERRY": 81,
+      "FERTILIZER": 52
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 2,
+      "SELL:FERTILIZER": 141,
+      "SELL:WHEAT": 100,
+      "SELL:STRAWBERRY": 1
+    },
+    {
+      "BUY_PRODUCT:FERTILIZER": 3,
+      "SELL:FERTILIZER": 3,
+      "BUY_PRODUCT:WHEAT": 4,
+      "BUY_ANIMAL:SHEEP": 1,
+      "SELL:WOOL": 18,
+      "SELL:MILK": 12,
+      "SELL:STRAWBERRY": 6,
+      "SELL:CARROT": 2,
+      "SELL:WHEAT": 1
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 2400.0,
+      "BUY_ANIMAL:SHEEP": 6000.0,
+      "BUY_SEED:WHEAT": 1390.0,
+      "BUY_SEED:MELON": 1600.0,
+      "BUY_PRODUCT:WHEAT": 36130.0,
+      "BUY_SEED:STRAWBERRY": 3400.0,
+      "BUY_SEED:CARROT": 40.0
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 4880.0,
+      "BUY_SEED:WHEAT": 1970.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_ANIMAL:COW": 3600.0,
+      "BUY_ANIMAL:SHEEP": 4000.0,
+      "BUY_SEED:CARROT": 100.0,
+      "BUY_SEED:STRAWBERRY": 3300.0,
+      "BUY_PRODUCT:FERTILIZER": 1858.0
+    }
+  ],
+  "max_call_ms": [
+    48.444,
+    0.339
+  ],
+  "shops": [
+    "PET_CAFE",
+    "PIZZA_SHOP",
+    "PIZZA_SHOP",
+    "FARMERS_MARKET",
+    "PET_CAFE",
+    "SMOOTHIE_SHOP",
+    "ICE_CREAM_SHOP",
+    "PIZZA_SHOP"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "variant": "v5-high-file",
+  "candidate_path": "experiments/track-portfolio-20260912/v5-high-file/main.py",
+  "candidate_sha256": "40c857218c781a5980010bacb348c03f498a87d36c2671e5a8c37194c78a2a83",
+  "opponent_path": "inbox/opponents/strong-source-audit-20260912/lynnsakurai-farming-score-v3/verified-output/main.py",
+  "opponent_sha256": "d36ae976ad4a6316e6c1a27a5d04e9cc8e30300f21bdd31e749127c67a9311c4",
+  "opponent": "arlene",
+  "family": "reconstructed_mixed_route",
+  "seed": 91103,
+  "seat": 0,
+  "split": "development",
+  "key": "arlene-91103-0-v5-high-file.json",
+  "freeze_path": "results/portfolio-20260912/freeze-probes-v1.json",
+  "freeze_sha256": "3f00829f23c6847fbe0593bb514974992bffda5a0c3dc24b753edcb8970a62d8",
+  "feature_schema_sha256": "7f1e1b3a8bc3f71fa4ba372c4cf9b5dab35d1c5366c2686089a3484049521547",
+  "baseline_comparator": {
+    "source": "read_only_reused_P2_control",
+    "path": "results/terminal-20260912/development/arlene-91103-0-baseline.json",
+    "result_sha256": "554f7633a251c48e743e2f3bd87ba820feec8064fb6b3bd6f7599e6722be9f4c",
+    "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+    "runner_sha256": "4518551bccfb2c2c39a30c928da6d0b16016eb3ee1b18b0dbcb95ec19d87054c",
+    "entrypoint": "official_get_last_callable",
+    "rewards": [
+      67363.0,
+      82294.0
+    ],
+    "margin": -14931.0,
+    "clean": true,
+    "prefix71": null,
+    "predecision72": null,
+    "prefix_missingness": "Historical controls did not record step-71 fingerprints or action-72 features; neither is reconstructed from a later snapshot.",
+    "comparability_warning": "Historical controls used different timing instrumentation and may use explicit opponent module.agent. Prefix equivalence cannot be established from these rows."
+  },
+  "runner_sha256": "38fd908bffd4c2364a87d46812049d40e53488dc7e1fa865ab627111f95c9a1d",
+  "features_sha256": "e6f865e478875deec3c745e89a5bb11bc86fc62a3cfac2e8f3e9198250932c34",
+  "research_cycle_sha256": "48df447e5be1389e425af2769e2bf39b5c36898db45d19ef0b2c5d1abfc1e211",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": "closed_loop",
+  "started_utc": "2026-09-12T06:40:23.098146+00:00",
+  "completed_utc": "2026-09-12T06:40:29.612425+00:00",
+  "wall_seconds": 6.5142436000169255,
+  "job_cpu_seconds": 6.3125,
+  "runtime_import_wall_seconds": 0.9001985000213608,
+  "policy_source_loading_wall_seconds": 0.05990910000400618,
+  "entrypoint": "official_get_last_callable",
+  "entrypoint_name": "_p3_portfolio_entrypoint",
+  "opponent_entrypoint": "official_get_last_callable",
+  "opponent_entrypoint_name": "agent",
+  "candidate_agent_is_entrypoint": false,
+  "opponent_agent_is_entrypoint": true,
+  "opponent_entrypoint_audit": {
+    "is_module_agent": true,
+    "known_source_equivalent_forwarder": false,
+    "equivalence_evidence": "Selected callable is namespace agent.",
+    "scope": "Source/identity comparison, not a proof that other wrapper/instrumentation differences are behavior-neutral."
+  },
+  "margin": -32561.0,
+  "own_call_profile": [
+    {
+      "step": 0,
+      "wall_ms": 11.852200026623905,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 1,
+      "wall_ms": 0.5077000241726637,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 2,
+      "wall_ms": 0.43810001807287335,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 3,
+      "wall_ms": 0.5435000057332218,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 4,
+      "wall_ms": 0.6282000103965402,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 5,
+      "wall_ms": 0.4620999679900706,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 6,
+      "wall_ms": 0.845499977003783,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 7,
+      "wall_ms": 0.58970000827685,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 8,
+      "wall_ms": 0.8228999795392156,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 9,
+      "wall_ms": 0.6747000152245164,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 10,
+      "wall_ms": 0.506000011228025,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 11,
+      "wall_ms": 0.797300017438829,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 12,
+      "wall_ms": 0.512800004798919,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 13,
+      "wall_ms": 0.528500007931143,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 14,
+      "wall_ms": 0.5025000427849591,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 15,
+      "wall_ms": 0.6492999964393675,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 16,
+      "wall_ms": 0.5544000305235386,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 17,
+      "wall_ms": 0.5626999773085117,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 18,
+      "wall_ms": 0.548599986359477,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 19,
+      "wall_ms": 0.7217999664135277,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 20,
+      "wall_ms": 0.9074000408872962,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 21,
+      "wall_ms": 0.7418000022880733,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 22,
+      "wall_ms": 0.9877000120468438,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 23,
+      "wall_ms": 0.5800999933853745,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 24,
+      "wall_ms": 0.5474000354297459,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 25,
+      "wall_ms": 0.6838000263087451,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 26,
+      "wall_ms": 0.5151000223122537,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 27,
+      "wall_ms": 0.527600001078099,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 28,
+      "wall_ms": 1.263100013602525,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 29,
+      "wall_ms": 0.526999996509403,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 30,
+      "wall_ms": 0.5191999953240156,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 31,
+      "wall_ms": 0.7602000259794295,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 32,
+      "wall_ms": 0.5589000065810978,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 33,
+      "wall_ms": 0.49780000699684024,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 34,
+      "wall_ms": 0.5141000146977603,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 35,
+      "wall_ms": 0.5005999701097608,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 36,
+      "wall_ms": 0.48160000005736947,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 37,
+      "wall_ms": 0.49160001799464226,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 38,
+      "wall_ms": 0.47720002476125956,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 39,
+      "wall_ms": 0.4668000037781894,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 40,
+      "wall_ms": 0.4763000179082155,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 41,
+      "wall_ms": 0.471699982881546,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 42,
+      "wall_ms": 0.7894000154919922,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 43,
+      "wall_ms": 0.4944999818690121,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 44,
+      "wall_ms": 0.8830999722704291,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 45,
+      "wall_ms": 0.5571999936364591,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 46,
+      "wall_ms": 0.47909998102113605,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 47,
+      "wall_ms": 0.47989998711273074,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 48,
+      "wall_ms": 1.1918999953195453,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 49,
+      "wall_ms": 0.5610999651253223,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 50,
+      "wall_ms": 0.9327000007033348,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 51,
+      "wall_ms": 0.8190000080503523,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 52,
+      "wall_ms": 0.8451000321656466,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 53,
+      "wall_ms": 0.5884999991394579,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 54,
+      "wall_ms": 0.5443000118248165,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 55,
+      "wall_ms": 0.5268999957479537,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 56,
+      "wall_ms": 0.5314000300131738,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 57,
+      "wall_ms": 0.5797999911010265,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 58,
+      "wall_ms": 0.6199000054039061,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 59,
+      "wall_ms": 0.5180999869480729,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 60,
+      "wall_ms": 0.5384999676607549,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 61,
+      "wall_ms": 0.5474999779835343,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 62,
+      "wall_ms": 0.6473000394180417,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 63,
+      "wall_ms": 0.5240999744273722,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 64,
+      "wall_ms": 0.5116999964229763,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 65,
+      "wall_ms": 0.5837000207975507,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 66,
+      "wall_ms": 0.5082999705336988,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 67,
+      "wall_ms": 0.4974000039510429,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 68,
+      "wall_ms": 0.5150000215508044,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 69,
+      "wall_ms": 0.8635999984107912,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 70,
+      "wall_ms": 0.5626999773085117,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 71,
+      "wall_ms": 0.526099989656359,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 72,
+      "wall_ms": 12.905100011266768,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 73,
+      "wall_ms": 1.7425999976694584,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 74,
+      "wall_ms": 0.5407999851740897,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 75,
+      "wall_ms": 0.5123000009916723,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 76,
+      "wall_ms": 0.5788999842479825,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 77,
+      "wall_ms": 0.7628999883309007,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 78,
+      "wall_ms": 0.597700010985136,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 79,
+      "wall_ms": 0.5090999766252935,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 80,
+      "wall_ms": 0.5480999825522304,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 81,
+      "wall_ms": 0.7909000269137323,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 82,
+      "wall_ms": 0.5043999990448356,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 83,
+      "wall_ms": 0.48889999743551016,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 84,
+      "wall_ms": 0.5466000293381512,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 85,
+      "wall_ms": 0.6291000172495842,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 86,
+      "wall_ms": 0.493300030939281,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 87,
+      "wall_ms": 0.5023999838158488,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 88,
+      "wall_ms": 0.5231000250205398,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 89,
+      "wall_ms": 0.6580000044777989,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 90,
+      "wall_ms": 0.5164000322110951,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 91,
+      "wall_ms": 0.5061000119894743,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 92,
+      "wall_ms": 0.5113999941386282,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 93,
+      "wall_ms": 0.6185999955050647,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 94,
+      "wall_ms": 0.4923000233247876,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 95,
+      "wall_ms": 0.5023000412620604,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 96,
+      "wall_ms": 0.6799999973736703,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 97,
+      "wall_ms": 1.8285000114701688,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 98,
+      "wall_ms": 0.4928000271320343,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 99,
+      "wall_ms": 0.5316999740898609,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 100,
+      "wall_ms": 0.5222000181674957,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 101,
+      "wall_ms": 48.434199998155236,
+      "cpu_ms": 46.875
+    },
+    {
+      "step": 102,
+      "wall_ms": 0.5249999812804163,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 103,
+      "wall_ms": 0.5182999884709716,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 104,
+      "wall_ms": 1.0585000272840261,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 105,
+      "wall_ms": 0.5706999800167978,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 106,
+      "wall_ms": 0.5535000236704946,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 107,
+      "wall_ms": 0.5499999970197678,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 108,
+      "wall_ms": 0.6642999942414463,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 109,
+      "wall_ms": 0.5813000025227666,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 110,
+      "wall_ms": 0.5385000258684158,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 111,
+      "wall_ms": 0.5145000177435577,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 112,
+      "wall_ms": 0.5721999914385378,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 113,
+      "wall_ms": 0.5750999553129077,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 114,
+      "wall_ms": 0.567799957934767,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 115,
+      "wall_ms": 0.5312999710440636,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 116,
+      "wall_ms": 0.568700022995472,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 117,
+      "wall_ms": 0.5521000130102038,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 118,
+      "wall_ms": 0.5510000046342611,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 119,
+      "wall_ms": 0.5846000276505947,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 120,
+      "wall_ms": 0.7159000379033387,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 121,
+      "wall_ms": 0.6410999922081828,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 122,
+      "wall_ms": 0.6638999911956489,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 123,
+      "wall_ms": 0.8889000164344907,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 124,
+      "wall_ms": 0.7707999902777374,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 125,
+      "wall_ms": 0.5838999641127884,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 126,
+      "wall_ms": 0.8545999880880117,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 127,
+      "wall_ms": 0.5665000062435865,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 128,
+      "wall_ms": 0.9238999919034541,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 129,
+      "wall_ms": 0.5654999986290932,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 130,
+      "wall_ms": 0.5259999888949096,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 131,
+      "wall_ms": 0.5237999721430242,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 132,
+      "wall_ms": 0.576100021135062,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 133,
+      "wall_ms": 0.5475000361911952,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 134,
+      "wall_ms": 0.5379000212997198,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 135,
+      "wall_ms": 0.561900029424578,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 136,
+      "wall_ms": 0.9113000123761594,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 137,
+      "wall_ms": 0.5433000042103231,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 138,
+      "wall_ms": 0.5204999470151961,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 139,
+      "wall_ms": 0.5640999879688025,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 140,
+      "wall_ms": 0.6881000008434057,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 141,
+      "wall_ms": 0.547099974937737,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 142,
+      "wall_ms": 0.5027000443078578,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 143,
+      "wall_ms": 0.8286999654956162,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 144,
+      "wall_ms": 0.6178000476211309,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 145,
+      "wall_ms": 0.5765999667346478,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 146,
+      "wall_ms": 0.5378000205382705,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 147,
+      "wall_ms": 0.5724000511690974,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 148,
+      "wall_ms": 0.6553999846801162,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 149,
+      "wall_ms": 0.5675999564118683,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 150,
+      "wall_ms": 0.8659999584779143,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 151,
+      "wall_ms": 0.7668999605812132,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 152,
+      "wall_ms": 1.3538999482989311,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 153,
+      "wall_ms": 0.602399988565594,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 154,
+      "wall_ms": 0.5434000049717724,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 155,
+      "wall_ms": 0.5572999943979084,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 156,
+      "wall_ms": 0.6708999862894416,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 157,
+      "wall_ms": 0.5688999663107097,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 158,
+      "wall_ms": 0.5721999914385378,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 159,
+      "wall_ms": 1.0376999853178859,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 160,
+      "wall_ms": 1.0035000159405172,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 161,
+      "wall_ms": 0.5825000116601586,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 162,
+      "wall_ms": 0.583500019274652,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 163,
+      "wall_ms": 0.5744000081904233,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 164,
+      "wall_ms": 0.7080999785102904,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 165,
+      "wall_ms": 0.5934000364504755,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 166,
+      "wall_ms": 0.5801999941468239,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 167,
+      "wall_ms": 0.7579999510198832,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 168,
+      "wall_ms": 12.232900015078485,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 169,
+      "wall_ms": 0.6534999702125788,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 170,
+      "wall_ms": 0.6897999555803835,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 171,
+      "wall_ms": 0.6435000104829669,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 172,
+      "wall_ms": 0.6514000124298036,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 173,
+      "wall_ms": 0.6358000100590289,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 174,
+      "wall_ms": 0.6238999776542187,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 175,
+      "wall_ms": 0.6076999707147479,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 176,
+      "wall_ms": 0.6439000135287642,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 177,
+      "wall_ms": 0.637599965557456,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 178,
+      "wall_ms": 0.6580999470315874,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 179,
+      "wall_ms": 0.6746999570168555,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 180,
+      "wall_ms": 0.6788000464439392,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 181,
+      "wall_ms": 0.8629999938420951,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 182,
+      "wall_ms": 0.8219999726861715,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 183,
+      "wall_ms": 0.742000003810972,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 184,
+      "wall_ms": 1.2244999525137246,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 185,
+      "wall_ms": 1.2635000166483223,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 186,
+      "wall_ms": 0.7241999846883118,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 187,
+      "wall_ms": 0.8886999567039311,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 188,
+      "wall_ms": 0.8015000494197011,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 189,
+      "wall_ms": 0.7404999923892319,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 190,
+      "wall_ms": 0.7071000291034579,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 191,
+      "wall_ms": 0.757400004658848,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 192,
+      "wall_ms": 0.763299991376698,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 193,
+      "wall_ms": 0.8086999878287315,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 194,
+      "wall_ms": 0.7343000033870339,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 195,
+      "wall_ms": 1.3112000306136906,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 196,
+      "wall_ms": 0.8625000482425094,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 197,
+      "wall_ms": 0.7934999885037541,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 198,
+      "wall_ms": 0.8426000131294131,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 199,
+      "wall_ms": 0.686999992467463,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 200,
+      "wall_ms": 0.7815000135451555,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 201,
+      "wall_ms": 0.8153000380843878,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 202,
+      "wall_ms": 0.8276000153273344,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 203,
+      "wall_ms": 0.7525000255554914,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 204,
+      "wall_ms": 0.8289999677799642,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 205,
+      "wall_ms": 0.7214000215753913,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 206,
+      "wall_ms": 0.8898999658413231,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 207,
+      "wall_ms": 0.7326999912038445,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 208,
+      "wall_ms": 0.8962000138126314,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 209,
+      "wall_ms": 0.903200008906424,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 210,
+      "wall_ms": 0.7193000055849552,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 211,
+      "wall_ms": 0.7758999709039927,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 212,
+      "wall_ms": 0.7958000060170889,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 213,
+      "wall_ms": 0.7203000131994486,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 214,
+      "wall_ms": 0.7951000006869435,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 215,
+      "wall_ms": 0.7360000163316727,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 216,
+      "wall_ms": 0.7050999556668103,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 217,
+      "wall_ms": 0.7942999945953488,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 218,
+      "wall_ms": 0.6661000079475343,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 219,
+      "wall_ms": 0.799400033429265,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 220,
+      "wall_ms": 0.7822000188753009,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 221,
+      "wall_ms": 0.7340000011026859,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 222,
+      "wall_ms": 0.846999988425523,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 223,
+      "wall_ms": 0.7100999937392771,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 224,
+      "wall_ms": 0.6410999922081828,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 225,
+      "wall_ms": 0.7316999835893512,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 226,
+      "wall_ms": 0.7044999510981143,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 227,
+      "wall_ms": 0.7511999574489892,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 228,
+      "wall_ms": 0.8037000079639256,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 229,
+      "wall_ms": 0.8325000526383519,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 230,
+      "wall_ms": 0.8214999688789248,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 231,
+      "wall_ms": 0.6778000388294458,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 232,
+      "wall_ms": 0.6474999827332795,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 233,
+      "wall_ms": 0.8086999878287315,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 234,
+      "wall_ms": 0.7516000187024474,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 235,
+      "wall_ms": 0.7360999588854611,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 236,
+      "wall_ms": 0.7105999975465238,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 237,
+      "wall_ms": 0.7826000219210982,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 238,
+      "wall_ms": 0.6670000148005784,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 239,
+      "wall_ms": 0.6904000183567405,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 240,
+      "wall_ms": 0.6052000098861754,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 241,
+      "wall_ms": 0.7271000067703426,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 242,
+      "wall_ms": 0.7468999829143286,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 243,
+      "wall_ms": 0.6510000093840063,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 244,
+      "wall_ms": 0.7964000105857849,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 245,
+      "wall_ms": 0.6514000124298036,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 246,
+      "wall_ms": 0.6621999782510102,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 247,
+      "wall_ms": 0.7608999731019139,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 248,
+      "wall_ms": 0.8018999942578375,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 249,
+      "wall_ms": 0.6378000252880156,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 250,
+      "wall_ms": 0.6782999844290316,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 251,
+      "wall_ms": 0.7363000186160207,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 252,
+      "wall_ms": 0.6066999631002545,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 253,
+      "wall_ms": 0.7859999896027148,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 254,
+      "wall_ms": 0.6804000004194677,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 255,
+      "wall_ms": 0.6445000180974603,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 256,
+      "wall_ms": 0.8138999692164361,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 257,
+      "wall_ms": 0.7584000122733414,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 258,
+      "wall_ms": 0.6906999624334276,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 259,
+      "wall_ms": 0.7850000401958823,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 260,
+      "wall_ms": 0.6768999737687409,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 261,
+      "wall_ms": 0.6424000021070242,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 262,
+      "wall_ms": 0.9283000254072249,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 263,
+      "wall_ms": 0.6621000356972218,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 264,
+      "wall_ms": 0.8052000193856657,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 265,
+      "wall_ms": 0.6285000126808882,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 266,
+      "wall_ms": 0.6225000252015889,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 267,
+      "wall_ms": 0.9819000260904431,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 268,
+      "wall_ms": 0.6825000164099038,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 269,
+      "wall_ms": 0.7439000182785094,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 270,
+      "wall_ms": 0.7516000187024474,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 271,
+      "wall_ms": 0.673100003041327,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 272,
+      "wall_ms": 0.647100037895143,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 273,
+      "wall_ms": 0.7731000077910721,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 274,
+      "wall_ms": 0.7725000032223761,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 275,
+      "wall_ms": 0.8643999462947249,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 276,
+      "wall_ms": 0.8166999905370176,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 277,
+      "wall_ms": 0.7528000278398395,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 278,
+      "wall_ms": 0.7851999835111201,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 279,
+      "wall_ms": 0.8966000168584287,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 280,
+      "wall_ms": 0.8373000309802592,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 281,
+      "wall_ms": 0.7354000117629766,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 282,
+      "wall_ms": 0.7242999854497612,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 283,
+      "wall_ms": 0.7907000253908336,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 284,
+      "wall_ms": 0.737300026230514,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 285,
+      "wall_ms": 0.8659999584779143,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 286,
+      "wall_ms": 1.4239000156521797,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 287,
+      "wall_ms": 1.6442000051029027,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 288,
+      "wall_ms": 0.9106000070460141,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 289,
+      "wall_ms": 0.8428999572061002,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 290,
+      "wall_ms": 0.846399983856827,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 291,
+      "wall_ms": 0.7474999874830246,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 292,
+      "wall_ms": 0.7307999767363071,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 293,
+      "wall_ms": 0.7510000141337514,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 294,
+      "wall_ms": 0.7825000211596489,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 295,
+      "wall_ms": 0.9048000210896134,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 296,
+      "wall_ms": 0.7475999882444739,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 297,
+      "wall_ms": 0.7731000077910721,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 298,
+      "wall_ms": 0.7604999700561166,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 299,
+      "wall_ms": 0.8951000054366887,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 300,
+      "wall_ms": 0.764199998229742,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 301,
+      "wall_ms": 0.927999964915216,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 302,
+      "wall_ms": 0.7628000457771122,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 303,
+      "wall_ms": 1.2273999745957553,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 304,
+      "wall_ms": 1.5793000347912312,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 305,
+      "wall_ms": 1.9777999841608107,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 306,
+      "wall_ms": 1.6955999890342355,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 307,
+      "wall_ms": 1.4807000407017767,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 308,
+      "wall_ms": 1.1199000291526318,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 309,
+      "wall_ms": 1.0568000143393874,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 310,
+      "wall_ms": 1.9511999562382698,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 311,
+      "wall_ms": 1.071999955456704,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 312,
+      "wall_ms": 1.354800013359636,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 313,
+      "wall_ms": 1.206899993121624,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 314,
+      "wall_ms": 1.0571000166237354,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 315,
+      "wall_ms": 1.0241999989375472,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 316,
+      "wall_ms": 1.076199987437576,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 317,
+      "wall_ms": 1.9441000185906887,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 318,
+      "wall_ms": 1.4285999932326376,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 319,
+      "wall_ms": 1.6930000274442136,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 320,
+      "wall_ms": 1.0403000051155686,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 321,
+      "wall_ms": 2.0144000300206244,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 322,
+      "wall_ms": 1.0979999788105488,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 323,
+      "wall_ms": 1.0830999817699194,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 324,
+      "wall_ms": 1.0656000231392682,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 325,
+      "wall_ms": 1.606699952390045,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 326,
+      "wall_ms": 0.9976000292226672,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 327,
+      "wall_ms": 1.0390000534243882,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 328,
+      "wall_ms": 1.2729999725706875,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 329,
+      "wall_ms": 1.0561999515630305,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 330,
+      "wall_ms": 1.04750000173226,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 331,
+      "wall_ms": 1.0449999826960266,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 332,
+      "wall_ms": 0.992199988104403,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 333,
+      "wall_ms": 1.1894999770447612,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 334,
+      "wall_ms": 1.2256999616511166,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 335,
+      "wall_ms": 1.0280999704264104,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 336,
+      "wall_ms": 1.0975999757647514,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 337,
+      "wall_ms": 0.9116999572142959,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 338,
+      "wall_ms": 1.6109999851323664,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 339,
+      "wall_ms": 0.9681000374257565,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 340,
+      "wall_ms": 1.0334000107832253,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 341,
+      "wall_ms": 0.9580000187270343,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 342,
+      "wall_ms": 1.0497000184841454,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 343,
+      "wall_ms": 0.9449999779462814,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 344,
+      "wall_ms": 1.036000030580908,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 345,
+      "wall_ms": 0.9266000124625862,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 346,
+      "wall_ms": 0.9954000124707818,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 347,
+      "wall_ms": 0.9138999739661813,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 348,
+      "wall_ms": 0.9674999746493995,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 349,
+      "wall_ms": 0.88160001905635,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 350,
+      "wall_ms": 1.5339000383391976,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 351,
+      "wall_ms": 2.2490000119432807,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 352,
+      "wall_ms": 1.0360999731346965,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 353,
+      "wall_ms": 1.3720000279136002,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 354,
+      "wall_ms": 1.3772000093013048,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 355,
+      "wall_ms": 1.1030000168830156,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 356,
+      "wall_ms": 1.2778000091202557,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 357,
+      "wall_ms": 1.9835999701172113,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 358,
+      "wall_ms": 1.983200025279075,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 359,
+      "wall_ms": 1.8414999940432608,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 360,
+      "wall_ms": 1.0775999980978668,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 361,
+      "wall_ms": 1.6272999928332865,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 362,
+      "wall_ms": 2.122200035955757,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 363,
+      "wall_ms": 1.021199976094067,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 364,
+      "wall_ms": 1.8890000064857304,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 365,
+      "wall_ms": 1.0557000059634447,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 366,
+      "wall_ms": 1.3002000050619245,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 367,
+      "wall_ms": 2.0579000120051205,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 368,
+      "wall_ms": 1.2958000297658145,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 369,
+      "wall_ms": 2.0173999946564436,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 370,
+      "wall_ms": 1.7684000195004046,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 371,
+      "wall_ms": 1.9747000187635422,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 372,
+      "wall_ms": 1.2133000418543816,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 373,
+      "wall_ms": 1.3481999631039798,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 374,
+      "wall_ms": 2.419400028884411,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 375,
+      "wall_ms": 2.0975000225007534,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 376,
+      "wall_ms": 1.9131000153720379,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 377,
+      "wall_ms": 1.1517000384628773,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 378,
+      "wall_ms": 1.1567000183276832,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 379,
+      "wall_ms": 1.3157000066712499,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 380,
+      "wall_ms": 2.2231999901123345,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 381,
+      "wall_ms": 1.2118000304326415,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 382,
+      "wall_ms": 1.5326999709941447,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 383,
+      "wall_ms": 1.6537000192329288,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 384,
+      "wall_ms": 1.1381999938748777,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 385,
+      "wall_ms": 1.000199990812689,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 386,
+      "wall_ms": 1.236500043887645,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 387,
+      "wall_ms": 1.1761000496335328,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 388,
+      "wall_ms": 1.7375000170432031,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 389,
+      "wall_ms": 1.6539000207558274,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 390,
+      "wall_ms": 1.0320000001229346,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 391,
+      "wall_ms": 1.256000017747283,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 392,
+      "wall_ms": 1.0434999712742865,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 393,
+      "wall_ms": 1.082700036931783,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 394,
+      "wall_ms": 0.9862000006251037,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 395,
+      "wall_ms": 1.2759999954141676,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 396,
+      "wall_ms": 1.725299982354045,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 397,
+      "wall_ms": 0.9894000249914825,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 398,
+      "wall_ms": 0.9911999804899096,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 399,
+      "wall_ms": 0.8527000318281353,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 400,
+      "wall_ms": 0.8031000033952296,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 401,
+      "wall_ms": 0.9811000199988484,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 402,
+      "wall_ms": 1.4522999990731478,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 403,
+      "wall_ms": 0.9186000097543001,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 404,
+      "wall_ms": 0.9234999888576567,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 405,
+      "wall_ms": 1.166099973488599,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 406,
+      "wall_ms": 0.8883000118657947,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 407,
+      "wall_ms": 0.9234999888576567,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 408,
+      "wall_ms": 0.8503000135533512,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 409,
+      "wall_ms": 0.9039999567903578,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 410,
+      "wall_ms": 0.8616999839432538,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 411,
+      "wall_ms": 0.9963000193238258,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 412,
+      "wall_ms": 0.8569000056013465,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 413,
+      "wall_ms": 1.05050002457574,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 414,
+      "wall_ms": 0.9130000253207982,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 415,
+      "wall_ms": 1.0148000437766314,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 416,
+      "wall_ms": 1.5814999933354557,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 417,
+      "wall_ms": 0.9692999883554876,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 418,
+      "wall_ms": 0.9526999783702195,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 419,
+      "wall_ms": 1.0293999803252518,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 420,
+      "wall_ms": 0.9401999996043742,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 421,
+      "wall_ms": 1.0719000129029155,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 422,
+      "wall_ms": 1.1478000087663531,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 423,
+      "wall_ms": 1.063200004864484,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 424,
+      "wall_ms": 1.019100018311292,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 425,
+      "wall_ms": 0.9607999818399549,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 426,
+      "wall_ms": 1.0381999891251326,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 427,
+      "wall_ms": 0.8782999939285219,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 428,
+      "wall_ms": 1.4420999796129763,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 429,
+      "wall_ms": 1.070300000719726,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 430,
+      "wall_ms": 1.1943999561481178,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 431,
+      "wall_ms": 0.9764999849721789,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 432,
+      "wall_ms": 1.0023000068031251,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 433,
+      "wall_ms": 0.8779999916441739,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 434,
+      "wall_ms": 0.8912999765016139,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 435,
+      "wall_ms": 0.8544999873265624,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 436,
+      "wall_ms": 1.1685999925248325,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 437,
+      "wall_ms": 0.914699980057776,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 438,
+      "wall_ms": 0.9663999662734568,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 439,
+      "wall_ms": 0.9057999704964459,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 440,
+      "wall_ms": 0.9940000018104911,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 441,
+      "wall_ms": 1.4195000403560698,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 442,
+      "wall_ms": 1.087099954020232,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 443,
+      "wall_ms": 0.9580999612808228,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 444,
+      "wall_ms": 1.0623999987728894,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 445,
+      "wall_ms": 1.0047000250779092,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 446,
+      "wall_ms": 1.0221999837085605,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 447,
+      "wall_ms": 1.0604000417515635,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 448,
+      "wall_ms": 1.024700002744794,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 449,
+      "wall_ms": 1.0241999989375472,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 450,
+      "wall_ms": 0.9936999995261431,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 451,
+      "wall_ms": 1.3076000032015145,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 452,
+      "wall_ms": 1.1174000101163983,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 453,
+      "wall_ms": 0.9820999694056809,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 454,
+      "wall_ms": 1.2546000070869923,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 455,
+      "wall_ms": 0.9337000083178282,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 456,
+      "wall_ms": 1.0424999636597931,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 457,
+      "wall_ms": 0.8311999845318496,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 458,
+      "wall_ms": 1.0379000450484455,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 459,
+      "wall_ms": 0.8282000198960304,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 460,
+      "wall_ms": 0.972100009676069,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 461,
+      "wall_ms": 0.8228999795392156,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 462,
+      "wall_ms": 1.0049999691545963,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 463,
+      "wall_ms": 0.8998999837785959,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 464,
+      "wall_ms": 0.9967000223696232,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 465,
+      "wall_ms": 0.8978999685496092,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 466,
+      "wall_ms": 1.062600000295788,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 467,
+      "wall_ms": 0.8951000054366887,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 468,
+      "wall_ms": 1.0834999848157167,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 469,
+      "wall_ms": 0.8868000004440546,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 470,
+      "wall_ms": 1.1407000129111111,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 471,
+      "wall_ms": 0.8620999869890511,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 472,
+      "wall_ms": 1.0051000281237066,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 473,
+      "wall_ms": 1.0722000151872635,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 474,
+      "wall_ms": 1.0000999900512397,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 475,
+      "wall_ms": 1.0076999897137284,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 476,
+      "wall_ms": 1.0721000144258142,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 477,
+      "wall_ms": 0.8986999746412039,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 478,
+      "wall_ms": 0.9302999824285507,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 479,
+      "wall_ms": 0.9289000299759209,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 480,
+      "wall_ms": 1.000799995381385,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 481,
+      "wall_ms": 0.8095999946817756,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 482,
+      "wall_ms": 0.9312999900430441,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 483,
+      "wall_ms": 0.8200999582186341,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 484,
+      "wall_ms": 1.0145999840460718,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 485,
+      "wall_ms": 0.9811000199988484,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 486,
+      "wall_ms": 1.0198000236414373,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 487,
+      "wall_ms": 0.9323999984189868,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 488,
+      "wall_ms": 0.8441999671049416,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 489,
+      "wall_ms": 1.0578999645076692,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 490,
+      "wall_ms": 0.8777999901212752,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 491,
+      "wall_ms": 1.1332999565638602,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 492,
+      "wall_ms": 0.8637999999336898,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 493,
+      "wall_ms": 0.908499991055578,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 494,
+      "wall_ms": 0.8794000023044646,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 495,
+      "wall_ms": 0.9776000515557826,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 496,
+      "wall_ms": 0.8633999968878925,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 497,
+      "wall_ms": 0.9973000269383192,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 498,
+      "wall_ms": 0.8505999576300383,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 499,
+      "wall_ms": 1.0242999996989965,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 500,
+      "wall_ms": 1.0015000007115304,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 501,
+      "wall_ms": 0.9931999957188964,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 502,
+      "wall_ms": 1.0127999703399837,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 503,
+      "wall_ms": 0.9018999990075827,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 504,
+      "wall_ms": 0.9182999492622912,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 505,
+      "wall_ms": 1.0864000068977475,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 506,
+      "wall_ms": 0.8342000073753297,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 507,
+      "wall_ms": 1.0452999849803746,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 508,
+      "wall_ms": 0.8303999784402549,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 509,
+      "wall_ms": 1.0435999720357358,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 510,
+      "wall_ms": 0.9252000018022954,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 511,
+      "wall_ms": 0.9209000272676349,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 512,
+      "wall_ms": 1.0729999630711973,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 513,
+      "wall_ms": 0.9289999725297093,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 514,
+      "wall_ms": 0.9625999955460429,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 515,
+      "wall_ms": 1.007899991236627,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 516,
+      "wall_ms": 1.7879000515677035,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 517,
+      "wall_ms": 1.5048999921418726,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 518,
+      "wall_ms": 1.742199994623661,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 519,
+      "wall_ms": 1.561200013384223,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 520,
+      "wall_ms": 1.050200022291392,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 521,
+      "wall_ms": 1.0420999606139958,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 522,
+      "wall_ms": 1.0377999860793352,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 523,
+      "wall_ms": 1.072299957741052,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 524,
+      "wall_ms": 1.0306999902240932,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 525,
+      "wall_ms": 1.0479000047780573,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 526,
+      "wall_ms": 1.0884000221267343,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 527,
+      "wall_ms": 1.1798000195994973,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 528,
+      "wall_ms": 1.053099986165762,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 529,
+      "wall_ms": 0.9642000077292323,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 530,
+      "wall_ms": 1.1158999986946583,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 531,
+      "wall_ms": 0.8637999999336898,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 532,
+      "wall_ms": 1.4922000118531287,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 533,
+      "wall_ms": 0.8997999830171466,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 534,
+      "wall_ms": 1.732999982777983,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 535,
+      "wall_ms": 0.9645000100135803,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 536,
+      "wall_ms": 0.9388000471517444,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 537,
+      "wall_ms": 0.9523999760858715,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 538,
+      "wall_ms": 0.9272000170312822,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 539,
+      "wall_ms": 0.9439999703317881,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 540,
+      "wall_ms": 0.8916000369936228,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 541,
+      "wall_ms": 0.9728000150062144,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 542,
+      "wall_ms": 1.6469000256620347,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 543,
+      "wall_ms": 1.1230999953113496,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 544,
+      "wall_ms": 1.094500010367483,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 545,
+      "wall_ms": 1.1366000398993492,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 546,
+      "wall_ms": 1.0036000167019665,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 547,
+      "wall_ms": 1.129999989643693,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 548,
+      "wall_ms": 1.057300018146634,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 549,
+      "wall_ms": 1.1653000256046653,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 550,
+      "wall_ms": 1.4762000064365566,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 551,
+      "wall_ms": 1.16610003169626,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 552,
+      "wall_ms": 1.0092000011354685,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 553,
+      "wall_ms": 0.9535999852232635,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 554,
+      "wall_ms": 1.0560999508015811,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 555,
+      "wall_ms": 1.6158000216819346,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 556,
+      "wall_ms": 1.0637000086717308,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 557,
+      "wall_ms": 1.0343000176362693,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 558,
+      "wall_ms": 1.074399973731488,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 559,
+      "wall_ms": 1.0377000435255468,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 560,
+      "wall_ms": 1.2740999809466302,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 561,
+      "wall_ms": 1.0176000068895519,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 562,
+      "wall_ms": 1.6338999848812819,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 563,
+      "wall_ms": 1.014699984807521,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 564,
+      "wall_ms": 1.2499000295065343,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 565,
+      "wall_ms": 1.0383999906480312,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 566,
+      "wall_ms": 1.0417000157758594,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 567,
+      "wall_ms": 1.5669999993406236,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 568,
+      "wall_ms": 1.0069000418297946,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 569,
+      "wall_ms": 1.0144999832846224,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 570,
+      "wall_ms": 1.0777999996207654,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 571,
+      "wall_ms": 1.0097000049427152,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 572,
+      "wall_ms": 0.990999978967011,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 573,
+      "wall_ms": 1.247999956831336,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 574,
+      "wall_ms": 0.9910999797284603,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 575,
+      "wall_ms": 1.0812999680638313,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 576,
+      "wall_ms": 0.8591000223532319,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 577,
+      "wall_ms": 1.014099980238825,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 578,
+      "wall_ms": 1.0559000074863434,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 579,
+      "wall_ms": 1.0828999802470207,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 580,
+      "wall_ms": 1.3343999744392931,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 581,
+      "wall_ms": 0.9417999535799026,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 582,
+      "wall_ms": 0.9254999458789825,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 583,
+      "wall_ms": 1.05050002457574,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 584,
+      "wall_ms": 0.90230000205338,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 585,
+      "wall_ms": 1.1307999957352877,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 586,
+      "wall_ms": 0.8941999985836446,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 587,
+      "wall_ms": 0.9073999826796353,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 588,
+      "wall_ms": 0.9049999644048512,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 589,
+      "wall_ms": 0.89490000391379,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 590,
+      "wall_ms": 0.9993999847210944,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 591,
+      "wall_ms": 0.9754000348038971,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 592,
+      "wall_ms": 1.3678999966941774,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 593,
+      "wall_ms": 0.89490000391379,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 594,
+      "wall_ms": 1.046599994879216,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 595,
+      "wall_ms": 0.8866999996826053,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 596,
+      "wall_ms": 1.0400000028312206,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 597,
+      "wall_ms": 0.8871000027284026,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 598,
+      "wall_ms": 1.0815999703481793,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 599,
+      "wall_ms": 1.2330999597907066,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 600,
+      "wall_ms": 1.0578999645076692,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 601,
+      "wall_ms": 0.873600016348064,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 602,
+      "wall_ms": 0.858799961861223,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 603,
+      "wall_ms": 0.9685999830253422,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 604,
+      "wall_ms": 0.9652000153437257,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 605,
+      "wall_ms": 1.6534999595023692,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 606,
+      "wall_ms": 0.9437999688088894,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 607,
+      "wall_ms": 1.027700025588274,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 608,
+      "wall_ms": 0.9427000186406076,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 609,
+      "wall_ms": 1.1454999912530184,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 610,
+      "wall_ms": 0.9415000095032156,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 611,
+      "wall_ms": 1.0865999502129853,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 612,
+      "wall_ms": 0.9764999849721789,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 613,
+      "wall_ms": 0.9677999769337475,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 614,
+      "wall_ms": 0.9462999878451228,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 615,
+      "wall_ms": 0.8997999830171466,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 616,
+      "wall_ms": 1.1020000092685223,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 617,
+      "wall_ms": 1.538999960757792,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 618,
+      "wall_ms": 1.107799995224923,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 619,
+      "wall_ms": 0.946100044529885,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 620,
+      "wall_ms": 1.0546999983489513,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 621,
+      "wall_ms": 0.9190999553538859,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 622,
+      "wall_ms": 1.1138999834656715,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 623,
+      "wall_ms": 0.9746999712660909,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 624,
+      "wall_ms": 0.9596000309102237,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 625,
+      "wall_ms": 0.8397999918088317,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 626,
+      "wall_ms": 1.1607999913394451,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 627,
+      "wall_ms": 0.9167000534944236,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 628,
+      "wall_ms": 1.0652000200934708,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 629,
+      "wall_ms": 1.0967999696731567,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 630,
+      "wall_ms": 1.673899998422712,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 631,
+      "wall_ms": 0.9383000433444977,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 632,
+      "wall_ms": 1.1009000008925796,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 633,
+      "wall_ms": 0.9991999831981957,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 634,
+      "wall_ms": 1.090999983716756,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 635,
+      "wall_ms": 1.040699949953705,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 636,
+      "wall_ms": 1.0646000155247748,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 637,
+      "wall_ms": 0.9742999682202935,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 638,
+      "wall_ms": 1.0029000113718212,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 639,
+      "wall_ms": 1.090699981432408,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 640,
+      "wall_ms": 1.0347000206820667,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 641,
+      "wall_ms": 1.121699984651059,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 642,
+      "wall_ms": 1.4063999988138676,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 643,
+      "wall_ms": 0.9698999929241836,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 644,
+      "wall_ms": 0.8492000051774085,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 645,
+      "wall_ms": 1.1445999843999743,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 646,
+      "wall_ms": 0.914399977773428,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 647,
+      "wall_ms": 1.02680001873523,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 648,
+      "wall_ms": 0.8420000085607171,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 649,
+      "wall_ms": 1.7152000218629837,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 650,
+      "wall_ms": 1.8931999802589417,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 651,
+      "wall_ms": 1.5745999990031123,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 652,
+      "wall_ms": 1.0066000395454466,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 653,
+      "wall_ms": 0.9677999769337475,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 654,
+      "wall_ms": 1.0273000225424767,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 655,
+      "wall_ms": 1.5596000012010336,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 656,
+      "wall_ms": 1.011099957395345,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 657,
+      "wall_ms": 1.057000015862286,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 658,
+      "wall_ms": 1.1023999541066587,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 659,
+      "wall_ms": 1.0006999946199358,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 660,
+      "wall_ms": 0.991299981251359,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 661,
+      "wall_ms": 0.896100013051182,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 662,
+      "wall_ms": 1.0210999753326178,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 663,
+      "wall_ms": 1.4875999768264592,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 664,
+      "wall_ms": 1.0461999918334186,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 665,
+      "wall_ms": 0.9949000086635351,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 666,
+      "wall_ms": 1.0322000016458333,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 667,
+      "wall_ms": 1.3048999826423824,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 668,
+      "wall_ms": 1.0287999757565558,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 669,
+      "wall_ms": 0.8681000326760113,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 670,
+      "wall_ms": 1.0803999612107873,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 671,
+      "wall_ms": 0.9661000221967697,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 672,
+      "wall_ms": 1.0524000390432775,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 673,
+      "wall_ms": 0.7226999732665718,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 674,
+      "wall_ms": 0.8941999985836446,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 675,
+      "wall_ms": 0.8399999933317304,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 676,
+      "wall_ms": 0.7353000110015273,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 677,
+      "wall_ms": 0.8565000025555491,
+      "cpu_ms": 15.625
+    },
+    {
+      "step": 678,
+      "wall_ms": 1.20009999955073,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 679,
+      "wall_ms": 0.8022999973036349,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 680,
+      "wall_ms": 0.7672000210732222,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 681,
+      "wall_ms": 0.9263000101782382,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 682,
+      "wall_ms": 0.7528000278398395,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 683,
+      "wall_ms": 0.8855999913066626,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 684,
+      "wall_ms": 0.7528999703936279,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 685,
+      "wall_ms": 0.6982000195421278,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 686,
+      "wall_ms": 0.7805999484844506,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 687,
+      "wall_ms": 0.7036000024527311,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 688,
+      "wall_ms": 0.7885000086389482,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 689,
+      "wall_ms": 0.7676000241190195,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 690,
+      "wall_ms": 0.6613999721594155,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 691,
+      "wall_ms": 0.8288999670185149,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 692,
+      "wall_ms": 0.6511000101454556,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 693,
+      "wall_ms": 0.6408000481314957,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 694,
+      "wall_ms": 0.756199995521456,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 695,
+      "wall_ms": 0.6463000318035483,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 696,
+      "wall_ms": 0.8163999882526696,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 697,
+      "wall_ms": 0.6408999906852841,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 698,
+      "wall_ms": 0.5834000185132027,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 699,
+      "wall_ms": 0.6370999617502093,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 700,
+      "wall_ms": 0.6988000241108239,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 701,
+      "wall_ms": 0.6571000558324158,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 702,
+      "wall_ms": 0.6766000296920538,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 703,
+      "wall_ms": 0.6481000455096364,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 704,
+      "wall_ms": 0.5713999853469431,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 705,
+      "wall_ms": 0.568699964787811,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 706,
+      "wall_ms": 0.506900018081069,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 707,
+      "wall_ms": 0.6124000065028667,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 708,
+      "wall_ms": 0.5138000124134123,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 709,
+      "wall_ms": 0.4927999689243734,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 710,
+      "wall_ms": 0.5723999929614365,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 711,
+      "wall_ms": 0.5880000535398722,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 712,
+      "wall_ms": 0.5564999883063138,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 713,
+      "wall_ms": 0.6422000005841255,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 714,
+      "wall_ms": 0.6386000313796103,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 715,
+      "wall_ms": 0.5499999970197678,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 716,
+      "wall_ms": 0.48669998068362474,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 717,
+      "wall_ms": 0.5635000416077673,
+      "cpu_ms": 0.0
+    },
+    {
+      "step": 718,
+      "wall_ms": 0.5287000094540417,
+      "cpu_ms": 0.0
+    }
+  ],
+  "timing_scope": "Inner candidate-call wall/CPU, including predecision feature capture but excluding policy source loading and some framework overhead; local callable execution, not official sandbox limits.",
+  "final_after_market": {
+    "step": 718,
+    "shed": [
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      }
+    ],
+    "cargo_totals": [
+      {},
+      {
+        "FERTILIZER": 9
+      }
+    ]
+  },
+  "phase_flows": {
+    "opening_0_71": [
+      {
+        "actual_sales": {
+          "WHEAT": 3,
+          "FERTILIZER": 3
+        },
+        "sale_revenue": {
+          "WHEAT": 87,
+          "FERTILIZER": 297
+        },
+        "unit_purchase_spending": {
+          "BUY_ANIMAL:COW": 800.0,
+          "BUY_ANIMAL:SHEEP": 1000.0,
+          "BUY_SEED:WHEAT": 70.0,
+          "BUY_SEED:MELON": 960.0,
+          "BUY_PRODUCT:WHEAT": 499.0
+        }
+      },
+      {
+        "actual_sales": {
+          "WHEAT": 19,
+          "FERTILIZER": 8
+        },
+        "sale_revenue": {
+          "WHEAT": 540,
+          "FERTILIZER": 792
+        },
+        "unit_purchase_spending": {
+          "BUY_PRODUCT:WHEAT": 871.0,
+          "BUY_SEED:WHEAT": 120.0,
+          "BUY_SEED:MELON": 960.0,
+          "BUY_ANIMAL:COW": 1200.0,
+          "BUY_ANIMAL:SHEEP": 1000.0
+        }
+      }
+    ],
+    "middle_72_167": [
+      {
+        "actual_sales": {
+          "FERTILIZER": 18,
+          "WHEAT": 18,
+          "WOOL": 12
+        },
+        "sale_revenue": {
+          "FERTILIZER": 1700,
+          "WHEAT": 550,
+          "WOOL": 2438
+        },
+        "unit_purchase_spending": {
+          "BUY_ANIMAL:COW": 800.0,
+          "BUY_PRODUCT:WHEAT": 428.0,
+          "BUY_SEED:WHEAT": 70.0,
+          "BUY_SEED:STRAWBERRY": 700.0,
+          "BUY_SEED:MELON": 640.0,
+          "BUY_SEED:CARROT": 40.0
+        }
+      },
+      {
+        "actual_sales": {
+          "WHEAT": 15,
+          "FERTILIZER": 23,
+          "WOOL": 10
+        },
+        "sale_revenue": {
+          "WHEAT": 462,
+          "FERTILIZER": 2146,
+          "WOOL": 1994
+        },
+        "unit_purchase_spending": {
+          "BUY_SEED:WHEAT": 160.0,
+          "BUY_ANIMAL:COW": 1200.0,
+          "BUY_SEED:CARROT": 80.0,
+          "BUY_SEED:STRAWBERRY": 1200.0,
+          "BUY_PRODUCT:WHEAT": 431.0
+        }
+      }
+    ],
+    "main_168_695": [
+      {
+        "actual_sales": {
+          "FERTILIZER": 265,
+          "MILK": 171,
+          "WHEAT": 744,
+          "WOOL": 235,
+          "MELON": 120,
+          "STRAWBERRY": 216,
+          "CARROT": 2
+        },
+        "sale_revenue": {
+          "FERTILIZER": 10337,
+          "MILK": 24420,
+          "WHEAT": 33051,
+          "WOOL": 3216,
+          "MELON": 13949,
+          "STRAWBERRY": 5316,
+          "CARROT": 206
+        },
+        "unit_purchase_spending": {
+          "BUY_ANIMAL:COW": 800.0,
+          "BUY_ANIMAL:SHEEP": 5000.0,
+          "BUY_SEED:STRAWBERRY": 2700.0,
+          "BUY_SEED:WHEAT": 1250.0,
+          "BUY_PRODUCT:WHEAT": 35203.0
+        }
+      },
+      {
+        "actual_sales": {
+          "WOOL": 183,
+          "FERTILIZER": 304,
+          "MILK": 253,
+          "WHEAT": 197,
+          "MELON": 72,
+          "STRAWBERRY": 262,
+          "CARROT": 8
+        },
+        "sale_revenue": {
+          "WOOL": 3387,
+          "FERTILIZER": 11704,
+          "MILK": 35351,
+          "WHEAT": 8632,
+          "MELON": 16064,
+          "STRAWBERRY": 11968,
+          "CARROT": 894
+        },
+        "unit_purchase_spending": {
+          "BUY_SEED:WHEAT": 1690.0,
+          "BUY_SEED:STRAWBERRY": 2100.0,
+          "BUY_ANIMAL:COW": 1200.0,
+          "BUY_PRODUCT:FERTILIZER": 1854.0,
+          "BUY_PRODUCT:WHEAT": 3578.0,
+          "BUY_ANIMAL:SHEEP": 3000.0,
+          "BUY_SEED:CARROT": 20.0
+        }
+      }
+    ],
+    "terminal_696_718": [
+      {
+        "actual_sales": {
+          "WHEAT": 88,
+          "MILK": 18,
+          "STRAWBERRY": 5,
+          "WOOL": 24,
+          "CARROT": 2,
+          "FERTILIZER": 7
+        },
+        "sale_revenue": {
+          "WHEAT": 3873,
+          "MILK": 3443,
+          "STRAWBERRY": 132,
+          "WOOL": 24,
+          "CARROT": 226,
+          "FERTILIZER": 7
+        },
+        "unit_purchase_spending": {}
+      },
+      {
+        "actual_sales": {
+          "WHEAT": 130,
+          "FERTILIZER": 16,
+          "CARROT": 1,
+          "MILK": 8,
+          "WOOL": 2
+        },
+        "sale_revenue": {
+          "WHEAT": 5647,
+          "FERTILIZER": 18,
+          "CARROT": 118,
+          "MILK": 1563,
+          "WOOL": 6
+        },
+        "unit_purchase_spending": {
+          "BUY_PRODUCT:FERTILIZER": 4.0
+        }
+      }
+    ]
+  },
+  "phase_flow_audit": {
+    "consistent": true,
+    "residuals": [],
+    "scope": "Actual successful unit commits; excludes HIRE and BUY_LAND in both spending totals."
+  },
+  "phase_flow_scope": "Actual successful unit commits; HIRE/BUY_LAND atomic costs absent from unit-purchase counters.",
+  "requested_work_actions": {
+    "BUILD_PASTURE": 18,
+    "PICKUP": 158,
+    "WEST": 928,
+    "NORTH": 908,
+    "PLACE": 58,
+    "PLANT": 189,
+    "EAST": 820,
+    "WATER": 921,
+    "SOUTH": 741,
+    "FEED": 371,
+    "CARE": 367,
+    "PASS": 622,
+    "COLLECT_FERTILIZER": 347,
+    "HARVEST": 389,
+    "DIG": 19,
+    "FERTILIZE": 54,
+    "DROP": 7
+  },
+  "requested_work_scope": "Issued commands only, not executed harvest or sale quantities.",
+  "route_diagnostics": {
+    "baseline_route_state": {
+      "last_step": 718,
+      "legacy": false,
+      "label": "8c6s_3q",
+      "third_yarn_milk": null,
+      "v5_gate": true,
+      "v5_shops": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "v5_expert": "high"
+    },
+    "portfolio_diagnostics": {
+      "entry_count": 1,
+      "expert_decision_count": 1,
+      "cache_hits": 0,
+      "fallback_count": 0,
+      "fallback_reasons": {},
+      "seats": {
+        "0": {
+          "config_supplied": true,
+          "entry": {
+            "step": 72,
+            "mode": "forced_v5_low",
+            "requested_expert": "high"
+          },
+          "expert_decision": {
+            "step": 168,
+            "expert": "high",
+            "mode": "fixed_probe"
+          }
+        },
+        "1": {}
+      },
+      "trace_validation_count": 3,
+      "trace_validation_total_ms": 34.07839999999851,
+      "trace_validation_max_ms": 11.588499997742474
+    }
+  },
+  "feature_schema": {
+    "schema": "portfolio-public72-v1",
+    "capture_action_step": 72,
+    "all_predictors_numeric": true,
+    "feature_names": [
+      "market.inventory.WHEAT",
+      "market.inventory.CARROT",
+      "market.inventory.TOMATO",
+      "market.inventory.STRAWBERRY",
+      "market.inventory.MELON",
+      "market.inventory.EGG",
+      "market.inventory.MILK",
+      "market.inventory.WOOL",
+      "market.inventory.FERTILIZER",
+      "market.prices.WHEAT",
+      "market.prices.CARROT",
+      "market.prices.TOMATO",
+      "market.prices.STRAWBERRY",
+      "market.prices.MELON",
+      "market.prices.EGG",
+      "market.prices.MILK",
+      "market.prices.WOOL",
+      "market.prices.FERTILIZER",
+      "town.shop_count.BAKERY",
+      "town.shop_count.PIZZA_SHOP",
+      "town.shop_count.BRUNCH_SPOT",
+      "town.shop_count.YARN_STORE",
+      "town.shop_count.ICE_CREAM_SHOP",
+      "town.shop_count.PET_CAFE",
+      "town.shop_count.SMOOTHIE_SHOP",
+      "town.shop_count.FARMERS_MARKET",
+      "own.money",
+      "own.hands_count",
+      "own.hires_today",
+      "own.farmer_x",
+      "own.farmer_y",
+      "own.hands_x_sum",
+      "own.hands_y_sum",
+      "own.quadrant.NW",
+      "own.quadrant.NE",
+      "own.quadrant.SW",
+      "own.quadrant.SE",
+      "own.tiles.EMPTY",
+      "own.tiles.LOCKED",
+      "own.tiles.WEED",
+      "own.tiles.PLANT",
+      "own.tiles.COOP",
+      "own.tiles.PASTURE",
+      "own.crop.WHEAT.count",
+      "own.crop.WHEAT.yield_units",
+      "own.crop.WHEAT.age_days_sum",
+      "own.crop.WHEAT.watered_today_count",
+      "own.crop.CARROT.count",
+      "own.crop.CARROT.yield_units",
+      "own.crop.CARROT.age_days_sum",
+      "own.crop.CARROT.watered_today_count",
+      "own.crop.TOMATO.count",
+      "own.crop.TOMATO.yield_units",
+      "own.crop.TOMATO.age_days_sum",
+      "own.crop.TOMATO.watered_today_count",
+      "own.crop.STRAWBERRY.count",
+      "own.crop.STRAWBERRY.yield_units",
+      "own.crop.STRAWBERRY.age_days_sum",
+      "own.crop.STRAWBERRY.watered_today_count",
+      "own.crop.MELON.count",
+      "own.crop.MELON.yield_units",
+      "own.crop.MELON.age_days_sum",
+      "own.crop.MELON.watered_today_count",
+      "own.animal.GOOSE.count",
+      "own.animal.GOOSE.yield_units",
+      "own.animal.GOOSE.age_days_sum",
+      "own.animal.GOOSE.fed_today_count",
+      "own.animal.GOOSE.cared_today_count",
+      "own.animal.GOOSE.fertilizer_available_count",
+      "own.animal.COW.count",
+      "own.animal.COW.yield_units",
+      "own.animal.COW.age_days_sum",
+      "own.animal.COW.fed_today_count",
+      "own.animal.COW.cared_today_count",
+      "own.animal.COW.fertilizer_available_count",
+      "own.animal.SHEEP.count",
+      "own.animal.SHEEP.yield_units",
+      "own.animal.SHEEP.age_days_sum",
+      "own.animal.SHEEP.fed_today_count",
+      "own.animal.SHEEP.cared_today_count",
+      "own.animal.SHEEP.fertilizer_available_count",
+      "opponent.money",
+      "opponent.hands_count",
+      "opponent.hires_today",
+      "opponent.farmer_x",
+      "opponent.farmer_y",
+      "opponent.hands_x_sum",
+      "opponent.hands_y_sum",
+      "opponent.quadrant.NW",
+      "opponent.quadrant.NE",
+      "opponent.quadrant.SW",
+      "opponent.quadrant.SE",
+      "opponent.tiles.EMPTY",
+      "opponent.tiles.LOCKED",
+      "opponent.tiles.WEED",
+      "opponent.tiles.PLANT",
+      "opponent.tiles.COOP",
+      "opponent.tiles.PASTURE",
+      "opponent.crop.WHEAT.count",
+      "opponent.crop.WHEAT.yield_units",
+      "opponent.crop.WHEAT.age_days_sum",
+      "opponent.crop.WHEAT.watered_today_count",
+      "opponent.crop.CARROT.count",
+      "opponent.crop.CARROT.yield_units",
+      "opponent.crop.CARROT.age_days_sum",
+      "opponent.crop.CARROT.watered_today_count",
+      "opponent.crop.TOMATO.count",
+      "opponent.crop.TOMATO.yield_units",
+      "opponent.crop.TOMATO.age_days_sum",
+      "opponent.crop.TOMATO.watered_today_count",
+      "opponent.crop.STRAWBERRY.count",
+      "opponent.crop.STRAWBERRY.yield_units",
+      "opponent.crop.STRAWBERRY.age_days_sum",
+      "opponent.crop.STRAWBERRY.watered_today_count",
+      "opponent.crop.MELON.count",
+      "opponent.crop.MELON.yield_units",
+      "opponent.crop.MELON.age_days_sum",
+      "opponent.crop.MELON.watered_today_count",
+      "opponent.animal.GOOSE.count",
+      "opponent.animal.GOOSE.yield_units",
+      "opponent.animal.GOOSE.age_days_sum",
+      "opponent.animal.GOOSE.fed_today_count",
+      "opponent.animal.GOOSE.cared_today_count",
+      "opponent.animal.GOOSE.fertilizer_available_count",
+      "opponent.animal.COW.count",
+      "opponent.animal.COW.yield_units",
+      "opponent.animal.COW.age_days_sum",
+      "opponent.animal.COW.fed_today_count",
+      "opponent.animal.COW.cared_today_count",
+      "opponent.animal.COW.fertilizer_available_count",
+      "opponent.animal.SHEEP.count",
+      "opponent.animal.SHEEP.yield_units",
+      "opponent.animal.SHEEP.age_days_sum",
+      "opponent.animal.SHEEP.fed_today_count",
+      "opponent.animal.SHEEP.cared_today_count",
+      "opponent.animal.SHEEP.fertilizer_available_count"
+    ],
+    "own_opponent_normalized": true,
+    "source_whitelist": [
+      "step (validation only)",
+      "day (public tile age derivation)",
+      "player (orientation only)",
+      "market.inventory[known products]",
+      "market.prices[known products]",
+      "town.unlocked_shops[known shop instances]",
+      "farms[own/opponent].money/farmer/hands/hires_today/unlocked_quadrants",
+      "farms[own/opponent].tiles.kind/crop/animal/planted_day/placed_day/yield_units/watered_today/fed_today/cared_today/fertilizer_available"
+    ],
+    "excluded": [
+      "seed",
+      "opponent identity/name",
+      "player id as predictor",
+      "private including own private",
+      "remainingOverageTime",
+      "future shops",
+      "rewards",
+      "actions",
+      "unrecognized keys"
+    ],
+    "semantics": "Current legal public observation only; tile counts and age/yield sums are descriptive, not future-production forecasts."
+  },
+  "process_provenance": {
+    "pid": 48380,
+    "parent_pid": 44016,
+    "python": "3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "start_method": "spawn",
+    "max_tasks_per_child": 1,
+    "isolation": "Fresh OS process and official last-callable namespaces for both files per job"
+  },
+  "prefix71": {
+    "raw_sha256": "dc92293b90db19268e633fa2e7f18805ff3514f921e042747a2ea6f22caa138e",
+    "gameplay_sha256": "09e116e418bfa90cb1b818396a234021fc5f602df79260d99086de769622a671",
+    "phase": "step-71 after market, BEFORE town consumption, decay and end-of-day",
+    "gameplay_scope": "All observation fields except remainingOverageTime; only hashes exported, not private raw observations.",
+    "runtime_overage_seconds": [
+      60,
+      60
+    ]
+  },
+  "prefix167": {
+    "raw_sha256": "894fa9ba798f1e194e20036c8803ff6ad3f361bd4b8766608a5c8a57f7244b5b",
+    "gameplay_sha256": "d284efba394191ee6090399a608e80a91af11af68a6b25bd10f47179248ec44d",
+    "phase": "step-167 after market, BEFORE town consumption, decay and end-of-day",
+    "gameplay_scope": "All observation fields except remainingOverageTime; only hashes exported, not private raw observations.",
+    "runtime_overage_seconds": [
+      60,
+      60
+    ]
+  },
+  "predecision72": {
+    "phase": "before candidate action-72 decision, after prior turn's town/decay/night",
+    "feature_snapshot": {
+      "schema": "portfolio-public72-v1",
+      "schema_sha256": "7f1e1b3a8bc3f71fa4ba372c4cf9b5dab35d1c5366c2686089a3484049521547",
+      "capture_action_step": 72,
+      "valid": true,
+      "values": {
+        "market.inventory.WHEAT": 9971,
+        "market.inventory.CARROT": 9997,
+        "market.inventory.TOMATO": 9997,
+        "market.inventory.STRAWBERRY": 9997,
+        "market.inventory.MELON": 9997,
+        "market.inventory.EGG": 9997,
+        "market.inventory.MILK": 9997,
+        "market.inventory.WOOL": 9997,
+        "market.inventory.FERTILIZER": 10011,
+        "market.prices.WHEAT": 30,
+        "market.prices.CARROT": 35,
+        "market.prices.TOMATO": 60,
+        "market.prices.STRAWBERRY": 135,
+        "market.prices.MELON": 262,
+        "market.prices.EGG": 50,
+        "market.prices.MILK": 175,
+        "market.prices.WOOL": 212,
+        "market.prices.FERTILIZER": 98,
+        "town.shop_count.BAKERY": 0,
+        "town.shop_count.PIZZA_SHOP": 0,
+        "town.shop_count.BRUNCH_SPOT": 0,
+        "town.shop_count.YARN_STORE": 0,
+        "town.shop_count.ICE_CREAM_SHOP": 0,
+        "town.shop_count.PET_CAFE": 1,
+        "town.shop_count.SMOOTHIE_SHOP": 0,
+        "town.shop_count.FARMERS_MARKET": 0,
+        "own.money": 36.0,
+        "own.hands_count": 0,
+        "own.hires_today": 0,
+        "own.farmer_x": 4,
+        "own.farmer_y": 4,
+        "own.hands_x_sum": 0,
+        "own.hands_y_sum": 0,
+        "own.quadrant.NW": 1,
+        "own.quadrant.NE": 0,
+        "own.quadrant.SW": 0,
+        "own.quadrant.SE": 0,
+        "own.tiles.EMPTY": 1,
+        "own.tiles.LOCKED": 75,
+        "own.tiles.WEED": 0,
+        "own.tiles.PLANT": 19,
+        "own.tiles.COOP": 0,
+        "own.tiles.PASTURE": 5,
+        "own.crop.WHEAT.count": 7,
+        "own.crop.WHEAT.yield_units": 14,
+        "own.crop.WHEAT.age_days_sum": 21,
+        "own.crop.WHEAT.watered_today_count": 0,
+        "own.crop.CARROT.count": 0,
+        "own.crop.CARROT.yield_units": 0,
+        "own.crop.CARROT.age_days_sum": 0,
+        "own.crop.CARROT.watered_today_count": 0,
+        "own.crop.TOMATO.count": 0,
+        "own.crop.TOMATO.yield_units": 0,
+        "own.crop.TOMATO.age_days_sum": 0,
+        "own.crop.TOMATO.watered_today_count": 0,
+        "own.crop.STRAWBERRY.count": 0,
+        "own.crop.STRAWBERRY.yield_units": 0,
+        "own.crop.STRAWBERRY.age_days_sum": 0,
+        "own.crop.STRAWBERRY.watered_today_count": 0,
+        "own.crop.MELON.count": 12,
+        "own.crop.MELON.yield_units": 12,
+        "own.crop.MELON.age_days_sum": 36,
+        "own.crop.MELON.watered_today_count": 0,
+        "own.animal.GOOSE.count": 0,
+        "own.animal.GOOSE.yield_units": 0,
+        "own.animal.GOOSE.age_days_sum": 0,
+        "own.animal.GOOSE.fed_today_count": 0,
+        "own.animal.GOOSE.cared_today_count": 0,
+        "own.animal.GOOSE.fertilizer_available_count": 0,
+        "own.animal.COW.count": 2,
+        "own.animal.COW.yield_units": 0,
+        "own.animal.COW.age_days_sum": 6,
+        "own.animal.COW.fed_today_count": 0,
+        "own.animal.COW.cared_today_count": 0,
+        "own.animal.COW.fertilizer_available_count": 2,
+        "own.animal.SHEEP.count": 2,
+        "own.animal.SHEEP.yield_units": 0,
+        "own.animal.SHEEP.age_days_sum": 6,
+        "own.animal.SHEEP.fed_today_count": 0,
+        "own.animal.SHEEP.cared_today_count": 0,
+        "own.animal.SHEEP.fertilizer_available_count": 2,
+        "opponent.money": 155.0,
+        "opponent.hands_count": 0,
+        "opponent.hires_today": 0,
+        "opponent.farmer_x": 4,
+        "opponent.farmer_y": 4,
+        "opponent.hands_x_sum": 0,
+        "opponent.hands_y_sum": 0,
+        "opponent.quadrant.NW": 1,
+        "opponent.quadrant.NE": 0,
+        "opponent.quadrant.SW": 0,
+        "opponent.quadrant.SE": 0,
+        "opponent.tiles.EMPTY": 0,
+        "opponent.tiles.LOCKED": 75,
+        "opponent.tiles.WEED": 0,
+        "opponent.tiles.PLANT": 19,
+        "opponent.tiles.COOP": 0,
+        "opponent.tiles.PASTURE": 6,
+        "opponent.crop.WHEAT.count": 7,
+        "opponent.crop.WHEAT.yield_units": 11,
+        "opponent.crop.WHEAT.age_days_sum": 15,
+        "opponent.crop.WHEAT.watered_today_count": 0,
+        "opponent.crop.CARROT.count": 0,
+        "opponent.crop.CARROT.yield_units": 0,
+        "opponent.crop.CARROT.age_days_sum": 0,
+        "opponent.crop.CARROT.watered_today_count": 0,
+        "opponent.crop.TOMATO.count": 0,
+        "opponent.crop.TOMATO.yield_units": 0,
+        "opponent.crop.TOMATO.age_days_sum": 0,
+        "opponent.crop.TOMATO.watered_today_count": 0,
+        "opponent.crop.STRAWBERRY.count": 0,
+        "opponent.crop.STRAWBERRY.yield_units": 0,
+        "opponent.crop.STRAWBERRY.age_days_sum": 0,
+        "opponent.crop.STRAWBERRY.watered_today_count": 0,
+        "opponent.crop.MELON.count": 12,
+        "opponent.crop.MELON.yield_units": 12,
+        "opponent.crop.MELON.age_days_sum": 36,
+        "opponent.crop.MELON.watered_today_count": 0,
+        "opponent.animal.GOOSE.count": 0,
+        "opponent.animal.GOOSE.yield_units": 0,
+        "opponent.animal.GOOSE.age_days_sum": 0,
+        "opponent.animal.GOOSE.fed_today_count": 0,
+        "opponent.animal.GOOSE.cared_today_count": 0,
+        "opponent.animal.GOOSE.fertilizer_available_count": 0,
+        "opponent.animal.COW.count": 3,
+        "opponent.animal.COW.yield_units": 0,
+        "opponent.animal.COW.age_days_sum": 7,
+        "opponent.animal.COW.fed_today_count": 0,
+        "opponent.animal.COW.cared_today_count": 0,
+        "opponent.animal.COW.fertilizer_available_count": 3,
+        "opponent.animal.SHEEP.count": 2,
+        "opponent.animal.SHEEP.yield_units": 0,
+        "opponent.animal.SHEEP.age_days_sum": 6,
+        "opponent.animal.SHEEP.fed_today_count": 0,
+        "opponent.animal.SHEEP.cared_today_count": 0,
+        "opponent.animal.SHEEP.fertilizer_available_count": 2
+      },
+      "error": null
+    },
+    "public_feature_sha256": "f3c5a2a3f7f7b9acd474e2498bc0f5493c3742ad15e50786d6a8f070b22086e5",
+    "observation_history_contiguous": true,
+    "eligible_selector_input": true
+  },
+  "predecision168": {
+    "phase": "before candidate action-168 decision, after prior town/decay/night",
+    "public_shop_sequence": [
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "public_shops_valid": true,
+    "observation_history_contiguous": true,
+    "scope": "Step-168 diagnostic only; never a step-72 predictor or retrospective step-72 feature."
+  },
+  "observation_history": {
+    "first_step": 0,
+    "last_step": 718,
+    "contiguous_from_zero": true
+  },
+  "route_checkpoints": {
+    "0": {
+      "baseline_route_state": {
+        "last_step": 0,
+        "legacy": null,
+        "label": "8c6s_3q",
+        "third_yarn_milk": null,
+        "v5_gate": null,
+        "v5_shops": [],
+        "v5_expert": null
+      },
+      "portfolio_diagnostics": {
+        "entry_count": 0,
+        "expert_decision_count": 0,
+        "cache_hits": 0,
+        "fallback_count": 0,
+        "fallback_reasons": {},
+        "seats": {
+          "0": {
+            "config_supplied": true
+          },
+          "1": {}
+        },
+        "trace_validation_count": 1,
+        "trace_validation_total_ms": 11.125200020615011,
+        "trace_validation_max_ms": 11.125200020615011
+      }
+    },
+    "71": {
+      "baseline_route_state": {
+        "last_step": 71,
+        "legacy": false,
+        "label": "8c6s_3q",
+        "third_yarn_milk": null,
+        "v5_gate": null,
+        "v5_shops": [],
+        "v5_expert": null
+      },
+      "portfolio_diagnostics": {
+        "entry_count": 0,
+        "expert_decision_count": 0,
+        "cache_hits": 0,
+        "fallback_count": 0,
+        "fallback_reasons": {},
+        "seats": {
+          "0": {
+            "config_supplied": true
+          },
+          "1": {}
+        },
+        "trace_validation_count": 1,
+        "trace_validation_total_ms": 11.125200020615011,
+        "trace_validation_max_ms": 11.125200020615011
+      }
+    },
+    "72": {
+      "baseline_route_state": {
+        "last_step": 72,
+        "legacy": false,
+        "label": "8c6s_3q",
+        "third_yarn_milk": null,
+        "v5_gate": true,
+        "v5_shops": [
+          "PET_CAFE"
+        ],
+        "v5_expert": null
+      },
+      "portfolio_diagnostics": {
+        "entry_count": 1,
+        "expert_decision_count": 0,
+        "cache_hits": 0,
+        "fallback_count": 0,
+        "fallback_reasons": {},
+        "seats": {
+          "0": {
+            "config_supplied": true,
+            "entry": {
+              "step": 72,
+              "mode": "forced_v5_low",
+              "requested_expert": "high"
+            }
+          },
+          "1": {}
+        },
+        "trace_validation_count": 2,
+        "trace_validation_total_ms": 22.713700018357486,
+        "trace_validation_max_ms": 11.588499997742474
+      }
+    },
+    "167": {
+      "baseline_route_state": {
+        "last_step": 167,
+        "legacy": false,
+        "label": "8c6s_3q",
+        "third_yarn_milk": null,
+        "v5_gate": true,
+        "v5_shops": [
+          "PET_CAFE",
+          "PIZZA_SHOP"
+        ],
+        "v5_expert": null
+      },
+      "portfolio_diagnostics": {
+        "entry_count": 1,
+        "expert_decision_count": 0,
+        "cache_hits": 0,
+        "fallback_count": 0,
+        "fallback_reasons": {},
+        "seats": {
+          "0": {
+            "config_supplied": true,
+            "entry": {
+              "step": 72,
+              "mode": "forced_v5_low",
+              "requested_expert": "high"
+            }
+          },
+          "1": {}
+        },
+        "trace_validation_count": 2,
+        "trace_validation_total_ms": 22.713700018357486,
+        "trace_validation_max_ms": 11.588499997742474
+      }
+    },
+    "168": {
+      "baseline_route_state": {
+        "last_step": 168,
+        "legacy": false,
+        "label": "8c6s_3q",
+        "third_yarn_milk": null,
+        "v5_gate": true,
+        "v5_shops": [
+          "PET_CAFE",
+          "PIZZA_SHOP"
+        ],
+        "v5_expert": "high"
+      },
+      "portfolio_diagnostics": {
+        "entry_count": 1,
+        "expert_decision_count": 1,
+        "cache_hits": 0,
+        "fallback_count": 0,
+        "fallback_reasons": {},
+        "seats": {
+          "0": {
+            "config_supplied": true,
+            "entry": {
+              "step": 72,
+              "mode": "forced_v5_low",
+              "requested_expert": "high"
+            },
+            "expert_decision": {
+              "step": 168,
+              "expert": "high",
+              "mode": "fixed_probe"
+            }
+          },
+          "1": {}
+        },
+        "trace_validation_count": 3,
+        "trace_validation_total_ms": 34.07839999999851,
+        "trace_validation_max_ms": 11.588499997742474
+      }
+    },
+    "718": {
+      "baseline_route_state": {
+        "last_step": 718,
+        "legacy": false,
+        "label": "8c6s_3q",
+        "third_yarn_milk": null,
+        "v5_gate": true,
+        "v5_shops": [
+          "PET_CAFE",
+          "PIZZA_SHOP"
+        ],
+        "v5_expert": "high"
+      },
+      "portfolio_diagnostics": {
+        "entry_count": 1,
+        "expert_decision_count": 1,
+        "cache_hits": 0,
+        "fallback_count": 0,
+        "fallback_reasons": {},
+        "seats": {
+          "0": {
+            "config_supplied": true,
+            "entry": {
+              "step": 72,
+              "mode": "forced_v5_low",
+              "requested_expert": "high"
+            },
+            "expert_decision": {
+              "step": 168,
+              "expert": "high",
+              "mode": "fixed_probe"
+            }
+          },
+          "1": {}
+        },
+        "trace_validation_count": 3,
+        "trace_validation_total_ms": 34.07839999999851,
+        "trace_validation_max_ms": 11.588499997742474
+      }
+    }
+  }
+}

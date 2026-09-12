@@ -262,6 +262,26 @@
       "bytes": 195340
     },
     {
+      "path": "experiments/track-portfolio-20260912/manifest-v1.json",
+      "sha256": "ec65d97fc0a655797bb753880e16d17d5ebd715e58a358a20126c1763b9dd675",
+      "bytes": 860
+    },
+    {
+      "path": "experiments/track-portfolio-20260912/portfolio_overlay.py",
+      "sha256": "9678ad7d6f9584398e2a3e15551510dc99fbb4724b9defeea5fce0d4386714f5",
+      "bytes": 14276
+    },
+    {
+      "path": "experiments/track-portfolio-20260912/v5-high-file/main.py",
+      "sha256": "40c857218c781a5980010bacb348c03f498a87d36c2671e5a8c37194c78a2a83",
+      "bytes": 204846
+    },
+    {
+      "path": "experiments/track-portfolio-20260912/v5-low-file/main.py",
+      "sha256": "f2d250860f199ba5569cfbd9909219a0069da6a1c3575fe4203c5d1551e5a3a2",
+      "bytes": 204845
+    },
+    {
       "path": "experiments/track-terminal-20260912/depth1/main.py",
       "sha256": "7e1225a6b67800ce70544162f594a6a4626c756ea547ff47bb6d84cb44dfbe0d",
       "bytes": 210105
@@ -408,13 +428,13 @@
     },
     {
       "path": "OPTIMIZATION_LOG.md",
-      "sha256": "5621ea98c99c58f370310e9507da48106e08d45650a314fb14bf991437f4ed89",
-      "bytes": 28009
+      "sha256": "2a803acfbbf7d1627be46029cb55e513358a05b1cfa4f90aa2f33c58ef410096",
+      "bytes": 30602
     },
     {
       "path": "PIPELINE_PROMPT.md",
-      "sha256": "0a02ab5efe652931d51bee24d160023d1ccbc487dcd5f3e2a48e424890b3d87f",
-      "bytes": 13182
+      "sha256": "67fd1929851464d6e6c9bec518fcf9da6ac1a5e2c328ee5c5f46b794d107178a",
+      "bytes": 13717
     },
     {
       "path": "public-baseline-v10/LICENSE",
@@ -693,8 +713,8 @@
     },
     {
       "path": "reports/p2-macro-source-hypotheses.md",
-      "sha256": "aa0b7a54e9dc665338fa8ab040c2ae4bb1a7f718ccaad847659d96fc4380eb67",
-      "bytes": 15919
+      "sha256": "0fccda8c7833bebb696aa011f54eb166d09f8be6216b726a66eb152678b828c7",
+      "bytes": 27944
     },
     {
       "path": "reports/p2-release-decision-review.md",
@@ -733,8 +753,38 @@
     },
     {
       "path": "reports/p3-20260912-plan.md",
-      "sha256": "1e815cba6668d0a4709e5494ef1580e598f40c6805b14895496c819d91b4eb32",
-      "bytes": 4484
+      "sha256": "89d4c90d441d5c33d2f57a7894d8a032fbe5e5f1d7439c3a830306bcf920c8c3",
+      "bytes": 5783
+    },
+    {
+      "path": "reports/p3-20260912-report.md",
+      "sha256": "964da2aa2fa27bc6f8461c0808b1ee8d57049e907afbc0db704f131abc7dcae5",
+      "bytes": 8484
+    },
+    {
+      "path": "reports/p3-macro-prior-diagnostics.json",
+      "sha256": "3e6aa3d6a64d269aa730c9085b64b42c909e100ca759a70df9de67cc6cb7fdcc",
+      "bytes": 73389
+    },
+    {
+      "path": "reports/p3-macro-prior-diagnostics.md",
+      "sha256": "27245001eeb4270da355f33923e67b840b9f524c6240d523d13571d92a4bd687",
+      "bytes": 8894
+    },
+    {
+      "path": "reports/p3-prefix-audit.json",
+      "sha256": "9d868e4f2219141497a7c9e75d97e0b2d2611376a384f6bc0bbbaffd1a3a4d3b",
+      "bytes": 5393
+    },
+    {
+      "path": "reports/p3-research-memory.md",
+      "sha256": "144b71d9860a1c735e69543dd1583638ed5ceca006285cf2694ba1abe419f385",
+      "bytes": 2319
+    },
+    {
+      "path": "reports/p4-material-diagnostic-proposal.md",
+      "sha256": "bd0fd465a98a8cac2c92333d01160d98c21b74a5d66094099e1e8e76c45acc38",
+      "bytes": 14881
     },
     {
       "path": "reports/versions/cok-v10-baseline.md",
@@ -922,6 +972,16 @@
       "bytes": 1453
     },
     {
+      "path": "reports/versions/p3-v5-high-file.md",
+      "sha256": "613c7945599f692c0526bead3b169d011ca4b5ba605cfa7b9feaeb91d3768020",
+      "bytes": 1493
+    },
+    {
+      "path": "reports/versions/p3-v5-low-file.md",
+      "sha256": "f0a1e6489854f7f74e6b4ce833b14a73592ac44169b631f5e17e02610fb957a5",
+      "bytes": 1411
+    },
+    {
       "path": "reports/versions/README.md",
       "sha256": "062a7c0fcf9974550cb8d4536a8c6482ce2714dc186a1efa1d640004efd82a10",
       "bytes": 2738
@@ -933,8 +993,8 @@
     },
     {
       "path": "research-state.json",
-      "sha256": "fd547ddb37e92d53f058d187062dfe0ad90c5d2bb801caa2ac122ae1045011c6",
-      "bytes": 5981
+      "sha256": "b35b41cb402dc38422a31b5dde28737585b27727dbac8fb13cfb34b5f07f446f",
+      "bytes": 6795
     },
     {
       "path": "RESEARCH.md",
@@ -2570,6 +2630,501 @@
       "path": "results/online-sample-analysis.json",
       "sha256": "85ffa32f4cefa228ebf0e8697c342550aedb22eaf9f9c680513efac8b3cb1416",
       "bytes": 83109
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91101-0-v5-high-file.json",
+      "sha256": "fbe7e08f4a5cb1b3801d411fbead390622c639309ed2554268d450abd56af8c3",
+      "bytes": 95973
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91101-0-v5-low-file.json",
+      "sha256": "7722659fbe4a7632d46092ead956b75e969a5eeec725bbba29ee87070ff7af88",
+      "bytes": 95989
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91101-1-v5-high-file.json",
+      "sha256": "5886b5aed6a90dd0db8c7b902c519cb9196233fcfb992291a3aa8cca215d6977",
+      "bytes": 95909
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91101-1-v5-low-file.json",
+      "sha256": "a016e048368dfd2b44b20451d3dc8d8236c6c6cff1508ad4e529a34708970b45",
+      "bytes": 95999
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91102-0-v5-high-file.json",
+      "sha256": "6ed804803c275fdfedb6e0baacc97c1287ec6938ff814c6f4d22e727d7fca3bd",
+      "bytes": 95944
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91102-0-v5-low-file.json",
+      "sha256": "ab0fae13a1405ee8b2fd57559ddc59ebcf7a2aade9aaa81b2920c61fbd9144bd",
+      "bytes": 95989
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91102-1-v5-high-file.json",
+      "sha256": "303c9336f1383d3e58f2664b4eae3283cfe199c6ad4420f60f276a6eb2d28a94",
+      "bytes": 95919
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91102-1-v5-low-file.json",
+      "sha256": "aed502541cf1b07193186b4f2a3166888f93df07886ca16102b9f3d2e4cfbabc",
+      "bytes": 95971
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91103-0-v5-high-file.json",
+      "sha256": "5715dc91b9842364d60faf5c54fe50c9c0fea587839bd5cea13777e29aeb3870",
+      "bytes": 95898
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91103-0-v5-low-file.json",
+      "sha256": "ba7ee6c8e80e5fb046107f5c4134aabc3a3ae9567c4f60887c86d9d615c0f9a8",
+      "bytes": 95972
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91103-1-v5-high-file.json",
+      "sha256": "648017e2f3ed580ba6cf50ee7eb9fb8865140ed0e85529fbbc3f5d87c67667d4",
+      "bytes": 95914
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91103-1-v5-low-file.json",
+      "sha256": "e0c21d0ee63d6004cf5300b5d80d68158cfe37e29931e3be96f9b97c861303ca",
+      "bytes": 95967
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91104-0-v5-high-file.json",
+      "sha256": "a7c5e031697410bf6ba665ce60030926b8d1c926d485173887732d793759eb85",
+      "bytes": 95909
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91104-0-v5-low-file.json",
+      "sha256": "08e7414ea6a78a469fb457194f64a9c46d403cdacfade66378be8b446d21515d",
+      "bytes": 96025
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91104-1-v5-high-file.json",
+      "sha256": "cbe46fbf63da72afc4d9675a788899845109eabf5dfb44d146e13fc55ac0bcf1",
+      "bytes": 95964
+    },
+    {
+      "path": "results/portfolio-20260912/development/arlene-91104-1-v5-low-file.json",
+      "sha256": "eefa61b2285e11f593e192d472147acab398395e0bec713da047c9b495663dca",
+      "bytes": 95998
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91101-0-v5-high-file.json",
+      "sha256": "a9a02d40b1384564e851ceb0634b1fb77c4540c4403bb18a877f83b0db496182",
+      "bytes": 95718
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91101-0-v5-low-file.json",
+      "sha256": "07133034dd3865f30afc2aaad3df84f96cfb4c6499f807d93522840db05a802c",
+      "bytes": 95660
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91101-1-v5-high-file.json",
+      "sha256": "8f5a4b5f4e9a34288d609447dddaa9b44b2d29682f14b398ee43f17502f0338f",
+      "bytes": 95735
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91101-1-v5-low-file.json",
+      "sha256": "e0a02a686ce3f3778070200ae5c605afd7d8b79594c408eddeedbb67516cb06e",
+      "bytes": 95663
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91102-0-v5-high-file.json",
+      "sha256": "08e9a82faca1d34ed92d9a23503dada56fe6a07961a619574a5d8055fc3a7738",
+      "bytes": 95695
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91102-0-v5-low-file.json",
+      "sha256": "fd47912412cc2eaa99b973c15c85f823133a5e05f7f7c843e20d2705867153d9",
+      "bytes": 95660
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91102-1-v5-high-file.json",
+      "sha256": "46e3bf768a194d6de3031affbc61250db2fa290146cc2796ca0b22a1b38820b6",
+      "bytes": 95636
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91102-1-v5-low-file.json",
+      "sha256": "35b299311258e80a1920cf1ffb6c0a83d2f8c041e163548cd863c153770775f7",
+      "bytes": 95652
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91103-0-v5-high-file.json",
+      "sha256": "bc9ba33e6411e3e855b6ccec0b91944c527d1cae61940437e6e0a5df2434e0ef",
+      "bytes": 95647
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91103-0-v5-low-file.json",
+      "sha256": "a8aed4041805e4d1ed4a473c25d36cf82a3225b9baa64e5c103292b06afe9a76",
+      "bytes": 95578
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91103-1-v5-high-file.json",
+      "sha256": "a98a1334fcf0d1c52a098410eb1a487797699c030483c0729f1dd146917e790e",
+      "bytes": 95663
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91103-1-v5-low-file.json",
+      "sha256": "d55ce501b54d645f4f9128bcfaa608f5f27623dea58e39460a85c8cf3ee8fe09",
+      "bytes": 95646
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91104-0-v5-high-file.json",
+      "sha256": "f6ecbe3e5dc8db4b161a61246116dee3fb4bf915eadcc812ace0d18dde94e848",
+      "bytes": 95621
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91104-0-v5-low-file.json",
+      "sha256": "33d20341e328c9bd22acdc238ee45afbf5ccf53acb875300cd5332de50a2f3f3",
+      "bytes": 95568
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91104-1-v5-high-file.json",
+      "sha256": "f14e11061cb793721696dcb6302eedfc38cda05f2fb1635adf5ad6c6808063bd",
+      "bytes": 95608
+    },
+    {
+      "path": "results/portfolio-20260912/development/cok-91104-1-v5-low-file.json",
+      "sha256": "186e6dbe337aebf8f4f1654e607c2b5c12d3f5a01da19fcc99efaa4f317a92c6",
+      "bytes": 95605
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91101-0-v5-high-file.json",
+      "sha256": "9ea9cea4c79bf1017ba441c50fc270e616828abfab178e30675d55e8f8c03277",
+      "bytes": 93735
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91101-0-v5-low-file.json",
+      "sha256": "ec26b95eb30ed8aa07a09f9fa01e8da0d3ead21e8672733a46ad4c3260e996c3",
+      "bytes": 93806
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91101-1-v5-high-file.json",
+      "sha256": "8d5473d72d1990019f1479ad615300b444b1ad90652124dda85744e65f4333ee",
+      "bytes": 93775
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91101-1-v5-low-file.json",
+      "sha256": "b731cbde4307590477db25083d81ff1e85c2e27ec9a76a1cf1700204035ac63e",
+      "bytes": 93712
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91102-0-v5-high-file.json",
+      "sha256": "fdf23a37cfbf0899448ca0713a3499f6090456ce8aa3092622c4d44d5177b618",
+      "bytes": 93748
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91102-0-v5-low-file.json",
+      "sha256": "23ee46e9c02542e594f4622451197e046da466bfd385a6764a810044d2cad972",
+      "bytes": 93757
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91102-1-v5-high-file.json",
+      "sha256": "6ca8c888d1079f678361b62b556ecb74a356a1674b1bc49d78d3270d32dba3b3",
+      "bytes": 93672
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91102-1-v5-low-file.json",
+      "sha256": "58564605c08226e0a65a84498159339b50475126285d4484292d975ec8b8b3b5",
+      "bytes": 93730
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91103-0-v5-high-file.json",
+      "sha256": "cdf74767011e6551deb992a743dda611f795c16039571290ddef73fcf3e94735",
+      "bytes": 93691
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91103-0-v5-low-file.json",
+      "sha256": "9eeceb6763326e03bf2fb788b0da688564f48849b96b13d58597f288d82fd40b",
+      "bytes": 93778
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91103-1-v5-high-file.json",
+      "sha256": "2eed5633857fda2b287b1ee1efe941a0559853809210ee845adf011318582ab4",
+      "bytes": 93692
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91103-1-v5-low-file.json",
+      "sha256": "0cfef4b7608240433c593fd611a54c73da13f285a0d5b4b88a0cd3fb0a65dcab",
+      "bytes": 93822
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91104-0-v5-high-file.json",
+      "sha256": "4e017ce15649693649d944863b657e9efe1e4df61de99b075db1369a6953419e",
+      "bytes": 93702
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91104-0-v5-low-file.json",
+      "sha256": "42bdf82da085fffa24e55473a89020a78cc220dc1bdabf0950be7bd07366729c",
+      "bytes": 93746
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91104-1-v5-high-file.json",
+      "sha256": "217d50fbe84b80b15647c5323e1d8b77fcb42b1df9bf53781d54777e4535d624",
+      "bytes": 93625
+    },
+    {
+      "path": "results/portfolio-20260912/development/deepesh-91104-1-v5-low-file.json",
+      "sha256": "a1202ad3cd1f81506f6277c2c47bc1f7126d9ad3932e5a6d9d642e95e33374be",
+      "bytes": 93687
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91101-0-v5-high-file.json",
+      "sha256": "c7f72855e75a612ac7e5c225552ac51caf1776ebb46db67bbe5890fcc85dd0de",
+      "bytes": 95273
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91101-0-v5-low-file.json",
+      "sha256": "3bdff7f33bc8473f0df969d5554893590ed7350fa1f3d2fb8451e0bc2acbb52f",
+      "bytes": 95285
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91101-1-v5-high-file.json",
+      "sha256": "7adb6903ff45d97f399713cef2ad3ecf81bb8c4b58846b565fd8bc5c40e711b6",
+      "bytes": 95212
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91101-1-v5-low-file.json",
+      "sha256": "d26fece1bf9df609345fb4fba8a38d0e78bc7128acbee4266042c24f2649a99a",
+      "bytes": 95305
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91102-0-v5-high-file.json",
+      "sha256": "eec42666bcc7dfa8d49c33e75f714f4f824c8595e0fdba8e6b420cba0f571dab",
+      "bytes": 95292
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91102-0-v5-low-file.json",
+      "sha256": "926e9174f376c10b8fbffb20fe89cf36c629e837836f283e04d6d201dbff4186",
+      "bytes": 95286
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91102-1-v5-high-file.json",
+      "sha256": "13aa0b47e18fe281ad814d1533d78ced25a01c69cd5088e87b046dbaa2fa18d5",
+      "bytes": 95197
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91102-1-v5-low-file.json",
+      "sha256": "6d14e1553aea1158648605571e45dcceb0a82629785d2ee584580698ff6d4286",
+      "bytes": 95289
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91103-0-v5-high-file.json",
+      "sha256": "4630a3436a36ae801361e676b2d2e8314dd12552f9694efeeb0e47197abf828c",
+      "bytes": 95211
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91103-0-v5-low-file.json",
+      "sha256": "c2f5f83a470ae9a09d7f80dda22e4e51eb8ee587b3d13fb0e8a4c568168b9f3a",
+      "bytes": 95283
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91103-1-v5-high-file.json",
+      "sha256": "0b95425171666a58786ebf1a52052e91a261eb43176df5d9111a6578f4882248",
+      "bytes": 95277
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91103-1-v5-low-file.json",
+      "sha256": "22a7641e835e81ed0d8b9fddaf82745fd25af32fde93352d7e78b70cb46bd095",
+      "bytes": 95260
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91104-0-v5-high-file.json",
+      "sha256": "e7aa95f49f53d205e77108524b6841726cc7c916f0bf93500a8b52ee2b40b5ac",
+      "bytes": 95237
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91104-0-v5-low-file.json",
+      "sha256": "c33d1b3366b67ef40195d32f888e24270ea043f9594340473a4f3163ddd639b9",
+      "bytes": 95305
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91104-1-v5-high-file.json",
+      "sha256": "37954f71d29aedf8795931896329fc59ae95f062e94f3ec66349e17aa5e04605",
+      "bytes": 95266
+    },
+    {
+      "path": "results/portfolio-20260912/development/lonespear-91104-1-v5-low-file.json",
+      "sha256": "dc097cde0e56416d880003b78bed3d870b5b131728cf34227c78ce101f163c65",
+      "bytes": 95281
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91101-0-v5-high-file.json",
+      "sha256": "248d46f0d3d8041306900b76de4fc6360b2a26a8f2537457d53a6fa8571f44cf",
+      "bytes": 93991
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91101-0-v5-low-file.json",
+      "sha256": "f9b49ed1643fe638785277bd9cac611d235146289ce8b1103f3e676155ce05ba",
+      "bytes": 94001
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91101-1-v5-high-file.json",
+      "sha256": "dbdaed9bbf7bcc3fc81f0ae0cb63db1dd595043e9272ab522c5bf82e75fea5c1",
+      "bytes": 93997
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91101-1-v5-low-file.json",
+      "sha256": "0b53f5699a439821c5fc32bcf2eac00a061e4aaca23b3a438e780856303c671c",
+      "bytes": 94032
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91102-0-v5-high-file.json",
+      "sha256": "f7cd857ccdc4b0562a80cca808428af774a15f9cd889559253c33ef2cd3cbab0",
+      "bytes": 93997
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91102-0-v5-low-file.json",
+      "sha256": "0f57db0c5edc01fa52f829c90bb637638d25f36349bb442d628c692686256924",
+      "bytes": 94018
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91102-1-v5-high-file.json",
+      "sha256": "3c2e509579392c68949e45dc7675f5664b5fb67bfebdc905247abba9e5847a89",
+      "bytes": 94072
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91102-1-v5-low-file.json",
+      "sha256": "481b432aebcbb374a51496af86b0cd5612ee278fe4b55817b20ff68068666d7e",
+      "bytes": 94090
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91103-0-v5-high-file.json",
+      "sha256": "dcb68be325e924160d599b2288376357dac39949e63ba01e341ea83def4abef3",
+      "bytes": 93997
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91103-0-v5-low-file.json",
+      "sha256": "423785d967e4b28409b13327f94627ab515af1dd20c2ef0ca4fb6528cb42cd0b",
+      "bytes": 94065
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91103-1-v5-high-file.json",
+      "sha256": "8967d931c2ffff3d68af3392369399e96f8f2c4aafefe35c4e2fa001094d2223",
+      "bytes": 93995
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91103-1-v5-low-file.json",
+      "sha256": "4f945abc8f3584a80fc005ac567b8d2a5efc01eb7e032a41b1aad9bf19e39970",
+      "bytes": 94039
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91104-0-v5-high-file.json",
+      "sha256": "cede26a5e1c4206769d9ef2333e9b816fbe9ae7a405ee3cfe9e4abbea8317ae5",
+      "bytes": 93963
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91104-0-v5-low-file.json",
+      "sha256": "3baa140448579851741f9c375490d307c6008dfac39323f0a9c462d41968524b",
+      "bytes": 94104
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91104-1-v5-high-file.json",
+      "sha256": "920b252fcfab84469d519b0bc82fe51d952e0f5a1f79ff3793cbb20ba36523c8",
+      "bytes": 93972
+    },
+    {
+      "path": "results/portfolio-20260912/development/maverick-91104-1-v5-low-file.json",
+      "sha256": "e6e6961934aa7ce133fc12dce9b1e9c4b375daf0e2fe0254de76d62e656c3ca4",
+      "bytes": 94031
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91101-0-v5-high-file.json",
+      "sha256": "3f05ac41ad77aca3abffe33db172d1dfbf4aecc71efe3981b1c604c5d08dbc50",
+      "bytes": 95776
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91101-0-v5-low-file.json",
+      "sha256": "3364917a1c0256f8159cd18bdc525fa847f417e83d710647444fb32427a16cfb",
+      "bytes": 95731
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91101-1-v5-high-file.json",
+      "sha256": "ece0176d9a748798ec96cee2f462ac488e51bb439e8bed5b8935ae0f76facca3",
+      "bytes": 95711
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91101-1-v5-low-file.json",
+      "sha256": "ff579768ed385fdc95515ea26c17fff56df79b65c2a792b60d0d6316323c252c",
+      "bytes": 95757
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91102-0-v5-high-file.json",
+      "sha256": "5cbb26cec5327e28dae5be0662ba331622d40dadd7e9ed9bd7a6fff10084b4fb",
+      "bytes": 95726
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91102-0-v5-low-file.json",
+      "sha256": "6a50bc8d64210674d539eb9d20fee3f208b12db882d0a3e419cc54e17cc03ed4",
+      "bytes": 95826
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91102-1-v5-high-file.json",
+      "sha256": "59b33835b73b5ef282c628f8a4f7f7105d7e6cecb21638b1d21658629d86799e",
+      "bytes": 95763
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91102-1-v5-low-file.json",
+      "sha256": "f577c24711be5f8c3dcf635308aa7d4f5da456cd7d6fe354918400aa31be93c6",
+      "bytes": 95786
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91103-0-v5-high-file.json",
+      "sha256": "b5ef69637c74cc7fd95273710a165d6aada50a8529002ec220ace29404c414fd",
+      "bytes": 95791
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91103-0-v5-low-file.json",
+      "sha256": "70a42da89c10ed7bd144173fbc0c1f7ec041e1242fcd0c4dad0bbead08072653",
+      "bytes": 95815
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91103-1-v5-high-file.json",
+      "sha256": "1be802448d559e129f1aed5cb62ef3b2b03cd7b8af664c383627c8a252cc81b0",
+      "bytes": 95775
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91103-1-v5-low-file.json",
+      "sha256": "76eb9954e8b35c4056e7ceef36e3c9cde828ff846862dbf04c4f4af963775fc4",
+      "bytes": 95857
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91104-0-v5-high-file.json",
+      "sha256": "326bd36342055994a0cdcfa891455c9488552cf059b87516def0264b1abee35f",
+      "bytes": 95810
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91104-0-v5-low-file.json",
+      "sha256": "2a4ae143dd0928760e3fc5761f6d0746730d1d5a548364b046c274979697696d",
+      "bytes": 95795
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91104-1-v5-high-file.json",
+      "sha256": "6e3de8e8aca9d52c88d69d2753dc282bcaf15390dbf278eb327ad2903a48fc92",
+      "bytes": 95780
+    },
+    {
+      "path": "results/portfolio-20260912/development/seyam-91104-1-v5-low-file.json",
+      "sha256": "d2197cadc2e913997e85c3ecbe2eccd9fe8924b24ce368c90bc5e65a061ed6cf",
+      "bytes": 95765
+    },
+    {
+      "path": "results/portfolio-20260912/experiment-index.json",
+      "sha256": "5138310730d46b1ad61761a1dc3842250e87538068e424ba6afc7a9b7e425bb8",
+      "bytes": 2453
+    },
+    {
+      "path": "results/portfolio-20260912/freeze-probes-v1.json",
+      "sha256": "3f00829f23c6847fbe0593bb514974992bffda5a0c3dc24b753edcb8970a62d8",
+      "bytes": 2664
+    },
+    {
+      "path": "results/portfolio-20260912/probe-report-v1.json",
+      "sha256": "629c13f3729f59b493704ea97ffbdf2cb9d143d6313205f1c04c3488bf61680d",
+      "bytes": 1175403
     },
     {
       "path": "results/public-corpus-20260911.json",
@@ -4302,6 +4857,11 @@
       "bytes": 1152
     },
     {
+      "path": "scripts/build_portfolio_probes.py",
+      "sha256": "732eee9ae177ebf0fa25bbb629357670449fb262c62d2c2a9b8c9dfaf5382c30",
+      "bytes": 2216
+    },
+    {
       "path": "scripts/build_research_variants.py",
       "sha256": "ac0735dc85f8879e4982d47c46eaf81b50c08da646b2f65a9033de2df357386f",
       "bytes": 1719
@@ -4372,6 +4932,11 @@
       "bytes": 4638
     },
     {
+      "path": "scripts/freeze_portfolio_probes.py",
+      "sha256": "80b45c64c1fe7cfa5cd6d4d0119558e9f6fc940331f88cb7f920dc8af15ecaef",
+      "bytes": 2838
+    },
+    {
       "path": "scripts/index_terminal_track.py",
       "sha256": "1bed185eb473fb94a82fba9a051a8b0435ab2380aa9c04259ac28747fcfb709b",
       "bytes": 2726
@@ -4380,6 +4945,11 @@
       "path": "scripts/paired_release_gate.py",
       "sha256": "8acd9877f936cda3259b2e11e305a92bfb794da9fc19f84f60e407c472536c15",
       "bytes": 20571
+    },
+    {
+      "path": "scripts/portfolio_features.py",
+      "sha256": "e6f865e478875deec3c745e89a5bb11bc86fc62a3cfac2e8f3e9198250932c34",
+      "bytes": 8560
     },
     {
       "path": "scripts/profile_corpus.py",
@@ -4407,6 +4977,16 @@
       "bytes": 2880
     },
     {
+      "path": "scripts/report_arlene_macro_prior.py",
+      "sha256": "7f7fd9c5de92d0cc2313d5a4df6a4a0a79ba282819bc96a5646778198d7dd742",
+      "bytes": 6026
+    },
+    {
+      "path": "scripts/report_portfolio_probes.py",
+      "sha256": "ffe118c5d39ab713838ef1a3836d44ff54850e81b9ade276556673d97a041e9f",
+      "bytes": 38030
+    },
+    {
       "path": "scripts/report_terminal_interactions.py",
       "sha256": "c7a548df068d93bb5d9df2c982da7e31f7c2d5a858b01c49b7208c665f300407",
       "bytes": 27923
@@ -4430,6 +5010,11 @@
       "path": "scripts/run_feed_track.py",
       "sha256": "8c62939284fa6b83640aae3d255478060a6c02de1551531362ad6b9e2c411bd4",
       "bytes": 9508
+    },
+    {
+      "path": "scripts/run_portfolio_track.py",
+      "sha256": "38fd908bffd4c2364a87d46812049d40e53488dc7e1fa865ab627111f95c9a1d",
+      "bytes": 28329
     },
     {
       "path": "scripts/run_terminal_track.py",
@@ -4730,6 +5315,21 @@
       "path": "tests/test_paired_release_gate.py",
       "sha256": "819ac08db4a80ace2265e2af2e8139a0fe2708bb0152eee2d1fd73c63a6e5c2c",
       "bytes": 10253
+    },
+    {
+      "path": "tests/test_portfolio_report.py",
+      "sha256": "9178e41019ef40d717a8885dedea1fd038ebf0b954540aa9213e319a456460da",
+      "bytes": 23174
+    },
+    {
+      "path": "tests/test_portfolio_runner.py",
+      "sha256": "6d4969d54958a9613e5153bd35cc3c822037edb6048584712d5be26fb069d017",
+      "bytes": 16495
+    },
+    {
+      "path": "tests/test_portfolio_switch.py",
+      "sha256": "d726476309cedcb87d71db33cec4cd481eaebe119f7b858dea8ceba046a4cbff",
+      "bytes": 26573
     },
     {
       "path": "tests/test_research.py",
