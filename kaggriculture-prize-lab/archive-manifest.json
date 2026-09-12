@@ -428,13 +428,13 @@
     },
     {
       "path": "OPTIMIZATION_LOG.md",
-      "sha256": "2a803acfbbf7d1627be46029cb55e513358a05b1cfa4f90aa2f33c58ef410096",
-      "bytes": 30602
+      "sha256": "7464acf75da7c240f842920ef4ae3b731f09f8df2605ade19d5042d66876462c",
+      "bytes": 32481
     },
     {
       "path": "PIPELINE_PROMPT.md",
-      "sha256": "67fd1929851464d6e6c9bec518fcf9da6ac1a5e2c328ee5c5f46b794d107178a",
-      "bytes": 13717
+      "sha256": "869d13a71d956e9be4bbcd3232f696de8ff6d5909dde4aa9f43cefcee602a30c",
+      "bytes": 14049
     },
     {
       "path": "public-baseline-v10/LICENSE",
@@ -697,6 +697,11 @@
       "bytes": 4801
     },
     {
+      "path": "reports/online-exploration-20260912.md",
+      "sha256": "5449dc85c65a5fa51ea00945515732f17b3b58b96038b634f0c232c1bebc03c3",
+      "bytes": 4120
+    },
+    {
       "path": "reports/p1-20260912-plan.md",
       "sha256": "6c66d80417311ac4e1085f2e5172457fb6fc8f91ee594352246450702e20f80e",
       "bytes": 5195
@@ -923,8 +928,8 @@
     },
     {
       "path": "reports/versions/P2a-depth2-file.md",
-      "sha256": "59f18794db98d369922f0ef07332c2fdc66e9b59b4605aa66defd978e4c2f6a1",
-      "bytes": 1009
+      "sha256": "192f2403dc764d1f371cd4c970536e99a17a76e7459ffca1249ca0367aebcf9b",
+      "bytes": 1798
     },
     {
       "path": "reports/versions/P2a-depth2.md",
@@ -963,8 +968,8 @@
     },
     {
       "path": "reports/versions/P2c-depth2-timing-safe-file.md",
-      "sha256": "5c960f82f94c479949f1335badee3b27c9ad3e15eec73be6c1f2571f17dc91d0",
-      "bytes": 1659
+      "sha256": "7119ff191c3407dbfc11bba52d3412b1a5b99bac3bb0ca51b1bcb051c0c69770",
+      "bytes": 2288
     },
     {
       "path": "reports/versions/P2c-timing-safe-file.md",
@@ -993,8 +998,8 @@
     },
     {
       "path": "research-state.json",
-      "sha256": "6a5a22c085088096e5154db910bc2d2c8fb2134737e27e6c6204ebc02880c5ba",
-      "bytes": 6913
+      "sha256": "9bf9a69a72fc23e1fdf05b227c3fdb2bf65cfeedcce9f668efb50fc463969c41",
+      "bytes": 7517
     },
     {
       "path": "RESEARCH.md",
@@ -2625,6 +2630,21 @@
       "path": "results/no-preempt-screen.json",
       "sha256": "21aa35449aee58e497d6fc532268517cc6b632ab73f9b0a91235240ae8abd050",
       "bytes": 2652
+    },
+    {
+      "path": "results/online-exploration-20260912/preflight-depth2-file-91101-0.json",
+      "sha256": "b1b1912efeaed1b3ff39bf254bd8804d72aff7daee8db9ddc655a772c0849233",
+      "bytes": 1077
+    },
+    {
+      "path": "results/online-exploration-20260912/preflight-depth2-file-91101-1.json",
+      "sha256": "a36293b495e5e5d621e5e9ea4eca9f1a07e3fdb963904988218087a453a963e5",
+      "bytes": 1078
+    },
+    {
+      "path": "results/online-exploration-20260912/submission-receipts.json",
+      "sha256": "ae5527dbb3ffb8c0e52f211942cd71af0944aaac4c15394d4be54adb4cc6de0d",
+      "bytes": 2114
     },
     {
       "path": "results/online-sample-analysis.json",
@@ -4950,6 +4970,11 @@
       "path": "scripts/portfolio_features.py",
       "sha256": "e6f865e478875deec3c745e89a5bb11bc86fc62a3cfac2e8f3e9198250932c34",
       "bytes": 8560
+    },
+    {
+      "path": "scripts/preflight_online_exploration.py",
+      "sha256": "c0321021f7db5b8c9e6fa92fe60d2e9e344f368b5657ef1f6437b9950ca609f4",
+      "bytes": 3464
     },
     {
       "path": "scripts/profile_corpus.py",

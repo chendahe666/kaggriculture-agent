@@ -1,0 +1,28 @@
+{
+  "variant": "depth2-file",
+  "seat": 1,
+  "seed": 91101,
+  "started_utc": "2026-09-12T07:02:34.282177+00:00",
+  "completed_utc": "2026-09-12T07:02:40.040591+00:00",
+  "wall_seconds": 5.7583828999777324,
+  "candidate_sha256": "c06dc267e07ce5b07e8bf5380104dc3c87efbbbcdaf72386677ba31e7bb55624",
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "runner_sha256": "c0321021f7db5b8c9e6fa92fe60d2e9e344f368b5657ef1f6437b9950ca609f4",
+  "frames": 720,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "rewards": [
+    92275.0,
+    94355.0
+  ],
+  "errors": [],
+  "own_max_framework_seconds": 0.069509,
+  "own_min_overage_seconds": 60.0,
+  "matches_prior_rewards": true,
+  "reference_sha_matches": true,
+  "reference": "results/terminal-20260912/development/cok-91101-1-depth2-file.json",
+  "evidence": "R1 preflight: both actual Python paths, duplicate development case; not new strength evidence or official sandbox guarantee"
+}

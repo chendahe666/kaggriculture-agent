@@ -1,0 +1,44 @@
+{
+  "round": "R1-online-exploration-20260912",
+  "competition": "kaggriculture",
+  "authority": "User explicitly requested two best existing versions for online trials after no-promotion findings were explained.",
+  "release_gate_passed": false,
+  "local_baseline_replaced": false,
+  "new_strategy_bytes": false,
+  "extra_preflight_full_games": 2,
+  "extra_preflight_scope": "Duplicate development cases; not independent strength evidence. P2/P3 frozen425-count not rewritten:327P2+96P3+2R1=425total executions.",
+  "regression_tests": {"count": 57, "passed": 57, "seconds": 6.817},
+  "receipt_source": "Official Kaggle CLI successful submit responses and independently fetched authenticated submission list",
+  "server_remaining_daily_submissions_after_second_upload": 3,
+  "submissions": [
+    {
+      "id": 56180702,
+      "candidate": "depth2-file",
+      "path": "experiments/track-terminal-20260912/depth2-file/main.py",
+      "sha256": "c06dc267e07ce5b07e8bf5380104dc3c87efbbbcdaf72386677ba31e7bb55624",
+      "preference_rank": 2,
+      "upload_order": 1,
+      "server_created_utc": "2026-09-12T07:03:34.037000Z",
+      "description": "R1 P2-A depth2 planner | c06dc267 | user-authorized online exploration",
+      "initial_status": "PENDING",
+      "initial_public_score": null,
+      "upload_accepted": true
+    },
+    {
+      "id": 56180708,
+      "candidate": "depth2-timing-safe-file",
+      "path": "experiments/track-terminal-20260912/depth2-timing-safe-file/main.py",
+      "sha256": "8d37e6f4683c5a8c399c74022211e77061a59600af6278e318c2958c9c6bfbd2",
+      "preference_rank": 1,
+      "upload_order": 2,
+      "server_created_utc": "2026-09-12T07:04:00.870000Z",
+      "description": "R1 P2-AB safe planner+timing | 8d37e6f4 | user-authorized online exploration",
+      "initial_status": "PENDING",
+      "initial_public_score": null,
+      "upload_accepted": true
+    }
+  ],
+  "automatic_follow_up": false,
+  "third_submission_authorized": false,
+  "rating_interpretation": "No online strength result yet; initial/default ratings and asynchronous opponent mixes are not paired causal uplift."
+}
