@@ -1,0 +1,23 @@
+{
+  "version": "MR-1",
+  "memory_sha256": "a9142a4861ea0f8d47c9a79f1fb340400304eeeeb4f3138d94d8a08614aa70b1",
+  "evidence_sha256": {
+    "p1_summary": "8b044ea8257083355284097ce786c7f8115738d4f48c651cd55e4c91351670b5",
+    "p1_index": "2e119acb99f37a1bea5fb5030225ca320f6da56af74c83ce6f8e72d29716ef93",
+    "p1_report": "cc798a37202490430f3bc1e9024b112298a54367e7fa4b70be1c6ba12a1561a8",
+    "p0_report": "a55b55ffbb1bb634b74889293e68e8363c7290df11a2f9ada5d2672a64e94035",
+    "p0_quality": "c37a93bba4a2d3daf9a42ea9d608692cccee165c4a4241ba4b8cbe9b46d94325",
+    "market_report": "6c9c8188cd205d958b331a5632aca92799669bc800c048d9c3be28555dffc56d",
+    "engine": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "mechanism_tests": "dfc23c432c64b112c4fa0bc31a6fc4bb375f133364c5947a74261ab8f33fa675",
+    "feed_tests": "53fd99570a2e5c37107ca4923c579f3c5089797b4d14385eb34e42d444a2c0d3",
+    "baseline": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01"
+  },
+  "numeric_assertions_checked": 23,
+  "p1_result_hashes_checked": 296,
+  "rules": 10,
+  "tracks": 6,
+  "hypotheses": 2,
+  "created_utc": "2026-09-12T04:07:41.669971+00:00",
+  "limits": "Reference/hash/metric checks only; no causal proof or new games"
+}

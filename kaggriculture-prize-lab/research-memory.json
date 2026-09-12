@@ -1,0 +1,67 @@
+{
+  "version": "MR-1",
+  "scope": "Frozen M/P0/P1 research; no new strategy performance claims",
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "evidence": {
+    "p1_summary": "results/feed-20260912/summary.json",
+    "p1_index": "results/feed-20260912/experiment-index.json",
+    "p1_report": "reports/p1-20260912-report.md",
+    "p0_report": "reports/elite-study-20260912-report.md",
+    "p0_quality": "datasets/elite-20260912-v0.1.0/quality.json",
+    "market_report": "results/research-report-20260911.json",
+    "engine": "official/installed-1.32.7/kaggriculture.py",
+    "mechanism_tests": "tests/test_research.py",
+    "feed_tests": "tests/test_feed.py",
+    "baseline": "public-baseline-v10/main.py"
+  },
+  "rules": [
+    {"id":"MR01","kind":"counterexample","claim":"采购成本减少不保证终局收益或胜分增加","evidence":["p1_summary","p1_report"],"scope":"P1 own fixed-tape development; netting and jit1","invalidation":"Recompute if source metrics or baseline change; do not infer inverse universal law","tracks":["V","P"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR02","kind":"mechanism","claim":"需求截止必须与最后可采购时点及工作先后联合建模","evidence":["engine","mechanism_tests","feed_tests","p1_report"],"scope":"Pinned engine/config; 107942319 full-slot chain","invalidation":"Revalidate on engine/order/work timing changes; horizon length not universal","tracks":["E","V","P"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR03","kind":"mechanism","claim":"当前仓内库存不足以表示集中返仓容量风险","evidence":["engine","mechanism_tests","p1_report","p1_summary"],"scope":"Pinned engine; 107942319 step 695 example; P1 overflow diagnostics","invalidation":"Revalidate capacity/day-end semantics; avoiding all overflow is not a proven objective","tracks":["E","P"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR04","kind":"counterexample","claim":"局部缺粮修复不保证整体改善","evidence":["p1_summary","p1_report"],"scope":"P1 first four own development episodes, jit-aware and feed-guard","invalidation":"New task/market regime needs fresh tests; not evidence for deliberate starvation","tracks":["V","P","R"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR05","kind":"counterexample","claim":"零触发的配送变体未提供有效干预证据","evidence":["p1_summary","p1_report"],"scope":"idle-delivery and delivery-early first four own episodes","invalidation":"Reopen with demonstrated new trigger coverage or task mechanism","tracks":["P","G"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR06","kind":"mechanism","claim":"策略总效果不能自动归因为单个采购模块的直接效果","evidence":["engine","p1_summary","p1_report"],"scope":"reserve6 changed shops in 20/20 own development scenarios","invalidation":"Engine randomness changes require revalidation; do not use frozen future as release estimate","tracks":["E","V","G"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR07","kind":"observation","claim":"强手采样不支持一种统一的高自给低投入模板","evidence":["p0_report","p0_quality"],"scope":"2026-09-12 UTC snapshot, 30 teams, 438 unique episodes, 600 related seats","invalidation":"New cohort/version may shift distribution; no causal gain inferred","tracks":["A","G"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR08","kind":"counterexample","claim":"对手席位正确、实时响应、统计独立须分别验证","evidence":["p1_summary","p1_index","p1_report"],"scope":"elite label correction to elite-top; static tapes remain development","invalidation":"Revalidate each opponent/version/seat binding and family lineage","tracks":["E","G","R"],"prompt_use":"guardrail_not_strategy"},
+    {"id":"MR09","kind":"policy","claim":"固定胜平负主目标，机制和经济代理不得越级晋升","evidence":["market_report","p1_summary"],"scope":"Project evaluation policy, not an empirical optimum or official numeric gate","invalidation":"Explicit project contract change with justification; never fit objective to test outcomes","tracks":["G","R"],"prompt_use":"workflow_policy"},
+    {"id":"MR10","kind":"policy","claim":"完整因果 track 消融和耦合评估后才提出线上挑战","evidence":["p1_report"],"scope":"User-directed workflow; direction changes and Kaggle releases need approval","invalidation":"Only explicit user authorization changes authority; failures require specific reopening evidence","tracks":["E","V","P","A","G","R"],"prompt_use":"workflow_policy"}
+  ],
+  "hypotheses": [
+    {"id":"H01","claim":"State-driven production/transport planning may outperform outer procurement patches","status":"unvalidated","direction_approval":"pending","track":"P","rules":["MR02","MR03","MR04","MR05"]},
+    {"id":"H02","claim":"Executable conditional production portfolios may improve robustness","status":"unvalidated","direction_approval":"pending","track":"A","rules":["MR07","MR08"]}
+  ],
+  "tracks": [
+    {"id":"E","status":"maintenance","depends_on":[],"strategy_uplift_validated":false,"charter":"RESEARCH_TRACKS.md"},
+    {"id":"V","status":"local_patch_family_on_hold","depends_on":["E"],"strategy_uplift_validated":false,"charter":"RESEARCH_TRACKS.md"},
+    {"id":"P","status":"direction_approval_pending","depends_on":["E"],"strategy_uplift_validated":false,"charter":"RESEARCH_TRACKS.md"},
+    {"id":"A","status":"hypothesis_backlog","depends_on":["E","V","P"],"strategy_uplift_validated":false,"charter":"RESEARCH_TRACKS.md"},
+    {"id":"G","status":"release_evidence_insufficient","depends_on":["E"],"strategy_uplift_validated":false,"charter":"RESEARCH_TRACKS.md"},
+    {"id":"R","status":"gated","depends_on":["E","G"],"strategy_uplift_validated":false,"charter":"RESEARCH_TRACKS.md"}
+  ],
+  "assertions": [
+    {"source":"p1_index","pointer":["candidate_count"],"expected":9},
+    {"source":"p1_index","pointer":["completed_simulations"],"expected":296},
+    {"source":"p1_index","pointer":["errors"],"expected":[]},
+    {"source":"p1_index","pointer":["new_holdout_opened"],"expected":false},
+    {"source":"p1_index","pointer":["kaggle_submitted"],"expected":false},
+    {"source":"p1_summary","pointer":["own","jit1","baseline_wins"],"expected":7},
+    {"source":"p1_summary","pointer":["own","jit1","candidate_wins"],"expected":4},
+    {"source":"p1_summary","pointer":["own","jit1","mean_wheat_cost_delta"],"expected":-13047.9},
+    {"source":"p1_summary","pointer":["own","jit1","mean_margin_gain"],"expected":-1701.3},
+    {"source":"p1_summary","pointer":["own","netting","candidate_wins"],"expected":7},
+    {"source":"p1_summary","pointer":["own","reserve6","shop_changed_games"],"expected":20},
+    {"source":"p1_summary","pointer":["own","feed-guard","baseline_wins"],"expected":1},
+    {"source":"p1_summary","pointer":["own","feed-guard","candidate_wins"],"expected":0},
+    {"source":"p1_summary","pointer":["own","feed-guard","mean_margin_gain"],"expected":-1845.25},
+    {"source":"p1_summary","pointer":["own","idle-delivery","mean_margin_gain"],"expected":0},
+    {"source":"p1_summary","pointer":["league","jit-aware","more_overflow_games"],"expected":12},
+    {"source":"p1_summary","pointer":["elite-top","netting","paired_games"],"expected":30},
+    {"source":"p1_summary","pointer":["elite-top","netting","baseline_wins"],"expected":6},
+    {"source":"p1_summary","pointer":["elite-top","netting","candidate_wins"],"expected":6},
+    {"source":"p0_quality","pointer":["unique_episodes"],"expected":438},
+    {"source":"p0_quality","pointer":["selected_references"],"expected":600},
+    {"source":"p0_quality","pointer":["client_clock_acquisition_times"],"expected":0},
+    {"source":"p0_quality","pointer":["complete"],"expected":true}
+  ]
+}

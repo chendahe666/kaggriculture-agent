@@ -272,6 +272,11 @@
       "bytes": 11558
     },
     {
+      "path": "MACRO_RESEARCH_RULES.md",
+      "sha256": "ad3eb321e8b6f6a8b3af4cd9b7fc0be60291dac057ca48a6e89df3c7355f19db",
+      "bytes": 12255
+    },
+    {
       "path": "official/installed-1.32.7/kaggriculture.json",
       "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867",
       "bytes": 6002
@@ -298,13 +303,13 @@
     },
     {
       "path": "OPTIMIZATION_LOG.md",
-      "sha256": "e76f33dc239da6195f3d6100385cb3f758f97ff14827ae21911ee1556845a9ed",
-      "bytes": 18863
+      "sha256": "f4e4bfc9421700b7a028cc7f4678221a2186ad6a5973e795927cf6ce1690153d",
+      "bytes": 20341
     },
     {
       "path": "PIPELINE_PROMPT.md",
-      "sha256": "8e3eb0d29180faadc2a05109999fcdec0b3b03ca356b8e8449a6d63b3423af43",
-      "bytes": 9357
+      "sha256": "593b53476c3fe9244d123a8ee029039ff2e4b10f3bd3e20b5bb3445a8722d180",
+      "bytes": 11664
     },
     {
       "path": "public-baseline-v10/LICENSE",
@@ -527,6 +532,11 @@
       "bytes": 8390
     },
     {
+      "path": "reports/macro-20260912-report.md",
+      "sha256": "4385592e219b1a6aa2ba43fd2743f4f79b0449186b0ed1a0f50af91848c3e5a2",
+      "bytes": 4801
+    },
+    {
       "path": "reports/p1-20260912-plan.md",
       "sha256": "6c66d80417311ac4e1085f2e5172457fb6fc8f91ee594352246450702e20f80e",
       "bytes": 5195
@@ -657,14 +667,24 @@
       "bytes": 2738
     },
     {
+      "path": "research-memory.json",
+      "sha256": "a9142a4861ea0f8d47c9a79f1fb340400304eeeeb4f3138d94d8a08614aa70b1",
+      "bytes": 7920
+    },
+    {
       "path": "research-state.json",
-      "sha256": "8ad1fb807ebbd648c22f87a25d20adf67994166e47f976e989a59e967c87a781",
-      "bytes": 3912
+      "sha256": "281019b8b32335a3391ad01d4275010160d5e5e66eac6b96e615bdf76f8b3542",
+      "bytes": 4426
     },
     {
       "path": "RESEARCH.md",
       "sha256": "921856eb333c173e2dc98196db01458c93b0bb7e329e6ad3d223d1ca22518c58",
       "bytes": 2946
+    },
+    {
+      "path": "RESEARCH_TRACKS.md",
+      "sha256": "3a2dfc0ff7964e60b0f91b6203d6ecbb8237f3ba9964be669140684b706113d3",
+      "bytes": 12071
     },
     {
       "path": "results/baseline-replay-20260911.json",
@@ -2272,6 +2292,11 @@
       "bytes": 4252
     },
     {
+      "path": "results/macro-20260912-evidence.json",
+      "sha256": "4e331eadd93b8c550db9c4a081d584433ea253bac5022e20e133e0865a82fe75",
+      "bytes": 1248
+    },
+    {
       "path": "results/no-family-counters-screen.json",
       "sha256": "50c93d417aeb9681a3d3adb6f53b06198c83c72534dbeec9f8b2f8df282609d3",
       "bytes": 2663
@@ -2462,6 +2487,11 @@
       "bytes": 4420
     },
     {
+      "path": "scripts/validate_research_memory.py",
+      "sha256": "6edcb562cf12f6d518e5e28aedee4cfdad1717dae773b7e139b4f95fc4024007",
+      "bytes": 5930
+    },
+    {
       "path": "submissions/k320-v23-current-20260902/LICENSES/Apache-2.0.txt",
       "sha256": "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549",
       "bytes": 10351
@@ -2507,6 +2537,11 @@
       "bytes": 7784
     },
     {
+      "path": "tests/test_research_memory.py",
+      "sha256": "4066bdc29d939c5d354e6e0a5349681eb7e7704ec50fba623bb7a1f9cb78deef",
+      "bytes": 1901
+    },
+    {
       "path": "THIRD_PARTY_NOTICES.md",
       "sha256": "26ca9a6b12a3ba657d656afcdd36b4d899e571d36b967d1be62ff962e8aba321",
       "bytes": 1538
@@ -2518,8 +2553,8 @@
     },
     {
       "path": "WORKFLOW.md",
-      "sha256": "e3bdc2fbaae978ba91494dc249a41f81b0b44723c38dadbb2e6f66412dde3218",
-      "bytes": 12940
+      "sha256": "678631cf664a9fef109d83c37754d889101cb7eb65b4fc1469ffac36e76bfccb",
+      "bytes": 13472
     }
   ],
   "excluded": [
