@@ -1,0 +1,1139 @@
+{
+  "manifest": {
+    "environment_version": "1.32.7",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "candidate_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+    "metric_version": "match-outcome-v1",
+    "opponents": {
+      "seyam": "4c02a323b0939e8f99df69dc6c23026946b033b0d831c79216ffac0ded9c8e60"
+    }
+  },
+  "matches": [
+    {
+      "rewards": [
+        55512.0,
+        40291.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 539,
+          "FERTILIZER": 236,
+          "WOOL": 120,
+          "MILK": 279,
+          "MELON": 72,
+          "STRAWBERRY": 274,
+          "CARROT": 11
+        },
+        {
+          "WHEAT": 833,
+          "FERTILIZER": 217,
+          "WOOL": 168,
+          "MILK": 230,
+          "MELON": 120,
+          "STRAWBERRY": 270
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 26566,
+          "FERTILIZER": 12773,
+          "WOOL": 8204,
+          "MILK": 16455,
+          "MELON": 16419,
+          "STRAWBERRY": 15722,
+          "CARROT": 574
+        },
+        {
+          "WHEAT": 37599,
+          "FERTILIZER": 12053,
+          "WOOL": 9954,
+          "MILK": 15051,
+          "MELON": 14877,
+          "STRAWBERRY": 12728
+        }
+      ],
+      "floor_units": [
+        {
+          "WOOL": 29,
+          "MILK": 97,
+          "STRAWBERRY": 109
+        },
+        {
+          "WOOL": 26,
+          "MILK": 54,
+          "STRAWBERRY": 96,
+          "MELON": 4
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 189,
+          "SELL:WHEAT": 72,
+          "SELL:WOOL": 10,
+          "SELL:STRAWBERRY": 4,
+          "SELL:MILK": 1
+        },
+        {
+          "SELL:WHEAT": 27,
+          "BUY_PRODUCT:WHEAT": 16,
+          "SELL:FERTILIZER": 53,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 25,
+          "SELL:MILK": 70,
+          "SELL:STRAWBERRY": 58,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 35,
+          "SELL:EGG": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        87.714,
+        1.064
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91101,
+      "seat": 0,
+      "evidence": "closed_loop",
+      "margin": 15221.0
+    },
+    {
+      "rewards": [
+        40263.0,
+        55266.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 829,
+          "FERTILIZER": 218,
+          "WOOL": 168,
+          "MILK": 230,
+          "MELON": 120,
+          "STRAWBERRY": 274
+        },
+        {
+          "WHEAT": 539,
+          "FERTILIZER": 236,
+          "WOOL": 120,
+          "MILK": 279,
+          "MELON": 72,
+          "STRAWBERRY": 274,
+          "CARROT": 11
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 37395,
+          "FERTILIZER": 12062,
+          "WOOL": 9954,
+          "MILK": 15051,
+          "MELON": 14877,
+          "STRAWBERRY": 12895
+        },
+        {
+          "WHEAT": 26566,
+          "FERTILIZER": 12773,
+          "WOOL": 8204,
+          "MILK": 16455,
+          "MELON": 16419,
+          "STRAWBERRY": 15476,
+          "CARROT": 574
+        }
+      ],
+      "floor_units": [
+        {
+          "WOOL": 26,
+          "MILK": 54,
+          "STRAWBERRY": 98,
+          "MELON": 4
+        },
+        {
+          "WOOL": 29,
+          "MILK": 97,
+          "STRAWBERRY": 111
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "SELL:WHEAT": 27,
+          "BUY_PRODUCT:WHEAT": 16,
+          "SELL:FERTILIZER": 53,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 25,
+          "SELL:MILK": 70,
+          "SELL:STRAWBERRY": 56,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 35,
+          "SELL:EGG": 1
+        },
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 189,
+          "SELL:WHEAT": 72,
+          "SELL:WOOL": 10,
+          "SELL:STRAWBERRY": 4,
+          "SELL:MILK": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        0.987,
+        98.608
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91101,
+      "seat": 1,
+      "evidence": "closed_loop",
+      "margin": 15003.0
+    },
+    {
+      "rewards": [
+        76261.0,
+        67355.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 539,
+          "FERTILIZER": 236,
+          "WOOL": 120,
+          "MILK": 279,
+          "MELON": 72,
+          "STRAWBERRY": 274,
+          "CARROT": 11
+        },
+        {
+          "WHEAT": 849,
+          "FERTILIZER": 200,
+          "WOOL": 168,
+          "MILK": 203,
+          "MELON": 120,
+          "STRAWBERRY": 270
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 26297,
+          "FERTILIZER": 13142,
+          "WOOL": 25307,
+          "MILK": 17599,
+          "MELON": 16419,
+          "STRAWBERRY": 18042,
+          "CARROT": 475
+        },
+        {
+          "WHEAT": 38129,
+          "FERTILIZER": 11494,
+          "WOOL": 34984,
+          "MILK": 14861,
+          "MELON": 14877,
+          "STRAWBERRY": 14541
+        }
+      ],
+      "floor_units": [
+        {
+          "MILK": 93,
+          "STRAWBERRY": 113
+        },
+        {
+          "MILK": 31,
+          "STRAWBERRY": 105,
+          "MELON": 4
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 189,
+          "SELL:WHEAT": 72,
+          "SELL:WOOL": 10,
+          "SELL:STRAWBERRY": 4,
+          "SELL:MILK": 1
+        },
+        {
+          "SELL:WHEAT": 27,
+          "BUY_PRODUCT:WHEAT": 17,
+          "SELL:FERTILIZER": 59,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 25,
+          "SELL:MILK": 72,
+          "SELL:STRAWBERRY": 56,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 39,
+          "SELL:EGG": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        12.574,
+        0.26
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 1,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91102,
+      "seat": 0,
+      "evidence": "closed_loop",
+      "margin": 8906.0
+    },
+    {
+      "rewards": [
+        68528.0,
+        77083.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 846,
+          "FERTILIZER": 201,
+          "WOOL": 168,
+          "MILK": 203,
+          "MELON": 120,
+          "STRAWBERRY": 270
+        },
+        {
+          "WHEAT": 539,
+          "FERTILIZER": 236,
+          "WOOL": 120,
+          "MILK": 279,
+          "MELON": 72,
+          "STRAWBERRY": 273,
+          "CARROT": 11
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 37898,
+          "FERTILIZER": 11508,
+          "WOOL": 35358,
+          "MILK": 15434,
+          "MELON": 14877,
+          "STRAWBERRY": 14966
+        },
+        {
+          "WHEAT": 26202,
+          "FERTILIZER": 13141,
+          "WOOL": 25578,
+          "MILK": 18113,
+          "MELON": 16419,
+          "STRAWBERRY": 18212,
+          "CARROT": 406
+        }
+      ],
+      "floor_units": [
+        {
+          "MILK": 14,
+          "STRAWBERRY": 89,
+          "MELON": 4
+        },
+        {
+          "MILK": 74,
+          "STRAWBERRY": 97
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "SELL:WHEAT": 26,
+          "BUY_PRODUCT:WHEAT": 17,
+          "SELL:FERTILIZER": 59,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 25,
+          "SELL:MILK": 72,
+          "SELL:STRAWBERRY": 58,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 39,
+          "SELL:EGG": 1
+        },
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 189,
+          "SELL:WHEAT": 72,
+          "SELL:WOOL": 10,
+          "SELL:STRAWBERRY": 5,
+          "SELL:MILK": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        152.217,
+        1.432
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 1,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91102,
+      "seat": 1,
+      "evidence": "closed_loop",
+      "margin": 8555.0
+    },
+    {
+      "rewards": [
+        100287.0,
+        86016.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 1010,
+          "FERTILIZER": 297,
+          "WOOL": 270,
+          "MILK": 189,
+          "MELON": 102,
+          "STRAWBERRY": 216,
+          "CARROT": 2
+        },
+        {
+          "WHEAT": 838,
+          "FERTILIZER": 217,
+          "WOOL": 167,
+          "MILK": 230,
+          "MELON": 120,
+          "STRAWBERRY": 264
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 49839,
+          "FERTILIZER": 13819,
+          "WOOL": 37748,
+          "MILK": 4200,
+          "MELON": 18684,
+          "STRAWBERRY": 46879,
+          "CARROT": 140
+        },
+        {
+          "WHEAT": 37344,
+          "FERTILIZER": 11249,
+          "WOOL": 24822,
+          "MILK": 4482,
+          "MELON": 11913,
+          "STRAWBERRY": 57109
+        }
+      ],
+      "floor_units": [
+        {
+          "MILK": 142,
+          "WOOL": 48,
+          "FERTILIZER": 2
+        },
+        {
+          "MILK": 171,
+          "MELON": 34,
+          "FERTILIZER": 19,
+          "WOOL": 12
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 142,
+          "SELL:WHEAT": 103,
+          "SELL:MELON": 1,
+          "SELL:MILK": 10,
+          "SELL:STRAWBERRY": 2
+        },
+        {
+          "SELL:WHEAT": 27,
+          "BUY_PRODUCT:WHEAT": 15,
+          "SELL:FERTILIZER": 52,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 20,
+          "SELL:MILK": 57,
+          "BUY_SEED:STRAWBERRY": 4,
+          "SELL:STRAWBERRY": 57,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 33,
+          "SELL:EGG": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        130.483,
+        1.287
+      ],
+      "shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91103,
+      "seat": 0,
+      "evidence": "closed_loop",
+      "margin": 14271.0
+    },
+    {
+      "rewards": [
+        88112.0,
+        101386.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 836,
+          "FERTILIZER": 217,
+          "WOOL": 167,
+          "MILK": 230,
+          "MELON": 120,
+          "STRAWBERRY": 264
+        },
+        {
+          "WHEAT": 1010,
+          "FERTILIZER": 297,
+          "WOOL": 264,
+          "MILK": 189,
+          "MELON": 102,
+          "STRAWBERRY": 216,
+          "CARROT": 2
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 37098,
+          "FERTILIZER": 11249,
+          "WOOL": 25305,
+          "MILK": 4714,
+          "MELON": 11913,
+          "STRAWBERRY": 58662
+        },
+        {
+          "WHEAT": 49524,
+          "FERTILIZER": 13819,
+          "WOOL": 37662,
+          "MILK": 4282,
+          "MELON": 18684,
+          "STRAWBERRY": 48122,
+          "CARROT": 134
+        }
+      ],
+      "floor_units": [
+        {
+          "MILK": 119,
+          "MELON": 34,
+          "FERTILIZER": 19,
+          "WOOL": 12
+        },
+        {
+          "MILK": 121,
+          "WOOL": 42,
+          "FERTILIZER": 2
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "SELL:WHEAT": 27,
+          "BUY_PRODUCT:WHEAT": 15,
+          "SELL:FERTILIZER": 52,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 24,
+          "SELL:MILK": 62,
+          "BUY_SEED:STRAWBERRY": 4,
+          "SELL:STRAWBERRY": 60,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 34,
+          "SELL:EGG": 1
+        },
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 142,
+          "SELL:WHEAT": 103,
+          "SELL:MELON": 1,
+          "SELL:MILK": 10,
+          "SELL:WOOL": 3,
+          "SELL:STRAWBERRY": 2
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        104.817,
+        136.403
+      ],
+      "shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91103,
+      "seat": 1,
+      "evidence": "closed_loop",
+      "margin": 13274.0
+    },
+    {
+      "rewards": [
+        61339.0,
+        41784.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 539,
+          "FERTILIZER": 236,
+          "WOOL": 120,
+          "MILK": 279,
+          "MELON": 72,
+          "STRAWBERRY": 274,
+          "CARROT": 11
+        },
+        {
+          "WHEAT": 833,
+          "FERTILIZER": 220,
+          "WOOL": 167,
+          "MILK": 230,
+          "MELON": 120,
+          "STRAWBERRY": 256
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 23864,
+          "FERTILIZER": 12709,
+          "WOOL": 6955,
+          "MILK": 11014,
+          "MELON": 16249,
+          "STRAWBERRY": 26921,
+          "CARROT": 2758
+        },
+        {
+          "WHEAT": 34233,
+          "FERTILIZER": 12145,
+          "WOOL": 7859,
+          "MILK": 10332,
+          "MELON": 15037,
+          "STRAWBERRY": 20325
+        }
+      ],
+      "floor_units": [
+        {
+          "WOOL": 47,
+          "MILK": 107,
+          "STRAWBERRY": 53
+        },
+        {
+          "WOOL": 43,
+          "MILK": 62,
+          "STRAWBERRY": 39,
+          "MELON": 4
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 189,
+          "SELL:WHEAT": 72,
+          "SELL:WOOL": 10,
+          "SELL:STRAWBERRY": 4,
+          "SELL:MILK": 1
+        },
+        {
+          "SELL:WHEAT": 28,
+          "BUY_PRODUCT:WHEAT": 14,
+          "SELL:FERTILIZER": 52,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 25,
+          "SELL:MILK": 70,
+          "BUY_SEED:WHEAT": 1,
+          "BUY_SEED:STRAWBERRY": 3,
+          "SELL:STRAWBERRY": 61,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 31,
+          "SELL:EGG": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        8.601,
+        0.202
+      ],
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91104,
+      "seat": 0,
+      "evidence": "closed_loop",
+      "margin": 19555.0
+    },
+    {
+      "rewards": [
+        41784.0,
+        61339.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "actual_sales": [
+        {
+          "WHEAT": 833,
+          "FERTILIZER": 220,
+          "WOOL": 167,
+          "MILK": 230,
+          "MELON": 120,
+          "STRAWBERRY": 256
+        },
+        {
+          "WHEAT": 539,
+          "FERTILIZER": 236,
+          "WOOL": 120,
+          "MILK": 279,
+          "MELON": 72,
+          "STRAWBERRY": 274,
+          "CARROT": 11
+        }
+      ],
+      "sale_revenue": [
+        {
+          "WHEAT": 34233,
+          "FERTILIZER": 12145,
+          "WOOL": 7859,
+          "MILK": 10332,
+          "MELON": 15037,
+          "STRAWBERRY": 20325
+        },
+        {
+          "WHEAT": 23864,
+          "FERTILIZER": 12709,
+          "WOOL": 6955,
+          "MILK": 11014,
+          "MELON": 16249,
+          "STRAWBERRY": 26921,
+          "CARROT": 2758
+        }
+      ],
+      "floor_units": [
+        {
+          "WOOL": 43,
+          "MILK": 62,
+          "STRAWBERRY": 39,
+          "MELON": 4
+        },
+        {
+          "WOOL": 47,
+          "MILK": 107,
+          "STRAWBERRY": 53
+        }
+      ],
+      "failed_market_commits": [
+        {
+          "SELL:WHEAT": 28,
+          "BUY_PRODUCT:WHEAT": 14,
+          "SELL:FERTILIZER": 52,
+          "SELL:CARROT": 4,
+          "SELL:MELON": 25,
+          "SELL:MILK": 70,
+          "BUY_SEED:WHEAT": 1,
+          "BUY_SEED:STRAWBERRY": 3,
+          "SELL:STRAWBERRY": 61,
+          "SELL:TOMATO": 1,
+          "SELL:WOOL": 31,
+          "SELL:EGG": 1
+        },
+        {
+          "BUY_PRODUCT:WHEAT": 1,
+          "SELL:FERTILIZER": 189,
+          "SELL:WHEAT": 72,
+          "SELL:WOOL": 10,
+          "SELL:STRAWBERRY": 4,
+          "SELL:MILK": 1
+        }
+      ],
+      "market_spending": [
+        {},
+        {}
+      ],
+      "max_call_ms": [
+        1.179,
+        1.225
+      ],
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "terminal_stock": [
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      ],
+      "opponent": "seyam",
+      "seed": 91104,
+      "seat": 1,
+      "evidence": "closed_loop",
+      "margin": 19555.0
+    }
+  ],
+  "summary": {
+    "games": 8,
+    "per_opponent": {
+      "seyam": {
+        "games": 8,
+        "expected_match_score": 1.0,
+        "mean_normalized_margin": 0.24065000301507106,
+        "worst_margin": 8555.0
+      }
+    },
+    "macro_match_score": 1.0,
+    "seed_block_bootstrap_95": [
+      1.0,
+      1.0
+    ],
+    "uncertainty_available": true,
+    "uncertainty_note": "conditional on this fixed opponent pool; no unseen-opponent or leaderboard uncertainty included",
+    "all_clean": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "2026-09-11-v1",
+  "objective": "official match outcomes; prize aspiration, not guarantee",
+  "baseline_submission": 56156204,
+  "identical_duplicate_submission_user_confirmed": 56156051,
+  "historical_baseline_submission": 55965192,
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "outcome_points": {"win": 1.0, "tie": 0.5, "loss": 0.0},
+  "development_seeds": [91101, 91102, 91103, 91104],
+  "validation_seeds": [91151, 91152, 91153, 91154, 91155, 91156, 91157, 91158],
+  "validation_seeds_already_opened": [91151, 91152, 91153, 91154],
+  "both_seats": true,
+  "historical_replays_usage": "development_only",
+  "release_targets": {"behavior_families_minimum": 5, "seeds_per_family_minimum": 30, "paired_gain_lower_95_bound": 0.0, "family_regression_tolerance": 0.05},
+  "rating_conversion": "unavailable_without_online_calibration",
+  "submission_permission": "explicit_user_authorization_required"
+}

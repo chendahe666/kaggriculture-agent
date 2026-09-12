@@ -1,5 +1,17 @@
 # AGENTS.md
 
+## Current research override — 2026-09-11
+
+The user authorized GitHub version records at this repository and explicitly allowed
+replacing the old root code. Root main.py now tracks the unchanged COK V10 online
+baseline; V4.2 is recoverable at c7bbcd6. Read kaggriculture-prize-lab/AGENTS.md and
+its referenced workflow before current research. The older phase order below is
+historical, not a requirement to restart V0 work. Each candidate gets an individual
+commit and version report; push verified commits without rewriting history. This
+GitHub authorization is not Kaggle submission authorization. Current track release
+requires the newer research gates and explicit user submission consent. Do not
+publish raw replays, credentials, or source with unverified redistribution rights.
+
 ## Project mission
 
 Build a reliable, submission-safe Kaggriculture agent through evidence-driven

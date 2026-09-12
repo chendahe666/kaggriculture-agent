@@ -1,0 +1,76 @@
+{
+  "version": "pool-20260911-v1",
+  "classification": "conservative manual lineage groups; provisional, not inferred from number of files",
+  "opponents": [
+    {
+      "name": "k320",
+      "path": "candidate/main.py",
+      "sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+      "family": "reconstructed_mixed_route",
+      "behavior": "same-lineage control",
+      "license": "Apache-2.0",
+      "source": "https://www.kaggle.com/code/raykkretzschmar/kaggriculture-rank-your-agent",
+      "captured_date": "2026-09-11"
+    },
+    {
+      "name": "cok",
+      "path": "public-baseline-v10/main.py",
+      "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "family": "reconstructed_mixed_route",
+      "behavior": "adaptive market control",
+      "license": "Apache-2.0",
+      "source": "https://github.com/COK-ZhangZiliang/Kaggriculture",
+      "captured_date": "2026-09-11"
+    },
+    {
+      "name": "igor",
+      "path": "public-igor-20260911/main.py",
+      "sha256": "8ac34abce129cf5c9456776c90edf7d2233b3a280bbdcf7622628825ef3669a0",
+      "family": "reconstructed_mixed_route",
+      "behavior": "multi-route/layout fallback",
+      "license": "license verification pending; evaluation only, do not redistribute",
+      "source": "https://www.kaggle.com/code/flexonafft/kaggriculture-multi-route-farming-agent",
+      "captured_date": "2026-09-11"
+    },
+    {
+      "name": "seyam",
+      "path": "public-seyam-v21/main.py",
+      "sha256": "4c02a323b0939e8f99df69dc6c23026946b033b0d831c79216ffac0ded9c8e60",
+      "family": "closed_loop_expert_route",
+      "behavior": "public V18/C20 expert controller plus recovery",
+      "license": "MIT repository; Apache-2.0 embedded policy",
+      "source": "https://github.com/Seyamalam/Kaggriculture",
+      "captured_date": "2026-09-11"
+    },
+    {
+      "name": "lonespear",
+      "path": "public-lonespear/main.py",
+      "sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "family": "greedy_dynamic_lineage",
+      "behavior": "dynamic mixed livestock tasks",
+      "license": "MIT",
+      "source": "https://github.com/lonespear/kaggriculture",
+      "captured_date": "2026-09-11"
+    },
+    {
+      "name": "herd",
+      "path": "public-lonespear/main_bigherd.py",
+      "sha256": "8a8504ad9941d16f23405a841aed5acaf0468705c5abc0865ce4c3c63a22a3ea",
+      "family": "greedy_dynamic_lineage",
+      "behavior": "milk flooding stress variant",
+      "license": "MIT",
+      "source": "https://github.com/lonespear/kaggriculture",
+      "captured_date": "2026-09-11"
+    },
+    {
+      "name": "crop",
+      "path": "public-lonespear/main_v9.py",
+      "sha256": "5016e0c3241426223b4b324b0e0944e5d68a64a98d095e1f65e4fd5beae06d4d",
+      "family": "greedy_dynamic_lineage",
+      "behavior": "older melon/goose crop-heavy stress",
+      "license": "MIT",
+      "source": "https://github.com/lonespear/kaggriculture",
+      "captured_date": "2026-09-11"
+    }
+  ]
+}

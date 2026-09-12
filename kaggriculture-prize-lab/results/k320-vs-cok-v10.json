@@ -1,0 +1,174 @@
+{
+  "manifest": {
+    "environment": "kaggriculture",
+    "kaggle_environments_version": "1.32.7",
+    "candidate": "C:\\Users\\chend\\OneDrive\\\u6587\u6863\\ChatGPT\\kaggle-agriculture\\kaggriculture-prize-lab\\public-rayk-k320\\main.py",
+    "candidate_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+    "opponents": [
+      {
+        "name": "cok-v10",
+        "path": "C:\\Users\\chend\\OneDrive\\\u6587\u6863\\ChatGPT\\kaggle-agriculture\\kaggriculture-prize-lab\\public-baseline-v10\\main.py",
+        "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01"
+      }
+    ],
+    "seeds": [
+      20260811,
+      20260829,
+      20260907,
+      20260919
+    ],
+    "both_seats": true
+  },
+  "matches": [
+    {
+      "opponent": "cok-v10",
+      "seed": 20260811,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 70045.0,
+      "opponent_reward": 71901.0,
+      "margin": -1856.0,
+      "normalized_margin": -0.026150789736942216,
+      "result": "loss",
+      "seconds": 7.406,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260811,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 70045.0,
+      "opponent_reward": 71901.0,
+      "margin": -1856.0,
+      "normalized_margin": -0.026150789736942216,
+      "result": "loss",
+      "seconds": 10.076,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260829,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 107369.0,
+      "opponent_reward": 108286.0,
+      "margin": -917.0,
+      "normalized_margin": -0.008504324036076141,
+      "result": "loss",
+      "seconds": 10.914,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260829,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 105839.0,
+      "opponent_reward": 106714.0,
+      "margin": -875.0,
+      "normalized_margin": -0.008233240650567153,
+      "result": "loss",
+      "seconds": 10.763,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260907,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 58788.0,
+      "opponent_reward": 60430.0,
+      "margin": -1642.0,
+      "normalized_margin": -0.027546175913033266,
+      "result": "loss",
+      "seconds": 11.618,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260907,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 58788.0,
+      "opponent_reward": 60430.0,
+      "margin": -1642.0,
+      "normalized_margin": -0.027546175913033266,
+      "result": "loss",
+      "seconds": 10.832,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260919,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 63119.0,
+      "opponent_reward": 64628.0,
+      "margin": -1509.0,
+      "normalized_margin": -0.023624820935129593,
+      "result": "loss",
+      "seconds": 11.027,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260919,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 63073.0,
+      "opponent_reward": 64674.0,
+      "margin": -1601.0,
+      "normalized_margin": -0.025065167870869764,
+      "result": "loss",
+      "seconds": 10.66,
+      "stderr": []
+    }
+  ],
+  "summaries": [
+    {
+      "opponent": "cok-v10",
+      "games": 8,
+      "wins": 0,
+      "ties": 0,
+      "losses": 8,
+      "win_rate": 0.0,
+      "mean_candidate_reward": 74633.25,
+      "mean_margin": -1487.25,
+      "median_normalized_margin": -0.02560797880390599,
+      "all_done": true
+    }
+  ]
+}

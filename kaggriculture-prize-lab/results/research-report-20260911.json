@@ -1,0 +1,1178 @@
+{
+  "calibration_games": 28,
+  "state_mismatches": 0,
+  "own_recent_economics": [
+    {
+      "episode_id": 107709162,
+      "players": [
+        {
+          "name": "Maksonch1k",
+          "sale_revenue": 110535,
+          "purchase_cost": 16405.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 8308.0,
+          "final_money": 85822.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 115224,
+          "purchase_cost": 32199.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 77048.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107710185,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 87094,
+          "purchase_cost": 34091.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 47026.0
+        },
+        {
+          "name": "Will English",
+          "sale_revenue": 85262,
+          "purchase_cost": 34219.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 45066.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107712380,
+      "players": [
+        {
+          "name": "Andrew9603",
+          "sale_revenue": 96081,
+          "purchase_cost": 34432.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 55672.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 100506,
+          "purchase_cost": 34283.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 60246.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107713155,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 152544,
+          "purchase_cost": 32541.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 114026.0
+        },
+        {
+          "name": "Beenvvv",
+          "sale_revenue": 147059,
+          "purchase_cost": 20430.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 7148.0,
+          "final_money": 119481.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107727172,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 153157,
+          "purchase_cost": 34244.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 112936.0
+        },
+        {
+          "name": "Lance Wu",
+          "sale_revenue": 130249,
+          "purchase_cost": 34781.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 89491.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107743853,
+      "players": [
+        {
+          "name": "Garigariyong",
+          "sale_revenue": 104559,
+          "purchase_cost": 15784.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 7530.0,
+          "final_money": 81245.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 107804,
+          "purchase_cost": 32278.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 69549.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107760289,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 184791,
+          "purchase_cost": 33838.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 144976.0
+        },
+        {
+          "name": "wangxt1",
+          "sale_revenue": 183477,
+          "purchase_cost": 33838.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 143662.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107782314,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 139681,
+          "purchase_cost": 34111.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 99593.0
+        },
+        {
+          "name": "CY",
+          "sale_revenue": 141887,
+          "purchase_cost": 34019.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 101891.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107798158,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 125757,
+          "purchase_cost": 33450.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 86330.0
+        },
+        {
+          "name": "Rucbic",
+          "sale_revenue": 115683,
+          "purchase_cost": 20857.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 7379.0,
+          "final_money": 87447.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107801749,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 88832,
+          "purchase_cost": 33154.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 49701.0
+        },
+        {
+          "name": "Farmula One",
+          "sale_revenue": 91397,
+          "purchase_cost": 16819.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 8308.0,
+          "final_money": 66270.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107814544,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 117742,
+          "purchase_cost": 32884.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 78881.0
+        },
+        {
+          "name": "BBaRRel.",
+          "sale_revenue": 118177,
+          "purchase_cost": 33321.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 78879.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107842902,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 128639,
+          "purchase_cost": 33765.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 88897.0
+        },
+        {
+          "name": "Mr.Frundles",
+          "sale_revenue": 119469,
+          "purchase_cost": 16546.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 8313.0,
+          "final_money": 94610.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107872505,
+      "players": [
+        {
+          "name": "OlivierS",
+          "sale_revenue": 127931,
+          "purchase_cost": 19400.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 4392.0,
+          "final_money": 104139.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 116917,
+          "purchase_cost": 33189.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 77751.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107902265,
+      "players": [
+        {
+          "name": "monnu",
+          "sale_revenue": 112560,
+          "purchase_cost": 32247.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 6008.0,
+          "final_money": 74305.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 113255,
+          "purchase_cost": 30971.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 76307.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107903783,
+      "players": [
+        {
+          "name": "Yuanchen Huang",
+          "sale_revenue": 126236,
+          "purchase_cost": 20822.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 3630.0,
+          "final_money": 101784.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 102413,
+          "purchase_cost": 31487.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 64949.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107921312,
+      "players": [
+        {
+          "name": "Aayush Sigdel",
+          "sale_revenue": 118676,
+          "purchase_cost": 16850.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 8308.0,
+          "final_money": 93518.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 122998,
+          "purchase_cost": 33327.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 83694.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107933422,
+      "players": [
+        {
+          "name": "Shadow",
+          "sale_revenue": 97109,
+          "purchase_cost": 21642.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5947.0,
+          "final_money": 69520.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 89530,
+          "purchase_cost": 33167.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 50386.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107942319,
+      "players": [
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 89418,
+          "purchase_cost": 34001.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 49440.0
+        },
+        {
+          "name": "CrazyML",
+          "sale_revenue": 104036,
+          "purchase_cost": 20883.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 3630.0,
+          "final_money": 79523.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107958155,
+      "players": [
+        {
+          "name": "KongKongDe",
+          "sale_revenue": 86136,
+          "purchase_cost": 20640.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 3630.0,
+          "final_money": 61866.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 85429,
+          "purchase_cost": 34583.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 44869.0
+        }
+      ]
+    },
+    {
+      "episode_id": 107992327,
+      "players": [
+        {
+          "name": "Uchechukwu Ajuzieogu",
+          "sale_revenue": 80672,
+          "purchase_cost": 16888.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 8308.0,
+          "final_money": 55476.0
+        },
+        {
+          "name": "Mike chen666",
+          "sale_revenue": 95791,
+          "purchase_cost": 33956.0,
+          "land_cost": 3000,
+          "hire_cost_by_accounting_identity": 5977.0,
+          "final_money": 55858.0
+        }
+      ]
+    }
+  ],
+  "experiments": {
+    "cok-current-replay": {
+      "file": "results\\cok-current-replay.json",
+      "result_sha256": "a26b557191a2d1ef3d031ee9cf06128b58c4cf294af8c6cbfc1433e8c2a0dcc2",
+      "total": {
+        "games": 20,
+        "wins": 7,
+        "ties": 0,
+        "losses": 13,
+        "mean_margin": -7860.2,
+        "all_clean": true,
+        "max_measured_call_ms": 184.11
+      },
+      "per_opponent": {
+        "Maksonch1k": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.10774237121630749,
+          "worst_margin": -8774.0
+        },
+        "Will English": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.042566129522651264,
+          "worst_margin": 1960.0
+        },
+        "Andrew9603": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.07891785572559913,
+          "worst_margin": 4574.0
+        },
+        "Beenvvv": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.0467223680660537,
+          "worst_margin": -5455.0
+        },
+        "Lance Wu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.23163906000681728,
+          "worst_margin": 23445.0
+        },
+        "Garigariyong": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.1551255354987599,
+          "worst_margin": -11696.0
+        },
+        "wangxt1": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.00910483027182838,
+          "worst_margin": 1314.0
+        },
+        "CY": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.02281074427746124,
+          "worst_margin": -2298.0
+        },
+        "Rucbic": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.012855556258883512,
+          "worst_margin": -1117.0
+        },
+        "Farmula One": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.28574384975554235,
+          "worst_margin": -16569.0
+        },
+        "BBaRRel.": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 2.535496957403651e-05,
+          "worst_margin": 2.0
+        },
+        "Mr.Frundles": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.06226465475431455,
+          "worst_margin": -5713.0
+        },
+        "OlivierS": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.29015338941118257,
+          "worst_margin": -26388.0
+        },
+        "monnu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.026584867075664622,
+          "worst_margin": 2002.0
+        },
+        "Yuanchen Huang": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.4418441460298801,
+          "worst_margin": -36835.0
+        },
+        "Aayush Sigdel": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.11087285285420852,
+          "worst_margin": -9824.0
+        },
+        "Shadow": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.31915000083398665,
+          "worst_margin": -19134.0
+        },
+        "CrazyML": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.46653691368842226,
+          "worst_margin": -30083.0
+        },
+        "KongKongDe": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.3184897175247107,
+          "worst_margin": -16997.0
+        },
+        "Uchechukwu Ajuzieogu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.006862234357878096,
+          "worst_margin": 382.0
+        }
+      },
+      "own_recent_only": {
+        "games": 20,
+        "wins": 7,
+        "ties": 0,
+        "losses": 13,
+        "mean_margin": -7860.2,
+        "all_clean": true,
+        "max_measured_call_ms": 184.11
+      },
+      "paired_mean_margin_change": 0.0,
+      "win_to_loss": [],
+      "improved_margins": 0,
+      "regressed_margins": 0
+    },
+    "track-integrated-current-corpus": {
+      "file": "results\\track-integrated-current-corpus.json",
+      "result_sha256": "ce56f277c404bbccde0a6c7bf93f1d9c68c029dd31190eb2501017900618a73a",
+      "total": {
+        "games": 28,
+        "wins": 9,
+        "ties": 0,
+        "losses": 19,
+        "mean_margin": -7013.928571428572,
+        "all_clean": true,
+        "max_measured_call_ms": 181.045
+      },
+      "per_opponent": {
+        "Maksonch1k": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.11347517730496454,
+          "worst_margin": -9136.0
+        },
+        "Will English": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.0419282657339619,
+          "worst_margin": 1930.0
+        },
+        "Andrew9603": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.08461238800155824,
+          "worst_margin": 4887.0
+        },
+        "Beenvvv": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.05745766663500479,
+          "worst_margin": -6654.0
+        },
+        "Lance Wu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.23806108569308768,
+          "worst_margin": 24065.0
+        },
+        "Garigariyong": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.16901200319727022,
+          "worst_margin": -12581.0
+        },
+        "wangxt1": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.009568183709127214,
+          "worst_margin": 1380.0
+        },
+        "CY": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.022093572191716152,
+          "worst_margin": -2223.0
+        },
+        "Rucbic": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.019534097878791387,
+          "worst_margin": -1688.0
+        },
+        "Farmula One": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.2448322001037656,
+          "worst_margin": -13449.0
+        },
+        "BBaRRel.": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.024355511280548157,
+          "worst_margin": 1907.0
+        },
+        "Mr.Frundles": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.07641814875593206,
+          "worst_margin": -6892.0
+        },
+        "OlivierS": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.28055232640562533,
+          "worst_margin": -24737.0
+        },
+        "monnu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.02622780838944241,
+          "worst_margin": 1973.0
+        },
+        "Yuanchen Huang": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.44716055943380273,
+          "worst_margin": -37024.0
+        },
+        "Aayush Sigdel": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.11578052479205919,
+          "worst_margin": -10078.0
+        },
+        "Shadow": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.2961421107628004,
+          "worst_margin": -17713.0
+        },
+        "CrazyML": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.4533936580499721,
+          "worst_margin": -28861.0
+        },
+        "KongKongDe": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.31671257518691326,
+          "worst_margin": -16902.0
+        },
+        "Uchechukwu Ajuzieogu": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.04934773626114161,
+          "worst_margin": -2508.0
+        },
+        "Otter Vibe": {
+          "games": 2,
+          "expected_match_score": 0.5,
+          "mean_normalized_margin": 0.06738903810220495,
+          "worst_margin": -4826.0
+        },
+        "SpaTaro": {
+          "games": 3,
+          "expected_match_score": 0.6666666666666666,
+          "mean_normalized_margin": 0.0274034574691086,
+          "worst_margin": -9654.0
+        },
+        "ymg_aq": {
+          "games": 2,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.27918062831840224,
+          "worst_margin": -28880.0
+        },
+        "Gleb Tumanov": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.6481809923432972,
+          "worst_margin": -29968.0
+        }
+      },
+      "own_recent_only": {
+        "games": 20,
+        "wins": 6,
+        "ties": 0,
+        "losses": 14,
+        "mean_margin": -7715.2,
+        "all_clean": true,
+        "max_measured_call_ms": 181.045
+      },
+      "paired_mean_margin_change": 145.0,
+      "win_to_loss": [
+        107992327
+      ],
+      "improved_margins": 10,
+      "regressed_margins": 10
+    },
+    "track-integrated-dev": {
+      "file": "results\\track-integrated-dev.json",
+      "result_sha256": "44946e025cbe5ec285f39ae6b73ce28e4f1ec9cf9e17604ac71524d96708f67c",
+      "total": {
+        "games": 24,
+        "wins": 23,
+        "ties": 0,
+        "losses": 1,
+        "mean_margin": 18155.5,
+        "all_clean": true,
+        "max_measured_call_ms": 127.548
+      },
+      "per_opponent": {
+        "cok": {
+          "games": 8,
+          "expected_match_score": 0.875,
+          "mean_normalized_margin": 0.011899582106570886,
+          "worst_margin": -212.0
+        },
+        "igor": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.04604407863146238,
+          "worst_margin": 1566.0
+        },
+        "lonespear": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.7240364520919804,
+          "worst_margin": 41664.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 0.9375,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 0.96875,
+      "family_count": 2,
+      "family_gate_pass": false
+    },
+    "track-rank-screen": {
+      "file": "results\\track-rank-screen.json",
+      "result_sha256": "1d23411b16e7767b69b53940e88b3094900ad130893e05bd53a645d88657914f",
+      "total": {
+        "games": 12,
+        "wins": 10,
+        "ties": 0,
+        "losses": 2,
+        "mean_margin": 18910.583333333332,
+        "all_clean": true,
+        "max_measured_call_ms": 131.623
+      },
+      "per_opponent": {
+        "cok": {
+          "games": 4,
+          "expected_match_score": 0.5,
+          "mean_normalized_margin": 0.0016652576025414402,
+          "worst_margin": -4876.0
+        },
+        "igor": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.058342880232978844,
+          "worst_margin": 3097.0
+        },
+        "lonespear": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.7365605004231386,
+          "worst_margin": 51077.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 0.75,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 0.875,
+      "family_count": 2,
+      "family_gate_pass": false
+    },
+    "track-sweep-screen": {
+      "file": "results\\track-sweep-screen.json",
+      "result_sha256": "f3a9f988c737824563ad33829760b5d5d4ec108c699ab57e76ab699da57fa7ea",
+      "total": {
+        "games": 12,
+        "wins": 12,
+        "ties": 0,
+        "losses": 0,
+        "mean_margin": 19205.0,
+        "all_clean": true,
+        "max_measured_call_ms": 158.611
+      },
+      "per_opponent": {
+        "cok": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.02121402774462,
+          "worst_margin": 157.0
+        },
+        "igor": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.05167444979863472,
+          "worst_margin": 2432.0
+        },
+        "lonespear": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.7365146487415519,
+          "worst_margin": 51075.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 1.0,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 1.0,
+      "family_count": 2,
+      "family_gate_pass": false
+    },
+    "track-sweep-rank-screen": {
+      "file": "results\\track-sweep-rank-screen.json",
+      "result_sha256": "4551fa80abe87a29f4d1c737b36fe8aa24dfd67d52795e87c9c2840f56be747a",
+      "total": {
+        "games": 12,
+        "wins": 12,
+        "ties": 0,
+        "losses": 0,
+        "mean_margin": 19204.333333333332,
+        "all_clean": true,
+        "max_measured_call_ms": 137.395
+      },
+      "per_opponent": {
+        "cok": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.02162766462344268,
+          "worst_margin": 269.0
+        },
+        "igor": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.05124724532057986,
+          "worst_margin": 2358.0
+        },
+        "lonespear": {
+          "games": 4,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.7365146487415519,
+          "worst_margin": 51075.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 1.0,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 1.0,
+      "family_count": 2,
+      "family_gate_pass": false
+    },
+    "cok-diverse-dev": {
+      "file": "results\\cok-diverse-dev.json",
+      "result_sha256": "eafed3a2ca2e5f37c105d749a6537b852e977db4daabffeb014719a6027e0aaa",
+      "total": {
+        "games": 32,
+        "wins": 32,
+        "ties": 0,
+        "losses": 0,
+        "mean_margin": 60113.875,
+        "all_clean": true,
+        "max_measured_call_ms": 134.767
+      },
+      "per_opponent": {
+        "igor": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.052641646965295295,
+          "worst_margin": 2135.0
+        },
+        "lonespear": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.7195436457064179,
+          "worst_margin": 41785.0
+        },
+        "herd": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 1.4884289622468492,
+          "worst_margin": 61490.0
+        },
+        "crop": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 1.3343107389411548,
+          "worst_margin": 94018.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 1.0,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 1.0,
+      "family_count": 2,
+      "family_gate_pass": false
+    },
+    "track-gated-current-own": {
+      "file": "results\\track-gated-current-own.json",
+      "result_sha256": "ca68441f2a35a5f4fcfdeef844140c504c2a4fc4ba57c38e1a94c8d4f71e3773",
+      "total": {
+        "games": 20,
+        "wins": 7,
+        "ties": 0,
+        "losses": 13,
+        "mean_margin": -7739.7,
+        "all_clean": true,
+        "max_measured_call_ms": 180.092
+      },
+      "per_opponent": {
+        "Maksonch1k": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.10774237121630749,
+          "worst_margin": -8774.0
+        },
+        "Will English": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.0419282657339619,
+          "worst_margin": 1930.0
+        },
+        "Andrew9603": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.08461238800155824,
+          "worst_margin": 4887.0
+        },
+        "Beenvvv": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.0467223680660537,
+          "worst_margin": -5455.0
+        },
+        "Lance Wu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.23163906000681728,
+          "worst_margin": 23445.0
+        },
+        "Garigariyong": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.1551255354987599,
+          "worst_margin": -11696.0
+        },
+        "wangxt1": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.009568183709127214,
+          "worst_margin": 1380.0
+        },
+        "CY": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.022093572191716152,
+          "worst_margin": -2223.0
+        },
+        "Rucbic": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.012855556258883512,
+          "worst_margin": -1117.0
+        },
+        "Farmula One": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.28574384975554235,
+          "worst_margin": -16569.0
+        },
+        "BBaRRel.": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.025346474060663243,
+          "worst_margin": 1988.0
+        },
+        "Mr.Frundles": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.06226465475431455,
+          "worst_margin": -5713.0
+        },
+        "OlivierS": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.29015338941118257,
+          "worst_margin": -26388.0
+        },
+        "monnu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.026584867075664622,
+          "worst_margin": 2002.0
+        },
+        "Yuanchen Huang": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.4418441460298801,
+          "worst_margin": -36835.0
+        },
+        "Aayush Sigdel": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.11087285285420852,
+          "worst_margin": -9824.0
+        },
+        "Shadow": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.31915000083398665,
+          "worst_margin": -19134.0
+        },
+        "CrazyML": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.46653691368842226,
+          "worst_margin": -30083.0
+        },
+        "KongKongDe": {
+          "games": 1,
+          "expected_match_score": 0.0,
+          "mean_normalized_margin": -0.3184897175247107,
+          "worst_margin": -16997.0
+        },
+        "Uchechukwu Ajuzieogu": {
+          "games": 1,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.006862234357878096,
+          "worst_margin": 382.0
+        }
+      },
+      "own_recent_only": {
+        "games": 20,
+        "wins": 7,
+        "ties": 0,
+        "losses": 13,
+        "mean_margin": -7739.7,
+        "all_clean": true,
+        "max_measured_call_ms": 180.092
+      },
+      "paired_mean_margin_change": 120.5,
+      "win_to_loss": [],
+      "improved_margins": 4,
+      "regressed_margins": 1
+    },
+    "track-gated-validation-v1": {
+      "file": "results\\track-gated-validation-v1.json",
+      "result_sha256": "a0a167e51d06cff5ebd31e7b68d983a8dafae8990b8c1c695b28c8e5f2ee9939",
+      "total": {
+        "games": 24,
+        "wins": 23,
+        "ties": 0,
+        "losses": 1,
+        "mean_margin": 14832.333333333334,
+        "all_clean": true,
+        "max_measured_call_ms": 130.64
+      },
+      "per_opponent": {
+        "cok": {
+          "games": 8,
+          "expected_match_score": 0.875,
+          "mean_normalized_margin": 0.004418542528519644,
+          "worst_margin": -114.0
+        },
+        "igor": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.04236379955950969,
+          "worst_margin": 2055.0
+        },
+        "lonespear": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.5490200625172056,
+          "worst_margin": 35451.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 0.9375,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 0.96875,
+      "family_count": 2,
+      "family_gate_pass": false
+    },
+    "cok-validation-v1": {
+      "file": "results\\cok-validation-v1.json",
+      "result_sha256": "83a77d05f11d316b2304e7ffaf440319553d89ce732c437a24efbd9d82aa52b0",
+      "total": {
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "losses": 0,
+        "mean_margin": 22111.9375,
+        "all_clean": true,
+        "max_measured_call_ms": 135.2
+      },
+      "per_opponent": {
+        "igor": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.04301229848583785,
+          "worst_margin": 2120.0
+        },
+        "lonespear": {
+          "games": 8,
+          "expected_match_score": 1.0,
+          "mean_normalized_margin": 0.5490200625172056,
+          "worst_margin": 35451.0
+        }
+      },
+      "family_scores": {
+        "reconstructed_mixed_route": 1.0,
+        "greedy_dynamic_lineage": 1.0
+      },
+      "family_macro_match_score": 1.0,
+      "family_count": 2,
+      "family_gate_pass": false
+    }
+  }
+}

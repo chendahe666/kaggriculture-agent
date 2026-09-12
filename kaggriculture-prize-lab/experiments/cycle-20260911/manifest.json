@@ -1,0 +1,25 @@
+{
+  "source_sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+  "variants": {
+    "final-rerank": {
+      "sha256": "f5da6e409cb455d1b11340698e47be15730d8698eba57a9c54677b5a0d6ede9b",
+      "patch": "\n_RESEARCH_BASE = agent\ndef agent(obs):\n    return _rank_sell_slots(obs, _RESEARCH_BASE(obs), None)\n"
+    },
+    "horizon4": {
+      "sha256": "f5a1b343f6e886ad85243dbac1530c54b3ff843e5f936a9eea07b9b15c7038aa",
+      "patch": "RESEARCH_HORIZON = 4\n\ndef _future_sells(obs, step):\n    actions = _kawa_actions(obs)\n    result = {}\n    for ahead in range(1, RESEARCH_HORIZON + 1):\n        if step + ahead >= len(actions):\n            break\n        for order in actions[step + ahead].get('market', []):\n            if len(order) >= 3 and order[0] == 'SELL' and order[1] in _PREMIUM:\n                result[order[1]] = result.get(order[1], 0) + max(0, int(order[2]))\n    return result\n"
+    },
+    "horizon6": {
+      "sha256": "76d3680b466be3ee0c6b033255609798932668b485ef985264e25a3117759bc5",
+      "patch": "RESEARCH_HORIZON = 6\n\ndef _future_sells(obs, step):\n    actions = _kawa_actions(obs)\n    result = {}\n    for ahead in range(1, RESEARCH_HORIZON + 1):\n        if step + ahead >= len(actions):\n            break\n        for order in actions[step + ahead].get('market', []):\n            if len(order) >= 3 and order[0] == 'SELL' and order[1] in _PREMIUM:\n                result[order[1]] = result.get(order[1], 0) + max(0, int(order[2]))\n    return result\n"
+    },
+    "horizon4-rerank": {
+      "sha256": "7af86db3e6d91e6b9d869d8be2db1ee7a2c6df20e5cb6668ffd54cb452e904bc",
+      "patch": "RESEARCH_HORIZON = 4\n\ndef _future_sells(obs, step):\n    actions = _kawa_actions(obs)\n    result = {}\n    for ahead in range(1, RESEARCH_HORIZON + 1):\n        if step + ahead >= len(actions):\n            break\n        for order in actions[step + ahead].get('market', []):\n            if len(order) >= 3 and order[0] == 'SELL' and order[1] in _PREMIUM:\n                result[order[1]] = result.get(order[1], 0) + max(0, int(order[2]))\n    return result\n\n_RESEARCH_BASE = agent\ndef agent(obs):\n    return _rank_sell_slots(obs, _RESEARCH_BASE(obs), None)\n"
+    },
+    "horizon4-floor-guard": {
+      "sha256": "7999f5e39c8574b7eaa88a323a0e808d3d16c280e414f1892ed70cca089865e4",
+      "patch": "RESEARCH_HORIZON = 4\n_PREEMPT_MIN_PRICE_RATIO = 0.1\n\ndef _future_sells(obs, step):\n    actions = _kawa_actions(obs)\n    result = {}\n    for ahead in range(1, RESEARCH_HORIZON + 1):\n        if step + ahead >= len(actions):\n            break\n        for order in actions[step + ahead].get('market', []):\n            if len(order) >= 3 and order[0] == 'SELL' and order[1] in _PREMIUM:\n                result[order[1]] = result.get(order[1], 0) + max(0, int(order[2]))\n    return result\n"
+    }
+  }
+}

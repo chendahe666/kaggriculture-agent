@@ -13,7 +13,7 @@ import main as agent_module
 
 PROJECT_DIR = Path(__file__).resolve().parent
 LOG_DIR = PROJECT_DIR / "logs"
-LOG_FILE = LOG_DIR / "episode_001.log"
+LOG_FILE = LOG_DIR / "cok_baseline_20260911.log"
 TEST_SEED = 20260901
 
 UNIT_OPS = {
@@ -262,7 +262,7 @@ class EpisodeLogger:
                 "market": [],
             }
 
-        decision = agent_module.get_last_decision()
+        decision = getattr(agent_module, "get_last_decision", lambda: {})()
         self._write(f"[TURN {current['step']} | DAY {current['day']} | HOUR {current['hour']}]")
         self._write(f"coins={current['coins']}")
         self._write(f"farmer_position={current['position']}")
@@ -308,11 +308,16 @@ def _print_summary(summary):
 
 def run_test():
     LOG_DIR.mkdir(parents=True, exist_ok=True)
-    agent_module.reset_runtime_state()
+    reset = getattr(agent_module, "reset_runtime_state", None)
+    if callable(reset):
+        reset()
+    else:
+        import importlib
+        importlib.reload(agent_module)
     started = time.perf_counter()
 
     with LOG_FILE.open("w", encoding="utf-8", newline="\n") as log:
-        log.write("KAGGRICULTURE V0 LOCAL EPISODE LOG\n")
+        log.write("KAGGRICULTURE CURRENT BASELINE LOCAL EPISODE LOG\n")
         log.write(f"platform={platform.platform()}\n")
         log.write(f"python={sys.version.split()[0]}\n")
         log.write(f"requested_seed={TEST_SEED}\n")
@@ -348,7 +353,7 @@ def run_test():
         else:
             result = "unavailable"
 
-        runtime_stats = agent_module.get_runtime_stats()
+        runtime_stats = getattr(agent_module, "get_runtime_stats", lambda: {"exceptions": None})()
         episode_completed = len(env.steps) == expected_steps and all(
             status == "DONE" for status in statuses
         )
@@ -359,7 +364,7 @@ def run_test():
             and episode_completed
             and tracker.invalid_actions == 0
             and tracker.wrapper_exceptions == 0
-            and runtime_stats["exceptions"] == 0
+            and runtime_stats["exceptions"] in (0, None)
         )
 
         log.write(f"kaggle_environments={kaggle_env_version}\n")

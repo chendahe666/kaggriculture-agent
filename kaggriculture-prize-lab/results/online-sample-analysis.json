@@ -1,0 +1,3720 @@
+[
+  {
+    "episode_id": "136568ea-a6fe-11f1-8dee-0242ac130203",
+    "seed": 1296414159,
+    "names": [
+      "Mike chen666",
+      "satoooh"
+    ],
+    "our_seat": 0,
+    "opponent": "satoooh",
+    "outcome": "loss",
+    "our_reward": 65210.0,
+    "opponent_reward": 66009.0,
+    "margin": -799.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "candidate_route": "10c4s_3q",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.9181,
+      "market_action_fraction": 0.9208,
+      "worker_action_fraction": 0.9819
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 31,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 555,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 646,
+        "WATER": 908,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 91,
+        "HIRE": 277,
+        "SELL": 496
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 280,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 154
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 10,
+        "MELON": 12,
+        "SHEEP": 4,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 29,
+        "STRAWBERRY": 38,
+        "WHEAT": 159,
+        "WOOL": 31
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 309,
+        "DIG": 30,
+        "DROP": 12,
+        "EAST": 825,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 981,
+        "PASS": 557,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 644,
+        "WATER": 909,
+        "WEST": 1167
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 101,
+        "HIRE": 277,
+        "SELL": 509
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2935,
+        "MELON": 72,
+        "MILK": 280,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 154
+      },
+      "requested_buys": {
+        "CARROT": 13,
+        "COW": 10,
+        "MELON": 12,
+        "SHEEP": 4,
+        "STRAWBERRY": 42,
+        "WHEAT": 620
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 227,
+        "MELON": 7,
+        "MILK": 32,
+        "STRAWBERRY": 39,
+        "WHEAT": 164,
+        "WOOL": 32
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1594.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1534.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 8,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 17520.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 17001.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 46910.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 10
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 4,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 46620.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 10
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 65210.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 12
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 66009.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      }
+    }
+  },
+  {
+    "episode_id": "cd6f3a9a-a6fe-11f1-a6d3-0242ac130202",
+    "seed": 819521856,
+    "names": [
+      "Mike chen666",
+      "Witold Dziurdz"
+    ],
+    "our_seat": 0,
+    "opponent": "Witold Dziurdz",
+    "outcome": "loss",
+    "our_reward": 57509.0,
+    "opponent_reward": 60206.0,
+    "margin": -2697.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "BAKERY",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE",
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "candidate_route": "10c4s_3q",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.7264,
+      "market_action_fraction": 0.7278,
+      "worker_action_fraction": 0.9958
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 31,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 555,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 645,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 91,
+        "HIRE": 277,
+        "SELL": 496
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 280,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 154
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 10,
+        "MELON": 12,
+        "SHEEP": 4,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 29,
+        "STRAWBERRY": 38,
+        "WHEAT": 159,
+        "WOOL": 31
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 30,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 555,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 646,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 94,
+        "HIRE": 277,
+        "SELL": 517
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 303,
+        "STRAWBERRY": 318,
+        "WHEAT": 856,
+        "WOOL": 186
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 10,
+        "MELON": 12,
+        "SHEEP": 4,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 230,
+        "MELON": 7,
+        "MILK": 29,
+        "STRAWBERRY": 43,
+        "WHEAT": 163,
+        "WOOL": 42
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1592.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1674.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 1,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 17514.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 17964.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 1,
+            "WHEAT": 8
+          }
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 40340.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 10
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 4,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 41813.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 12
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 1,
+            "WHEAT": 8
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 57509.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 60206.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        }
+      }
+    }
+  },
+  {
+    "episode_id": "f3c95266-a6fe-11f1-a779-0242ac130204",
+    "seed": 122686089,
+    "names": [
+      "xerkey",
+      "Mike chen666"
+    ],
+    "our_seat": 1,
+    "opponent": "xerkey",
+    "outcome": "loss",
+    "our_reward": 57387.0,
+    "opponent_reward": 60000.0,
+    "margin": -2613.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "candidate_route": "8c6s_3q",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.8833,
+      "market_action_fraction": 0.8917,
+      "worker_action_fraction": 0.975
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 31,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 555,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 645,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 91,
+        "HIRE": 277,
+        "SELL": 497
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 279,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 193
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 8,
+        "MELON": 12,
+        "SHEEP": 6,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 28,
+        "STRAWBERRY": 38,
+        "WHEAT": 159,
+        "WOOL": 32
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 309,
+        "DIG": 31,
+        "DROP": 12,
+        "EAST": 825,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 981,
+        "PASS": 556,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 644,
+        "WATER": 909,
+        "WEST": 1167
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 101,
+        "HIRE": 277,
+        "SELL": 510
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2935,
+        "MELON": 72,
+        "MILK": 273,
+        "STRAWBERRY": 284,
+        "WHEAT": 856,
+        "WOOL": 171
+      },
+      "requested_buys": {
+        "CARROT": 13,
+        "COW": 8,
+        "MELON": 12,
+        "SHEEP": 6,
+        "STRAWBERRY": 42,
+        "WHEAT": 620
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 227,
+        "MELON": 7,
+        "MILK": 30,
+        "STRAWBERRY": 42,
+        "WHEAT": 164,
+        "WOOL": 34
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1594.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1534.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 8,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 15500.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 8,
+              "SHEEP": 6
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 14794.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 8,
+              "SHEEP": 6
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 41865.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 8,
+              "SHEEP": 6
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 21
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 4,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 42063.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 8,
+              "SHEEP": 6
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 20
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 57387.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 8,
+              "SHEEP": 6
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 60000.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 8,
+              "SHEEP": 6
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      }
+    }
+  },
+  {
+    "episode_id": "efee0bd6-a6ff-11f1-b283-0242ac130202",
+    "seed": 1409862367,
+    "names": [
+      "Mike chen666",
+      "郑诗籍 ZhengShiJi"
+    ],
+    "our_seat": 0,
+    "opponent": "郑诗籍 ZhengShiJi",
+    "outcome": "win",
+    "our_reward": 99498.0,
+    "opponent_reward": 96110.0,
+    "margin": 3388.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "YARN_STORE",
+      "PET_CAFE",
+      "PET_CAFE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "candidate_route": "6c12s_4q_second_yarn",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.2458,
+      "market_action_fraction": 0.4917,
+      "worker_action_fraction": 0.2833
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 18,
+        "CARE": 366,
+        "COLLECT_FERTILIZER": 346,
+        "DIG": 23,
+        "DROP": 9,
+        "EAST": 841,
+        "FEED": 372,
+        "FERTILIZE": 49,
+        "HARVEST": 401,
+        "NORTH": 894,
+        "PASS": 603,
+        "PICKUP": 159,
+        "PLACE": 55,
+        "PLANT": 202,
+        "SOUTH": 726,
+        "WATER": 947,
+        "WEST": 907
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 11,
+        "BUY_LAND": 3,
+        "BUY_PRODUCT": 99,
+        "BUY_SEED": 96,
+        "HIRE": 277,
+        "SELL": 511
+      },
+      "requested_sells": {
+        "CARROT": 2,
+        "FERTILIZER": 2026,
+        "MELON": 120,
+        "MILK": 228,
+        "STRAWBERRY": 226,
+        "WHEAT": 1648,
+        "WOOL": 270
+      },
+      "requested_buys": {
+        "CARROT": 3,
+        "COW": 6,
+        "MELON": 17,
+        "SHEEP": 12,
+        "STRAWBERRY": 34,
+        "WHEAT": 1115
+      },
+      "sale_steps": {
+        "CARROT": 1,
+        "FERTILIZER": 190,
+        "MELON": 10,
+        "MILK": 34,
+        "STRAWBERRY": 24,
+        "WHEAT": 220,
+        "WOOL": 32
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 30,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 555,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 646,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 101,
+        "HIRE": 277,
+        "SELL": 497
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 279,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 233
+      },
+      "requested_buys": {
+        "CARROT": 13,
+        "COW": 6,
+        "MELON": 12,
+        "SHEEP": 8,
+        "STRAWBERRY": 42,
+        "WHEAT": 620
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 27,
+        "STRAWBERRY": 40,
+        "WHEAT": 159,
+        "WOOL": 34
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1278.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 14,
+              "STRAWBERRY": 4,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 26,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 3,
+            "MELON": 3,
+            "STRAWBERRY": 3,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1578.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 8,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 14606.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 5,
+              "STRAWBERRY": 34,
+              "WHEAT": 22
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 10
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "PLANT": 61
+            },
+            "ready_yield": {
+              "MELON": 17,
+              "STRAWBERRY": 0,
+              "WHEAT": 45
+            }
+          },
+          "shed": {
+            "FERTILIZER": 13,
+            "WHEAT": 10
+          },
+          "carried": {
+            "FERTILIZER": 10,
+            "MILK": 6,
+            "SHEEP": 2,
+            "WHEAT": 11,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 3,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 20093.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 64839.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 27,
+              "WHEAT": 25
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 12
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "PLANT": 53,
+              "WEED": 6
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 4,
+              "WHEAT": 37
+            }
+          },
+          "shed": {},
+          "carried": {
+            "FERTILIZER": 12,
+            "MILK": 6,
+            "STRAWBERRY": 8,
+            "WHEAT": 53,
+            "WOOL": 8
+          },
+          "seeds": {
+            "CARROT": 2,
+            "WHEAT": 7
+          }
+        },
+        "opponent": {
+          "money": 63222.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 29
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 99498.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {},
+            "animals": {
+              "COW": 6,
+              "SHEEP": 9
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "WEED": 25
+            },
+            "ready_yield": {}
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 96110.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 12
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {
+            "CARROT": 8,
+            "WHEAT": 8
+          }
+        }
+      }
+    }
+  },
+  {
+    "episode_id": "71f7ffb0-a700-11f1-a429-0242ac130204",
+    "seed": 1439563477,
+    "names": [
+      "liuhc1017",
+      "Mike chen666"
+    ],
+    "our_seat": 1,
+    "opponent": "liuhc1017",
+    "outcome": "tie",
+    "our_reward": 133758.0,
+    "opponent_reward": 133758.0,
+    "margin": 0.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "candidate_route": "6c8s_3q",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.9792,
+      "market_action_fraction": 1.0,
+      "worker_action_fraction": 0.9792
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 31,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 554,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 646,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 91,
+        "HIRE": 277,
+        "SELL": 500
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 279,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 233
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 6,
+        "MELON": 12,
+        "SHEEP": 8,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 28,
+        "STRAWBERRY": 38,
+        "WHEAT": 159,
+        "WOOL": 35
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 32,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 983,
+        "PASS": 553,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 646,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 91,
+        "HIRE": 277,
+        "SELL": 500
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 279,
+        "STRAWBERRY": 279,
+        "WHEAT": 856,
+        "WOOL": 233
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 6,
+        "MELON": 12,
+        "SHEEP": 8,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 28,
+        "STRAWBERRY": 38,
+        "WHEAT": 159,
+        "WOOL": 35
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1590.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1590.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 20795.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 20795.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "WHEAT": 8
+          }
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 77964.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 37
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 4,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 77964.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 37
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 4,
+            "WHEAT": 8
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 133758.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 133758.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 8
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 11
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        }
+      }
+    }
+  },
+  {
+    "episode_id": "6c2f48b2-a701-11f1-a976-0242ac130203",
+    "seed": 597286293,
+    "names": [
+      "Mike chen666",
+      "HKmgikao"
+    ],
+    "our_seat": 0,
+    "opponent": "HKmgikao",
+    "outcome": "win",
+    "our_reward": 98233.0,
+    "opponent_reward": 97893.0,
+    "margin": 340.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "candidate_route": "6c12s_4q_second_yarn",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.9125,
+      "market_action_fraction": 0.9319,
+      "worker_action_fraction": 0.9708
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 18,
+        "CARE": 366,
+        "COLLECT_FERTILIZER": 346,
+        "DIG": 25,
+        "DROP": 9,
+        "EAST": 841,
+        "FEED": 372,
+        "FERTILIZE": 49,
+        "HARVEST": 401,
+        "NORTH": 894,
+        "PASS": 603,
+        "PICKUP": 159,
+        "PLACE": 55,
+        "PLANT": 201,
+        "SOUTH": 726,
+        "WATER": 947,
+        "WEST": 906
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 11,
+        "BUY_LAND": 3,
+        "BUY_PRODUCT": 99,
+        "BUY_SEED": 96,
+        "HIRE": 277,
+        "SELL": 512
+      },
+      "requested_sells": {
+        "CARROT": 2,
+        "FERTILIZER": 2026,
+        "MELON": 120,
+        "MILK": 216,
+        "STRAWBERRY": 226,
+        "WHEAT": 1648,
+        "WOOL": 270
+      },
+      "requested_buys": {
+        "CARROT": 3,
+        "COW": 6,
+        "MELON": 17,
+        "SHEEP": 12,
+        "STRAWBERRY": 34,
+        "WHEAT": 1115
+      },
+      "sale_steps": {
+        "CARROT": 1,
+        "FERTILIZER": 190,
+        "MELON": 10,
+        "MILK": 33,
+        "STRAWBERRY": 25,
+        "WHEAT": 220,
+        "WOOL": 32
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 18,
+        "CARE": 366,
+        "COLLECT_FERTILIZER": 346,
+        "DIG": 23,
+        "DROP": 9,
+        "EAST": 841,
+        "FEED": 372,
+        "FERTILIZE": 49,
+        "HARVEST": 401,
+        "NORTH": 894,
+        "PASS": 603,
+        "PICKUP": 159,
+        "PLACE": 55,
+        "PLANT": 202,
+        "SOUTH": 726,
+        "WATER": 947,
+        "WEST": 907
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 11,
+        "BUY_LAND": 3,
+        "BUY_PRODUCT": 99,
+        "BUY_SEED": 105,
+        "HIRE": 277,
+        "SELL": 527
+      },
+      "requested_sells": {
+        "CARROT": 2,
+        "FERTILIZER": 2025,
+        "MELON": 120,
+        "MILK": 225,
+        "STRAWBERRY": 222,
+        "WHEAT": 1648,
+        "WOOL": 270
+      },
+      "requested_buys": {
+        "CARROT": 10,
+        "COW": 6,
+        "MELON": 17,
+        "SHEEP": 12,
+        "STRAWBERRY": 34,
+        "WHEAT": 1123
+      },
+      "sale_steps": {
+        "CARROT": 1,
+        "FERTILIZER": 189,
+        "MELON": 10,
+        "MILK": 42,
+        "STRAWBERRY": 32,
+        "WHEAT": 220,
+        "WOOL": 32
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 49.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1278.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 14,
+              "STRAWBERRY": 4,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 26,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 3,
+            "MELON": 3,
+            "STRAWBERRY": 3,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1198.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 14,
+              "STRAWBERRY": 4,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 26,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 7,
+            "MELON": 3,
+            "STRAWBERRY": 3,
+            "WHEAT": 4
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 14627.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 5,
+              "STRAWBERRY": 34,
+              "WHEAT": 22
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 10
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "PLANT": 61
+            },
+            "ready_yield": {
+              "MELON": 17,
+              "STRAWBERRY": 0,
+              "WHEAT": 45
+            }
+          },
+          "shed": {
+            "FERTILIZER": 13,
+            "WHEAT": 10
+          },
+          "carried": {
+            "FERTILIZER": 10,
+            "MILK": 6,
+            "SHEEP": 2,
+            "WHEAT": 11,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 3,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 14547.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 5,
+              "STRAWBERRY": 34,
+              "WHEAT": 22
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 10
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "PLANT": 61
+            },
+            "ready_yield": {
+              "MELON": 17,
+              "STRAWBERRY": 0,
+              "WHEAT": 45
+            }
+          },
+          "shed": {
+            "FERTILIZER": 13,
+            "WHEAT": 10
+          },
+          "carried": {
+            "FERTILIZER": 10,
+            "MILK": 6,
+            "SHEEP": 2,
+            "WHEAT": 11,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 7,
+            "WHEAT": 8
+          }
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 61123.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 27,
+              "WHEAT": 25
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 12
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "PLANT": 53,
+              "WEED": 6
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 4,
+              "WHEAT": 37
+            }
+          },
+          "shed": {},
+          "carried": {
+            "FERTILIZER": 12,
+            "MILK": 6,
+            "STRAWBERRY": 8,
+            "WHEAT": 53,
+            "WOOL": 8
+          },
+          "seeds": {
+            "CARROT": 2,
+            "WHEAT": 7
+          }
+        },
+        "opponent": {
+          "money": 60930.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 27,
+              "WHEAT": 25
+            },
+            "animals": {
+              "COW": 6,
+              "SHEEP": 12
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "PLANT": 53,
+              "WEED": 6
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 4,
+              "WHEAT": 37
+            }
+          },
+          "shed": {},
+          "carried": {
+            "FERTILIZER": 12,
+            "MILK": 6,
+            "STRAWBERRY": 8,
+            "WHEAT": 53,
+            "WOOL": 8
+          },
+          "seeds": {
+            "CARROT": 7,
+            "WHEAT": 7
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 98233.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {},
+            "animals": {
+              "COW": 6,
+              "SHEEP": 9
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "WEED": 26
+            },
+            "ready_yield": {}
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {
+            "WHEAT": 1
+          }
+        },
+        "opponent": {
+          "money": 97893.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW",
+            "SE"
+          ],
+          "tiles": {
+            "crops": {},
+            "animals": {
+              "COW": 6,
+              "SHEEP": 9
+            },
+            "kinds": {
+              "PASTURE": 18,
+              "WEED": 25
+            },
+            "ready_yield": {}
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {
+            "CARROT": 7,
+            "WHEAT": 8
+          }
+        }
+      }
+    }
+  },
+  {
+    "episode_id": "714253d0-a701-11f1-9e6a-0242ac130202",
+    "seed": 914797848,
+    "names": [
+      "Mike chen666",
+      "LXZ538"
+    ],
+    "our_seat": 0,
+    "opponent": "LXZ538",
+    "outcome": "loss",
+    "our_reward": 89939.0,
+    "opponent_reward": 103176.0,
+    "margin": -13237.0,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "shops": [
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "candidate_route": "10c4s_3q",
+    "similarity": {
+      "comparable_steps": 720,
+      "exact_action_fraction": 0.0014,
+      "market_action_fraction": 0.3306,
+      "worker_action_fraction": 0.0083
+    },
+    "ours": {
+      "worker_actions": {
+        "BUILD_PASTURE": 14,
+        "CARE": 318,
+        "COLLECT_FERTILIZER": 306,
+        "DIG": 31,
+        "DROP": 9,
+        "EAST": 828,
+        "FEED": 321,
+        "FERTILIZE": 70,
+        "HARVEST": 399,
+        "NORTH": 982,
+        "PASS": 555,
+        "PICKUP": 127,
+        "PLACE": 48,
+        "PLANT": 184,
+        "SOUTH": 646,
+        "WATER": 909,
+        "WEST": 1168
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 8,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 72,
+        "BUY_SEED": 91,
+        "HIRE": 277,
+        "SELL": 497
+      },
+      "requested_sells": {
+        "CARROT": 11,
+        "FERTILIZER": 2932,
+        "MELON": 72,
+        "MILK": 280,
+        "STRAWBERRY": 296,
+        "WHEAT": 856,
+        "WOOL": 175
+      },
+      "requested_buys": {
+        "CARROT": 5,
+        "COW": 10,
+        "MELON": 12,
+        "SHEEP": 4,
+        "STRAWBERRY": 42,
+        "WHEAT": 612
+      },
+      "sale_steps": {
+        "CARROT": 3,
+        "FERTILIZER": 225,
+        "MELON": 7,
+        "MILK": 28,
+        "STRAWBERRY": 41,
+        "WHEAT": 159,
+        "WOOL": 34
+      }
+    },
+    "opponent_actions": {
+      "worker_actions": {
+        "BUILD_PASTURE": 15,
+        "CARE": 343,
+        "COLLECT_FERTILIZER": 337,
+        "DIG": 47,
+        "DROP": 139,
+        "EAST": 775,
+        "FEED": 347,
+        "FERTILIZE": 80,
+        "HARVEST": 420,
+        "NORTH": 1015,
+        "PASS": 380,
+        "PICKUP": 297,
+        "PLACE": 45,
+        "PLANT": 206,
+        "SOUTH": 771,
+        "WATER": 986,
+        "WEST": 946
+      },
+      "market_actions": {
+        "BUY_ANIMAL": 7,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 37,
+        "BUY_SEED": 39,
+        "HIRE": 282,
+        "SELL": 574
+      },
+      "requested_sells": {
+        "CARROT": 57,
+        "FERTILIZER": 397,
+        "MELON": 72,
+        "MILK": 335,
+        "STRAWBERRY": 430,
+        "WHEAT": 313,
+        "WOOL": 179
+      },
+      "requested_buys": {
+        "CARROT": 20,
+        "COW": 11,
+        "MELON": 11,
+        "SHEEP": 4,
+        "STRAWBERRY": 41,
+        "WHEAT": 245
+      },
+      "sale_steps": {
+        "CARROT": 22,
+        "FERTILIZER": 127,
+        "MELON": 12,
+        "MILK": 91,
+        "STRAWBERRY": 72,
+        "WHEAT": 45,
+        "WOOL": 50
+      }
+    },
+    "snapshots": {
+      "71": {
+        "ours": {
+          "money": 38.0,
+          "hands": 4,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "WHEAT": 7
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 5,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 12,
+              "WHEAT": 14
+            }
+          },
+          "shed": {
+            "WHEAT": 4
+          },
+          "carried": {
+            "FERTILIZER": 4
+          },
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 311.0,
+          "hands": 3,
+          "quadrants": [
+            "NW"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 7,
+              "STRAWBERRY": 2,
+              "WHEAT": 10
+            },
+            "animals": {
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 4,
+              "PLANT": 19
+            },
+            "ready_yield": {
+              "MELON": 7,
+              "STRAWBERRY": 0,
+              "WHEAT": 15
+            }
+          },
+          "shed": {
+            "WHEAT": 5
+          },
+          "carried": {
+            "WHEAT": 4
+          },
+          "seeds": {}
+        }
+      },
+      "167": {
+        "ours": {
+          "money": 1655.0,
+          "hands": 4,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 12,
+              "STRAWBERRY": 6,
+              "WHEAT": 3
+            },
+            "animals": {
+              "COW": 4,
+              "SHEEP": 2
+            },
+            "kinds": {
+              "PASTURE": 7,
+              "PLANT": 21
+            },
+            "ready_yield": {
+              "MELON": 24,
+              "STRAWBERRY": 0,
+              "WHEAT": 6
+            }
+          },
+          "shed": {
+            "WHEAT": 7
+          },
+          "carried": {
+            "FERTILIZER": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "STRAWBERRY": 1,
+            "WHEAT": 4
+          }
+        },
+        "opponent": {
+          "money": 1179.0,
+          "hands": 6,
+          "quadrants": [
+            "NW",
+            "NE"
+          ],
+          "tiles": {
+            "crops": {
+              "MELON": 7,
+              "STRAWBERRY": 12,
+              "WHEAT": 5
+            },
+            "animals": {
+              "COW": 2,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 6,
+              "PLANT": 24
+            },
+            "ready_yield": {
+              "MELON": 14,
+              "STRAWBERRY": 0,
+              "WHEAT": 10
+            }
+          },
+          "shed": {
+            "WHEAT": 14
+          },
+          "carried": {
+            "COW": 4,
+            "FERTILIZER": 1,
+            "WHEAT": 9
+          },
+          "seeds": {
+            "STRAWBERRY": 6,
+            "WHEAT": 5
+          }
+        }
+      },
+      "359": {
+        "ours": {
+          "money": 19633.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 42,
+              "WHEAT": 18
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 60
+            },
+            "ready_yield": {
+              "STRAWBERRY": 0,
+              "WHEAT": 36
+            }
+          },
+          "shed": {
+            "FERTILIZER": 5,
+            "WHEAT": 8
+          },
+          "carried": {
+            "FERTILIZER": 15,
+            "MILK": 6,
+            "WHEAT": 18,
+            "WOOL": 6
+          },
+          "seeds": {
+            "CARROT": 5,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 13013.0,
+          "hands": 11,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "MELON": 4,
+              "STRAWBERRY": 40,
+              "WHEAT": 12
+            },
+            "animals": {
+              "COW": 11,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 15,
+              "PLANT": 57
+            },
+            "ready_yield": {
+              "CARROT": 2,
+              "MELON": 4,
+              "STRAWBERRY": 0,
+              "WHEAT": 23
+            }
+          },
+          "shed": {
+            "STRAWBERRY": 2,
+            "WHEAT": 15,
+            "WOOL": 9
+          },
+          "carried": {
+            "CARROT": 21,
+            "FERTILIZER": 12,
+            "MILK": 3,
+            "STRAWBERRY": 4,
+            "WHEAT": 6
+          },
+          "seeds": {}
+        }
+      },
+      "551": {
+        "ours": {
+          "money": 65618.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "CARROT": 1,
+              "STRAWBERRY": 32,
+              "WHEAT": 23
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 56,
+              "WEED": 1
+            },
+            "ready_yield": {
+              "CARROT": 1,
+              "STRAWBERRY": 0,
+              "WHEAT": 41
+            }
+          },
+          "shed": {
+            "WOOL": 10
+          },
+          "carried": {
+            "FERTILIZER": 17,
+            "MILK": 6,
+            "STRAWBERRY": 26,
+            "WHEAT": 22
+          },
+          "seeds": {
+            "CARROT": 4,
+            "WHEAT": 8
+          }
+        },
+        "opponent": {
+          "money": 75045.0,
+          "hands": 12,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 32,
+              "WHEAT": 26
+            },
+            "animals": {
+              "COW": 11,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 15,
+              "PLANT": 58
+            },
+            "ready_yield": {
+              "STRAWBERRY": 4,
+              "WHEAT": 34
+            }
+          },
+          "shed": {
+            "FERTILIZER": 8,
+            "MELON": 21,
+            "MILK": 6,
+            "WHEAT": 9,
+            "WOOL": 4
+          },
+          "carried": {
+            "FERTILIZER": 9,
+            "MILK": 7,
+            "STRAWBERRY": 14,
+            "WHEAT": 27
+          },
+          "seeds": {
+            "WHEAT": 1
+          }
+        }
+      },
+      "719": {
+        "ours": {
+          "money": 89939.0,
+          "hands": 8,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "STRAWBERRY": 3,
+              "WHEAT": 1
+            },
+            "animals": {
+              "COW": 10,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 14,
+              "PLANT": 4,
+              "WEED": 13
+            },
+            "ready_yield": {
+              "STRAWBERRY": 2,
+              "WHEAT": 1
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {}
+        },
+        "opponent": {
+          "money": 103176.0,
+          "hands": 9,
+          "quadrants": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "tiles": {
+            "crops": {
+              "WHEAT": 12
+            },
+            "animals": {
+              "COW": 11,
+              "SHEEP": 4
+            },
+            "kinds": {
+              "PASTURE": 15,
+              "PLANT": 12
+            },
+            "ready_yield": {
+              "WHEAT": 27
+            }
+          },
+          "shed": {},
+          "carried": {},
+          "seeds": {
+            "WHEAT": 6
+          }
+        }
+      }
+    }
+  }
+]

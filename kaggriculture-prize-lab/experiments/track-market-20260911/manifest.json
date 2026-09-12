@@ -1,0 +1,29 @@
+{
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "variants": {
+    "rank": {
+      "sha256": "f1a7217b2599d4c26f3252b1dbf63d7e289f5853cfe53528abd6b11eb5471502",
+      "sweep": false,
+      "rank": true,
+      "project_observer": false
+    },
+    "sweep": {
+      "sha256": "6450782f864d755a90db54be41f7e102ec30159b5541256f890f02ac401ed71c",
+      "sweep": true,
+      "rank": false,
+      "project_observer": false
+    },
+    "sweep-rank": {
+      "sha256": "91f6586f0ee0f75f36fbeacc3e8e46423f2eb5ddf2f7ea5d42c15f871e564be0",
+      "sweep": true,
+      "rank": true,
+      "project_observer": false
+    },
+    "integrated": {
+      "sha256": "d700dee5bb611704a98dc5b81371ca192ab49f7e806f1a5052e7fd6ee54692cc",
+      "sweep": true,
+      "rank": true,
+      "project_observer": true
+    }
+  }
+}

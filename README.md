@@ -1,4 +1,21 @@
-# Kaggriculture Agent V0
+# Kaggriculture Agent — 当前 COK V10 基线与研究档案
+
+2026-09-11：用户授权将根 `main.py` 更新为线上提交 56156204 / 56156051
+对应的 COK V10 原文件，SHA256：
+`1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01`。
+旧 V4.2 在 Git 提交 `c7bbcd6`，没有删除历史。
+
+从 [研究工作流](kaggriculture-prize-lab/WORKFLOW.md)、
+[优化复盘](kaggriculture-prize-lab/OPTIMIZATION_LOG.md)、
+[逐版本记录](kaggriculture-prize-lab/reports/versions/)、
+[版本恢复说明](kaggriculture-prize-lab/VERSIONING.md) 开始。
+当前市场候选没有通过发布门禁，GitHub 存档不代表线上提分。
+根源码对应许可为 `LICENSE-APACHE-2.0.txt`，原始来源声明见
+`THIRD_PARTY_NOTICES.md`；不要将第三方代码表示为本项目原创。
+
+以下 V0 内容仅作历史记录，其策略描述与调试接口不适用于当前 COK。
+
+## 历史：Kaggriculture Agent V0
 
 ## Goal
 

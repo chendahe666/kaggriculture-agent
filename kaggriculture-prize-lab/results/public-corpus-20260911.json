@@ -1,0 +1,447 @@
+{
+  "captured_utc": "2026-09-12T01:15:50.770504+00:00",
+  "selection": "20 latest completed public own episodes plus 2 per top-five best active submission; not filtered on outcome",
+  "own_submission": 56156204,
+  "matches": [
+    {
+      "episode_id": 107992327,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107992327,
+        "createTime": "2026-09-12T00:11:12.121000",
+        "endTime": "2026-09-12T00:14:35.428000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "c351ce3e48d26bb61e02e33ce474ee06b531dc066c204f31beb3312e0484ceb3",
+      "path": "inbox\\replays\\episode-107992327-replay.json"
+    },
+    {
+      "episode_id": 107958155,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107958155,
+        "createTime": "2026-09-11T21:50:16.615000",
+        "endTime": "2026-09-11T21:55:28.099000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "94c5640f73edaf43397653d2f4deaabdeaa23d7dfe1ceec00ceaf558c36ecac0",
+      "path": "inbox\\replays\\episode-107958155-replay.json"
+    },
+    {
+      "episode_id": 107942319,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107942319,
+        "createTime": "2026-09-11T20:44:21.079000",
+        "endTime": "2026-09-11T20:45:53.422000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "805d7227bd0a75ca88d53a0bffd24b2ba18589611a518132e792d707ea0f2191",
+      "path": "inbox\\replays\\episode-107942319-replay.json"
+    },
+    {
+      "episode_id": 107933422,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107933422,
+        "createTime": "2026-09-11T20:08:24.147000",
+        "endTime": "2026-09-11T20:12:05.889000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "dde2749fcc9d986bd4bbda5bb7bcc3c7d3e266d88dfbeef0d7ca9b917768237d",
+      "path": "inbox\\replays\\episode-107933422-replay.json"
+    },
+    {
+      "episode_id": 107921312,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107921312,
+        "createTime": "2026-09-11T19:16:24.374000",
+        "endTime": "2026-09-11T19:21:33.373000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "dfc182dd4b630288b0d0dea1c4ef77747f325c80c5cfb57a549a16e4b35798aa",
+      "path": "inbox\\replays\\episode-107921312-replay.json"
+    },
+    {
+      "episode_id": 107903783,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107903783,
+        "createTime": "2026-09-11T18:04:30.430000",
+        "endTime": "2026-09-11T18:06:03.434000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "fd50e49e4571fd687ae8c33686c3b4a2375bad75f0da4a68425fa609d6468c5c",
+      "path": "inbox\\replays\\episode-107903783-replay.json"
+    },
+    {
+      "episode_id": 107902265,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107902265,
+        "createTime": "2026-09-11T17:56:29.129000",
+        "endTime": "2026-09-11T17:58:17.570000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "8d9e9e73c01020333acb42ae544a5e7ef438f6d1d796315bbe3aa2a960f7d0ec",
+      "path": "inbox\\replays\\episode-107902265-replay.json"
+    },
+    {
+      "episode_id": 107872505,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107872505,
+        "createTime": "2026-09-11T15:49:25.212000",
+        "endTime": "2026-09-11T15:54:18.735000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "55ee469ed0fc6d1cf7a2c62e2e0b6c753f8ef1286d24324a20a67480780e3d73",
+      "path": "inbox\\replays\\episode-107872505-replay.json"
+    },
+    {
+      "episode_id": 107842902,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107842902,
+        "createTime": "2026-09-11T13:49:24.897000",
+        "endTime": "2026-09-11T13:52:11.749000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "6d21ec970cc45601e947e9a66fa9333e55f33d6c1a750c6edf4dc169740d32d9",
+      "path": "inbox\\replays\\episode-107842902-replay.json"
+    },
+    {
+      "episode_id": 107814544,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107814544,
+        "createTime": "2026-09-11T11:57:22.329000",
+        "endTime": "2026-09-11T11:59:56.818000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "7ac8a59b1da7c70779964809f202c0955cb7d6d7f2c408273998601566d7bef4",
+      "path": "inbox\\replays\\episode-107814544-replay.json"
+    },
+    {
+      "episode_id": 107801749,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107801749,
+        "createTime": "2026-09-11T11:05:22.425000",
+        "endTime": "2026-09-11T11:07:47.475000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "3147bc3a466b298ce6685d38b05c2b242e336f3f30c5f2ca55424d6ac50c7d6b",
+      "path": "inbox\\replays\\episode-107801749-replay.json"
+    },
+    {
+      "episode_id": 107798158,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107798158,
+        "createTime": "2026-09-11T10:49:24.275000",
+        "endTime": "2026-09-11T10:52:27.542000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "1943d2a10dbb4c1f5e82297eab7366a4632cdec6920a9c0d484fb428c324a704",
+      "path": "inbox\\replays\\episode-107798158-replay.json"
+    },
+    {
+      "episode_id": 107782314,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107782314,
+        "createTime": "2026-09-11T09:45:23.307000",
+        "endTime": "2026-09-11T09:46:55.180000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "e785618d0a7f5623cc550eec5dbe1f1dfb491a23759acd262df9275f68af68cc",
+      "path": "inbox\\replays\\episode-107782314-replay.json"
+    },
+    {
+      "episode_id": 107760289,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107760289,
+        "createTime": "2026-09-11T08:17:22.691000",
+        "endTime": "2026-09-11T08:21:17.207000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "e7f5398aa66d9d4bfa1ee3a00b31f8fcb003706fa45ae643637191185b45c529",
+      "path": "inbox\\replays\\episode-107760289-replay.json"
+    },
+    {
+      "episode_id": 107743853,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107743853,
+        "createTime": "2026-09-11T07:09:23.008000",
+        "endTime": "2026-09-11T07:12:15.471000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "72364b212e40d89f543da7c8d8883b11b70400a40fde52ab42a0d9443c30ad7b",
+      "path": "inbox\\replays\\episode-107743853-replay.json"
+    },
+    {
+      "episode_id": 107727172,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107727172,
+        "createTime": "2026-09-11T06:01:23.223000",
+        "endTime": "2026-09-11T06:06:32.025000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "3a71b2eb5cec9366c4485e71a39c4b6efd6a82b77d5d113da5bdc47b26e69d85",
+      "path": "inbox\\replays\\episode-107727172-replay.json"
+    },
+    {
+      "episode_id": 107713155,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107713155,
+        "createTime": "2026-09-11T05:04:52.510000",
+        "endTime": "2026-09-11T05:08:07.361000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "c1752ab9bb409828c30d87b437d6e4ccd39a8658ff620775242d15735776af30",
+      "path": "inbox\\replays\\episode-107713155-replay.json"
+    },
+    {
+      "episode_id": 107712380,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107712380,
+        "createTime": "2026-09-11T05:00:58.083000",
+        "endTime": "2026-09-11T05:02:41.816000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "629ac737dfcc9690b09b74c7cd6e300241e3d604c4d7e0f968b76eac62f3bafc",
+      "path": "inbox\\replays\\episode-107712380-replay.json"
+    },
+    {
+      "episode_id": 107710185,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107710185,
+        "createTime": "2026-09-11T04:52:54.290000",
+        "endTime": "2026-09-11T04:56:43.922000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "34d96b20bf784700d49ac1183d222909bee4fe47cd30e50d62ada9cc764e54fe",
+      "path": "inbox\\replays\\episode-107710185-replay.json"
+    },
+    {
+      "episode_id": 107709162,
+      "source": "own_recent",
+      "submission": 56156204,
+      "episode_metadata": {
+        "id": 107709162,
+        "createTime": "2026-09-11T04:48:53.285000",
+        "endTime": "2026-09-11T04:53:28.412000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "f73c96e7b0894b0d5cba6a9a241677115b2b8f23e9c1590532b0785eb59a9aab",
+      "path": "inbox\\replays\\episode-107709162-replay.json"
+    },
+    {
+      "episode_id": 108005681,
+      "source": "top5_public",
+      "team_id": 16718819,
+      "submission": 56156662,
+      "rating_snapshot": "3168.8",
+      "episode_metadata": {
+        "id": 108005681,
+        "createTime": "2026-09-12T01:03:12.553000",
+        "endTime": "2026-09-12T01:07:37.303000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "6aafd36729af18205ddb00a520a9dcdb4deb2c5fef44bf5a3c0dfd1e74a77915",
+      "path": "inbox\\replays\\episode-108005681-replay.json"
+    },
+    {
+      "episode_id": 108001570,
+      "source": "top5_public",
+      "team_id": 16718819,
+      "submission": 56156662,
+      "rating_snapshot": "3168.8",
+      "episode_metadata": {
+        "id": 108001570,
+        "createTime": "2026-09-12T00:47:13.591000",
+        "endTime": "2026-09-12T00:51:38.054000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "6e853df2e418cbb2331a7ad6d8cc72a4f38ad45117d6f7cbc12894e174aa41ba",
+      "path": "inbox\\replays\\episode-108001570-replay.json"
+    },
+    {
+      "episode_id": 108005681,
+      "source": "top5_public",
+      "team_id": 16732403,
+      "submission": 56161578,
+      "rating_snapshot": "3068.5",
+      "episode_metadata": {
+        "id": 108005681,
+        "createTime": "2026-09-12T01:03:12.553000",
+        "endTime": "2026-09-12T01:07:37.303000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "6aafd36729af18205ddb00a520a9dcdb4deb2c5fef44bf5a3c0dfd1e74a77915",
+      "path": "inbox\\replays\\episode-108005681-replay.json"
+    },
+    {
+      "episode_id": 108005700,
+      "source": "top5_public",
+      "team_id": 16732403,
+      "submission": 56161578,
+      "rating_snapshot": "3068.5",
+      "episode_metadata": {
+        "id": 108005700,
+        "createTime": "2026-09-12T01:03:12.575000",
+        "endTime": "2026-09-12T01:06:29.873000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "32b1520fb9fbf0c39c57c36b8f8e39cd2b0beb55dad8602d894034d76b2a3643",
+      "path": "inbox\\replays\\episode-108005700-replay.json"
+    },
+    {
+      "episode_id": 108005713,
+      "source": "top5_public",
+      "team_id": 16730612,
+      "submission": 56161402,
+      "rating_snapshot": "3052.4",
+      "episode_metadata": {
+        "id": 108005713,
+        "createTime": "2026-09-12T01:03:12.600000",
+        "endTime": "2026-09-12T01:10:34.641000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "19362a81a833b4620b9a3e03878151ea57a1b67a131ac9b0ac80007a2f1a4f42",
+      "path": "inbox\\replays\\episode-108005713-replay.json"
+    },
+    {
+      "episode_id": 108001688,
+      "source": "top5_public",
+      "team_id": 16730612,
+      "submission": 56161402,
+      "rating_snapshot": "3052.4",
+      "episode_metadata": {
+        "id": 108001688,
+        "createTime": "2026-09-12T00:47:13.758000",
+        "endTime": "2026-09-12T00:51:39.292000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "b8712212a197e81c4d5fa862e7bf08e7c7a3ef69a7dffd5af9186d45949b50ca",
+      "path": "inbox\\replays\\episode-108001688-replay.json"
+    },
+    {
+      "episode_id": 108006325,
+      "source": "top5_public",
+      "team_id": 16640510,
+      "submission": 56114097,
+      "rating_snapshot": "3043.0",
+      "episode_metadata": {
+        "id": 108006325,
+        "createTime": "2026-09-12T01:07:15.563000",
+        "endTime": "2026-09-12T01:12:54.731000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "74631c1d554509fe34ff2a88a216d2210ea1123a28bb4605c967117d81178217",
+      "path": "inbox\\replays\\episode-108006325-replay.json"
+    },
+    {
+      "episode_id": 108001591,
+      "source": "top5_public",
+      "team_id": 16640510,
+      "submission": 56114097,
+      "rating_snapshot": "3043.0",
+      "episode_metadata": {
+        "id": 108001591,
+        "createTime": "2026-09-12T00:47:13.613000",
+        "endTime": "2026-09-12T00:54:15.775000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "58f39c93ffa90afa72d77c3d21e2fca6c73060b4f4b3fddf25bde792831a2cb9",
+      "path": "inbox\\replays\\episode-108001591-replay.json"
+    },
+    {
+      "episode_id": 108005701,
+      "source": "top5_public",
+      "team_id": 16621799,
+      "submission": 56145462,
+      "rating_snapshot": "3012.7",
+      "episode_metadata": {
+        "id": 108005701,
+        "createTime": "2026-09-12T01:03:12.577000",
+        "endTime": "2026-09-12T01:08:42.208000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "15d5d41670b922ed1f78cbdf5bb49cab8dbbb57d8142c67d05d562920dc2113d",
+      "path": "inbox\\replays\\episode-108005701-replay.json"
+    },
+    {
+      "episode_id": 108001591,
+      "source": "top5_public",
+      "team_id": 16621799,
+      "submission": 56145462,
+      "rating_snapshot": "3012.7",
+      "episode_metadata": {
+        "id": 108001591,
+        "createTime": "2026-09-12T00:47:13.613000",
+        "endTime": "2026-09-12T00:54:15.775000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      "sha256": "58f39c93ffa90afa72d77c3d21e2fca6c73060b4f4b3fddf25bde792831a2cb9",
+      "path": "inbox\\replays\\episode-108001591-replay.json"
+    }
+  ]
+}

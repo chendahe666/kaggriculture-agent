@@ -1,0 +1,5 @@
+{
+  "parent_sha256": "d700dee5bb611704a98dc5b81371ca192ab49f7e806f1a5052e7fd6ee54692cc",
+  "sha256": "b148ae9f336ab6a3d76c8c2b2663d14a73e982050994a0cbd7d12d35f291f611",
+  "gate": "step>=240, 60/64 public worker-position equality, economic tile distance<=3"
+}

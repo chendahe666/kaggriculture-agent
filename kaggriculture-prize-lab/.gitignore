@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.local-tmp/
+replays/
+dist/
+*.log
+inbox/
+online-replays/
+public-igor-20260911/
+.env
+.env.*
+kaggle.json
+*token*.json
+*.pem
+*.key

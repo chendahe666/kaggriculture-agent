@@ -1,0 +1,4 @@
+# Preserve source and license bytes for SHA256-pinned submission artifacts.
+/main.py -text whitespace=cr-at-eol
+/THIRD_PARTY_NOTICES.md -text
+/LICENSE-APACHE-2.0.txt -text

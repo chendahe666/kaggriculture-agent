@@ -1,0 +1,2 @@
+# Research hashes identify original bytes, including historical Windows line endings.
+* -text whitespace=cr-at-eol

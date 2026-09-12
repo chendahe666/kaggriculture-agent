@@ -1,0 +1,31 @@
+{
+  "updated_local_date": "2026-09-11",
+  "status": "track_p_approved_github_checkpoint",
+  "github_repository": "https://github.com/chendahe666/kaggriculture-agent",
+  "github_policy": "one candidate and its version report per commit; push and verify remote; no Kaggle submission implied",
+  "active_baseline": "public-baseline-v10/main.py",
+  "online_submissions": [56156204, 56156051],
+  "historical_baseline": "candidate/main.py",
+  "completed_rounds": ["K320 market pre-study", "COK market track screening and gated counterexample test"],
+  "retained_research_only_candidate": "experiments/track-market-20260911/gated/main.py",
+  "release_gate_passed": false,
+  "submitted_this_turn": false,
+  "last_track_result": "gated: 7/20 recent own fixed-tape wins unchanged; 7/8 over COK on new seeds; no evidence of broad online uplift",
+  "opened_validation_seeds": [91151, 91152, 91153, 91154],
+  "unopened_reserved_seeds": [91155, 91156, 91157, 91158],
+  "corpus": "results/public-corpus-20260911.json",
+  "canonical_economic_audit": "results/current-corpus-calibration-v2.json",
+  "aggregate_report": "results/research-report-20260911.json",
+  "external_data_access": "official Kaggle CLI works; no credentials or manual replay downloads currently needed",
+  "next_proposed_track": "feed inventory, procurement and production/labor joint planning; preserve COK as fallback and regression control",
+  "reason_for_pause": null,
+  "direction_approval": "2026-09-11: user replied 好的 to proposed Track P and requested per-version GitHub records; checkpoint first, preserve COK control",
+  "resume_after_approval": [
+    "Read OPTIMIZATION_LOG.md and begin a round with hypotheses and evaluation design in chat",
+    "Audit own wheat production/sales/buys/feed obligations and actual fertilizer utilization from calibrated replays",
+    "Build a conservative inventory/reservation model before any new crop or workforce layout",
+    "Compare cost-aware local planning and public-state expert policies on diverse closed-loop opponents and fresh temporal replays",
+    "Keep all previously opened datasets as development evidence; freeze new holdout before model selection",
+    "Do not upload until the whole track satisfies release criteria and user explicitly authorizes submission"
+  ]
+}

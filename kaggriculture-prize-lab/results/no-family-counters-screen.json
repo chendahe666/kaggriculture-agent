@@ -1,0 +1,104 @@
+{
+  "manifest": {
+    "environment": "kaggriculture",
+    "kaggle_environments_version": "1.32.7",
+    "candidate": "C:\\Users\\chend\\OneDrive\\\u6587\u6863\\ChatGPT\\kaggle-agriculture\\kaggriculture-prize-lab\\experiments\\k320-no-family-counters.py",
+    "candidate_sha256": "d4a57667fefb34b7079add1459289d4618829bd8397625389d7dc4a0404e19ab",
+    "opponents": [
+      {
+        "name": "cok-v10",
+        "path": "C:\\Users\\chend\\OneDrive\\\u6587\u6863\\ChatGPT\\kaggle-agriculture\\kaggriculture-prize-lab\\public-baseline-v10\\main.py",
+        "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01"
+      }
+    ],
+    "seeds": [
+      20260811,
+      20260829
+    ],
+    "both_seats": true
+  },
+  "matches": [
+    {
+      "opponent": "cok-v10",
+      "seed": 20260811,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 69796.0,
+      "opponent_reward": 72199.0,
+      "margin": -2403.0,
+      "normalized_margin": -0.033846262192330716,
+      "result": "loss",
+      "seconds": 7.905,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260811,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 69796.0,
+      "opponent_reward": 72199.0,
+      "margin": -2403.0,
+      "normalized_margin": -0.033846262192330716,
+      "result": "loss",
+      "seconds": 11.145,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260829,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 107166.0,
+      "opponent_reward": 109029.0,
+      "margin": -1863.0,
+      "normalized_margin": -0.017234441129535837,
+      "result": "loss",
+      "seconds": 11.492,
+      "stderr": []
+    },
+    {
+      "opponent": "cok-v10",
+      "seed": 20260829,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 105921.0,
+      "opponent_reward": 107064.0,
+      "margin": -1143.0,
+      "normalized_margin": -0.010733150221846609,
+      "result": "loss",
+      "seconds": 11.209,
+      "stderr": []
+    }
+  ],
+  "summaries": [
+    {
+      "opponent": "cok-v10",
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "losses": 4,
+      "win_rate": 0.0,
+      "mean_candidate_reward": 88169.75,
+      "mean_margin": -1953.0,
+      "median_normalized_margin": -0.025540351660933276,
+      "all_done": true
+    }
+  ]
+}

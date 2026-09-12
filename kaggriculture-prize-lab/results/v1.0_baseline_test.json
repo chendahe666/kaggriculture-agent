@@ -1,0 +1,104 @@
+{
+  "manifest": {
+    "environment": "kaggriculture",
+    "kaggle_environments_version": "1.32.7",
+    "candidate": "C:\\Users\\chend\\OneDrive\\\u6587\u6863\\ChatGPT\\kaggle-agriculture\\kaggriculture-prize-lab\\submissions\\v1.0\\main.py",
+    "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+    "opponents": [
+      {
+        "name": "k320",
+        "path": "C:\\Users\\chend\\OneDrive\\\u6587\u6863\\ChatGPT\\kaggle-agriculture\\kaggriculture-prize-lab\\candidate\\main.py",
+        "sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812"
+      }
+    ],
+    "seeds": [
+      20260901,
+      20260902
+    ],
+    "both_seats": true
+  },
+  "matches": [
+    {
+      "opponent": "k320",
+      "seed": 20260901,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 63816.0,
+      "opponent_reward": 62543.0,
+      "margin": 1273.0,
+      "normalized_margin": 0.020148940716529888,
+      "result": "win",
+      "seconds": 4.643,
+      "stderr": []
+    },
+    {
+      "opponent": "k320",
+      "seed": 20260901,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 64148.0,
+      "opponent_reward": 62625.0,
+      "margin": 1523.0,
+      "normalized_margin": 0.024027198220441262,
+      "result": "win",
+      "seconds": 4.692,
+      "stderr": []
+    },
+    {
+      "opponent": "k320",
+      "seed": 20260902,
+      "seat": 0,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 74466.0,
+      "opponent_reward": 70848.0,
+      "margin": 3618.0,
+      "normalized_margin": 0.04979561501300632,
+      "result": "win",
+      "seconds": 4.576,
+      "stderr": []
+    },
+    {
+      "opponent": "k320",
+      "seed": 20260902,
+      "seat": 1,
+      "states": 720,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_reward": 74830.0,
+      "opponent_reward": 71221.0,
+      "margin": 3609.0,
+      "normalized_margin": 0.0494210926320258,
+      "result": "win",
+      "seconds": 4.625,
+      "stderr": []
+    }
+  ],
+  "summaries": [
+    {
+      "opponent": "k320",
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "win_rate": 1.0,
+      "mean_candidate_reward": 69315.0,
+      "mean_margin": 2505.75,
+      "median_normalized_margin": 0.036724145426233534,
+      "all_done": true
+    }
+  ]
+}
