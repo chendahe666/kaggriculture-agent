@@ -1,0 +1,237 @@
+{
+  "rewards": [
+    68658.0,
+    77564.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 846,
+      "FERTILIZER": 201,
+      "WOOL": 168,
+      "MILK": 203,
+      "MELON": 120,
+      "STRAWBERRY": 270
+    },
+    {
+      "WHEAT": 539,
+      "FERTILIZER": 236,
+      "WOOL": 120,
+      "MILK": 279,
+      "MELON": 72,
+      "STRAWBERRY": 271,
+      "CARROT": 11
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 37848,
+      "FERTILIZER": 11490,
+      "WOOL": 35888,
+      "MILK": 15225,
+      "MELON": 14873,
+      "STRAWBERRY": 14840
+    },
+    {
+      "WHEAT": 26234,
+      "FERTILIZER": 13157,
+      "WOOL": 25921,
+      "MILK": 18193,
+      "MELON": 16425,
+      "STRAWBERRY": 18246,
+      "CARROT": 406
+    }
+  ],
+  "floor_units": [
+    {
+      "MILK": 23,
+      "STRAWBERRY": 90,
+      "MELON": 4
+    },
+    {
+      "MILK": 68,
+      "STRAWBERRY": 93
+    }
+  ],
+  "failed_market_commits": [
+    {
+      "SELL:WHEAT": 26,
+      "BUY_PRODUCT:WHEAT": 17,
+      "SELL:FERTILIZER": 59,
+      "SELL:CARROT": 4,
+      "SELL:MELON": 25,
+      "SELL:MILK": 72,
+      "SELL:STRAWBERRY": 58,
+      "SELL:TOMATO": 1,
+      "SELL:WOOL": 39,
+      "SELL:EGG": 1
+    },
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72,
+      "SELL:STRAWBERRY": 1
+    }
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 3200.0,
+      "BUY_SEED:MELON": 1680.0,
+      "BUY_SEED:WHEAT": 660.0,
+      "BUY_PRODUCT:WHEAT": 40663.0,
+      "BUY_ANIMAL:SHEEP": 3000.0,
+      "BUY_SEED:STRAWBERRY": 4400.0
+    },
+    {
+      "BUY_ANIMAL:COW": 4000.0,
+      "BUY_ANIMAL:SHEEP": 2000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 22491.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    }
+  ],
+  "max_call_ms": [
+    2.282,
+    3.9
+  ],
+  "shops": [
+    "PIZZA_SHOP",
+    "BRUNCH_SPOT",
+    "BAKERY",
+    "YARN_STORE",
+    "ICE_CREAM_SHOP",
+    "YARN_STORE",
+    "YARN_STORE",
+    "SMOOTHIE_SHOP"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 1,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "variant": "transport",
+  "candidate_path": "experiments/track-terminal-20260912/transport/main.py",
+  "opponent_path": "public-seyam-v21/main.py",
+  "opponent": "seyam",
+  "family": "closed_loop_expert_route",
+  "seed": 91102,
+  "seat": 1,
+  "split": "development",
+  "key": "seyam-91102-1-transport.json",
+  "started_utc": "2026-09-12T05:21:27.758345+00:00",
+  "completed_utc": "2026-09-12T05:21:34.608145+00:00",
+  "wall_seconds": 6.849765999999363,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "runner_sha256": "1205a7ef72285e7e93caf05d84fbb635ebdce8a1c2046bea1a96c7d92f1e44c9",
+  "candidate_sha256": "5ca5804f7f0f9c89c4c758b2e83d7e70f504f10d45f028accd06adef5eb4df3f",
+  "opponent_sha256": "4c02a323b0939e8f99df69dc6c23026946b033b0d831c79216ffac0ded9c8e60",
+  "evidence": "closed_loop",
+  "margin": 8906.0,
+  "terminal_diagnostics": {
+    "calls": 23,
+    "search_nodes": 0,
+    "tasks": 0,
+    "assigned_workers": 44,
+    "harvest_actions": 20,
+    "fertilizer_actions": 0,
+    "water_actions": 9,
+    "safe_partial_deposits": 0,
+    "capacity_waits": 0
+  },
+  "final_after_market": {
+    "step": 718,
+    "shed": [
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 1,
+        "SHEEP": 0
+      },
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      }
+    ],
+    "carried": [
+      [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ]
+  },
+  "terminal_start": {
+    "sha256": "039e25892ae9d6bc5ef2bcb880aa4fca676eec3d2b795ae45523e8bcd76cba9a"
+  }
+}

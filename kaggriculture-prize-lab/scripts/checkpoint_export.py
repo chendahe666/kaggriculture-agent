@@ -20,6 +20,8 @@ PUBLIC = {
     'public-baseline-v10': ('main.py', 'LICENSE', 'THIRD_PARTY_NOTICES.md'),
     'public-seyam-v21': ('main.py', 'LICENSE', 'THIRD_PARTY_NOTICES.md'),
     'public-lonespear': ('main.py', 'main_bigherd.py', 'main_v9.py', 'LICENSE'),
+    'public-deepesh-20260912': ('main.py', 'LICENSE'),
+    'public-maverick-20260912': ('main.py', 'LICENSE', 'THIRD_PARTY_NOTICES.md'),
 }
 
 

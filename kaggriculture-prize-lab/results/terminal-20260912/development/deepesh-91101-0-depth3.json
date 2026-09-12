@@ -1,0 +1,195 @@
+{
+  "rewards": [
+    155490.0,
+    4669.0
+  ],
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "frames": 720,
+  "errors": [],
+  "actual_sales": [
+    {
+      "WHEAT": 532,
+      "FERTILIZER": 250,
+      "WOOL": 120,
+      "MILK": 279,
+      "MELON": 72,
+      "STRAWBERRY": 276,
+      "CARROT": 11
+    },
+    {
+      "WHEAT": 71
+    }
+  ],
+  "sale_revenue": [
+    {
+      "WHEAT": 23402,
+      "FERTILIZER": 18775,
+      "WOOL": 12253,
+      "MILK": 66401,
+      "MELON": 17440,
+      "STRAWBERRY": 54894,
+      "CARROT": 816
+    },
+    {
+      "WHEAT": 2629
+    }
+  ],
+  "floor_units": [
+    {
+      "WOOL": 31
+    },
+    {}
+  ],
+  "failed_market_commits": [
+    {
+      "BUY_PRODUCT:WHEAT": 1,
+      "SELL:FERTILIZER": 189,
+      "SELL:WHEAT": 72
+    },
+    {}
+  ],
+  "market_spending": [
+    {
+      "BUY_ANIMAL:COW": 4000.0,
+      "BUY_ANIMAL:SHEEP": 2000.0,
+      "BUY_SEED:WHEAT": 1290.0,
+      "BUY_SEED:MELON": 960.0,
+      "BUY_PRODUCT:WHEAT": 19964.0,
+      "BUY_SEED:STRAWBERRY": 4200.0,
+      "BUY_SEED:CARROT": 100.0
+    },
+    {
+      "BUY_SEED:WHEAT": 960.0
+    }
+  ],
+  "max_call_ms": [
+    283.957,
+    0.367
+  ],
+  "shops": [
+    "PET_CAFE",
+    "FARMERS_MARKET",
+    "PIZZA_SHOP",
+    "PIZZA_SHOP",
+    "ICE_CREAM_SHOP",
+    "ICE_CREAM_SHOP",
+    "ICE_CREAM_SHOP",
+    "FARMERS_MARKET"
+  ],
+  "terminal_stock": [
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 0,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    }
+  ],
+  "variant": "depth3",
+  "candidate_path": "experiments/track-terminal-20260912/depth3/main.py",
+  "opponent_path": "public-deepesh-20260912/main.py",
+  "opponent": "deepesh",
+  "family": "single_farmer_staple_greedy",
+  "seed": 91101,
+  "seat": 0,
+  "split": "development",
+  "key": "deepesh-91101-0-depth3.json",
+  "started_utc": "2026-09-12T05:20:45.329734+00:00",
+  "completed_utc": "2026-09-12T05:20:53.128449+00:00",
+  "wall_seconds": 7.798668700037524,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "runner_sha256": "1205a7ef72285e7e93caf05d84fbb635ebdce8a1c2046bea1a96c7d92f1e44c9",
+  "candidate_sha256": "448d398eedba9cbffc6abcec0ab214a4910c5c917f43c2457fe730dd4d43db84",
+  "opponent_sha256": "bad9dd849ee6b828183ee938d2a5732835715a23fcb25082269ba95c54808cf6",
+  "evidence": "closed_loop",
+  "margin": 150821.0,
+  "terminal_diagnostics": {
+    "calls": 23,
+    "search_nodes": 156546,
+    "tasks": 601,
+    "assigned_workers": 98,
+    "harvest_actions": 18,
+    "fertilizer_actions": 14,
+    "water_actions": 5,
+    "safe_partial_deposits": 0,
+    "capacity_waits": 0
+  },
+  "final_after_market": {
+    "step": 718,
+    "shed": [
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      }
+    ],
+    "carried": [
+      [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "WHEAT": 4
+        }
+      ]
+    ]
+  },
+  "terminal_start": {
+    "sha256": "cc3ef30c16227aba440e469a5ab1308d7b6162468462e05e802ff713126c24e5"
+  }
+}

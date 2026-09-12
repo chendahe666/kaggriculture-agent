@@ -1,6 +1,9 @@
 {
   "updated_local_date": "2026-09-12",
-  "status": "competition_research_skill_installed_no_strategy_promotion_track_p_approved_not_started",
+  "status": "P2_terminal_joint_planning_development_running_no_promotion",
+  "current_round_plan": "reports/p2-20260912-plan.md",
+  "current_round_results": "results/terminal-20260912/development-summary.json",
+  "conditional_submission_authorization": "2026-09-12 latest user explicitly authorizes baseline optimization when simulation evidence supports it, then Kaggle submission; release gates still apply",
   "latest_general_research_report": "reports/competition-research-20260912.md",
   "competition_research_skill": {
     "version": "0.1.1",
@@ -37,6 +40,7 @@
   "retained_research_only_candidate": "experiments/track-market-20260911/gated/main.py",
   "release_gate_passed": false,
   "submitted_this_turn": false,
+  "kaggle_access_check": {"date_utc": "2026-09-12", "status": "official CLI authenticated read succeeded", "submission_score_snapshots": {"56156204": 1258.8, "56156051": 1298.9}, "interpretation": "same-code transient ratings, not paired algorithm evidence"},
   "last_track_result": "P1: 9 candidates, 296 simulations; no promotion. Macro synthesis distinguishes mechanism/counterexample/observation/policy from H01/H02 unvalidated hypotheses",
   "opened_validation_seeds": [91151, 91152, 91153, 91154],
   "unopened_reserved_seeds": [91155, 91156, 91157, 91158],
@@ -44,8 +48,8 @@
   "canonical_economic_audit": "results/current-corpus-calibration-v2.json",
   "aggregate_report": "results/research-report-20260911.json",
   "external_data_access": "official Kaggle CLI works; no credentials or manual replay downloads currently needed",
-  "next_proposed_track": "P in RESEARCH_TRACKS.md: isolated state-driven production/transport planning is direction-approved but not started; maintain E/G evidence controls and retain the COK baseline",
-  "reason_for_pause": "Local inventory patch family has no outcome uplift after mechanism fixes, ablations and broader controls. Track P direction is approved, but no new planner experiment has started in this checkpoint; this is not a claim that all algorithms are exhausted.",
+  "next_proposed_track": "P2: last-day state-driven harvest/transport/liquidation, depth 1/2/3 and transport-only ablation. E/G paired gate and new public opponent audit in parallel. COK remains active control.",
+  "reason_for_pause": null,
   "direction_approval": "2026-09-11: user replied 好的 to proposed Track P and requested per-version GitHub records; checkpoint first, preserve COK control",
   "resume_after_approval": [
     "Read OPTIMIZATION_LOG.md and begin a round with hypotheses and evaluation design in chat",

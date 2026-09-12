@@ -1,0 +1,202 @@
+{
+  "split": "development_only",
+  "total_simulations": 80,
+  "variants": {
+    "depth1": {
+      "candidate_sha256": [
+        "7e1225a6b67800ce70544162f594a6a4626c756ea547ff47bb6d84cb44dfbe0d"
+      ],
+      "games": 16,
+      "paired": 16,
+      "family": {
+        "closed_loop_expert_route": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 495.25
+        },
+        "greedy_dynamic_lineage": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 410.25
+        },
+        "reconstructed_mixed_route": {
+          "games": 4,
+          "baseline_points": 2.0,
+          "candidate_points": 2.0,
+          "gain": 0.0,
+          "mean_margin_gain": 502.0
+        },
+        "single_farmer_staple_greedy": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 97.25
+        }
+      },
+      "macro_gain": 0.0,
+      "mean_margin_gain": 376.1875,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "baseline_points": 14.0,
+      "candidate_points": 14.0,
+      "mean_wall_seconds": 6.956559999991441,
+      "max_call_ms": 170.966,
+      "mean_search_nodes": 15033.3125,
+      "mean_terminal_cargo": 0,
+      "all_clean": true,
+      "decision": "DEVELOPMENT_NOT_A_RELEASE_GATE"
+    },
+    "depth2": {
+      "candidate_sha256": [
+        "0692a62a180906eca9ea292d1a9badcbbfe09659790105f53b98f9a71f0c2b57"
+      ],
+      "games": 16,
+      "paired": 16,
+      "family": {
+        "closed_loop_expert_route": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 557.5
+        },
+        "greedy_dynamic_lineage": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 517.5
+        },
+        "reconstructed_mixed_route": {
+          "games": 4,
+          "baseline_points": 2.0,
+          "candidate_points": 2.0,
+          "gain": 0.0,
+          "mean_margin_gain": 543.25
+        },
+        "single_farmer_staple_greedy": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 96.75
+        }
+      },
+      "macro_gain": 0.0,
+      "mean_margin_gain": 428.75,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "baseline_points": 14.0,
+      "candidate_points": 14.0,
+      "mean_wall_seconds": 7.969687781242101,
+      "max_call_ms": 223.165,
+      "mean_search_nodes": 96850.875,
+      "mean_terminal_cargo": 0,
+      "all_clean": true,
+      "decision": "DEVELOPMENT_NOT_A_RELEASE_GATE"
+    },
+    "depth3": {
+      "candidate_sha256": [
+        "448d398eedba9cbffc6abcec0ab214a4910c5c917f43c2457fe730dd4d43db84"
+      ],
+      "games": 16,
+      "paired": 16,
+      "family": {
+        "closed_loop_expert_route": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 551.25
+        },
+        "greedy_dynamic_lineage": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 562.5
+        },
+        "reconstructed_mixed_route": {
+          "games": 4,
+          "baseline_points": 2.0,
+          "candidate_points": 2.0,
+          "gain": 0.0,
+          "mean_margin_gain": 569.5
+        },
+        "single_farmer_staple_greedy": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 87.25
+        }
+      },
+      "macro_gain": 0.0,
+      "mean_margin_gain": 442.625,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "baseline_points": 14.0,
+      "candidate_points": 14.0,
+      "mean_wall_seconds": 8.739568531244004,
+      "max_call_ms": 411.358,
+      "mean_search_nodes": 149473.75,
+      "mean_terminal_cargo": 0,
+      "all_clean": true,
+      "decision": "DEVELOPMENT_NOT_A_RELEASE_GATE"
+    },
+    "transport": {
+      "candidate_sha256": [
+        "5ca5804f7f0f9c89c4c758b2e83d7e70f504f10d45f028accd06adef5eb4df3f"
+      ],
+      "games": 16,
+      "paired": 16,
+      "family": {
+        "closed_loop_expert_route": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 510.0
+        },
+        "greedy_dynamic_lineage": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": 65.25
+        },
+        "reconstructed_mixed_route": {
+          "games": 4,
+          "baseline_points": 2.0,
+          "candidate_points": 2.0,
+          "gain": 0.0,
+          "mean_margin_gain": 360.0
+        },
+        "single_farmer_staple_greedy": {
+          "games": 4,
+          "baseline_points": 4.0,
+          "candidate_points": 4.0,
+          "gain": 0.0,
+          "mean_margin_gain": -107.5
+        }
+      },
+      "macro_gain": 0.0,
+      "mean_margin_gain": 206.9375,
+      "positive_outcome_flips": 0,
+      "negative_outcome_flips": 0,
+      "baseline_points": 14.0,
+      "candidate_points": 14.0,
+      "mean_wall_seconds": 8.102660224998544,
+      "max_call_ms": 186.266,
+      "mean_search_nodes": 0,
+      "mean_terminal_cargo": 0,
+      "all_clean": true,
+      "decision": "DEVELOPMENT_NOT_A_RELEASE_GATE"
+    }
+  }
+}

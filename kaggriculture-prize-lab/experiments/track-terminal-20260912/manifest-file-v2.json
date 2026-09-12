@@ -1,0 +1,45 @@
+{
+  "baseline_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "variants": {
+    "depth1": {
+      "depth": 1,
+      "mode": "planner",
+      "sha256": "7e1225a6b67800ce70544162f594a6a4626c756ea547ff47bb6d84cb44dfbe0d"
+    },
+    "depth2": {
+      "depth": 2,
+      "mode": "planner",
+      "sha256": "0692a62a180906eca9ea292d1a9badcbbfe09659790105f53b98f9a71f0c2b57"
+    },
+    "depth3": {
+      "depth": 3,
+      "mode": "planner",
+      "sha256": "448d398eedba9cbffc6abcec0ab214a4910c5c917f43c2457fe730dd4d43db84"
+    },
+    "transport": {
+      "depth": 1,
+      "mode": "transport",
+      "sha256": "5ca5804f7f0f9c89c4c758b2e83d7e70f504f10d45f028accd06adef5eb4df3f"
+    },
+    "depth1-file": {
+      "depth": 1,
+      "mode": "planner",
+      "sha256": "f6c12107f65c4f344dc2eaafebc744510f51a0eb10e4c705f2808bbebd512674"
+    },
+    "depth2-file": {
+      "depth": 2,
+      "mode": "planner",
+      "sha256": "c06dc267e07ce5b07e8bf5380104dc3c87efbbbcdaf72386677ba31e7bb55624"
+    },
+    "depth3-file": {
+      "depth": 3,
+      "mode": "planner",
+      "sha256": "d8d8b3b0b6bfdf88b890791f597ec147ab616f936a2a576fb1c954983fe518a8"
+    },
+    "transport-file": {
+      "depth": 1,
+      "mode": "transport",
+      "sha256": "901cf683dc605906f6014427a75e4cb9ce8ac97502bd8fdf1c0e1aeb5fc304df"
+    }
+  }
+}
