@@ -23,7 +23,7 @@ elif a.mode=='historical':
     title=f'archive(Kaggle): preserve submission {a.name}'
     body=json.dumps(manifest,ensure_ascii=False,indent=2)
 else:
-    relatives=['PIPELINE_PROMPT.md','OPTIMIZATION_LOG.md','research-state.json','reports/r3-20260917-plan.md','reports/r3-20260917-report.md','tests/test_monitoring.py','tests/test_r3.py']
+    relatives=['PIPELINE_PROMPT.md','OPTIMIZATION_LOG.md','research-state.json','reports/r3-20260917-plan.md','reports/r3-20260917-report.md','reports/r3-20260917-handoff.md','tests/test_monitoring.py','tests/test_r3.py']
     relatives+=['scripts/'+s for s in ('run_r2.py','run_r3.py','collect_r3.py','extract_r3_sources.py','audit_r3_sources.py','build_r3.py','analyze_r3.py','report_r3_data.py','render_r3_report.py','submit_r3.py','export_r3.py','monitor_scores.py','archive_submission.py')]
     relatives+=['results/r3-20260917/'+s for s in ('final-evaluation.json','paired-results.json','online-summary.json','online-games.json','test-receipt.json','reviewed-report.json')]
     paths=[ROOT/s for s in relatives]

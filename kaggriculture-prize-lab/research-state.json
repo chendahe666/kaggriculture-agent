@@ -16,7 +16,8 @@
     "submission_scope": "One explicitly authorized online trial; user accepts A leaving latest2; latest2 are B+R3",
     "server_status": "COMPLETE at2026-09-17T13:07:34.403177Z; initial600.0, not mature rating; remaining2",
     "working_copy": "C project only; E remains unsynchronized R3 backup; automation still PAUSED",
-    "report": "reports/r3-20260917-report.md"
+    "report": "reports/r3-20260917-report.md",
+    "github": "Local version commits and three archive branches created. Ordinary push failed: HTTPS credentials unavailable. No remote synchronization claim. See reports/r3-20260917-handoff.md."
   },
   "scheduled_workflow": {
     "automation_id": "kaggriculture",
@@ -28,7 +29,7 @@
     "safety": "no blind upload retries or catch-up batches; platform limits and correctness/resource gates apply",
     "migration": "Copied to E:/kaggle-agriculture; 6185files SHA256 identical at2026-09-17T05:12:17.9131093Z. C source retained. Awaiting user project-path rebind; see MIGRATION_STATUS.md. E filesystem warning unresolved.",
     "automation_status": "PAUSED during project path migration; verify actual E directory/permissions and update same task before resuming",
-    "setup_gaps": "GitHub archive branches not yet created/pushed. Seven source bindings prepared; two oldest source bindings unresolved. Archive helper not yet integration-tested; initial monitoring6 tests:5pass,1sandbox temp-permission error. Validate these before unattended publication. Initial snapshot reported zero counted games despite rating updates; inspect raw episode enum values before treating this as no matches."
+    "setup_gaps": "R3 fixed PUBLIC enum; monitoring7/7 and full228tests passed. Historical archive created for9submissions:7withsource,2metadataonly. Three local archive branches created; HTTPS credential error still blockspush. C/E project rebind and R3delta sync unresolved; automation remainsPAUSED."
   },
   "status": "R3_single_trial_uploaded_56305191_not_rating_validated",
   "R2": {
