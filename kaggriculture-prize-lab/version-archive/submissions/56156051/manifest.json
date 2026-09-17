@@ -1,0 +1,31 @@
+{
+  "submission_id": 56156051,
+  "submitted_utc": "2026-09-11T01:40:53.617Z",
+  "archived_utc": "2026-09-17T13:05:47.726826+00:00",
+  "pre_submit_verified_utc": null,
+  "code_created_utc": null,
+  "archive_kind": "historical_backfill",
+  "initial_archive_score_observation": {
+    "score": "1297.8",
+    "observed_utc": "2026-09-17T12:42:19.703972+00:00"
+  },
+  "server_status_at_archive": "COMPLETE",
+  "description": "",
+  "snapshot": "snapshot.json",
+  "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "binding_status": "local_historical_evidence_and_server_byte_count_not_server_download_hash",
+  "notes": "Server timestamps are distinct from present archival time; missing times are not reconstructed.",
+  "source": "public-baseline-v10/main.py",
+  "baseline_name": "COK V10 unchanged public baseline",
+  "changes": "Same exact bytes as56156204; duplicate confirmed by user.",
+  "hypothesis": "Public baseline trial; no optimization difference.",
+  "evaluation": "See historical COK report; differences between duplicate ratings do not identify a code effect.",
+  "reports": [
+    "reports/versions/cok-v10-baseline.md"
+  ],
+  "licenses": [
+    "public-baseline-v10/LICENSE",
+    "public-baseline-v10/THIRD_PARTY_NOTICES.md"
+  ],
+  "bytes": 190485
+}
