@@ -1,0 +1,7 @@
+{
+  "name": "clean",
+  "parent": "experiments\\track-r2-20260916\\route-counter-35\\main.py",
+  "parent_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+  "sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+  "patch": "\n# R3: non-speculative funded opening. V46 production/advance layers unchanged.\n# All inherited Apache-2.0 notices retained. Mechanism inspired by Nathan Jacob pipe-8.\n_OPEN_STEP0=[['BUY_PRODUCT','WHEAT',5]]\n"
+}
