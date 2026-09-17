@@ -1,0 +1,31 @@
+{
+  "submission_id": 56156204,
+  "submitted_utc": "2026-09-11T01:50:19.597Z",
+  "archived_utc": "2026-09-17T13:05:47.758726+00:00",
+  "pre_submit_verified_utc": null,
+  "code_created_utc": null,
+  "archive_kind": "historical_backfill",
+  "initial_archive_score_observation": {
+    "score": "1255.5",
+    "observed_utc": "2026-09-17T12:42:19.703972+00:00"
+  },
+  "server_status_at_archive": "COMPLETE",
+  "description": "Baseline 1.0 - COK V10 Base Agent",
+  "snapshot": "snapshot.json",
+  "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+  "binding_status": "local_historical_evidence_and_server_byte_count_not_server_download_hash",
+  "notes": "Server timestamps are distinct from present archival time; missing times are not reconstructed.",
+  "source": "public-baseline-v10/main.py",
+  "baseline_name": "COK V10 unchanged public baseline",
+  "changes": "Unmodified source; duplicate submission confirmed by user.",
+  "hypothesis": "Public baseline replacement; not a new optimization.",
+  "evaluation": "See historical COK baseline report; current score is observation, not paired comparison.",
+  "reports": [
+    "reports/versions/cok-v10-baseline.md"
+  ],
+  "licenses": [
+    "public-baseline-v10/LICENSE",
+    "public-baseline-v10/THIRD_PARTY_NOTICES.md"
+  ],
+  "bytes": 190485
+}
