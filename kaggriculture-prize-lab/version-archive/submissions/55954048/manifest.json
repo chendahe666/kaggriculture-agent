@@ -1,0 +1,18 @@
+{
+  "submission_id": 55954048,
+  "submitted_utc": "2026-09-02T04:48:48.073Z",
+  "archived_utc": "2026-09-17T13:05:47.684340+00:00",
+  "pre_submit_verified_utc": null,
+  "code_created_utc": null,
+  "archive_kind": "historical_backfill",
+  "initial_archive_score_observation": {
+    "score": "226.9",
+    "observed_utc": "2026-09-17T12:42:19.703972+00:00"
+  },
+  "server_status_at_archive": "COMPLETE",
+  "description": "V0 deterministic wheat baseline",
+  "snapshot": "snapshot.json",
+  "sha256": null,
+  "binding_status": "metadata_only_source_unresolved",
+  "notes": "Server timestamps are distinct from present archival time; missing times are not reconstructed."
+}
