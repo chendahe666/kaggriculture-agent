@@ -1,0 +1,9 @@
+{
+ "command":"py -3.13 -m unittest discover -s kaggriculture-prize-lab/tests",
+ "tests":228,
+ "seconds":86.437,
+ "passed":true,
+ "exit_code":0,
+ "additional_focused_runs":{"test_r3":7,"test_monitoring":7},
+ "notes":"Full test suite includes focused tests; do not add counts as independent tests. Optional OpenSpiel registration warnings occurred before suite; Kaggriculture tests passed. Local tests are not Kaggle sandbox verification."
+}

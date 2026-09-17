@@ -1,0 +1,413 @@
+{
+  "generated_utc": "2026-09-17T13:02:06.836870+00:00",
+  "full_games": 64,
+  "all_valid": true,
+  "candidates": {
+    "A": {
+      "all": {
+        "n": 22,
+        "wins": 10,
+        "ties": 2,
+        "losses": 10,
+        "outcome_rate": 0.5
+      },
+      "by_opponent": {
+        "cok": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        },
+        "deepesh": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        },
+        "jaxa": {
+          "n": 6,
+          "wins": 0,
+          "ties": 2,
+          "losses": 4,
+          "outcome_rate": 0.16666666666666666
+        },
+        "pipe8": {
+          "n": 6,
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.6666666666666666
+        },
+        "tetsutani": {
+          "n": 4,
+          "wins": 0,
+          "ties": 0,
+          "losses": 4,
+          "outcome_rate": 0.0
+        },
+        "v46": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        }
+      },
+      "max_call_seconds": 0.128419,
+      "min_overage_seconds": 60.0,
+      "sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282"
+    },
+    "adaptive": {
+      "all": {
+        "n": 6,
+        "wins": 4,
+        "ties": 0,
+        "losses": 2,
+        "outcome_rate": 0.6666666666666666
+      },
+      "by_opponent": {
+        "jaxa": {
+          "n": 2,
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.0
+        },
+        "pipe8": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        },
+        "v46": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        }
+      },
+      "max_call_seconds": 0.122684,
+      "min_overage_seconds": 60.0,
+      "sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc"
+    },
+    "clean": {
+      "all": {
+        "n": 24,
+        "wins": 14,
+        "ties": 4,
+        "losses": 6,
+        "outcome_rate": 0.6666666666666666
+      },
+      "by_opponent": {
+        "clean": {
+          "n": 2,
+          "wins": 0,
+          "ties": 2,
+          "losses": 0,
+          "outcome_rate": 0.5
+        },
+        "cok": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        },
+        "deepesh": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        },
+        "jaxa": {
+          "n": 6,
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.6666666666666666
+        },
+        "pipe8": {
+          "n": 6,
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.6666666666666666
+        },
+        "tetsutani": {
+          "n": 4,
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.5
+        },
+        "v46": {
+          "n": 2,
+          "wins": 0,
+          "ties": 2,
+          "losses": 0,
+          "outcome_rate": 0.5
+        }
+      },
+      "max_call_seconds": 0.129493,
+      "min_overage_seconds": 60.0,
+      "sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885"
+    },
+    "cok": {
+      "all": {
+        "n": 4,
+        "wins": 0,
+        "ties": 0,
+        "losses": 4,
+        "outcome_rate": 0.0
+      },
+      "by_opponent": {
+        "jaxa": {
+          "n": 2,
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.0
+        },
+        "pipe8": {
+          "n": 2,
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "outcome_rate": 0.0
+        }
+      },
+      "max_call_seconds": 0.097919,
+      "min_overage_seconds": 60.0,
+      "sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01"
+    },
+    "v46": {
+      "all": {
+        "n": 4,
+        "wins": 4,
+        "ties": 0,
+        "losses": 0,
+        "outcome_rate": 1.0
+      },
+      "by_opponent": {
+        "jaxa": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        },
+        "pipe8": {
+          "n": 2,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "outcome_rate": 1.0
+        }
+      },
+      "max_call_seconds": 0.101351,
+      "min_overage_seconds": 60.0,
+      "sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+    }
+  },
+  "paired_confirmation": [
+    {
+      "opponent": "cok",
+      "seed": 917401,
+      "seat": 0,
+      "baseline_margin": 33317.0,
+      "candidate_margin": 33300.0,
+      "baseline_points": 1.0,
+      "candidate_points": 1.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "cok",
+      "seed": 917401,
+      "seat": 1,
+      "baseline_margin": 33317.0,
+      "candidate_margin": 33300.0,
+      "baseline_points": 1.0,
+      "candidate_points": 1.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "deepesh",
+      "seed": 917401,
+      "seat": 0,
+      "baseline_margin": 82031.0,
+      "candidate_margin": 82027.0,
+      "baseline_points": 1.0,
+      "candidate_points": 1.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "deepesh",
+      "seed": 917401,
+      "seat": 1,
+      "baseline_margin": 82031.0,
+      "candidate_margin": 82027.0,
+      "baseline_points": 1.0,
+      "candidate_points": 1.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "jaxa",
+      "seed": 917401,
+      "seat": 0,
+      "baseline_margin": 0.0,
+      "candidate_margin": 150.0,
+      "baseline_points": 0.5,
+      "candidate_points": 1.0,
+      "delta": 0.5,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "jaxa",
+      "seed": 917401,
+      "seat": 1,
+      "baseline_margin": 0.0,
+      "candidate_margin": 150.0,
+      "baseline_points": 0.5,
+      "candidate_points": 1.0,
+      "delta": 0.5,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "jaxa",
+      "seed": 917402,
+      "seat": 0,
+      "baseline_margin": -784.0,
+      "candidate_margin": -1152.0,
+      "baseline_points": 0.0,
+      "candidate_points": 0.0,
+      "delta": 0.0,
+      "shop_path_same": false,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "jaxa",
+      "seed": 917402,
+      "seat": 1,
+      "baseline_margin": -784.0,
+      "candidate_margin": -1152.0,
+      "baseline_points": 0.0,
+      "candidate_points": 0.0,
+      "delta": 0.0,
+      "shop_path_same": false,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "pipe8",
+      "seed": 917401,
+      "seat": 0,
+      "baseline_margin": 369.0,
+      "candidate_margin": 758.0,
+      "baseline_points": 1.0,
+      "candidate_points": 1.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "pipe8",
+      "seed": 917401,
+      "seat": 1,
+      "baseline_margin": 369.0,
+      "candidate_margin": 758.0,
+      "baseline_points": 1.0,
+      "candidate_points": 1.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "pipe8",
+      "seed": 917402,
+      "seat": 0,
+      "baseline_margin": -865.0,
+      "candidate_margin": -898.0,
+      "baseline_points": 0.0,
+      "candidate_points": 0.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "pipe8",
+      "seed": 917402,
+      "seat": 1,
+      "baseline_margin": -865.0,
+      "candidate_margin": -898.0,
+      "baseline_points": 0.0,
+      "candidate_points": 0.0,
+      "delta": 0.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "tetsutani",
+      "seed": 917401,
+      "seat": 0,
+      "baseline_margin": -24.0,
+      "candidate_margin": 295.0,
+      "baseline_points": 0.0,
+      "candidate_points": 1.0,
+      "delta": 1.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "tetsutani",
+      "seed": 917401,
+      "seat": 1,
+      "baseline_margin": -24.0,
+      "candidate_margin": 295.0,
+      "baseline_points": 0.0,
+      "candidate_points": 1.0,
+      "delta": 1.0,
+      "shop_path_same": true,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "tetsutani",
+      "seed": 917402,
+      "seat": 0,
+      "baseline_margin": -1150.0,
+      "candidate_margin": -1165.0,
+      "baseline_points": 0.0,
+      "candidate_points": 0.0,
+      "delta": 0.0,
+      "shop_path_same": false,
+      "split": "confirmatory"
+    },
+    {
+      "opponent": "tetsutani",
+      "seed": 917402,
+      "seat": 1,
+      "baseline_margin": -1150.0,
+      "candidate_margin": -1165.0,
+      "baseline_points": 0.0,
+      "candidate_points": 0.0,
+      "delta": 0.0,
+      "shop_path_same": false,
+      "split": "confirmatory"
+    }
+  ],
+  "formal_promotion": false,
+  "reason": "Bounded pilot, not five families x30 seeds; no calibrated Kaggle rating prediction"
+}

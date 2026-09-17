@@ -1,0 +1,1158 @@
+{
+  "surface": "report",
+  "title": "2000分来自生产底座升级，开局反制仍需取舍",
+  "generatedAt": "2026-09-17T13:02:06.836870+00:00",
+  "status": "observed",
+  "buildStatus": "creating",
+  "filters": [],
+  "report": {
+    "asOf": "2026-09-17T12:42:22.149553+00:00"
+  },
+  "queries": {
+    "online": {
+      "rows": [
+        {
+          "submission": 56294957,
+          "score": 617.2,
+          "win": 14,
+          "tie": 0,
+          "loss": 15,
+          "unknown_completed_public": 0,
+          "n": 29,
+          "outcome_rate": 0.4827586206896552,
+          "slices": {
+            "low_<1200": {
+              "win": 7,
+              "tie": 0,
+              "loss": 6,
+              "unknown_completed_public": 0,
+              "n": 13,
+              "outcome_rate": 0.5384615384615384
+            },
+            "high_>=1600": {
+              "win": 0,
+              "tie": 0,
+              "loss": 1,
+              "unknown_completed_public": 0,
+              "n": 1,
+              "outcome_rate": 0.0
+            },
+            "unknown": {
+              "win": 7,
+              "tie": 0,
+              "loss": 8,
+              "unknown_completed_public": 0,
+              "n": 15,
+              "outcome_rate": 0.4666666666666667
+            }
+          },
+          "first20": {
+            "win": 11,
+            "tie": 0,
+            "loss": 9,
+            "unknown_completed_public": 0,
+            "n": 20,
+            "outcome_rate": 0.55
+          },
+          "last20": {
+            "win": 8,
+            "tie": 0,
+            "loss": 12,
+            "unknown_completed_public": 0,
+            "n": 20,
+            "outcome_rate": 0.4
+          }
+        },
+        {
+          "submission": 56294951,
+          "score": 2147.0,
+          "win": 75,
+          "tie": 1,
+          "loss": 12,
+          "unknown_completed_public": 0,
+          "n": 88,
+          "outcome_rate": 0.8579545454545454,
+          "slices": {
+            "high_>=1600": {
+              "win": 49,
+              "tie": 1,
+              "loss": 11,
+              "unknown_completed_public": 0,
+              "n": 61,
+              "outcome_rate": 0.8114754098360656
+            },
+            "unknown": {
+              "win": 11,
+              "tie": 0,
+              "loss": 1,
+              "unknown_completed_public": 0,
+              "n": 12,
+              "outcome_rate": 0.9166666666666666
+            },
+            "middle_1200_1599": {
+              "win": 7,
+              "tie": 0,
+              "loss": 0,
+              "unknown_completed_public": 0,
+              "n": 7,
+              "outcome_rate": 1.0
+            },
+            "low_<1200": {
+              "win": 8,
+              "tie": 0,
+              "loss": 0,
+              "unknown_completed_public": 0,
+              "n": 8,
+              "outcome_rate": 1.0
+            }
+          },
+          "first20": {
+            "win": 19,
+            "tie": 0,
+            "loss": 1,
+            "unknown_completed_public": 0,
+            "n": 20,
+            "outcome_rate": 0.95
+          },
+          "last20": {
+            "win": 15,
+            "tie": 0,
+            "loss": 5,
+            "unknown_completed_public": 0,
+            "n": 20,
+            "outcome_rate": 0.75
+          }
+        }
+      ],
+      "source": {
+        "type": "file",
+        "name": "Kaggriculture R3 verified evidence",
+        "files": [
+          "results/r3-20260917/online-summary.json"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Acquisition and transformation",
+            "detail": "Official Kaggle SDK competition_submissions(kaggriculture, page_size=100), competition_list_episodes(56294951), competition_list_episodes(56294957). Snapshot 2026-09-17T12:42:22.149553+00:00. All returned unique completed public games; validation games excluded."
+          }
+        ],
+        "caveats": [
+          "Current opponent ratings are not prematch ratings. Fixed pool and few seeds do not imply leaderboard score."
+        ]
+      },
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run scripts/analyze_r3.py against frozen inbox/r3-20260917 and results/r3-20260917/runs; group official completed public episodes; exact submission-ID score join; compare terminal rewards."
+        }
+      ]
+    },
+    "confirmation": {
+      "rows": [
+        {
+          "opponent": "cok",
+          "seed": 917401,
+          "seat": 0,
+          "baseline_margin": 33317.0,
+          "candidate_margin": 33300.0,
+          "baseline_points": 1.0,
+          "candidate_points": 1.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "cok",
+          "seed": 917401,
+          "seat": 1,
+          "baseline_margin": 33317.0,
+          "candidate_margin": 33300.0,
+          "baseline_points": 1.0,
+          "candidate_points": 1.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "deepesh",
+          "seed": 917401,
+          "seat": 0,
+          "baseline_margin": 82031.0,
+          "candidate_margin": 82027.0,
+          "baseline_points": 1.0,
+          "candidate_points": 1.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "deepesh",
+          "seed": 917401,
+          "seat": 1,
+          "baseline_margin": 82031.0,
+          "candidate_margin": 82027.0,
+          "baseline_points": 1.0,
+          "candidate_points": 1.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "jaxa",
+          "seed": 917401,
+          "seat": 0,
+          "baseline_margin": 0.0,
+          "candidate_margin": 150.0,
+          "baseline_points": 0.5,
+          "candidate_points": 1.0,
+          "delta": 0.5,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "jaxa",
+          "seed": 917401,
+          "seat": 1,
+          "baseline_margin": 0.0,
+          "candidate_margin": 150.0,
+          "baseline_points": 0.5,
+          "candidate_points": 1.0,
+          "delta": 0.5,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "jaxa",
+          "seed": 917402,
+          "seat": 0,
+          "baseline_margin": -784.0,
+          "candidate_margin": -1152.0,
+          "baseline_points": 0.0,
+          "candidate_points": 0.0,
+          "delta": 0.0,
+          "shop_path_same": false,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "jaxa",
+          "seed": 917402,
+          "seat": 1,
+          "baseline_margin": -784.0,
+          "candidate_margin": -1152.0,
+          "baseline_points": 0.0,
+          "candidate_points": 0.0,
+          "delta": 0.0,
+          "shop_path_same": false,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "pipe8",
+          "seed": 917401,
+          "seat": 0,
+          "baseline_margin": 369.0,
+          "candidate_margin": 758.0,
+          "baseline_points": 1.0,
+          "candidate_points": 1.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "pipe8",
+          "seed": 917401,
+          "seat": 1,
+          "baseline_margin": 369.0,
+          "candidate_margin": 758.0,
+          "baseline_points": 1.0,
+          "candidate_points": 1.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "pipe8",
+          "seed": 917402,
+          "seat": 0,
+          "baseline_margin": -865.0,
+          "candidate_margin": -898.0,
+          "baseline_points": 0.0,
+          "candidate_points": 0.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "pipe8",
+          "seed": 917402,
+          "seat": 1,
+          "baseline_margin": -865.0,
+          "candidate_margin": -898.0,
+          "baseline_points": 0.0,
+          "candidate_points": 0.0,
+          "delta": 0.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "tetsutani",
+          "seed": 917401,
+          "seat": 0,
+          "baseline_margin": -24.0,
+          "candidate_margin": 295.0,
+          "baseline_points": 0.0,
+          "candidate_points": 1.0,
+          "delta": 1.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "tetsutani",
+          "seed": 917401,
+          "seat": 1,
+          "baseline_margin": -24.0,
+          "candidate_margin": 295.0,
+          "baseline_points": 0.0,
+          "candidate_points": 1.0,
+          "delta": 1.0,
+          "shop_path_same": true,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "tetsutani",
+          "seed": 917402,
+          "seat": 0,
+          "baseline_margin": -1150.0,
+          "candidate_margin": -1165.0,
+          "baseline_points": 0.0,
+          "candidate_points": 0.0,
+          "delta": 0.0,
+          "shop_path_same": false,
+          "split": "confirmatory"
+        },
+        {
+          "opponent": "tetsutani",
+          "seed": 917402,
+          "seat": 1,
+          "baseline_margin": -1150.0,
+          "candidate_margin": -1165.0,
+          "baseline_points": 0.0,
+          "candidate_points": 0.0,
+          "delta": 0.0,
+          "shop_path_same": false,
+          "split": "confirmatory"
+        }
+      ],
+      "source": {
+        "type": "file",
+        "name": "Kaggriculture R3 verified evidence",
+        "files": [
+          "results/r3-20260917/paired-results.json"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Acquisition and transformation",
+            "detail": "Official kaggle-environments 1.32.7, actual Python file loader, full 720 frames, fresh seeds 917401/917402; immutable source hashes in run receipts."
+          }
+        ],
+        "caveats": [
+          "Current opponent ratings are not prematch ratings. Fixed pool and few seeds do not imply leaderboard score."
+        ]
+      },
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run scripts/analyze_r3.py against frozen inbox/r3-20260917 and results/r3-20260917/runs; group official completed public episodes; exact submission-ID score join; compare terminal rewards."
+        }
+      ]
+    },
+    "audits": {
+      "rows": [
+        {
+          "seat": 0,
+          "final_money": 27826.0,
+          "harvest": {
+            "WHEAT": 476,
+            "WOOL": 39,
+            "MELON": 36,
+            "MILK": 32,
+            "STRAWBERRY": 96,
+            "CARROT": 14
+          },
+          "sale_revenue": {
+            "FERTILIZER": 7035.0,
+            "WHEAT": 15874.0,
+            "WOOL": 8498.0,
+            "MELON": 7129.0,
+            "MILK": 6126.0,
+            "STRAWBERRY": 3822.0,
+            "CARROT": 443.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 3491.0,
+            "BUY_SEED:WHEAT": 1880.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_ANIMAL:COW": 2800.0,
+            "BUY_ANIMAL:SHEEP": 1500.0,
+            "BUY_SEED:CARROT": 180.0,
+            "BUY_SEED:STRAWBERRY": 3700.0,
+            "BUY_PRODUCT:FERTILIZER": 2376.0
+          },
+          "hire_cost": 4214.0,
+          "land_cost": 3000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 109934089
+        },
+        {
+          "seat": 1,
+          "final_money": 144910.0,
+          "harvest": {
+            "WHEAT": 567,
+            "WOOL": 161,
+            "MILK": 245,
+            "MELON": 72,
+            "EGG": 87,
+            "STRAWBERRY": 249,
+            "CARROT": 91
+          },
+          "sale_revenue": {
+            "WHEAT": 13046.0,
+            "FERTILIZER": 21726.0,
+            "WOOL": 36845.0,
+            "MILK": 58536.0,
+            "MELON": 16102.0,
+            "EGG": 4919.0,
+            "STRAWBERRY": 17834.0,
+            "CARROT": 2771.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 5117.0,
+            "BUY_ANIMAL:COW": 3200.0,
+            "BUY_ANIMAL:SHEEP": 3000.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_SEED:WHEAT": 1630.0,
+            "BUY_SEED:STRAWBERRY": 3300.0,
+            "BUY_PRODUCT:FERTILIZER": 4101.0,
+            "BUY_ANIMAL:GOOSE": 900.0,
+            "BUY_SEED:CARROT": 620.0
+          },
+          "hire_cost": 4041.0,
+          "land_cost": 3000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 109934089
+        },
+        {
+          "seat": 0,
+          "final_money": 49882.0,
+          "harvest": {
+            "WHEAT": 264,
+            "WOOL": 172,
+            "MILK": 246,
+            "STRAWBERRY": 157,
+            "CARROT": 27
+          },
+          "sale_revenue": {
+            "FERTILIZER": 13805.0,
+            "WHEAT": 50872.0,
+            "WOOL": 4497.0,
+            "MILK": 26900.0,
+            "STRAWBERRY": 19956.0,
+            "CARROT": 1308.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 54405.0,
+            "BUY_SEED:WHEAT": 800.0,
+            "BUY_ANIMAL:COW": 3200.0,
+            "BUY_ANIMAL:SHEEP": 3000.0,
+            "BUY_SEED:STRAWBERRY": 2500.0,
+            "BUY_SEED:CARROT": 240.0
+          },
+          "hire_cost": 5311.0,
+          "land_cost": 1000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 109953373
+        },
+        {
+          "seat": 1,
+          "final_money": 146897.0,
+          "harvest": {
+            "WHEAT": 552,
+            "WOOL": 59,
+            "MILK": 202,
+            "MELON": 72,
+            "EGG": 82,
+            "STRAWBERRY": 219,
+            "TOMATO": 142,
+            "CARROT": 56
+          },
+          "sale_revenue": {
+            "WHEAT": 21115.0,
+            "FERTILIZER": 11083.0,
+            "WOOL": 6132.0,
+            "MILK": 23020.0,
+            "MELON": 17490.0,
+            "EGG": 4345.0,
+            "STRAWBERRY": 37320.0,
+            "TOMATO": 47953.0,
+            "CARROT": 3019.0
+          },
+          "purchase_cost": {
+            "BUY_ANIMAL:COW": 3600.0,
+            "BUY_PRODUCT:WHEAT": 6612.0,
+            "BUY_ANIMAL:SHEEP": 1500.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_SEED:WHEAT": 1790.0,
+            "BUY_SEED:STRAWBERRY": 2800.0,
+            "BUY_ANIMAL:GOOSE": 600.0,
+            "BUY_SEED:TOMATO": 1100.0,
+            "BUY_SEED:CARROT": 600.0
+          },
+          "hire_cost": 5018.0,
+          "land_cost": 3000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 109953373
+        },
+        {
+          "seat": 0,
+          "final_money": 82726.0,
+          "harvest": {
+            "WHEAT": 604,
+            "WOOL": 132,
+            "MILK": 252,
+            "MELON": 72,
+            "EGG": 89,
+            "STRAWBERRY": 251,
+            "CARROT": 92
+          },
+          "sale_revenue": {
+            "WHEAT": 52077.0,
+            "FERTILIZER": 15292.0,
+            "WOOL": 17280.0,
+            "MILK": 27781.0,
+            "MELON": 14267.0,
+            "EGG": 4224.0,
+            "STRAWBERRY": 10804.0,
+            "CARROT": 4971.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 43363.0,
+            "BUY_ANIMAL:COW": 3600.0,
+            "BUY_ANIMAL:SHEEP": 2500.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_SEED:WHEAT": 1620.0,
+            "BUY_SEED:STRAWBERRY": 3300.0,
+            "BUY_PRODUCT:FERTILIZER": 2799.0,
+            "BUY_ANIMAL:GOOSE": 900.0,
+            "BUY_SEED:CARROT": 620.0
+          },
+          "hire_cost": 4308.0,
+          "land_cost": 3000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 109959976
+        },
+        {
+          "seat": 1,
+          "final_money": 82820.0,
+          "harvest": {
+            "WHEAT": 607,
+            "WOOL": 132,
+            "MILK": 252,
+            "MELON": 72,
+            "EGG": 89,
+            "STRAWBERRY": 251,
+            "CARROT": 92
+          },
+          "sale_revenue": {
+            "WHEAT": 51480.0,
+            "FERTILIZER": 15403.0,
+            "WOOL": 17340.0,
+            "MILK": 27675.0,
+            "MELON": 14267.0,
+            "EGG": 4208.0,
+            "STRAWBERRY": 10792.0,
+            "CARROT": 4971.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 42718.0,
+            "BUY_ANIMAL:COW": 3600.0,
+            "BUY_ANIMAL:SHEEP": 2500.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_SEED:WHEAT": 1630.0,
+            "BUY_SEED:STRAWBERRY": 3300.0,
+            "BUY_PRODUCT:FERTILIZER": 2780.0,
+            "BUY_ANIMAL:GOOSE": 900.0,
+            "BUY_SEED:CARROT": 620.0
+          },
+          "hire_cost": 4308.0,
+          "land_cost": 3000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 109959976
+        },
+        {
+          "seat": 0,
+          "final_money": 115664.0,
+          "harvest": {
+            "WHEAT": 559,
+            "WOOL": 104,
+            "MILK": 203,
+            "MELON": 72,
+            "EGG": 83,
+            "STRAWBERRY": 249,
+            "TOMATO": 80,
+            "CARROT": 91
+          },
+          "sale_revenue": {
+            "WHEAT": 17189.0,
+            "FERTILIZER": 20652.0,
+            "WOOL": 6143.0,
+            "MILK": 12018.0,
+            "MELON": 14867.0,
+            "EGG": 4454.0,
+            "STRAWBERRY": 52812.0,
+            "TOMATO": 16930.0,
+            "CARROT": 5860.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 5090.0,
+            "BUY_ANIMAL:COW": 3200.0,
+            "BUY_ANIMAL:SHEEP": 3000.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_SEED:WHEAT": 1630.0,
+            "BUY_SEED:STRAWBERRY": 3300.0,
+            "BUY_PRODUCT:FERTILIZER": 4504.0,
+            "BUY_ANIMAL:GOOSE": 900.0,
+            "BUY_SEED:TOMATO": 500.0,
+            "BUY_SEED:CARROT": 620.0
+          },
+          "hire_cost": 7557.0,
+          "land_cost": 7000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 110011798
+        },
+        {
+          "seat": 1,
+          "final_money": 120579.0,
+          "harvest": {
+            "WHEAT": 488,
+            "WOOL": 61,
+            "MILK": 159,
+            "CARROT": 61,
+            "MELON": 72,
+            "STRAWBERRY": 213,
+            "TOMATO": 208
+          },
+          "sale_revenue": {
+            "WHEAT": 18515.0,
+            "FERTILIZER": 7340.0,
+            "WOOL": 4809.0,
+            "MILK": 8066.0,
+            "CARROT": 3605.0,
+            "MELON": 13632.0,
+            "STRAWBERRY": 45301.0,
+            "TOMATO": 41116.0
+          },
+          "purchase_cost": {
+            "BUY_PRODUCT:WHEAT": 5101.0,
+            "BUY_SEED:WHEAT": 1460.0,
+            "BUY_SEED:MELON": 960.0,
+            "BUY_ANIMAL:COW": 2400.0,
+            "BUY_ANIMAL:SHEEP": 1000.0,
+            "BUY_PRODUCT:FERTILIZER": 1375.0,
+            "BUY_SEED:STRAWBERRY": 3000.0,
+            "BUY_SEED:CARROT": 440.0,
+            "BUY_SEED:TOMATO": 1800.0
+          },
+          "hire_cost": 4269.0,
+          "land_cost": 3000.0,
+          "cash_balance_error": 0.0,
+          "wheat_balance_error": 0,
+          "episode": 110011798
+        }
+      ],
+      "source": {
+        "type": "file",
+        "name": "Kaggriculture R3 verified evidence",
+        "files": [
+          "results/r3-20260917/runs/audit-109959976.json",
+          "results/r3-20260917/runs/audit-110011798.json",
+          "results/r3-20260917/runs/audit-109934089.json",
+          "results/r3-20260917/runs/audit-109953373.json"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Acquisition and transformation",
+            "detail": "Four diagnostic, non-random replays; exact public/private full-state offline calibration; zero state mismatch and zero cash balance error. No private states included in this report snapshot."
+          }
+        ],
+        "caveats": [
+          "Current opponent ratings are not prematch ratings. Fixed pool and few seeds do not imply leaderboard score."
+        ]
+      },
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run scripts/analyze_r3.py against frozen inbox/r3-20260917 and results/r3-20260917/runs; group official completed public episodes; exact submission-ID score join; compare terminal rewards."
+        }
+      ]
+    },
+    "development": {
+      "rows": [
+        {
+          "candidate": "A",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 0,
+          "margin": -134.0,
+          "valid": true,
+          "candidate_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "A",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 1,
+          "margin": -134.0,
+          "valid": true,
+          "candidate_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "A",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 158.0,
+          "valid": true,
+          "candidate_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "A",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 158.0,
+          "valid": true,
+          "candidate_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "A",
+          "opponent": "v46",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 133.0,
+          "valid": true,
+          "candidate_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+          "opponent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+        },
+        {
+          "candidate": "A",
+          "opponent": "v46",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 133.0,
+          "valid": true,
+          "candidate_sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+          "opponent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+        },
+        {
+          "candidate": "adaptive",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 0,
+          "margin": -19.0,
+          "valid": true,
+          "candidate_sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "adaptive",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 1,
+          "margin": -19.0,
+          "valid": true,
+          "candidate_sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "adaptive",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 158.0,
+          "valid": true,
+          "candidate_sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "adaptive",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 158.0,
+          "valid": true,
+          "candidate_sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "adaptive",
+          "opponent": "v46",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 1315.0,
+          "valid": true,
+          "candidate_sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc",
+          "opponent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+        },
+        {
+          "candidate": "adaptive",
+          "opponent": "v46",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 1315.0,
+          "valid": true,
+          "candidate_sha256": "7dc5bcbc548ddb0521e65f4f9aee44fa56fc3640774eeb0f4644c2b482448ffc",
+          "opponent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+        },
+        {
+          "candidate": "clean",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 7.0,
+          "valid": true,
+          "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "clean",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 7.0,
+          "valid": true,
+          "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "clean",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 159.0,
+          "valid": true,
+          "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "clean",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 159.0,
+          "valid": true,
+          "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "clean",
+          "opponent": "v46",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 0.0,
+          "valid": true,
+          "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+          "opponent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+        },
+        {
+          "candidate": "clean",
+          "opponent": "v46",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 0.0,
+          "valid": true,
+          "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+          "opponent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6"
+        },
+        {
+          "candidate": "cok",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 0,
+          "margin": -16299.0,
+          "valid": true,
+          "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "cok",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 1,
+          "margin": -16299.0,
+          "valid": true,
+          "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "cok",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 0,
+          "margin": -16697.0,
+          "valid": true,
+          "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "cok",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 1,
+          "margin": -16697.0,
+          "valid": true,
+          "candidate_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "v46",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 39.0,
+          "valid": true,
+          "candidate_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "v46",
+          "opponent": "jaxa",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 39.0,
+          "valid": true,
+          "candidate_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+          "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56"
+        },
+        {
+          "candidate": "v46",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 0,
+          "margin": 159.0,
+          "valid": true,
+          "candidate_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        },
+        {
+          "candidate": "v46",
+          "opponent": "pipe8",
+          "seed": 917301,
+          "seat": 1,
+          "margin": 159.0,
+          "valid": true,
+          "candidate_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+          "opponent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c"
+        }
+      ],
+      "source": {
+        "type": "file",
+        "name": "Kaggriculture R3 verified evidence",
+        "files": [
+          "results/r3-20260917/runs"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Acquisition and transformation",
+            "detail": "All development games seed917301, both seats, unchanged official file-loader engine; full record source hashes preserved."
+          }
+        ],
+        "caveats": [
+          "Current opponent ratings are not prematch ratings. Fixed pool and few seeds do not imply leaderboard score."
+        ]
+      },
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run scripts/analyze_r3.py against frozen inbox/r3-20260917 and results/r3-20260917/runs; group official completed public episodes; exact submission-ID score join; compare terminal rewards."
+        }
+      ]
+    },
+    "references": {
+      "rows": [
+        {
+          "ref": "jaxa623/2802-two-identical-agents-90-points-apart",
+          "started_utc": "2026-09-17T12:42:34.787699+00:00",
+          "completed_utc": "2026-09-17T12:42:35.680336+00:00",
+          "files": [
+            {
+              "name": "2802-two-identical-agents-90-points-apart.ipynb",
+              "sha256": "2303e2ffcb1754b8f79569bf8fbaf35c4b43097bacf4797cd8aab05b6b74c5fc"
+            },
+            {
+              "name": "kernel-metadata.json",
+              "sha256": "b8541819cd723638cb441d4afe37367ca2d1d446c980f9340539ea1357aef258"
+            }
+          ]
+        },
+        {
+          "ref": "haideptry/v46-vs-pipe-8-vs-jaxa-turn-1-microstructure-war",
+          "started_utc": "2026-09-17T12:42:36.558280+00:00",
+          "completed_utc": "2026-09-17T12:42:37.281575+00:00",
+          "files": [
+            {
+              "name": "kernel-metadata.json",
+              "sha256": "d8bb1e916035bd9ee4ea9ae9276fa1e945e9e2e14ee8b166779f402426d6e112"
+            },
+            {
+              "name": "v46-vs-pipe-8-vs-jaxa-turn-1-microstructure-war.ipynb",
+              "sha256": "b0e57dfa91a66e7ab77bd5440516db57ba2b847c67768e027fec71c6ca0d2079"
+            }
+          ]
+        },
+        {
+          "ref": "nathanjacob/kaggriculture-pipe-8-clean-opening",
+          "started_utc": "2026-09-17T12:42:35.763338+00:00",
+          "completed_utc": "2026-09-17T12:42:36.537813+00:00",
+          "files": [
+            {
+              "name": "kaggriculture-pipe-8-clean-opening.ipynb",
+              "sha256": "469aa3a42d024efe9dacdd3eecb44f8780871768facdf571e36530210ef735c1"
+            },
+            {
+              "name": "kernel-metadata.json",
+              "sha256": "863d9dd049eff7ad354a65c2f7201a26c0651e585179f77e3f003f95f05cf29c"
+            }
+          ]
+        },
+        {
+          "ref": "ahmedberatozer/kaggriculture-v46-first-turn-microstructure-and-s",
+          "started_utc": "2026-09-17T12:42:37.297549+00:00",
+          "completed_utc": "2026-09-17T12:42:38.118781+00:00",
+          "files": [
+            {
+              "name": "kaggriculture-v46-first-turn-microstructure-and-s.ipynb",
+              "sha256": "ccf23bb3e2f9c81b285de9294c6a3095bb28be8ba4c60e6bdacea9dbfa7ffc91"
+            },
+            {
+              "name": "kernel-metadata.json",
+              "sha256": "7e57eb0d493b84e4a69b4833b71224e2db5bd4b900ff63b726641636581aaf93"
+            }
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kaggle/kaggle-environments/master/kaggle_environments/envs/kaggriculture/AGENTS.md",
+          "started_utc": "2026-09-17T12:42:38.899325+00:00",
+          "completed_utc": "2026-09-17T12:42:39.112481+00:00",
+          "sha256": "e1a80501a7b02a212eaac9370ada4129a64e0ee6cb3cbc790f3d77d22863fe22"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kaggle/kaggle-environments/master/kaggle_environments/envs/kaggriculture/kaggriculture.json",
+          "started_utc": "2026-09-17T12:42:38.690210+00:00",
+          "completed_utc": "2026-09-17T12:42:38.897944+00:00",
+          "sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kaggle/kaggle-environments/master/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+          "started_utc": "2026-09-17T12:42:38.132275+00:00",
+          "completed_utc": "2026-09-17T12:42:38.448886+00:00",
+          "sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Kaggle/kaggle-environments/master/kaggle_environments/envs/kaggriculture/README.md",
+          "started_utc": "2026-09-17T12:42:38.449527+00:00",
+          "completed_utc": "2026-09-17T12:42:38.689175+00:00",
+          "sha256": "3081e52baf8eb2da5d861acc63a3636ce29425f6bdb79a67036ba234ac4ade00"
+        }
+      ],
+      "source": {
+        "type": "file",
+        "name": "Kaggriculture R3 verified evidence",
+        "files": [
+          "inbox/r3-20260917/sources/*/acquisition.json",
+          "inbox/r3-20260917/official/*.source.json"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Acquisition and transformation",
+            "detail": "Read-only official SDK kernels_pull of four named notebooks; public GitHub raw official engine/docs; acquisition times and exact raw hashes. Kernel download does not establish claimed leaderboard rating."
+          }
+        ],
+        "caveats": [
+          "Current opponent ratings are not prematch ratings. Fixed pool and few seeds do not imply leaderboard score."
+        ]
+      },
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run scripts/analyze_r3.py against frozen inbox/r3-20260917 and results/r3-20260917/runs; group official completed public episodes; exact submission-ID score join; compare terminal rewards."
+        }
+      ]
+    },
+    "release": {
+      "rows": [
+        {
+          "ref": 56305191,
+          "date": "2026-09-17T13:04:18.407Z",
+          "description": "R3 Clean opening | V46 production retained | dc3d7927",
+          "fileName": "main.py",
+          "totalBytes": 334966,
+          "status": "COMPLETE",
+          "publicScore": "600.0",
+          "checked_utc": "2026-09-17T13:07:34.403177+00:00"
+        },
+        {
+          "ref": 56294957,
+          "date": "2026-09-17T04:41:16.507Z",
+          "description": "R2 B Reactive Hungarian | architecture exploration | c2de9496",
+          "fileName": "main.py",
+          "totalBytes": 46817,
+          "status": "COMPLETE",
+          "publicScore": "617.2",
+          "checked_utc": "2026-09-17T13:07:34.403177+00:00"
+        },
+        {
+          "ref": 56294951,
+          "date": "2026-09-17T04:40:59.870Z",
+          "description": "R2 A Route counter35 | public-state copy defense | c4c890f4",
+          "fileName": "main.py",
+          "totalBytes": 334758,
+          "status": "COMPLETE",
+          "publicScore": "2144.1",
+          "checked_utc": "2026-09-17T13:07:34.403177+00:00"
+        }
+      ],
+      "source": {
+        "type": "file",
+        "name": "Kaggriculture R3 verified evidence",
+        "files": [
+          "results/r3-20260917/submissions/latest-status.json"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Acquisition and transformation",
+            "detail": "Official SDK independently re-listed submissions after single upload; COMPLETE distinct from converged rating."
+          }
+        ],
+        "caveats": [
+          "Current opponent ratings are not prematch ratings. Fixed pool and few seeds do not imply leaderboard score."
+        ]
+      },
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run scripts/analyze_r3.py against frozen inbox/r3-20260917 and results/r3-20260917/runs; group official completed public episodes; exact submission-ID score join; compare terminal rewards."
+        }
+      ]
+    }
+  }
+}

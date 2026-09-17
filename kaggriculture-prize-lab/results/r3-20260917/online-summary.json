@@ -1,0 +1,202 @@
+{
+  "snapshot_utc": "2026-09-17T12:42:22.149553+00:00",
+  "submissions": [
+    {
+      "ref": 56294957,
+      "date": "2026-09-17T04:41:16.507Z",
+      "description": "R2 B Reactive Hungarian | architecture exploration | c2de9496",
+      "fileName": "main.py",
+      "totalBytes": 46817,
+      "status": "COMPLETE",
+      "publicScore": "617.2"
+    },
+    {
+      "ref": 56294951,
+      "date": "2026-09-17T04:40:59.870Z",
+      "description": "R2 A Route counter35 | public-state copy defense | c4c890f4",
+      "fileName": "main.py",
+      "totalBytes": 334758,
+      "status": "COMPLETE",
+      "publicScore": "2147.0"
+    },
+    {
+      "ref": 56180708,
+      "date": "2026-09-12T07:04:00.870Z",
+      "description": "R1 P2-AB safe planner+timing | 8d37e6f4 | user-authorized online exploration",
+      "fileName": "main.py",
+      "totalBytes": 227557,
+      "status": "COMPLETE",
+      "publicScore": "1179.0"
+    },
+    {
+      "ref": 56180702,
+      "date": "2026-09-12T07:03:34.037Z",
+      "description": "R1 P2-A depth2 planner | c06dc267 | user-authorized online exploration",
+      "fileName": "main.py",
+      "totalBytes": 210192,
+      "status": "COMPLETE",
+      "publicScore": "1176.6"
+    },
+    {
+      "ref": 56156204,
+      "date": "2026-09-11T01:50:19.597Z",
+      "description": "Baseline 1.0 - COK V10 Base Agent",
+      "fileName": "main.py",
+      "totalBytes": 190485,
+      "status": "COMPLETE",
+      "publicScore": "1255.5"
+    },
+    {
+      "ref": 56156051,
+      "date": "2026-09-11T01:40:53.617Z",
+      "description": "",
+      "fileName": "main.py",
+      "totalBytes": 190485,
+      "status": "COMPLETE",
+      "publicScore": "1297.8"
+    },
+    {
+      "ref": 55967151,
+      "date": "2026-09-02T19:22:07.103Z",
+      "description": "v1",
+      "fileName": "main.py",
+      "totalBytes": 17661,
+      "status": "COMPLETE",
+      "publicScore": "296.4"
+    },
+    {
+      "ref": 55965192,
+      "date": "2026-09-02T16:37:57.200Z",
+      "description": "# Kaggriculture Prize Lab",
+      "fileName": "main.py",
+      "totalBytes": 154027,
+      "status": "COMPLETE",
+      "publicScore": "1268.1"
+    },
+    {
+      "ref": 55954048,
+      "date": "2026-09-02T04:48:48.073Z",
+      "description": "V0 deterministic wheat baseline",
+      "fileName": "main.py",
+      "totalBytes": 7166,
+      "status": "COMPLETE",
+      "publicScore": "226.9"
+    }
+  ],
+  "results": {
+    "56294951": {
+      "all": {
+        "win": 75,
+        "tie": 1,
+        "loss": 12,
+        "unknown_completed_public": 0,
+        "n": 88,
+        "outcome_rate": 0.8579545454545454
+      },
+      "by_current_score_band": {
+        "high_>=1600": {
+          "win": 49,
+          "tie": 1,
+          "loss": 11,
+          "unknown_completed_public": 0,
+          "n": 61,
+          "outcome_rate": 0.8114754098360656
+        },
+        "unknown": {
+          "win": 11,
+          "tie": 0,
+          "loss": 1,
+          "unknown_completed_public": 0,
+          "n": 12,
+          "outcome_rate": 0.9166666666666666
+        },
+        "middle_1200_1599": {
+          "win": 7,
+          "tie": 0,
+          "loss": 0,
+          "unknown_completed_public": 0,
+          "n": 7,
+          "outcome_rate": 1.0
+        },
+        "low_<1200": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0,
+          "unknown_completed_public": 0,
+          "n": 8,
+          "outcome_rate": 1.0
+        }
+      },
+      "first20": {
+        "win": 19,
+        "tie": 0,
+        "loss": 1,
+        "unknown_completed_public": 0,
+        "n": 20,
+        "outcome_rate": 0.95
+      },
+      "last20": {
+        "win": 15,
+        "tie": 0,
+        "loss": 5,
+        "unknown_completed_public": 0,
+        "n": 20,
+        "outcome_rate": 0.75
+      }
+    },
+    "56294957": {
+      "all": {
+        "win": 14,
+        "tie": 0,
+        "loss": 15,
+        "unknown_completed_public": 0,
+        "n": 29,
+        "outcome_rate": 0.4827586206896552
+      },
+      "by_current_score_band": {
+        "low_<1200": {
+          "win": 7,
+          "tie": 0,
+          "loss": 6,
+          "unknown_completed_public": 0,
+          "n": 13,
+          "outcome_rate": 0.5384615384615384
+        },
+        "high_>=1600": {
+          "win": 0,
+          "tie": 0,
+          "loss": 1,
+          "unknown_completed_public": 0,
+          "n": 1,
+          "outcome_rate": 0.0
+        },
+        "unknown": {
+          "win": 7,
+          "tie": 0,
+          "loss": 8,
+          "unknown_completed_public": 0,
+          "n": 15,
+          "outcome_rate": 0.4666666666666667
+        }
+      },
+      "first20": {
+        "win": 11,
+        "tie": 0,
+        "loss": 9,
+        "unknown_completed_public": 0,
+        "n": 20,
+        "outcome_rate": 0.55
+      },
+      "last20": {
+        "win": 8,
+        "tie": 0,
+        "loss": 12,
+        "unknown_completed_public": 0,
+        "n": 20,
+        "outcome_rate": 0.4
+      }
+    }
+  },
+  "team_snapshots": 100,
+  "prematch_scores_available": false
+}

@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-17T13:04:16.862671+00:00",
+  "sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+  "description": "R3 Clean opening | V46 production retained | dc3d7927",
+  "archive": "version-archive\\pre-submit\\r3-clean-20260917",
+  "limits_before": {
+    "numToday": 2,
+    "numTotal": 9,
+    "numAllowedNow": 3
+  },
+  "authorization": "User explicitly selected ONE optimized submission, accepting A56294951 leaving latest two. No backup submission.",
+  "evaluation": "64 valid full research executions;228 regression tests;confirmation10W6L vs A6W2T8L;exploratory, not formal promotion"
+}
