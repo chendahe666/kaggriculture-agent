@@ -1,0 +1,31 @@
+{
+  "submission_id": 55965192,
+  "submitted_utc": "2026-09-02T16:37:57.200Z",
+  "archived_utc": "2026-09-17T13:05:47.685469+00:00",
+  "pre_submit_verified_utc": null,
+  "code_created_utc": null,
+  "archive_kind": "historical_backfill",
+  "initial_archive_score_observation": {
+    "score": "1268.1",
+    "observed_utc": "2026-09-17T12:42:19.703972+00:00"
+  },
+  "server_status_at_archive": "COMPLETE",
+  "description": "# Kaggriculture Prize Lab",
+  "snapshot": "snapshot.json",
+  "sha256": "6c709f6d3ce6cf221a9495de7e716fcd1b660e3bbc8ee5679b63233d0265a812",
+  "binding_status": "local_historical_evidence_and_server_byte_count_not_server_download_hash",
+  "notes": "Server timestamps are distinct from present archival time; missing times are not reconstructed.",
+  "source": "submissions/k320-v23-current-20260902/main.py",
+  "baseline_name": "Rayk K320 V23 unchanged frozen public candidate",
+  "changes": "Unmodified frozen main.py; historical project/user association, server raw code not independently downloaded.",
+  "hypothesis": "Initial public candidate strength check.",
+  "evaluation": "Historical local COK panel0/8; not current independent evaluation.",
+  "reports": [
+    "submissions/k320-v23-current-20260902/README.md"
+  ],
+  "licenses": [
+    "submissions/k320-v23-current-20260902/LICENSES/Apache-2.0.txt",
+    "submissions/k320-v23-current-20260902/THIRD_PARTY_NOTICES.md"
+  ],
+  "bytes": 154027
+}
