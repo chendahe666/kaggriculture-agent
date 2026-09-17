@@ -1,0 +1,10 @@
+{
+  "name": "public-v47",
+  "source": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v47-reactive-market-coordination",
+  "sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+  "baseline_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+  "license": "Apache-2.0; embedded upstream notices retained",
+  "original_strategy_authorship": false,
+  "changes": "Public same-lineage integrated upgrade versus R3; no untested G4 patches merged. Byte-identical V47 intake.",
+  "formal_promotion": false
+}
