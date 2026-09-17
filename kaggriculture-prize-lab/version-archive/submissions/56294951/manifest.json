@@ -1,0 +1,37 @@
+{
+  "submission_id": 56294951,
+  "submitted_utc": "2026-09-17T04:40:59.870Z",
+  "archived_utc": "2026-09-17T13:05:47.852914+00:00",
+  "pre_submit_verified_utc": "2026-09-17T04:40:58.540920+00:00",
+  "code_created_utc": null,
+  "archive_kind": "historical_backfill",
+  "initial_archive_score_observation": {
+    "score": "2147.0",
+    "observed_utc": "2026-09-17T12:42:19.703972+00:00"
+  },
+  "server_status_at_archive": "COMPLETE",
+  "description": "R2 A Route counter35 | public-state copy defense | c4c890f4",
+  "snapshot": "snapshot.json",
+  "sha256": "c4c890f4e73b72dbbcc93edfc22ec1c17f40c9751cd2206214f38351fe227282",
+  "binding_status": "local_historical_evidence_and_server_byte_count_not_server_download_hash",
+  "notes": "Server timestamps are distinct from present archival time; missing times are not reconstructed.",
+  "source": "experiments/track-r2-20260916/route-counter-35/main.py",
+  "baseline": "inbox/r2-20260916/sources/v46/extracted-main.py",
+  "baseline_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+  "baseline_name": "Ahmed Berat Ozer V46",
+  "source_url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v46-first-turn-microstructure-and-s",
+  "changes": "Net opening WHEAT 35; sell up to30 next step while preserving5; disable parent step1 buy30 attack.",
+  "hypothesis": "Public-state opening copy defense without disrupting the mature production route.",
+  "evaluation": "94 full games in R2,214 regression tests passed; A responsive panel22W4L, COK6/6,V466/6,tetsutani2/6. Strong paired slice outcome points equal parent. Exploratory, not universal promotion.",
+  "attempt": "results/r2-20260916/submissions/A-attempt.json",
+  "reports": [
+    "reports/r2-20260916-report.md",
+    "experiments/track-r2-20260916/route-counter-35/VERSION_REPORT.md",
+    "results/r2-20260916/submissions/A-receipt.json"
+  ],
+  "licenses": [
+    "public-baseline-v10/LICENSES/Apache-2.0.txt"
+  ],
+  "bytes": 334758,
+  "pre_submit_time_basis": "persisted hash-checked upload attempt; not code creation time"
+}

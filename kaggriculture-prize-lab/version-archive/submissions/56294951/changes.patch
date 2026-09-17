@@ -1,0 +1,25 @@
+--- baseline/main.py
++++ candidate/main.py
+@@ -3625,3 +3625,22 @@
+     return action
+ agent.telemetry=_ADV_REPORT
+ agent=globals().pop('agent')
++
++# R2 2026-09-17 modification: pre-funded opening inventory, no new money source.
++# Based on Ahmed Berat Ozer V46 (Apache-2.0), all upstream notices retained.
++# Counter-model: a public copy buys wheat at turn 1. Supply it from turn-0 stock;
++# no identity, seed, future shop or private opponent state is consulted.
++_OPEN_STEP0=[['BUY_PRODUCT','WHEAT',37],['SELL','WHEAT',2]]
++_OPEN_ATTACK=0
++_R2_PARENT=agent
++def agent(observation, configuration=None):
++    action=_R2_PARENT(observation,configuration)
++    standard=configuration is None or all(configuration.get(k,v)==v for k,v in [('boardSize',10),('turnsPerDay',24),('shedCapacity',100),('maxMarketOrdersPerTurn',10),('startingMoney',3000)])
++    if standard and int(observation['step'])==1 and _OPEN_REPORT.get('open_turns',0):
++        stock=int(observation['private']['shed'].get('WHEAT',0))
++        excess=max(0,min(30,stock-5))
++        if excess:
++            orders=[['SELL','WHEAT',excess]]+[list(o) for o in action.get('market',[])]
++            if len(orders)<=10: action=dict(action,market=orders)
++    return action
++agent=globals().pop('agent')
