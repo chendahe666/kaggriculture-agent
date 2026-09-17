@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-17T20:48:07.685352+00:00",
+  "sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+  "description": "G4 Public V47 integrated trial | Ahmed Berat Ozer credit | f4ecd487",
+  "archive": "version-archive\\pre-submit\\g4-public-v47-20260917",
+  "limits_before": {
+    "numToday": 3,
+    "numTotal": 10,
+    "numAllowedNow": 2
+  },
+  "authorization": "Latest user explicitly requested optimization followed by latest version submission. Exactly one exploratory upload; retains R3, B leaves latest two.",
+  "evaluation": "63 valid research executions;258 distinct tests passed;4 wins vs C in2seeds;2 transfer wins;2 valid selfplay ties;not formal promotion",
+  "budget_deviation": "69 total full executions including6 unit fixtures;5 over64 cap;reported and all further simulations stopped"
+}

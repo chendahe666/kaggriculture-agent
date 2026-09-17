@@ -1,0 +1,335 @@
+[
+  {
+    "candidate_key": "confirmation-M-vs-cok-917521-0",
+    "control_key": "confirmation-C-vs-cok-917521-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "confirmation-M-vs-cok-917521-1",
+    "control_key": "confirmation-C-vs-cok-917521-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "confirmation-M-vs-cok-917522-0",
+    "control_key": "confirmation-C-vs-cok-917522-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "confirmation-M-vs-cok-917522-1",
+    "control_key": "confirmation-C-vs-cok-917522-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "confirmation-M-vs-v47-917521-0",
+    "control_key": "confirmation-C-vs-v47-917521-0",
+    "margin_delta": 14.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "confirmation-M-vs-v47-917521-1",
+    "control_key": "confirmation-C-vs-v47-917521-1",
+    "margin_delta": 14.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "confirmation-M-vs-v47-917522-0",
+    "control_key": "confirmation-C-vs-v47-917522-0",
+    "margin_delta": 5.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "confirmation-M-vs-v47-917522-1",
+    "control_key": "confirmation-C-vs-v47-917522-1",
+    "margin_delta": 5.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "coverage-M-vs-jaxa-917401-0",
+    "control_key": "coverage-C-vs-jaxa-917401-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": 644
+  },
+  {
+    "candidate_key": "coverage-MP-vs-jaxa-917401-0",
+    "control_key": "coverage-C-vs-jaxa-917401-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": 644
+  },
+  {
+    "candidate_key": "coverage-P-vs-jaxa-917401-0",
+    "control_key": "coverage-C-vs-jaxa-917401-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-M-vs-jaxa-917511-0",
+    "control_key": "development-C-vs-jaxa-917511-0",
+    "margin_delta": 6.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-M-vs-jaxa-917511-1",
+    "control_key": "development-C-vs-jaxa-917511-1",
+    "margin_delta": 6.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-M-vs-jaxa-917512-0",
+    "control_key": "development-C-vs-jaxa-917512-0",
+    "margin_delta": 5.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-M-vs-jaxa-917512-1",
+    "control_key": "development-C-vs-jaxa-917512-1",
+    "margin_delta": 5.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-M-vs-lonespear-917511-0",
+    "control_key": "development-C-vs-lonespear-917511-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-M-vs-lonespear-917511-1",
+    "control_key": "development-C-vs-lonespear-917511-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-M-vs-lonespear-917512-0",
+    "control_key": "development-C-vs-lonespear-917512-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-M-vs-lonespear-917512-1",
+    "control_key": "development-C-vs-lonespear-917512-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-MP-vs-jaxa-917511-0",
+    "control_key": "development-C-vs-jaxa-917511-0",
+    "margin_delta": 6.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-MP-vs-jaxa-917511-1",
+    "control_key": "development-C-vs-jaxa-917511-1",
+    "margin_delta": 6.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-MP-vs-jaxa-917512-0",
+    "control_key": "development-C-vs-jaxa-917512-0",
+    "margin_delta": 5.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-MP-vs-jaxa-917512-1",
+    "control_key": "development-C-vs-jaxa-917512-1",
+    "margin_delta": 5.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": 503,
+    "first_action_divergence": 503
+  },
+  {
+    "candidate_key": "development-MP-vs-lonespear-917511-0",
+    "control_key": "development-C-vs-lonespear-917511-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-MP-vs-lonespear-917511-1",
+    "control_key": "development-C-vs-lonespear-917511-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-MP-vs-lonespear-917512-0",
+    "control_key": "development-C-vs-lonespear-917512-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-MP-vs-lonespear-917512-1",
+    "control_key": "development-C-vs-lonespear-917512-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-jaxa-917511-0",
+    "control_key": "development-C-vs-jaxa-917511-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-jaxa-917511-1",
+    "control_key": "development-C-vs-jaxa-917511-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-jaxa-917512-0",
+    "control_key": "development-C-vs-jaxa-917512-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-jaxa-917512-1",
+    "control_key": "development-C-vs-jaxa-917512-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-lonespear-917511-0",
+    "control_key": "development-C-vs-lonespear-917511-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-lonespear-917511-1",
+    "control_key": "development-C-vs-lonespear-917511-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-lonespear-917512-0",
+    "control_key": "development-C-vs-lonespear-917512-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "development-P-vs-lonespear-917512-1",
+    "control_key": "development-C-vs-lonespear-917512-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "noop-C-vs-jaxa-917501-0",
+    "control_key": "noop-R3-vs-jaxa-917501-0",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  },
+  {
+    "candidate_key": "noop-C-vs-jaxa-917501-1",
+    "control_key": "noop-R3-vs-jaxa-917501-1",
+    "margin_delta": 0.0,
+    "outcome_delta": 0.0,
+    "first_shop_divergence": null,
+    "first_state_divergence": null,
+    "first_action_divergence": null
+  }
+]

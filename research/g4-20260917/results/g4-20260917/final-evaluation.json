@@ -1,0 +1,2347 @@
+{
+  "round": "G4-20260917",
+  "all_valid": true,
+  "research_completed": 63,
+  "research_reserved_attempts": 64,
+  "failed_before_game": 1,
+  "full_horizon_test_fixture_executions": 6,
+  "total_full_executions": 69,
+  "cap": 64,
+  "cap_excess": 5,
+  "budget_status": "BREACHED: test fixtures omitted from runner reservation; no further simulations",
+  "by_phase": {
+    "online-audit": 2,
+    "confirmation": 16,
+    "coverage": 4,
+    "development": 32,
+    "noop": 4,
+    "profile-retry": 1,
+    "selfplay": 2,
+    "transfer": 2
+  },
+  "groups": [
+    {
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "cok",
+      "n": 4,
+      "seeds": [
+        917521,
+        917522
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 23800.5
+    },
+    {
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "v47",
+      "n": 4,
+      "seeds": [
+        917521,
+        917522
+      ],
+      "wins": 0,
+      "ties": 0,
+      "losses": 4,
+      "mean_margin": -5300.5
+    },
+    {
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "cok",
+      "n": 4,
+      "seeds": [
+        917521,
+        917522
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 23800.5
+    },
+    {
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "v47",
+      "n": 4,
+      "seeds": [
+        917521,
+        917522
+      ],
+      "wins": 0,
+      "ties": 0,
+      "losses": 4,
+      "mean_margin": -5291.0
+    },
+    {
+      "phase": "coverage",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "n": 1,
+      "seeds": [
+        917401
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 150.0
+    },
+    {
+      "phase": "coverage",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "n": 1,
+      "seeds": [
+        917401
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 150.0
+    },
+    {
+      "phase": "coverage",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "n": 1,
+      "seeds": [
+        917401
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 150.0
+    },
+    {
+      "phase": "coverage",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "n": 1,
+      "seeds": [
+        917401
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 150.0
+    },
+    {
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 87.5
+    },
+    {
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "lonespear",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 67725.5
+    },
+    {
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 93.0
+    },
+    {
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "lonespear",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 67725.5
+    },
+    {
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 93.0
+    },
+    {
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "lonespear",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 67725.5
+    },
+    {
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 87.5
+    },
+    {
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "lonespear",
+      "n": 4,
+      "seeds": [
+        917511,
+        917512
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 67725.5
+    },
+    {
+      "phase": "noop",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "n": 2,
+      "seeds": [
+        917501
+      ],
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 17.0
+    },
+    {
+      "phase": "noop",
+      "candidate": "R3",
+      "opponent": "jaxa",
+      "n": 2,
+      "seeds": [
+        917501
+      ],
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 17.0
+    },
+    {
+      "phase": "profile-retry",
+      "candidate": "R3",
+      "opponent": "jaxa",
+      "n": 1,
+      "seeds": [
+        917501
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 17.0
+    },
+    {
+      "phase": "selfplay",
+      "candidate": "public-v47",
+      "opponent": "public-v47",
+      "n": 2,
+      "seeds": [
+        917532
+      ],
+      "wins": 0,
+      "ties": 2,
+      "losses": 0,
+      "mean_margin": 0.0
+    },
+    {
+      "phase": "transfer",
+      "candidate": "public-v47",
+      "opponent": "cok",
+      "n": 1,
+      "seeds": [
+        917531
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 37157.0
+    },
+    {
+      "phase": "transfer",
+      "candidate": "public-v47",
+      "opponent": "lonespear",
+      "n": 1,
+      "seeds": [
+        917531
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 62557.0
+    }
+  ],
+  "rows": [
+    {
+      "key": "confirmation-C-vs-cok-917521-0",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "cok",
+      "seed": 917521,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17476.0,
+      "rewards": [
+        149710.0,
+        132234.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.084151,
+        0.059509
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:45.458071+00:00",
+      "completed_utc": "2026-09-17T20:35:51.302925+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-cok-917521-1",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "cok",
+      "seed": 917521,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17476.0,
+      "rewards": [
+        132234.0,
+        149710.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.073407,
+        0.070046
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:45.572373+00:00",
+      "completed_utc": "2026-09-17T20:35:51.429809+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-cok-917522-0",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "cok",
+      "seed": 917522,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 29935.0,
+      "rewards": [
+        104323.0,
+        74388.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.083615,
+        0.057186
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:52.459624+00:00",
+      "completed_utc": "2026-09-17T20:35:58.582760+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-cok-917522-1",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "cok",
+      "seed": 917522,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 30315.0,
+      "rewards": [
+        74331.0,
+        104646.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.051804,
+        0.075996
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:52.578898+00:00",
+      "completed_utc": "2026-09-17T20:35:58.779718+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-v47-917521-0",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "v47",
+      "seed": 917521,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -8074.0,
+      "rewards": [
+        103861.0,
+        111935.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.086373,
+        0.073967
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:27.018188+00:00",
+      "completed_utc": "2026-09-17T20:35:34.487781+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-v47-917521-1",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "v47",
+      "seed": 917521,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -8074.0,
+      "rewards": [
+        111935.0,
+        103861.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.083655,
+        0.072947
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:27.018129+00:00",
+      "completed_utc": "2026-09-17T20:35:34.387265+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-v47-917522-0",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "v47",
+      "seed": 917522,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -2527.0,
+      "rewards": [
+        97446.0,
+        99973.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.138111,
+        0.073921
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:35.641326+00:00",
+      "completed_utc": "2026-09-17T20:35:44.330858+00:00"
+    },
+    {
+      "key": "confirmation-C-vs-v47-917522-1",
+      "phase": "confirmation",
+      "candidate": "C",
+      "opponent": "v47",
+      "seed": 917522,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -2527.0,
+      "rewards": [
+        99973.0,
+        97446.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.137984,
+        0.074535
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:35.850985+00:00",
+      "completed_utc": "2026-09-17T20:35:44.476975+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-cok-917521-0",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "cok",
+      "seed": 917521,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17476.0,
+      "rewards": [
+        149710.0,
+        132234.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.08567,
+        0.063167
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:36:15.202258+00:00",
+      "completed_utc": "2026-09-17T20:36:21.260453+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-cok-917521-1",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "cok",
+      "seed": 917521,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17476.0,
+      "rewards": [
+        132234.0,
+        149710.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.079042,
+        0.073245
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:36:15.382760+00:00",
+      "completed_utc": "2026-09-17T20:36:21.414236+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-cok-917522-0",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "cok",
+      "seed": 917522,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 29935.0,
+      "rewards": [
+        104323.0,
+        74388.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.078398,
+        0.055968
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:36:22.449305+00:00",
+      "completed_utc": "2026-09-17T20:36:28.566882+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-cok-917522-1",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "cok",
+      "seed": 917522,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 30315.0,
+      "rewards": [
+        74331.0,
+        104646.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.049252,
+        0.082175
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:36:22.545869+00:00",
+      "completed_utc": "2026-09-17T20:36:28.550847+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-v47-917521-0",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "v47",
+      "seed": 917521,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -8060.0,
+      "rewards": [
+        103867.0,
+        111927.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.102863,
+        0.080499
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:59.764319+00:00",
+      "completed_utc": "2026-09-17T20:36:06.711518+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-v47-917521-1",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "v47",
+      "seed": 917521,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -8060.0,
+      "rewards": [
+        111927.0,
+        103867.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.089039,
+        0.119589
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:35:59.920268+00:00",
+      "completed_utc": "2026-09-17T20:36:06.845801+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-v47-917522-0",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "v47",
+      "seed": 917522,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -2522.0,
+      "rewards": [
+        97450.0,
+        99972.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.078726,
+        0.08699
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:36:07.906456+00:00",
+      "completed_utc": "2026-09-17T20:36:14.002984+00:00"
+    },
+    {
+      "key": "confirmation-M-vs-v47-917522-1",
+      "phase": "confirmation",
+      "candidate": "M",
+      "opponent": "v47",
+      "seed": 917522,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": -2522.0,
+      "rewards": [
+        99972.0,
+        97450.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.08735,
+        0.085137
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:36:07.968859+00:00",
+      "completed_utc": "2026-09-17T20:36:14.163191+00:00"
+    },
+    {
+      "key": "coverage-C-vs-jaxa-917401-0",
+      "phase": "coverage",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917401,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 150.0,
+      "rewards": [
+        78393.0,
+        78243.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.101376,
+        0.069281
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:34:26.804322+00:00",
+      "completed_utc": "2026-09-17T20:34:32.604790+00:00"
+    },
+    {
+      "key": "coverage-M-vs-jaxa-917401-0",
+      "phase": "coverage",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "seed": 917401,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 150.0,
+      "rewards": [
+        78393.0,
+        78243.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.109892,
+        0.069596
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:34:26.804248+00:00",
+      "completed_utc": "2026-09-17T20:34:32.583181+00:00"
+    },
+    {
+      "key": "coverage-MP-vs-jaxa-917401-0",
+      "phase": "coverage",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "seed": 917401,
+      "seat": 0,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 150.0,
+      "rewards": [
+        78393.0,
+        78243.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.116372,
+        0.069036
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:34:33.639406+00:00",
+      "completed_utc": "2026-09-17T20:34:39.607515+00:00"
+    },
+    {
+      "key": "coverage-P-vs-jaxa-917401-0",
+      "phase": "coverage",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "seed": 917401,
+      "seat": 0,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 150.0,
+      "rewards": [
+        78393.0,
+        78243.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.10954,
+        0.068997
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:34:33.639487+00:00",
+      "completed_utc": "2026-09-17T20:34:39.622400+00:00"
+    },
+    {
+      "key": "development-C-vs-jaxa-917511-0",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 60.0,
+      "rewards": [
+        101567.0,
+        101507.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.099601,
+        0.075955
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:30:47.923404+00:00",
+      "completed_utc": "2026-09-17T20:30:53.863540+00:00"
+    },
+    {
+      "key": "development-C-vs-jaxa-917511-1",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 60.0,
+      "rewards": [
+        101507.0,
+        101567.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.074923,
+        0.08127
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:30:47.923365+00:00",
+      "completed_utc": "2026-09-17T20:30:53.755553+00:00"
+    },
+    {
+      "key": "development-C-vs-jaxa-917512-0",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 115.0,
+      "rewards": [
+        108474.0,
+        108359.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.112132,
+        0.075459
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:30:54.826537+00:00",
+      "completed_utc": "2026-09-17T20:31:00.937798+00:00"
+    },
+    {
+      "key": "development-C-vs-jaxa-917512-1",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 115.0,
+      "rewards": [
+        108359.0,
+        108474.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.075716,
+        0.084601
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:30:54.911960+00:00",
+      "completed_utc": "2026-09-17T20:31:01.041694+00:00"
+    },
+    {
+      "key": "development-C-vs-lonespear-917511-0",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        109226.0,
+        36159.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.0829,
+        2.967484
+      ],
+      "min_overage_seconds": [
+        60.0,
+        58.032516
+      ],
+      "started_utc": "2026-09-17T20:31:02.068848+00:00",
+      "completed_utc": "2026-09-17T20:31:10.358154+00:00"
+    },
+    {
+      "key": "development-C-vs-lonespear-917511-1",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        36159.0,
+        109226.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        2.93001,
+        0.077287
+      ],
+      "min_overage_seconds": [
+        58.06999,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:02.188588+00:00",
+      "completed_utc": "2026-09-17T20:31:10.470619+00:00"
+    },
+    {
+      "key": "development-C-vs-lonespear-917512-0",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        100577.0,
+        38193.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.086419,
+        0.332756
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:11.580068+00:00",
+      "completed_utc": "2026-09-17T20:31:17.302836+00:00"
+    },
+    {
+      "key": "development-C-vs-lonespear-917512-1",
+      "phase": "development",
+      "candidate": "C",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        38193.0,
+        100577.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.342117,
+        0.10044
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:11.649066+00:00",
+      "completed_utc": "2026-09-17T20:31:17.440600+00:00"
+    },
+    {
+      "key": "development-M-vs-jaxa-917511-0",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 66.0,
+      "rewards": [
+        101571.0,
+        101505.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.089075,
+        0.081512
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:18.421613+00:00",
+      "completed_utc": "2026-09-17T20:31:25.224625+00:00"
+    },
+    {
+      "key": "development-M-vs-jaxa-917511-1",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 66.0,
+      "rewards": [
+        101505.0,
+        101571.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.088415,
+        0.082623
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:18.547435+00:00",
+      "completed_utc": "2026-09-17T20:31:25.326456+00:00"
+    },
+    {
+      "key": "development-M-vs-jaxa-917512-0",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 120.0,
+      "rewards": [
+        108477.0,
+        108357.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.084957,
+        0.077758
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:26.374478+00:00",
+      "completed_utc": "2026-09-17T20:31:33.038666+00:00"
+    },
+    {
+      "key": "development-M-vs-jaxa-917512-1",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 120.0,
+      "rewards": [
+        108357.0,
+        108477.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.083446,
+        0.07936
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:26.454127+00:00",
+      "completed_utc": "2026-09-17T20:31:32.977456+00:00"
+    },
+    {
+      "key": "development-M-vs-lonespear-917511-0",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        109226.0,
+        36159.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.085436,
+        0.366051
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:34.100824+00:00",
+      "completed_utc": "2026-09-17T20:31:41.081802+00:00"
+    },
+    {
+      "key": "development-M-vs-lonespear-917511-1",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        36159.0,
+        109226.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.361667,
+        0.099655
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:34.188566+00:00",
+      "completed_utc": "2026-09-17T20:31:41.190909+00:00"
+    },
+    {
+      "key": "development-M-vs-lonespear-917512-0",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        100577.0,
+        38193.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.088246,
+        0.393522
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:42.274795+00:00",
+      "completed_utc": "2026-09-17T20:31:48.441149+00:00"
+    },
+    {
+      "key": "development-M-vs-lonespear-917512-1",
+      "phase": "development",
+      "candidate": "M",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "81c57324f510abe166ebf9e53dfad1d8a018e3f39cd258162dc9dffeedb6860a",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        38193.0,
+        100577.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.370889,
+        0.083433
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:42.385584+00:00",
+      "completed_utc": "2026-09-17T20:31:48.766547+00:00"
+    },
+    {
+      "key": "development-MP-vs-jaxa-917511-0",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 66.0,
+      "rewards": [
+        101571.0,
+        101505.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.152873,
+        0.073618
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:29.342880+00:00",
+      "completed_utc": "2026-09-17T20:32:38.061162+00:00"
+    },
+    {
+      "key": "development-MP-vs-jaxa-917511-1",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 66.0,
+      "rewards": [
+        101505.0,
+        101571.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.154547,
+        0.074787
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:29.406553+00:00",
+      "completed_utc": "2026-09-17T20:32:37.842060+00:00"
+    },
+    {
+      "key": "development-MP-vs-jaxa-917512-0",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 120.0,
+      "rewards": [
+        108477.0,
+        108357.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.148511,
+        0.069815
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:39.244644+00:00",
+      "completed_utc": "2026-09-17T20:32:47.298414+00:00"
+    },
+    {
+      "key": "development-MP-vs-jaxa-917512-1",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 120.0,
+      "rewards": [
+        108357.0,
+        108477.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.141499,
+        0.070562
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:39.459387+00:00",
+      "completed_utc": "2026-09-17T20:32:47.672935+00:00"
+    },
+    {
+      "key": "development-MP-vs-lonespear-917511-0",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        109226.0,
+        36159.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.080127,
+        0.333137
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:48.697958+00:00",
+      "completed_utc": "2026-09-17T20:32:55.913331+00:00"
+    },
+    {
+      "key": "development-MP-vs-lonespear-917511-1",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        36159.0,
+        109226.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.313151,
+        0.07599
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:49.106580+00:00",
+      "completed_utc": "2026-09-17T20:32:56.259657+00:00"
+    },
+    {
+      "key": "development-MP-vs-lonespear-917512-0",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        100577.0,
+        38193.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.069415,
+        0.32668
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:57.216824+00:00",
+      "completed_utc": "2026-09-17T20:33:03.849510+00:00"
+    },
+    {
+      "key": "development-MP-vs-lonespear-917512-1",
+      "phase": "development",
+      "candidate": "MP",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "a0564c1a79a1ecedd29dab6675a3bb94392fbeb1be3d97ffa27190bab3958273",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        38193.0,
+        100577.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.313951,
+        0.087959
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:57.552379+00:00",
+      "completed_utc": "2026-09-17T20:33:04.053409+00:00"
+    },
+    {
+      "key": "development-P-vs-jaxa-917511-0",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 60.0,
+      "rewards": [
+        101567.0,
+        101507.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.25253,
+        0.076902
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:49.557126+00:00",
+      "completed_utc": "2026-09-17T20:31:57.691636+00:00"
+    },
+    {
+      "key": "development-P-vs-jaxa-917511-1",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 60.0,
+      "rewards": [
+        101507.0,
+        101567.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.084937,
+        0.086992
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:49.862326+00:00",
+      "completed_utc": "2026-09-17T20:31:57.877608+00:00"
+    },
+    {
+      "key": "development-P-vs-jaxa-917512-0",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 115.0,
+      "rewards": [
+        108474.0,
+        108359.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.234073,
+        0.080686
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:59.271215+00:00",
+      "completed_utc": "2026-09-17T20:32:08.681921+00:00"
+    },
+    {
+      "key": "development-P-vs-jaxa-917512-1",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "jaxa",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 115.0,
+      "rewards": [
+        108359.0,
+        108474.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.158162,
+        0.083387
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:31:59.457574+00:00",
+      "completed_utc": "2026-09-17T20:32:08.706681+00:00"
+    },
+    {
+      "key": "development-P-vs-lonespear-917511-0",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 0,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        109226.0,
+        36159.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.094472,
+        0.356032
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:10.231086+00:00",
+      "completed_utc": "2026-09-17T20:32:18.470703+00:00"
+    },
+    {
+      "key": "development-P-vs-lonespear-917511-1",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "lonespear",
+      "seed": 917511,
+      "seat": 1,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 73067.0,
+      "rewards": [
+        36159.0,
+        109226.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.378644,
+        0.089126
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:10.234988+00:00",
+      "completed_utc": "2026-09-17T20:32:18.426926+00:00"
+    },
+    {
+      "key": "development-P-vs-lonespear-917512-0",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 0,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        100577.0,
+        38193.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.07698,
+        0.352927
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:20.184848+00:00",
+      "completed_utc": "2026-09-17T20:32:27.863194+00:00"
+    },
+    {
+      "key": "development-P-vs-lonespear-917512-1",
+      "phase": "development",
+      "candidate": "P",
+      "opponent": "lonespear",
+      "seed": 917512,
+      "seat": 1,
+      "candidate_sha256": "eadf696e255ee7cf60e0b895262f683743e9839d165dfc0f2c8a841c92078424",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62384.0,
+      "rewards": [
+        38193.0,
+        100577.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.38745,
+        0.181913
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:32:20.184750+00:00",
+      "completed_utc": "2026-09-17T20:32:27.965930+00:00"
+    },
+    {
+      "key": "noop-C-vs-jaxa-917501-0",
+      "phase": "noop",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917501,
+      "seat": 0,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17.0,
+      "rewards": [
+        141749.0,
+        141732.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.100162,
+        0.073643
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:28:38.008371+00:00",
+      "completed_utc": "2026-09-17T20:28:44.086061+00:00"
+    },
+    {
+      "key": "noop-C-vs-jaxa-917501-1",
+      "phase": "noop",
+      "candidate": "C",
+      "opponent": "jaxa",
+      "seed": 917501,
+      "seat": 1,
+      "candidate_sha256": "e3aa2565453bc174daca8677bc1d20505bf756674ca8e65533f7134b4359e9b0",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17.0,
+      "rewards": [
+        141732.0,
+        141749.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.069859,
+        0.072253
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:28:38.167770+00:00",
+      "completed_utc": "2026-09-17T20:28:44.098138+00:00"
+    },
+    {
+      "key": "noop-R3-vs-jaxa-917501-0",
+      "phase": "noop",
+      "candidate": "R3",
+      "opponent": "jaxa",
+      "seed": 917501,
+      "seat": 0,
+      "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17.0,
+      "rewards": [
+        141749.0,
+        141732.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.099605,
+        0.0791
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:28:31.025088+00:00",
+      "completed_utc": "2026-09-17T20:28:37.110445+00:00"
+    },
+    {
+      "key": "noop-R3-vs-jaxa-917501-1",
+      "phase": "noop",
+      "candidate": "R3",
+      "opponent": "jaxa",
+      "seed": 917501,
+      "seat": 1,
+      "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17.0,
+      "rewards": [
+        141732.0,
+        141749.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.079097,
+        0.078362
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:28:31.025152+00:00",
+      "completed_utc": "2026-09-17T20:28:36.949010+00:00"
+    },
+    {
+      "key": "profile-retry-R3-vs-jaxa-917501-0",
+      "phase": "profile-retry",
+      "candidate": "R3",
+      "opponent": "jaxa",
+      "seed": 917501,
+      "seat": 0,
+      "candidate_sha256": "dc3d7927e264e3823578dcb75c07ba95cf8ac94b54f607ae1a7d6284417f1885",
+      "opponent_sha256": "944aa64c5ae1296a9a17eb7961ed8d5a96d0b80183d41e954389983d73420a56",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 17.0,
+      "rewards": [
+        141749.0,
+        141732.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.156354,
+        0.076876
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:23:27.378748+00:00",
+      "completed_utc": "2026-09-17T20:23:46.923346+00:00"
+    },
+    {
+      "key": "selfplay-public-v47-vs-public-v47-917532-0",
+      "phase": "selfplay",
+      "candidate": "public-v47",
+      "opponent": "public-v47",
+      "seed": 917532,
+      "seat": 0,
+      "candidate_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 0.0,
+      "rewards": [
+        57264.0,
+        57264.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.09313,
+        0.077184
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:39:42.228150+00:00",
+      "completed_utc": "2026-09-17T20:39:48.446767+00:00"
+    },
+    {
+      "key": "selfplay-public-v47-vs-public-v47-917532-1",
+      "phase": "selfplay",
+      "candidate": "public-v47",
+      "opponent": "public-v47",
+      "seed": 917532,
+      "seat": 1,
+      "candidate_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "opponent_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 0.0,
+      "rewards": [
+        57264.0,
+        57264.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.093375,
+        0.079793
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:39:42.228712+00:00",
+      "completed_utc": "2026-09-17T20:39:48.430335+00:00"
+    },
+    {
+      "key": "transfer-public-v47-vs-cok-917531-0",
+      "phase": "transfer",
+      "candidate": "public-v47",
+      "opponent": "cok",
+      "seed": 917531,
+      "seat": 0,
+      "candidate_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "opponent_sha256": "1c7335f698692f1c7bac34913a9ededc0f736dfb2b51346a4fa59098ab471d01",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 37157.0,
+      "rewards": [
+        75351.0,
+        38194.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.083788,
+        0.05638
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:39:04.715089+00:00",
+      "completed_utc": "2026-09-17T20:39:10.654176+00:00"
+    },
+    {
+      "key": "transfer-public-v47-vs-lonespear-917531-0",
+      "phase": "transfer",
+      "candidate": "public-v47",
+      "opponent": "lonespear",
+      "seed": 917531,
+      "seat": 0,
+      "candidate_sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+      "opponent_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "valid": true,
+      "margin": 62557.0,
+      "rewards": [
+        75540.0,
+        12983.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "frames": 720,
+      "errors": [],
+      "max_call_seconds": [
+        0.076504,
+        0.34517
+      ],
+      "min_overage_seconds": [
+        60.0,
+        60.0
+      ],
+      "started_utc": "2026-09-17T20:39:04.717540+00:00",
+      "completed_utc": "2026-09-17T20:39:10.377262+00:00"
+    }
+  ],
+  "selected": {
+    "name": "public-v47",
+    "sha256": "f4ecd4876fde93a14e3381993283f3b6a1afa023b48dd57217f4d90794d39842",
+    "max_call_seconds": 0.137984,
+    "min_overage_seconds": 60.0,
+    "formal_promotion": false,
+    "original_strategy_authorship": false,
+    "adaptive_selection": true
+  },
+  "inference": "No rating prediction. Seats clustered by seed; V47 selection reused confirmation results, so those seeds are development for V47. Transfer panel is small and not matched to R3."
+}

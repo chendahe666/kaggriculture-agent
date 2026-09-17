@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "full_suite_passed": 253,
+  "additional_passed": 5,
+  "distinct_tests_passed": 258,
+  "single_258_test_run": false,
+  "first_suite": "252 passed;1 sandbox temporary-directory error;full suite repeated with approval",
+  "additional_first_attempt": "4 passed;1 incorrect module import;import corrected;all5 passed",
+  "full_horizon_fixture_executions": 6,
+  "test_sources": {
+    "test_g4.py": "af9053eca285644cd1764da168cea9ff79be7d73922e59a161345ed5e2c0e9d3",
+    "test_g4_model.py": "b9abd556c9dade6a7fdaa5a66055a35574e8217e41447aa858837730b4144add"
+  }
+}
