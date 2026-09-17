@@ -1,0 +1,37 @@
+{
+  "submission_id": 56294957,
+  "submitted_utc": "2026-09-17T04:41:16.507Z",
+  "archived_utc": "2026-09-17T13:05:47.899061+00:00",
+  "pre_submit_verified_utc": "2026-09-17T04:41:15.212237+00:00",
+  "code_created_utc": null,
+  "archive_kind": "historical_backfill",
+  "initial_archive_score_observation": {
+    "score": "617.2",
+    "observed_utc": "2026-09-17T12:42:19.703972+00:00"
+  },
+  "server_status_at_archive": "COMPLETE",
+  "description": "R2 B Reactive Hungarian | architecture exploration | c2de9496",
+  "snapshot": "snapshot.json",
+  "sha256": "c2de9496eafd88bcd56f5765d4efa5ea972c44d9420dc2638e15910489639d4f",
+  "binding_status": "local_historical_evidence_and_server_byte_count_not_server_download_hash",
+  "notes": "Server timestamps are distinct from present archival time; missing times are not reconstructed.",
+  "source": "experiments/track-r2-20260916/reactive-funding/main.py",
+  "baseline": "public-lonespear/main.py",
+  "baseline_sha256": "3981830b9181db4685afe2b61f182edb13ff5a19d344a70b16a6bc5aedf2a026",
+  "baseline_name": "Lonespear reactive Hungarian scheduler",
+  "source_url": "https://github.com/lonespear/kaggriculture",
+  "changes": "Pure Python rectangular Hungarian replaces NumPy/SciPy; cash-generating sales before payments while preserving same-product order.",
+  "hypothesis": "Independent state-driven architecture and order financing; assignment tie changes can also alter future play.",
+  "evaluation": "B responsive panel8W6L; original parent4/4, mature COK/V46 routes0/6. Exploratory architecture, not prize-ready.",
+  "attempt": "results/r2-20260916/submissions/B-attempt.json",
+  "reports": [
+    "reports/r2-20260916-report.md",
+    "experiments/track-r2-20260916/reactive-funding/VERSION_REPORT.md",
+    "results/r2-20260916/submissions/B-receipt.json"
+  ],
+  "licenses": [
+    "public-lonespear/LICENSE"
+  ],
+  "bytes": 46817,
+  "pre_submit_time_basis": "persisted hash-checked upload attempt; not code creation time"
+}
